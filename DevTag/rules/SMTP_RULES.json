@@ -1,0 +1,46 @@
+{"filterword": "^220 ([\\w._-]+) IP Office Voicemail Pro \\[Hardware mode 00\\] - Version ([\\w._-]+ \\([\\w._-]+\\)) SMTP MAIL Service ready .* ([+-]\\d\\d\\d\\d)\\r\\n", "tag": {"application": "", "device_type": "pbx", "product": "ip office voicemail pro", "vendor": "Avaya"}}
+{"filterword": "^220 ([\\w._-]+) ESMTP EdgeWave mag3000\\r\\n", "tag": {"application": "", "device_type": "proxy server", "product": "mag3000 email filtering appliance", "vendor": "EdgeWave"}}
+{"filterword": "^220 ([-.+\\w]+) Cisco NetWorks ESMTP server\\r\\n", "tag": {"application": "", "device_type": "terminal", "product": "ios networks smtp server", "vendor": "Cisco"}}
+{"filterword": "^220 SMTP service ready\\r\\n214-Commands:\\r\\n214-\\tDATA\\tRCPT\\tMAIL\\tQUIT\\tRSET\\r\\n214 \\tHELO\\tVRFY\\tEXPN\\tHELP\\tNOOP\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "WatchGuard"}}
+{"filterword": "^553 Requested action not taken; No permission\\.\\r\\n$", "tag": {"application": "", "device_type": "pbx", "product": "3300", "vendor": "Mitel"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP Gruponet IE2020 ([\\d./]+);\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "mail appliance", "vendor": "Gruponet"}}
+{"filterword": "^220 DP-1820E\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "dp-1820e", "vendor": "Panasonic"}}
+{"filterword": "^220 Welcome to SafeQ Mail Service\\.\\r\\n", "tag": {"application": "ysoft:safeq", "device_type": "printer", "product": "safeq", "vendor": "YSoft"}}
+{"filterword": "^220 Simple Mail Tranfer Service Ready \\r\\n502 Commande not implement \\r\\n", "tag": {"application": "", "device_type": "printer", "product": "", "vendor": "Brother"}}
+{"filterword": "^220 ([\\w._-]+) \\[ESMTP Server\\] service ready;Bonjour; [^\\r\\n]*\\r\\n", "tag": {"application": "trendmicro:interscan_messaging_security_suite", "device_type": "proxy server", "product": "micro interscan messaging security", "vendor": "Trend"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP\\r\\n214-The following commands are recognized\\r\\n214-\\tdata\\tehlo\\thelo\\thelp\\r\\n214-\\tmail\\tnoop\\tquit\\trcpt\\r\\n214 \\trset\\tvrfy\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "c60", "vendor": "IronPort"}}
+{"filterword": "^220 \\r\\n501 \\r\\n", "tag": {"application": "", "device_type": "printer", "product": "bizhub 350", "vendor": "Konica Minolta"}}
+{"filterword": "^220 ([-\\w_.]+) (SCM\\d+)/SMTP Ready\\.\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "2", "vendor": "McAfee"}}
+{"filterword": "^220  ESMTP smtprelay service ready\\.\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "smtp relay", "vendor": "GeNUGate"}}
+{"filterword": "^220 ([\\w._-]+) ESMTP [\\w._-]+\\r\\n501 5\\.5\\.2 HELO requires domain address\\r\\n", "tag": {"application": "", "device_type": "proxy server", "product": "email security appliance", "vendor": "SonicWALL"}}
+{"filterword": "^220-([-\\w_.]+) Bluecat Networks Inc\\. Meridius Security Gateway\\r\\n220 ", "tag": {"application": "", "device_type": "firewall", "product": "meridius", "vendor": "Bluecat"}}
+{"filterword": "^220 I, CALLPILOT\\[[\\d.]+\\], speak ESMTP\\.  Talk to me\\.\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "callpilot imapd", "vendor": "Nortel"}}
+{"filterword": "^220-([-\\w_.]+) ESMTP\\r\\n220 [-\\w_.]+ AsyncOS\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "c-60", "vendor": "IronPort"}}
+{"filterword": "^421 Service not available, closing transmission channel \\r\\n$", "tag": {"application": "", "device_type": "printer", "product": "bizhub", "vendor": "Konica Minolta"}}
+{"filterword": "^220 ([\\w_.-]+) ESMTP SonicWALL \\(([\\d.]+)\\)\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "email security", "vendor": "SonicWALL"}}
+{"filterword": "^220 \\[[\\w_.-]+\\] ESMTP Ready\\r\\n501 HELO requires domain address\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "imagerunner c5185", "vendor": "Canon"}}
+{"filterword": "^220 ([\\w._-]+) InSciTek OIS Ready here ESMTP\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "6x vo", "vendor": "Allworx"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP MailFrontier \\(([\\d.]+)\\)\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "MailFrontier"}}
+{"filterword": "^220\\s+(DP-\\d+)\\r\\n250-Hello\\r\\n250-DSN\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "", "vendor": "Panasonic"}}
+{"filterword": "^220 ([\\w._-]+) WebShielde1000/SMTP Ready\\.\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "webshield e1000", "vendor": "McAfee"}}
+{"filterword": "Microsft Exchange", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "exchange server", "vendor": "microsoft"}}
+{"filterword": "^220 [\\*\\d\\ ]{2,300}\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "pix sanitized", "vendor": "Cisco"}}
+{"filterword": "^220 ([-\\w_.]+) Server ESMTP ready at .*\\r\\n241-\\r\\n$", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "BorderWare"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP\\r\\n214-The following commands are recognized\\r\\n214-\\tauth\\tdata\\tehlo\\t", "tag": {"application": "", "device_type": "specialized", "product": "", "vendor": "IronPort"}}
+{"filterword": "^220 CheckPoint FireWall-1 secure ESMTP server\\r\\n$", "tag": {"application": "checkpoint:firewall-1", "device_type": "firewall", "product": "", "vendor": "CheckPoint"}}
+{"filterword": "^421 Service not available, closing transmission channel\\r\\n$", "tag": {"application": "", "device_type": "printer", "product": "3200n laser", "vendor": "Oki"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP smtprelay service ready\\.\\r\\n214-This is smtprelay\\r\\n214-Topics:", "tag": {"application": "", "device_type": "misc device", "product": "smtprelay", "vendor": "Genua"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP \\r\\n$", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "BorderWare"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP\\r\\n214-The following commands are recognized\\r\\n214-\\tauth\\tdata\\tehlo\\teuq_full\\r\\n214-\\thelo\\thelp\\tmail\\tnoop\\r\\n214 \\tquit\\trcpt\\trset\\tvrfy\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "c600", "vendor": "IronPort"}}
+{"filterword": "^220 Canon[-.\\w]+ ESMTP Ready\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "smtp server", "vendor": "Canon"}}
+{"filterword": "^220 ([-\\w_.]+) ESMTP BorderWare MXtreme Mail Firewall\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "mxtreme", "vendor": "BorderWare"}}
+{"filterword": "Postfix", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "postfix", "vendor": ""}}
+{"filterword": "Microsoft ESMTP MAIL Service", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "exchange server", "vendor": "microsoft"}}
+{"filterword": "^220 Service ready KM([\\w._-]+) smtpd\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "bizhub $1", "vendor": "Konica Minolta"}}
+{"filterword": "^220 ([-\\w_.]+) SMTP Ready 12\\.\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "Tunix"}}
+{"filterword": "Sendmail", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "sendmail", "vendor": ""}}
+{"filterword": "^220 CheckPoint FireWall-1 secure SMTP server\\r\\n$", "tag": {"application": "checkpoint:firewall-1", "device_type": "firewall", "product": "", "vendor": "CheckPoint"}}
+{"filterword": "Exim", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "exim", "vendor": ""}}
+{"filterword": "^220 ([-\\w_.]+) Tumbleweed MMS SMTP Relay Service ready\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "Tumbleweed"}}
+{"filterword": "^220 network-box ESMTP\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "box", "vendor": "Network"}}
+{"filterword": "gsmtp", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "", "vendor": "Google"}}
