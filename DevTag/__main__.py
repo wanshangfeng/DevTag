@@ -58,7 +58,7 @@ def main():
 
     ## 将banner和tag写入文件中
     dirname,filename = os.path.split(os.path.abspath(__file__))
-    file = dirname +'/' +'DevTag2.json'
+    file = dirname +'/' +'DevTag.json'
 
     if part_or_all == 'part':
         logger.info("We will give you the first tag")
