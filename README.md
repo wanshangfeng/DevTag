@@ -17,7 +17,9 @@ pip3 install -r requirements.txt
 python __main__.py -p http -f http_25.json -T all -dType camera -ven tp-link
 ```
 ### Based on Model
-
+```
+python __main__.py -p http -f http_25.json -T all -dType camera -ven tp-link
+```
 
 
 
