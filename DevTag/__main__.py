@@ -77,7 +77,10 @@ def main():
             logger.info("don't find a tag")
             
             with open(file,'a',encoding='utf-8') as f:
-                f.write("\n")
+                f.write('{"application": "unknown", ' +
+                        '"device_type": "unknown", ' +
+                        '"product": "unknown", '+
+                        '"vendor": "unknown"} '+ '\n')
                 f.write('==================================')
                 f.write("\n")
 
