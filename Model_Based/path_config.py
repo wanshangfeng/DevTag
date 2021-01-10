@@ -1,5 +1,4 @@
-# coding: utf-8
-
+# coding: UTF-8
 dataset = 'data3tags'  # 数据集目录
 train_path = dataset + '/data/train.txt'    # 训练集
 val_path = dataset + '/data/valid.txt'      # 验证集

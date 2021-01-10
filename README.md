@@ -40,5 +40,6 @@ python get_wordvector.py
 ```
 #### Test
 ```
-python run.py --type test --model <model name> --file <Pathname>
+python run.py --type test --model <model name> --file <path name>
 ```
+The path name is the file path of your test data.
