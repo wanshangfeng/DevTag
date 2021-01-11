@@ -14,7 +14,7 @@ pip3 install -r requirements.txt
 ## Usage
 ### Based on Rules
 ```
-python __main__.py -p http -f http_25.json -T all -dType camera -ven tp-link
+python __main__.py -p <protocol> -f <filename> -T <all/part> -dType <device type> -ven <vendor name>
 ```
 ### Based on Model
 This part provides the following models: 
