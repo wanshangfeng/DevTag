@@ -1,5 +1,10 @@
 # DevTag
-DevTag is a tool that can recognizes information about IoT devices. Input the corresponding protocol packet data, it will output its corresponding device information including device type, vendor, product name and so on.
+DevTag is a tool that can recognize information about IoT devices. 
+
+The input is the remote host's banner in the application-layer protocol, and the output is the tag of the remote host. 
+
+The Tag format is the <device_type, vendor, product_info>.
+
 <br>
 We provide two ways to identify device information, one is rule-based and the other is model-based.
 
