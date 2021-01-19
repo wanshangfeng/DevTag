@@ -22,22 +22,22 @@ def main():
                         choices=range(0, Logger.TRACE + 1))
 
     #读取文件内容
-    parser.add_argument('-f','--filename',type=argparse.FileType('r'))
+    parser.add_argument('-f', '--filename', type=argparse.FileType('r'))
 
     #读取json数据内容
-    parser.add_argument('-D','--decoder',type=JSONDecoder)
-    parser.add_argument('-E','--encoder',type=JSONEncoder)
+    parser.add_argument('-D', '--decoder', type=JSONDecoder)
+    parser.add_argument('-E', '--encoder', type=JSONEncoder)
 
     #选择tag选择所有的还是部分的
-    parser.add_argument('-T','--tag',default="part",type=str,choices=["all","part"])
+    parser.add_argument('-T', '--tag', default="part", type=str, choices=["all", "part"])
 
-    parser.add_argument('-dType','--device_type',default="all",type=str)
-    parser.add_argument('-ven','--vendor',default="all",type=str)
+    parser.add_argument('-dType', '--device_type', default="all", type=str)
+    parser.add_argument('-ven', '--vendor', default="all", type=str)
 
 
     args = parser.parse_args()
 
-    logger = Logger(args.logfile,args.loglevel)
+    logger = Logger(args.logfile, args.loglevel)
 
     if not args.protocol:
         logger.info("Error: protocol (-P/--protocol) required\n")
@@ -57,13 +57,13 @@ def main():
     logger.info("vendor: %s" %vendor)  
 
     ## 将banner和tag写入文件中
-    dirname,filename = os.path.split(os.path.abspath(__file__))
-    file = dirname +'/' +'DevTag.json'
+    dirname, filename = os.path.split(os.path.abspath(__file__))
+    file = dirname + '/' + 'DevTag.json'
 
     if part_or_all == 'part':
-        logger.info("We will give you the first tag")
+        logger.info("The DevTag provides the part tag")
     if part_or_all == "all":
-        logger.info("We will give you all tags")
+        logger.info("The DevTag provides the complete tags")
     
     start_time = datetime.utcnow()
 
@@ -76,7 +76,7 @@ def main():
         if tag_list is None:
             logger.info("don't find a tag")
             
-            with open(file,'a',encoding='utf-8') as f:
+            with open(file, 'a', encoding='utf-8') as f:
                 f.write('{"application": "unknown", ' +
                         '"device_type": "unknown", ' +
                         '"product": "unknown", '+
@@ -89,24 +89,21 @@ def main():
 
         if part_or_all == "part":
             first_tag = tag_list[0]
-            with open(file,'a',encoding='utf-8') as f:
-                json.dump(first_tag,f,sort_keys=True)
+            with open(file, 'a', encoding='utf-8') as f:
+                json.dump(first_tag, f, sort_keys=True)
                 f.write('\n')
         if part_or_all == "all":
             for tag in tag_list:
-                with open(file,'a',encoding='utf-8') as f:
-                    json.dump(tag,f,sort_keys=True)
+                with open(file, 'a', encoding='utf-8') as f:
+                    json.dump(tag, f, sort_keys=True)
                     f.write('\n')
-            with open(file,'a',encoding='utf-8') as f:
+            with open(file, 'a', encoding='utf-8') as f:
                 f.write('==================================')
                 f.write('\n')    
     end_time = datetime.utcnow()
 
     duration = end_time - start_time
-    logger.info("time has spent %s" % duration.total_seconds())
-
-    
-    
+    logger.info("the running time is %s" % duration.total_seconds())
 
 
 if __name__ == "__main__":
