@@ -7,7 +7,7 @@ from decoders import JSONDecoder
 from encoders import JSONEncoder
 from log import Logger
 from preprocess import clean_all
-from recongnition import tag_rules
+from recognition import tag_rules
 
 from datetime import datetime
 
@@ -70,8 +70,8 @@ def main():
     for line in args.filename:
         lines = json.loads(line)
         banner = lines['portInfo']['bannerList'][-1]['banner']
-        banner = clean_all(protocol,line)
-        tag_list = tag_rules(protocol,banner,device_type,vendor)
+        banner = clean_all(protocol, line)
+        tag_list = tag_rules(protocol, banner, device_type, vendor)
 
         if tag_list is None:
             logger.info("don't find a tag")
