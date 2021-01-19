@@ -1,11 +1,11 @@
 ### 识别banner
 import re
-from lables.extra_rules import FTP,HTTP,RTSP,SMTP,TELNET
+from lables.extra_rules import FTP, HTTP, RTSP, SMTP, TELNET
 
 from preprocess import clean_all
 
 
-def rules(protocol,device_type,vendor):
+def rules(protocol, device_type, vendor):
     rule = None
 
     if protocol.lower() == "ftp":
@@ -19,16 +19,16 @@ def rules(protocol,device_type,vendor):
     if protocol.lower() == "telnet":
         rule = TELNET()
 
-    rule.generate_rules(device_type,vendor)
+    rule.generate_rules(device_type, vendor)
     return rule.rule
 
 # number = ["1","2","3","4","5"]
-regu_col = ['$1','$2','$3','$4','$5']
+regex_note = ['$1','$2','$3','$4','$5']
 
-def tag_all(banner,all_rules,tag_list):
+def tag_all(banner, all_rules, tag_list):
+
     if len(all_rules) < 1:
         return None
-    
 
     for item in all_rules:
 
@@ -45,21 +45,21 @@ def tag_all(banner,all_rules,tag_list):
         else:
             words = filterword.strip("####").split("####")
             ##如何product不是正则
-            is_regual = False
+            is_regex = False
             pro_index = 0
             replace_index = 0
-            for item in regu_col:
+            for item in regex_note:
                 if product.find(item) >=0:
                     replace_index = item
-                    item = item.replace('$','')
+                    item = item.replace('$', '')
                     pro_index = int(item.strip())
-                    is_regual = True
+                    is_regex = True
                     break
 
-            if is_regual == False:
+            if is_regex == False:
                 for i in words:
                     i = i.strip()
-                    i_re = re.compile(i,re.IGNORECASE)
+                    i_re = re.compile(i, re.IGNORECASE)
                     if i_re.search(banner) is None:
                         contain_all = False
                         break
@@ -110,5 +110,5 @@ def tag_rules(protocol,banner,device_type,vendor):
 
 if __name__ == "__main__":
     banner = "postfix"
-    tag = tag_rules("SMTP",banner,device_type)
+    tag = tag_rules("SMTP", banner, device_type)
     print(tag)
