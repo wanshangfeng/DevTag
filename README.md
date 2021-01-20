@@ -5,7 +5,7 @@ The input is the remote host's banner in the application-layer protocol, and the
 
 The Tag format is the <device_type, vendor, product_info>.
 
-<br>
+
 We provide two ways to identify device information, one is rule-based and the other is model-based.
 
 
