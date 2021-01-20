@@ -6,8 +6,6 @@ def clean_all(protocol,banner):
     banner = banner.lower()
     # banner = banner.replace(r"\r\n","")
 
-    ###加上\r \t \n 
-
     if protocol == "FTP" or protocol == "TELNET":
         return clean_TF(banner)
 

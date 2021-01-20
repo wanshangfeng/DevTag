@@ -1,4 +1,3 @@
-### 识别banner
 import re
 from lables.extra_rules import FTP, HTTP, RTSP, SMTP, TELNET
 
@@ -22,7 +21,6 @@ def rules(protocol, device_type, vendor):
     rule.generate_rules(device_type, vendor)
     return rule.rule
 
-# number = ["1","2","3","4","5"]
 regex_note = ['$1','$2','$3','$4','$5']
 
 def tag_all(banner, all_rules, tag_list):
@@ -44,7 +42,6 @@ def tag_all(banner, all_rules, tag_list):
                     break
         else:
             words = filterword.strip("####").split("####")
-            ##如何product不是正则
             is_regex = False
             pro_index = 0
             replace_index = 0
@@ -92,7 +89,6 @@ def tag_all(banner, all_rules, tag_list):
         return None
 
 
-###识别正则
 def tag_rules(protocol,banner,device_type,vendor):
 
     tag_list = list()

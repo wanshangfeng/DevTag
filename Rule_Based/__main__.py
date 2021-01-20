@@ -20,20 +20,12 @@ def main():
                         default=sys.stderr)
     parser.add_argument('-v', '--loglevel', type=int, default=Logger.INFO,
                         choices=range(0, Logger.TRACE + 1))
-
-    #读取文件内容
     parser.add_argument('-f', '--filename', type=argparse.FileType('r'))
-
-    #读取json数据内容
     parser.add_argument('-D', '--decoder', type=JSONDecoder)
     parser.add_argument('-E', '--encoder', type=JSONEncoder)
-
-    #选择tag选择所有的还是部分的
     parser.add_argument('-T', '--tag', default="part", type=str, choices=["all", "part"])
-
     parser.add_argument('-dType', '--device_type', default="all", type=str)
     parser.add_argument('-ven', '--vendor', default="all", type=str)
-
 
     args = parser.parse_args()
 
@@ -56,7 +48,6 @@ def main():
     logger.info("device_type: %s" % device_type)
     logger.info("vendor: %s" %vendor)  
 
-    ## 将banner和tag写入文件中
     dirname, filename = os.path.split(os.path.abspath(__file__))
     file = dirname + '/' + 'DevTag.json'
 
