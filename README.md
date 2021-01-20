@@ -5,7 +5,7 @@ The input is the remote host's banner in the application-layer protocol, and the
 
 The Tag format is the <device_type, vendor, product_info>.
 
-<br>
+
 We provide two ways to identify device information, one is rule-based and the other is model-based.
 
 
@@ -16,8 +16,9 @@ pip3 install -r requirements.txt
 ```
 
 
-## Rule Sourse
-The rules are from [ARE](https://www.usenix.org/conference/usenixsecurity18/presentation/feng),ZTAG,NMAP.
+## Rules Introduction
+The rules are from [ARE](https://www.usenix.org/conference/usenixsecurity18/presentation/feng), ZTAG and NMAP.
+One rule contains a filterword and a tag. The filterword is like a filter. As long as the banner matches the filterword, it will return the tag.
 
 
 ## Usage
