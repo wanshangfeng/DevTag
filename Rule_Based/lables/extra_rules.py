@@ -29,7 +29,6 @@ class FTP():
         def __init__(self):
             self.rule = list() 
 
-        #读取规则保存到相应的列表中
         def generate_rules(self,device_type,vendor):
             self.rule = generate_all_rules("FTP_RULES.json",device_type,vendor)
 
@@ -39,8 +38,7 @@ class HTTP():
 
         def __init__(self):
             self.rule = list()
-
-        #读取规则保存到相应的列表中
+        
         def generate_rules(self,device_type,vendor):
             self.rule = generate_all_rules("HTTP_RULES.json",device_type,vendor)
 
@@ -51,7 +49,6 @@ class RTSP():
         def __init__(self):
             self.rule = list() 
 
-        #读取规则保存到相应的列表中
         def generate_rules(self,device_type,vendor):
             self.rule = generate_all_rules("RTSP_RULES.json",device_type,vendor)
 
@@ -61,7 +58,6 @@ class SMTP():
         def __init__(self):
             self.rule = list() 
 
-        #读取规则保存到相应的列表中
         def generate_rules(self,device_type,vendor):
             self.rule = generate_all_rules("SMTP_RULES.json",device_type,vendor)
 
@@ -71,7 +67,6 @@ class TELNET():
         def __init__(self):
             self.rule = list() 
 
-        #读取规则保存到相应的列表中
         def generate_rules(self,device_type,vendor):
             self.rule = generate_all_rules("TELNET_RULES.json",device_type,vendor)
 
