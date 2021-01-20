@@ -16,8 +16,9 @@ pip3 install -r requirements.txt
 ```
 
 
-## Rule Sourse
-The rules are from [ARE](https://www.usenix.org/conference/usenixsecurity18/presentation/feng),ZTAG,NMAP.
+## Rules Introduction
+The rules are from [ARE](https://www.usenix.org/conference/usenixsecurity18/presentation/feng), ZTAG and NMAP.
+One rule contains a filterword and a tag. The filterword is like a filter. As long as the banner matches the filterword, it will return the tag.
 
 
 ## Usage
