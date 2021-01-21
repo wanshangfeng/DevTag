@@ -1,32 +1,58 @@
 # DevTag
-DevTag is a tool that can recognize information about IoT devices. 
+
+___Bacground___: The recent rise in embedded system technologies has insti-
+gated a significant increase in the development and deployment of Internet-of-Things (IoT) devices, including including routers, webcams, and
+network printers, causing security concerns.
+
+___DevTag___ is a tool that recognizes information about IoT devices, including a ___rule-based approach___ and a ___model-based approach___.
 
 The input is the remote host's banner in the application-layer protocol, and the output is the tag of the remote host. 
-
 The Tag format is the <device_type, vendor, product_info>.
 
 
-We provide two ways to identify device information, one is rule-based and the other is model-based.
+## The Rule-based Approach 
+
+As far, we use three popular sources (listed by Table 1) to generate rules of IoT devices, including [NMAP](https://nmap.org/), [ZTAG](https://github.com/zmap/ztag), and [ARE](https://www.usenix.org/conference/usenixsecurity18/presentation/feng). 
+
+Source    | Original Format            |   How the rules are stored |  Protocol|
+--------- | --------                   |--------        | ---------|
+NMAP      | Regex-> Device Tag        |    File      |  FTP, HTTP, RTSP, Telnet|
+ZTAG      | String/Regex-> Device Tag |   Script    | FTP, HTTP, Telnet|
+ARE       | String -> Device Tag       |  File    |  FTP, HTTP, RTSP, Telnet|
+
+Note that those rules use different formats and name conventions for IoT devices. 
+To integrate consistent rules, we revise name conventions for all IoT rules and
+use a unified format to represent them. 
+```
+<String/Regex>  -> <device_type, vendor, product_info>
+```
+
+If a banner of host is matched with <String/Regex> of rule, DevTag provides a tag to this host.
 
 
-## Requirements
+### The rule-based approach: Usage
+```python
+python __main__.py -p <protocol> -f <filename> -T <all/part> -dType <device type> -ven <vendor name>
+```
+
+| Parameter         | Help           |
+|---------  | --------                 |
+|protocol |  FTP, HTTP, RTSP, Telnet|
+|filename | JSON file (banners of hosts) |
+|all/part | indicates what rules to use   |  
+|device type | uses rules belong to this *type* |
+|vendor name | uses rules belong to this *vendor* |
+
+
+## The Model-based Approach 
+
+### Requirements
 The tool is implemented in Python 3. To install needed packages use:
 ```
 pip3 install -r requirements.txt
 ```
 
-
-## Rules Introduction
-The rules are from [ARE](https://www.usenix.org/conference/usenixsecurity18/presentation/feng), ZTAG and NMAP.
-One rule contains a filterword and a tag. The filterword is like a filter. As long as the banner matches the filterword, it will return the tag.
-
-
-## Usage
-### Based on Rules
-```
-python __main__.py -p <protocol> -f <filename> -T <all/part> -dType <device type> -ven <vendor name>
-```
-### Based on Model
+### Model
 This part provides the following models: 
 ```
 TextCNN, TextRNN, TextRCNN, TextRNN_Att, DPCNN.
