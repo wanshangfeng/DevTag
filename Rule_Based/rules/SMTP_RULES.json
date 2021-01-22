@@ -10,7 +10,7 @@
 {"filterword": "^220 ([\\w._-]+) \\[ESMTP Server\\] service ready;Bonjour; [^\\r\\n]*\\r\\n", "tag": {"application": "trendmicro:interscan_messaging_security_suite", "device_type": "proxy server", "product": "micro interscan messaging security", "vendor": "Trend"}}
 {"filterword": "^220 ([-\\w_.]+) ESMTP\\r\\n214-The following commands are recognized\\r\\n214-\\tdata\\tehlo\\thelo\\thelp\\r\\n214-\\tmail\\tnoop\\tquit\\trcpt\\r\\n214 \\trset\\tvrfy\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "c60", "vendor": "IronPort"}}
 {"filterword": "^220 \\r\\n501 \\r\\n", "tag": {"application": "", "device_type": "printer", "product": "bizhub 350", "vendor": "Konica Minolta"}}
-{"filterword": "^220 ([-\\w_.]+) (SCM\\d+)/SMTP Ready\\.\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "2", "vendor": "McAfee"}}
+{"filterword": "^220 ([-\\w_.]+) (SCM\\d+)/SMTP Ready\\.\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "$2", "vendor": "McAfee"}}
 {"filterword": "^220  ESMTP smtprelay service ready\\.\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "smtp relay", "vendor": "GeNUGate"}}
 {"filterword": "^220 ([\\w._-]+) ESMTP [\\w._-]+\\r\\n501 5\\.5\\.2 HELO requires domain address\\r\\n", "tag": {"application": "", "device_type": "proxy server", "product": "email security appliance", "vendor": "SonicWALL"}}
 {"filterword": "^220-([-\\w_.]+) Bluecat Networks Inc\\. Meridius Security Gateway\\r\\n220 ", "tag": {"application": "", "device_type": "firewall", "product": "meridius", "vendor": "Bluecat"}}

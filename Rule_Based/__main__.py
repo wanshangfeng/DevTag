@@ -48,8 +48,8 @@ def main():
     logger.info("device_type: %s" % device_type)
     logger.info("vendor: %s" %vendor)  
 
-    dirname, filename = os.path.split(os.path.abspath(__file__))
-    file = dirname + '/' + 'DevTag.json'
+    dirname, fname = os.path.split(os.path.abspath(__file__))
+    file = dirname + '/test/' + 'DevTag-'+protocol+'.json'
 
     if part_or_all == 'part':
         logger.info("The DevTag provides the part tag")
@@ -59,12 +59,15 @@ def main():
     start_time = datetime.utcnow()
 
     for line in args.filename:
-        lines = json.loads(line)
-        banner = lines['portInfo']['bannerList'][-1]['banner']
-        banner = clean_all(protocol, line)
+        line_to_json = json.loads(line)
+        banner = line_to_json['banner']
         tag_list = tag_rules(protocol, banner, device_type, vendor)
+        
+        #delete same tag
+        tag_delete_same_list = []
+        [tag_delete_same_list.append(i) for i in tag_list if not i in tag_delete_same_list]
 
-        if tag_list is None:
+        if tag_delete_same_list is None:
             logger.info("don't find a tag")
             
             with open(file, 'a', encoding='utf-8') as f:
@@ -77,14 +80,13 @@ def main():
 
             continue
             
-
         if part_or_all == "part":
-            first_tag = tag_list[0]
+            first_tag = tag_delete_same_list[0]
             with open(file, 'a', encoding='utf-8') as f:
                 json.dump(first_tag, f, sort_keys=True)
                 f.write('\n')
         if part_or_all == "all":
-            for tag in tag_list:
+            for tag in tag_delete_same_list:
                 with open(file, 'a', encoding='utf-8') as f:
                     json.dump(tag, f, sort_keys=True)
                     f.write('\n')

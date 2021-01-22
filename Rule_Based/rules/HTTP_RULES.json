@@ -40,7 +40,7 @@
 {"filterword": "t41", "tag": {"application": "", "device_type": "camera", "product": "t41", "vendor": "panasonic"}}
 {"filterword": "dcs-6045l", "tag": {"application": "", "device_type": "camera", "product": "dcs-6045l", "vendor": "d-link"}}
 {"filterword": "^HTTP/1\\.0 404 Not found\\nDate: .*\\nServer: Acme\\.Serve/v([\\w._ -]+)\\nConnection: close\\nContent-type: text/html; charset=ISO-8859-1\\n\\n", "tag": {"application": "acme:acme.serve:$1", "device_type": "power-device", "product": "acme.serve", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"(TL-\\w+)\\xcf\\xb5\\xc1\\xd0 SOHO\\xbf\\xed\\xb4\\xf8\\xc2\\xb7\\xd3\\xc9\\xc6\\xf7\\\"\\r\\nContent-Type: text/html\\r\\n\\r\\nWeb Server Error Report:<HR>\\n<H1>Server Error: 401 N/A</H1>\\r\\nOperating System Error Nr:3997698: /userRpm/index\\.htm <P><HR><H2>Access denied / wrong user name or password</H2><P><P><HR><H1>/userRpm/index\\.htm</H1><P><HR>$", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"(TL-\\w+)\\xcf\\xb5\\xc1\\xd0 SOHO\\xbf\\xed\\xb4\\xf8\\xc2\\xb7\\xd3\\xc9\\xc6\\xf7\\\"\\r\\nContent-Type: text/html\\r\\n\\r\\nWeb Server Error Report:<HR>\\n<H1>Server Error: 401 N/A</H1>\\r\\nOperating System Error Nr:3997698: /userRpm/index\\.htm <P><HR><H2>Access denied / wrong user name or password</H2><P><P><HR><H1>/userRpm/index\\.htm</H1><P><HR>$", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "att685", "tag": {"application": "", "device_type": "gateway", "product": "att685", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"MasterSwitch Plus\\\"\\r\\nContent-Type: text/html\\r\\nServer: Allegro-Software-RomPager/ ?([\\w.]+)\\r\\n\\r\\n<HTML>\\n<HEAD>\\n<TITLE>Protected Object</TITLE>.*This object on the APC Management Web Server is protected\\.", "tag": {"application": "allegro:rompager:$1", "device_type": "power-device", "product": "rompager", "vendor": "Allegro"}}
 {"filterword": "jp8lb56584", "tag": {"application": "", "device_type": "printer", "product": "jp8lb56584", "vendor": "hp"}}
@@ -62,7 +62,7 @@
 {"filterword": "wv-sf336", "tag": {"application": "", "device_type": "camera", "product": "wv-sf336", "vendor": "panasonic"}}
 {"filterword": "r4419", "tag": {"application": "", "device_type": "router", "product": "r4419", "vendor": "tp-link"}}
 {"filterword": "wr-8305rt", "tag": {"application": "", "device_type": "router", "product": "wr-8305rt", "vendor": "zbt"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nExpires: Sat, 01 Jan 2000 00:00:00 GMT\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3\\.2 Final//EN\">\\r\\n<HTML>\\r\\n<HEAD><TITLE>(ZBR\\d+) - [^<]+</TITLE><meta http-equiv=\"Pragma\" content=\"no-cache\"><meta http-equiv=\"Expires\" content=\"0\"></HEAD>\\r\\n<BODY><CENTER>\\r\\n<IMG SRC=\"logo\\.png\" ALT=\"\\[Logo\\]\">\\r\\n<H1>Zebra Technologies<BR>\\r\\n((?:FDX )?([^<(]+)(?: \\([EZ]PL\\)))?</H1>\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "Zebra"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nExpires: Sat, 01 Jan 2000 00:00:00 GMT\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3\\.2 Final//EN\">\\r\\n<HTML>\\r\\n<HEAD><TITLE>(ZBR\\d+) - [^<]+</TITLE><meta http-equiv=\"Pragma\" content=\"no-cache\"><meta http-equiv=\"Expires\" content=\"0\"></HEAD>\\r\\n<BODY><CENTER>\\r\\n<IMG SRC=\"logo\\.png\" ALT=\"\\[Logo\\]\">\\r\\n<H1>Zebra Technologies<BR>\\r\\n((?:FDX )?([^<(]+)(?: \\([EZ]PL\\)))?</H1>\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "Zebra"}}
 {"filterword": "ob-200af", "tag": {"application": "", "device_type": "camera", "product": "ob-200af", "vendor": "brickcom"}}
 {"filterword": "cs-mvtx01f", "tag": {"application": "", "device_type": "camera", "product": "cs-mvtx01f", "vendor": "planex"}}
 {"filterword": "wr641g", "tag": {"application": "", "device_type": "router", "product": "wr641g", "vendor": "tp-link"}}
@@ -103,8 +103,8 @@
 {"filterword": "wrt600n", "tag": {"application": "", "device_type": "router", "product": "wrt600n", "vendor": "linksys"}}
 {"filterword": "ws-c3750g", "tag": {"application": "", "device_type": "router", "product": "ws-c3750g", "vendor": "cisco"}}
 {"filterword": "kg57npw24n", "tag": {"application": "", "device_type": "camera", "product": "kg57npw24n", "vendor": "siemens"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-length: \\d+\\r\\nContent-type: text/html\\r\\nCache-Control:no-cache\\r\\nPragma:no-cache\\r\\n\\r\\n<html><head>\\r\\n<META name=\"description\" content=\"(WN\\w+)\">\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Netgear"}}
-{"filterword": "^HTTP/1\\.0 401 NG\\r\\nWWW-Authenticate: Basic realm=\\\"(RT-[\\w._-]+)\\\"\\r\\n\\r\\n<!--CAS:0003-->Unauthorized", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Asus"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-length: \\d+\\r\\nContent-type: text/html\\r\\nCache-Control:no-cache\\r\\nPragma:no-cache\\r\\n\\r\\n<html><head>\\r\\n<META name=\"description\" content=\"(WN\\w+)\">\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 401 NG\\r\\nWWW-Authenticate: Basic realm=\\\"(RT-[\\w._-]+)\\\"\\r\\n\\r\\n<!--CAS:0003-->Unauthorized", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Asus"}}
 {"filterword": "jpscb4d1g0", "tag": {"application": "", "device_type": "printer", "product": "jpscb4d1g0", "vendor": "hp"}}
 {"filterword": "td-8840tb", "tag": {"application": "", "device_type": "router", "product": "td-8840tb", "vendor": "tp-link"}}
 {"filterword": "1050ron", "tag": {"application": "", "device_type": "camera", "product": "1050ron", "vendor": "creative"}}
@@ -152,9 +152,9 @@
 {"filterword": "x424hf", "tag": {"application": "", "device_type": "switch", "product": "x424hf", "vendor": "brocade"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-type: text/html\\r\\nConnection: close\\r\\n\\r\\n.*<title>Hollis</title>.*<td id=b>Indoor</td><td id=c bgcolor=green>([\\d.]+)</td><td id=b>&deg;F</td></tr><tr><td id=b>Indoor Set Temp\\.</td><td id=c><input type=text name=setTemp size=10 maxlength=10 value=([\\d.]+)></td><td id=b>&deg;F&nbsp;<input type=submit name=7 value=\\\"Apply\\\"></td></tr><tr><td id=b>Outdoor temp</td><td id=c bgcolor=green>([\\d.]+)</td><td id=b>&deg;F</td></tr></table></form></body></html>$", "tag": {"application": "", "device_type": "specialized", "product": "controlbyweb", "vendor": ""}}
 {"filterword": "dek-33ecc0", "tag": {"application": "", "device_type": "modem", "product": "dek-33ecc0", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (DCS-\\w+)\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (DCS-\\w+)\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "wl730rt4", "tag": {"application": "", "device_type": "router", "product": "wl730rt4", "vendor": "aztech"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\n.*<title>Remote UI \\(Top Page\\):&nbsp;(MF\\w+) Series", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Canon"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\n.*<title>Remote UI \\(Top Page\\):&nbsp;(MF\\w+) Series", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Canon"}}
 {"filterword": "dek-33e6bc", "tag": {"application": "", "device_type": "modem", "product": "dek-33e6bc", "vendor": ""}}
 {"filterword": "g-4100", "tag": {"application": "", "device_type": "router", "product": "g-4100", "vendor": "zyxel"}}
 {"filterword": "2405fpw", "tag": {"application": "", "device_type": "router", "product": "2405fpw", "vendor": "dell"}}
@@ -164,7 +164,7 @@
 {"filterword": "ky2017", "tag": {"application": "", "device_type": "dvr", "product": "ky2017", "vendor": "hikvision"}}
 {"filterword": "k7g86a", "tag": {"application": "", "device_type": "printer", "product": "k7g86a", "vendor": "hp"}}
 {"filterword": "tm552", "tag": {"application": "", "device_type": "modem", "product": "tm552", "vendor": "arris"}}
-{"filterword": "^HTTP/1\\.1  200 OK\\r\\n.*<p:DeviceName>D-Link (DIR-[-\\w_.+]+)</p:DeviceName>.*<p:FirmwareVersion>([^<]+)</p:FirmwareVersion>", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1  200 OK\\r\\n.*<p:DeviceName>D-Link (DIR-[-\\w_.+]+)</p:DeviceName>.*<p:FirmwareVersion>([^<]+)</p:FirmwareVersion>", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "tl-wr902ac", "tag": {"application": "", "device_type": "router", "product": "tl-wr902ac", "vendor": "tp-link"}}
 {"filterword": "rs6", "tag": {"application": "", "device_type": "camera", "product": "rs6", "vendor": "hyundai"}}
 {"filterword": "edt2017", "tag": {"application": "", "device_type": "", "product": "edt2017", "vendor": "shock"}}
@@ -363,7 +363,7 @@
 {"filterword": "gt1920", "tag": {"application": "", "device_type": "camera", "product": "gt1920", "vendor": "sun"}}
 {"filterword": "mzk-w300nh", "tag": {"application": "", "device_type": "router", "product": "mzk-w300nh", "vendor": "planex"}}
 {"filterword": "t-16", "tag": {"application": "", "device_type": "", "product": "t-16", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 401 Authorization Required\\r\\n.*www-authenticate:Basic realm=\\\"(\\w+)v(\\d+)POE \\(([0-9A-F]{12})\\)\\\"\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "InterTel"}}
+{"filterword": "^HTTP/1\\.1 401 Authorization Required\\r\\n.*www-authenticate:Basic realm=\\\"(\\w+)v(\\d+)POE \\(([0-9A-F]{12})\\)\\\"\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "InterTel"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: CNIX HTTP Server 1\\.0\\r\\nContent-Type: text/html\\r\\nPragma:no-cache\\r\\nExpires:-1\\r\\nCache-Control:no-cache;no-store;must-revalidate\\r\\nTransfer-Encoding: chunked\\r\\n\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "logo! 8 plc", "vendor": "Siemens"}}
 {"filterword": "jp5jb37524", "tag": {"application": "", "device_type": "printer", "product": "jp5jb37524", "vendor": "hp"}}
 {"filterword": "e2l", "tag": {"application": "", "device_type": "", "product": "e2l", "vendor": "ibm"}}
@@ -425,7 +425,7 @@
 {"filterword": "jcg-a4be9b", "tag": {"application": "", "device_type": "modem", "product": "jcg-a4be9b", "vendor": ""}}
 {"filterword": "jp5jc03642", "tag": {"application": "", "device_type": "printer", "product": "jp5jc03642", "vendor": "hp"}}
 {"filterword": "<img id=\"logo\" src=\"/manage/images/logo.png\" alt=\"LenovoEMC\"/>", "tag": {"application": "", "device_type": "", "product": "", "vendor": "lenovo"}}
-{"filterword": "^HTTP/1\\.0 200 Ok\\r\\n.*<H1>(ZBR\\d+) - ZebraNet PrintServer</H1>", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "ZebraNet"}}
+{"filterword": "^HTTP/1\\.0 200 Ok\\r\\n.*<H1>(ZBR\\d+) - ZebraNet PrintServer</H1>", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "ZebraNet"}}
 {"filterword": "dek-33e9dc", "tag": {"application": "", "device_type": "modem", "product": "dek-33e9dc", "vendor": ""}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma: no-cache\\r\\nContent-Type: text/html\\r\\n\\r\\n\\n\\n\\n\\t\\n\\n\\n\\t\\n\\n\\n\\n\\n\\n<!--  -->\\n\\n\\n\\n<!-- \\$R..file: i_pagestart\\.shtm,v \\$  -->\\n<html>\\n<head>\\n", "tag": {"application": "", "device_type": "printer", "product": "5400 web config", "vendor": "Axis"}}
 {"filterword": "dek-1f3eac", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3eac", "vendor": ""}}
@@ -649,7 +649,7 @@
 {"filterword": "dek-1f36fc", "tag": {"application": "", "device_type": "modem", "product": "dek-1f36fc", "vendor": ""}}
 {"filterword": "jsc3rd", "tag": {"application": "", "device_type": "", "product": "jsc3rd", "vendor": "nai"}}
 {"filterword": "dek-2ab9e4", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab9e4", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (WGR\\w+)\\\"\\r\\nContent-type: text/html\\r\\n\\r\\n<html>\\r\\n<head><title>401 Unauthorized</title></head>\\r\\n<body><h1>401 Unauthorized</h1>\\r\\n<p>Access to this resource is denied; your client has not supplied the correct authentication\\.</p></body>\\r\\n</html>\\r\\n$", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (WGR\\w+)\\\"\\r\\nContent-type: text/html\\r\\n\\r\\n<html>\\r\\n<head><title>401 Unauthorized</title></head>\\r\\n<body><h1>401 Unauthorized</h1>\\r\\n<p>Access to this resource is denied; your client has not supplied the correct authentication\\.</p></body>\\r\\n</html>\\r\\n$", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "wnrt-617g", "tag": {"application": "", "device_type": "router", "product": "wnrt-617g", "vendor": "planet"}}
 {"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*\\r\\nServer: Polycom SoundPoint IP Telephone HTTPd\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "soundpoint vo", "vendor": "Polycom"}}
 {"filterword": "^HTTP/1\\.1 302 Redirect\\r\\nServer: GoAhead-Webs\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-Type: text/html\\r\\nLocation: http://[\\w._-]+/index\\.asp\\r\\n\\r\\n<html><head></head><body>\\r\\n\\t\\tThis document has moved to a new", "tag": {"application": "goahead:goahead_webserver", "device_type": "switch", "product": "webserver", "vendor": "GoAhead"}}
@@ -691,7 +691,7 @@
 {"filterword": "^ 400 badrequest\\r\\n.*<title>McAfee Web Gateway - Notification - </title>", "tag": {"application": "mcafee:web_gateway", "device_type": "proxy server", "product": "McAfee web", "vendor": ""}}
 {"filterword": "wr847n", "tag": {"application": "", "device_type": "router", "product": "wr847n", "vendor": "tp-link"}}
 {"filterword": "br895wl", "tag": {"application": "", "device_type": "router", "product": "br895wl", "vendor": "cosy"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\nContent-type: text/html\\nServer: AV-TECH (AV\\w+) Video Web Server\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "Gadspot/Avtech"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\nContent-type: text/html\\nServer: AV-TECH (AV\\w+) Video Web Server\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "Gadspot/Avtech"}}
 {"filterword": "db1", "tag": {"application": "", "device_type": "gateway", "product": "db1", "vendor": "ascom"}}
 {"filterword": "q5942x", "tag": {"application": "", "device_type": "printer", "product": "q5942x", "vendor": "hp"}}
 {"filterword": "tl-wr702n", "tag": {"application": "", "device_type": "router", "product": "tl-wr702n", "vendor": "tp-link"}}
@@ -719,7 +719,7 @@
 {"filterword": "dek-33e3b4", "tag": {"application": "", "device_type": "modem", "product": "dek-33e3b4", "vendor": ""}}
 {"filterword": "jcg-00e8e3", "tag": {"application": "", "device_type": "modem", "product": "jcg-00e8e3", "vendor": ""}}
 {"filterword": "t40", "tag": {"application": "", "device_type": "camera", "product": "t40", "vendor": "panasonic"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .* GMT\\r\\nWWW-Authenticate: Basic realm=\\\"(\\w+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\\n<BODY BGCOLOR=\\\"#cc9999\\\"><H4>401 Unauthorized</H4>\\nAuthorization required\\.\\n</BODY></HTML>\\n$", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .* GMT\\r\\nWWW-Authenticate: Basic realm=\\\"(\\w+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\\n<BODY BGCOLOR=\\\"#cc9999\\\"><H4>401 Unauthorized</H4>\\nAuthorization required\\.\\n</BODY></HTML>\\n$", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "sf200-24", "tag": {"application": "", "device_type": "switch", "product": "sf200-24", "vendor": "cisco"}}
 {"filterword": "des-3250tg", "tag": {"application": "", "device_type": "switch", "product": "des-3250tg", "vendor": "d-link"}}
 {"filterword": "hg520", "tag": {"application": "", "device_type": "gateway", "product": "hg520", "vendor": "echolife"}}
@@ -778,7 +778,7 @@
 {"filterword": "hl-l2360dw", "tag": {"application": "", "device_type": "printer", "product": "hl-l2360dw", "vendor": "brother"}}
 {"filterword": "4011g", "tag": {"application": "", "device_type": "gateway", "product": "4011g", "vendor": "2wire"}}
 {"filterword": "hp-j6x78a", "tag": {"application": "", "device_type": "printer", "product": "hp-j6x78a", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nCache-control:no-cache\\r\\nContent-Type:text/html\\r\\nTransfer-Encoding:chunked\\r\\nConnection:Keep-Alive\\r\\n\\r\\n.*\\r\\nvar ProductName = '(\\w+)'", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Huawei"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nCache-control:no-cache\\r\\nContent-Type:text/html\\r\\nTransfer-Encoding:chunked\\r\\nConnection:Keep-Alive\\r\\n\\r\\n.*\\r\\nvar ProductName = '(\\w+)'", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Huawei"}}
 {"filterword": "p660ht3", "tag": {"application": "", "device_type": "router", "product": "p660ht3", "vendor": "zyxel"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nDate: .*\\r\\nExpires: .*\\r\\nLast-Modified: .*\\r\\nPragma: no-cache\\r\\nServer: Allegro-Software-RomPager/(\\d[-.\\w]+)\\r\\n\\r\\n<HTML>\\n<!--Copyright \\(c\\) Xerox Corporation ", "tag": {"application": "allegro:rompager:$1", "device_type": "printer", "product": "rompager", "vendor": "Allegro"}}
 {"filterword": "sysv3", "tag": {"application": "", "device_type": "", "product": "sysv3", "vendor": "option"}}
@@ -837,7 +837,7 @@
 {"filterword": "dsl-n10e", "tag": {"application": "", "device_type": "router", "product": "dsl-n10e", "vendor": "asus"}}
 {"filterword": "np16", "tag": {"application": "", "device_type": "router", "product": "np16", "vendor": "apple"}}
 {"filterword": "wipg-300h", "tag": {"application": "", "device_type": "gateway", "product": "wipg-300h", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*:: Welcome to ZyXEL (P-\\w+) \\(([-\\w_.]+)\\) ::\\.", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "ZyXEL"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*:: Welcome to ZyXEL (P-\\w+) \\(([-\\w_.]+)\\) ::\\.", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "ZyXEL"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma: no-cache\\r\\nContent-Type: text/html\\r\\n\\r\\n<html>\\n<head>\\n<meta http-equiv=\\\"content-type\\\" content=\\\"text/css;charset=UTF-8\\\">\\n<meta http-equiv=\\\"Cache-Control\\\" content=\\\"no-cache\\\">\\n<meta http-equiv=\\\"Expires\\\" content=\\\"0\\\">\\n<title>prelogin</title>", "tag": {"application": "", "device_type": "wap", "product": "encore 3g", "vendor": "Belkin"}}
 {"filterword": "att9aqb4mj", "tag": {"application": "", "device_type": "gateway", "product": "att9aqb4mj", "vendor": ""}}
 {"filterword": "mf831", "tag": {"application": "", "device_type": "modem", "product": "mf831", "vendor": "zte"}}
@@ -883,7 +883,7 @@
 {"filterword": "h3n2", "tag": {"application": "", "device_type": "router", "product": "h3n2", "vendor": "orange"}}
 {"filterword": "jcg-99fc8f", "tag": {"application": "", "device_type": "modem", "product": "jcg-99fc8f", "vendor": ""}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: Apache/0\\.6\\.5\\r\\nPragma: no-cache\\r\\nContent-type: text/html\\r\\nWWW-Authenticate: Basic realm=\\\"System Setup\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "awl wireless webadmin", "vendor": "BenQ"}}
-{"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*\\r\\nConnection: Close\\r\\nServer: LANCOM ([\\w._+/-]+) Wireless ([\\w. /]+)\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Lancom"}}
+{"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*\\r\\nConnection: Close\\r\\nServer: LANCOM ([\\w._+/-]+) Wireless ([\\w. /]+)\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Lancom"}}
 {"filterword": "sl-m3820dw", "tag": {"application": "", "device_type": "printer", "product": "sl-m3820dw", "vendor": "samsung"}}
 {"filterword": "jp8rb79264", "tag": {"application": "", "device_type": "", "product": "jp8rb79264", "vendor": "hp"}}
 {"filterword": "mp2900-04", "tag": {"application": "", "device_type": "router", "product": "mp2900-04", "vendor": "maipu"}}
@@ -938,7 +938,7 @@
 {"filterword": "p2055x", "tag": {"application": "", "device_type": "printer", "product": "p2055x", "vendor": "hp"}}
 {"filterword": "dmc-tz6", "tag": {"application": "", "device_type": "camera", "product": "dmc-tz6", "vendor": "panasonic"}}
 {"filterword": "jcg-00952f", "tag": {"application": "", "device_type": "modem", "product": "jcg-00952f", "vendor": ""}}
-{"filterword": "Dell (\\w*) (Laser Printer|Color Laser|Laser MFP)", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "dell"}}
+{"filterword": "Dell (\\w*) (Laser Printer|Color Laser|Laser MFP)", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "dell"}}
 {"filterword": "dcs-934l", "tag": {"application": "", "device_type": "camera", "product": "dcs-934l", "vendor": "d-link"}}
 {"filterword": "x01", "tag": {"application": "", "device_type": "router", "product": "x01", "vendor": "mentor"}}
 {"filterword": "hdr-10", "tag": {"application": "", "device_type": "", "product": "hdr-10", "vendor": "apple"}}
@@ -947,7 +947,7 @@
 {"filterword": "jcg-a4e1f3", "tag": {"application": "", "device_type": "modem", "product": "jcg-a4e1f3", "vendor": ""}}
 {"filterword": "m4300", "tag": {"application": "", "device_type": "switch", "product": "m4300", "vendor": "netgear"}}
 {"filterword": "c4380", "tag": {"application": "", "device_type": "printer", "product": "c4380", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\"\\d+Mbps Wireless \\w+ Router (TL-\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\"\\d+Mbps Wireless \\w+ Router (TL-\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "tn115b", "tag": {"application": "", "device_type": "printer", "product": "tn115b", "vendor": "brother"}}
 {"filterword": "h264", "tag": {"application": "", "device_type": "dvr", "product": "h264", "vendor": "vista"}}
 {"filterword": "riascolta12", "tag": {"application": "", "device_type": "encoder", "product": "riascolta12", "vendor": "prime"}}
@@ -1084,7 +1084,7 @@
 {"filterword": "j9776a", "tag": {"application": "", "device_type": "switch", "product": "j9776a", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nDate: .* GMT\\r\\nServer: DNVRS-Webs\\r\\nETag: \"[a-f\\d-]+\"\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\nLast-Modified: .* GMT\\r\\n\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "network video recorder", "vendor": "Hikvision"}}
 {"filterword": "plnk-937bdb", "tag": {"application": "", "device_type": "modem", "product": "plnk-937bdb", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\nCache-Control:no-cache\\r\\nPragma:no-cache\\r\\nExpires:[smtwf].*\\r\\n\\r\\n<!DOCTYPE html>\\n<script>\\nvar g_Lan=\\d+,g_level=\\d+,g_year=\\d+,g_title='([^']+)';", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\nCache-Control:no-cache\\r\\nPragma:no-cache\\r\\nExpires:[smtwf].*\\r\\n\\r\\n<!DOCTYPE html>\\n<script>\\nvar g_Lan=\\d+,g_level=\\d+,g_year=\\d+,g_title='([^']+)';", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "4000w", "tag": {"application": "", "device_type": "camera", "product": "4000w", "vendor": "pyle"}}
 {"filterword": "dek-1f400c", "tag": {"application": "", "device_type": "modem", "product": "dek-1f400c", "vendor": ""}}
 {"filterword": "tvip61560", "tag": {"application": "", "device_type": "camera", "product": "tvip61560", "vendor": "abus"}}
@@ -1249,7 +1249,7 @@
 {"filterword": "m4300-52g", "tag": {"application": "", "device_type": "switch", "product": "m4300-52g", "vendor": "netgear"}}
 {"filterword": "cuddlecakes3", "tag": {"application": "", "device_type": "", "product": "cuddlecakes3", "vendor": "cayman"}}
 {"filterword": "tl-nc200", "tag": {"application": "", "device_type": "camera", "product": "tl-nc200", "vendor": "tp-link"}}
-{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*<TITLE>AXIS ([\\d]+) Camera Server</TITLE>", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "AXIS"}}
+{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*<TITLE>AXIS ([\\d]+) Camera Server</TITLE>", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "AXIS"}}
 {"filterword": "tsp100iii", "tag": {"application": "", "device_type": "printer", "product": "tsp100iii", "vendor": ""}}
 {"filterword": "m510w", "tag": {"application": "", "device_type": "camera", "product": "m510w", "vendor": "zavio"}}
 {"filterword": "wa7x", "tag": {"application": "", "device_type": "camera", "product": "wa7x", "vendor": "peak"}}
@@ -1285,7 +1285,7 @@
 {"filterword": "desktop-hodv1ks", "tag": {"application": "", "device_type": "gateway", "product": "desktop-hodv1ks", "vendor": "technicolor"}}
 {"filterword": "m651dn", "tag": {"application": "", "device_type": "printer", "product": "m651dn", "vendor": "hp"}}
 {"filterword": "c-140x", "tag": {"application": "", "device_type": "gateway", "product": "c-140x", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router Webserver\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"Wireless \\w+ Router (WRN\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Intelbras"}}
+{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router Webserver\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"Wireless \\w+ Router (WRN\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Intelbras"}}
 {"filterword": "f7110", "tag": {"application": "", "device_type": "camera", "product": "f7110", "vendor": "zavio"}}
 {"filterword": "m475dw", "tag": {"application": "", "device_type": "printer", "product": "m475dw", "vendor": "hp"}}
 {"filterword": "jpdc51k01m", "tag": {"application": "", "device_type": "printer", "product": "jpdc51k01m", "vendor": "hp"}}
@@ -1299,7 +1299,7 @@
 {"filterword": "m225", "tag": {"application": "", "device_type": "printer", "product": "m225", "vendor": "hp"}}
 {"filterword": "jcg-007097", "tag": {"application": "", "device_type": "modem", "product": "jcg-007097", "vendor": ""}}
 {"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*\\r\\nDate: .*\\r\\nServer: CPWS\\r\\n", "tag": {"application": "checkpoint:connectra", "device_type": "misc device", "product": "check point web security", "vendor": "Connectra"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-type: text/html\\r\\nConnection: Close\\r\\n\\r\\n<HTML>\\n<HEAD>\\n<TITLE>ZyXEL (ZyAIR [\\w._-]+)</TITLE>", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "ZyXEL"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-type: text/html\\r\\nConnection: Close\\r\\n\\r\\n<HTML>\\n<HEAD>\\n<TITLE>ZyXEL (ZyAIR [\\w._-]+)</TITLE>", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "ZyXEL"}}
 {"filterword": "att9fnf55u", "tag": {"application": "", "device_type": "gateway", "product": "att9fnf55u", "vendor": ""}}
 {"filterword": "ac3200", "tag": {"application": "", "device_type": "router", "product": "ac3200", "vendor": "d-link"}}
 {"filterword": "jp4ld08042", "tag": {"application": "", "device_type": "", "product": "jp4ld08042", "vendor": "hp"}}
@@ -1326,7 +1326,7 @@
 {"filterword": "k5400", "tag": {"application": "", "device_type": "printer", "product": "k5400", "vendor": "hp"}}
 {"filterword": "cnwbf03819", "tag": {"application": "", "device_type": "", "product": "cnwbf03819", "vendor": "hp"}}
 {"filterword": "d750", "tag": {"application": "", "device_type": "camera", "product": "d750", "vendor": "canon"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: D-Link Internet Camera\\r\\n.*<title>(DCS-\\w+)</title>", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: D-Link Internet Camera\\r\\n.*<title>(DCS-\\w+)</title>", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "a6300", "tag": {"application": "", "device_type": "camera", "product": "a6300", "vendor": "canon"}}
 {"filterword": "dek-2ab290", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab290", "vendor": ""}}
 {"filterword": "it3111", "tag": {"application": "", "device_type": "", "product": "it3111", "vendor": "apple"}}
@@ -1564,7 +1564,7 @@
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: Web Server\\r\\n X-UA-Compatible: IE=EmulateIE7\\r\\nContent-Type: text/html\\r\\nCache-Control: no-cache\\r\\nPragma: no-cache\\r\\n.*<title>Switch</title>", "tag": {"application": "", "device_type": "switch", "product": "sg200", "vendor": "Cisco"}}
 {"filterword": "ex4200-24f", "tag": {"application": "", "device_type": "switch", "product": "ex4200-24f", "vendor": "juniper"}}
 {"filterword": "3215ni", "tag": {"application": "", "device_type": "", "product": "3215ni", "vendor": "xerox"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic Realm=\\\"(DSL-[\\w._-]+) Admin Login\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic Realm=\\\"(DSL-[\\w._-]+) Admin Login\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "jcg-9c0933", "tag": {"application": "", "device_type": "modem", "product": "jcg-9c0933", "vendor": ""}}
 {"filterword": "mt6753", "tag": {"application": "", "device_type": "camera", "product": "mt6753", "vendor": "lg"}}
 {"filterword": "mfc-7360n", "tag": {"application": "", "device_type": "printer", "product": "mfc-7360n", "vendor": "brother"}}
@@ -1647,7 +1647,7 @@
 {"filterword": "gateway1", "tag": {"application": "", "device_type": "gateway", "product": "gateway1", "vendor": ""}}
 {"filterword": "1544p", "tag": {"application": "", "device_type": "switch", "product": "1544p", "vendor": "adtran"}}
 {"filterword": "dir-600vb", "tag": {"application": "", "device_type": "router", "product": "dir-600vb", "vendor": "d-link"}}
-{"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (EWS-NIC\\w+)/([\\d.]+)\\r\\n.*<title>(Phaser \\w+) - Phaser [\\w-]+</title>", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Xerox"}}
+{"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (EWS-NIC\\w+)/([\\d.]+)\\r\\n.*<title>(Phaser \\w+) - Phaser [\\w-]+</title>", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Xerox"}}
 {"filterword": "wv-sf346", "tag": {"application": "", "device_type": "camera", "product": "wv-sf346", "vendor": "panasonic"}}
 {"filterword": "f480t", "tag": {"application": "", "device_type": "switch", "product": "f480t", "vendor": "telstra"}}
 {"filterword": "spectrum24", "tag": {"application": "", "device_type": "router", "product": "spectrum24", "vendor": "symbol"}}
@@ -1778,7 +1778,7 @@
 {"filterword": "ea6400-rm", "tag": {"application": "", "device_type": "", "product": "ea6400-rm", "vendor": "linksys"}}
 {"filterword": "power2", "tag": {"application": "", "device_type": "camera", "product": "power2", "vendor": "lg"}}
 {"filterword": "jpfmc62558firmware", "tag": {"application": "", "device_type": "printer", "product": "jpfmc62558firmware", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-type: text/html \\r\\n.*<title>Motorola (PTP \\w+)  - Home \\(IP=[\\d.]+\\)</title>\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Motorola"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-type: text/html \\r\\n.*<title>Motorola (PTP \\w+)  - Home \\(IP=[\\d.]+\\)</title>\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Motorola"}}
 {"filterword": "gn-br02g", "tag": {"application": "", "device_type": "router", "product": "gn-br02g", "vendor": "gigabyte"}}
 {"filterword": "wrt100", "tag": {"application": "", "device_type": "router", "product": "wrt100", "vendor": "linksys"}}
 {"filterword": "dp-c213", "tag": {"application": "", "device_type": "printer", "product": "dp-c213", "vendor": "panasonic"}}
@@ -1807,7 +1807,7 @@
 {"filterword": "^HTTP/1\\.0 200 OK\\nContent-type: text/html\\r\\n.*<title>DVR WebViewer</title>\\r\\n<meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=euc-kr\\\">\\r\\n.*<OBJECT\\r\\n\\t  classid=\\\"clsid:EE479A40-C128-40DD-93DA-000556AF9607\\\"\\r\\n\\t  codebase=\\\"CtrWeb\\.cab#version=1,1,1,1\\\"\\r\\n\\t  width=(\\d+)\\r\\n\\t  height=(\\d+)\\r\\n\\t  align=center\\r\\n\\t  hspace=0\\r\\n\\t  vspace=0\\r\\n>\\r\\n<param name=\\\"CmdPort\\\" value=\\\"(\\d+)\\\">\\r\\n<param name=\\\"StreamPort\\\" value=\\\"(\\d+)\\\">", "tag": {"application": "", "device_type": "media device", "product": "mdr-4600", "vendor": "MicroDigital"}}
 {"filterword": "dek-1f37d4", "tag": {"application": "", "device_type": "modem", "product": "dek-1f37d4", "vendor": ""}}
 {"filterword": "jcg-0129c7", "tag": {"application": "", "device_type": "modem", "product": "jcg-0129c7", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: Aragorn\\r\\nWWW-Authenticate: Basic realm=\\\"Aastra ([\\w._ -]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Aastra"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: Aragorn\\r\\nWWW-Authenticate: Basic realm=\\\"Aastra ([\\w._ -]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Aastra"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\n.*<script src=\\\"\\./message/message\\.js\\\"></script>\\n\\t<script src=\\\"\\./buffalo\\.js\\\"></script>\\n\\t\\n\\t<script src=\\\"\\./btsdk\\.js\\\"></script>\\n\\t<script src=\\\"\\./btuicommon\\.js\\\"></script>", "tag": {"application": "", "device_type": "misc device", "product": "nas bittorrent download manager http interface", "vendor": "Buffalo"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nDate: .*\\r\\nContent-[Tt]ype: text/html\\r\\nExpires: .*\\r\\nWWW-Authenticate: Basic realm=\\\"level 15 access\\\"\\r\\n", "tag": {"application": "", "device_type": "switch", "product": "ios", "vendor": "Cisco"}}
 {"filterword": "xgs4600-32f", "tag": {"application": "", "device_type": "switch", "product": "xgs4600-32f", "vendor": "zyxel"}}
@@ -1967,7 +1967,7 @@
 {"filterword": "k4t96a", "tag": {"application": "", "device_type": "printer", "product": "k4t96a", "vendor": "hp"}}
 {"filterword": "7200rs", "tag": {"application": "", "device_type": "switch", "product": "7200rs", "vendor": "netgear"}}
 {"filterword": "g16", "tag": {"application": "", "device_type": "camera", "product": "g16", "vendor": "canon"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\n.*<!-- General javascripts -->.*var path='http://www\\.axis\\.com/cgi-bin/prodhelp\\?prod=axis_([\\w._-]+)&ver=([\\w._-]+)&", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "AXIS"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\n.*<!-- General javascripts -->.*var path='http://www\\.axis\\.com/cgi-bin/prodhelp\\?prod=axis_([\\w._-]+)&ver=([\\w._-]+)&", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "AXIS"}}
 {"filterword": "dgd1316", "tag": {"application": "", "device_type": "dvr", "product": "dgd1316", "vendor": "avtech"}}
 {"filterword": "wg-604", "tag": {"application": "", "device_type": "gateway", "product": "wg-604", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nDate: .*\\nThe requested URL '' was not found on the Divar\\.<p>\\nReturn to", "tag": {"application": "", "device_type": "camera", "product": "divar closed circuit", "vendor": "Bosch"}}
@@ -2015,7 +2015,7 @@
 {"filterword": "ql-1060n", "tag": {"application": "", "device_type": "printer", "product": "ql-1060n", "vendor": "brother"}}
 {"filterword": "jcg-004137", "tag": {"application": "", "device_type": "modem", "product": "jcg-004137", "vendor": ""}}
 {"filterword": "8570n", "tag": {"application": "", "device_type": "printer", "product": "8570n", "vendor": "xerox"}}
-{"filterword": "^HTTP/1\\.1 200 Ok\\r\\nServer: snom embedded\\r\\n.*\\n<TITLE>snom ?(\\w+)(?:-[\\dA-F]+)?</TITLE>\\n", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Snom"}}
+{"filterword": "^HTTP/1\\.1 200 Ok\\r\\nServer: snom embedded\\r\\n.*\\n<TITLE>snom ?(\\w+)(?:-[\\dA-F]+)?</TITLE>\\n", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Snom"}}
 {"filterword": "eliana1", "tag": {"application": "", "device_type": "modem", "product": "eliana1", "vendor": ""}}
 {"filterword": "jprlb24185", "tag": {"application": "", "device_type": "", "product": "jprlb24185", "vendor": "hp"}}
 {"filterword": "b210e", "tag": {"application": "", "device_type": "printer", "product": "b210e", "vendor": "hp"}}
@@ -2055,7 +2055,7 @@
 {"filterword": "mfc-j245", "tag": {"application": "", "device_type": "printer", "product": "mfc-j245", "vendor": "brother"}}
 {"filterword": "svr-304", "tag": {"application": "", "device_type": "nvr", "product": "svr-304", "vendor": "foscam"}}
 {"filterword": "b-8800nxl", "tag": {"application": "", "device_type": "router", "product": "b-8800nxl", "vendor": "billion"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-type: text/html\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.0 Transitional//EN\\\" >\\r\\n<html >\\r\\n  <head>\\r\\n<meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=UTF-8\\\">\\r\\n<meta name=\\\"description\\\" content=\\\"Cisco (WAP\\w+)\\\">\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Cisco"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-type: text/html\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.0 Transitional//EN\\\" >\\r\\n<html >\\r\\n  <head>\\r\\n<meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=UTF-8\\\">\\r\\n<meta name=\\\"description\\\" content=\\\"Cisco (WAP\\w+)\\\">\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Cisco"}}
 {"filterword": "crownview3", "tag": {"application": "", "device_type": "gateway", "product": "crownview3", "vendor": ""}}
 {"filterword": "h711", "tag": {"application": "", "device_type": "printer", "product": "h711", "vendor": "hp"}}
 {"filterword": "ky-pz100", "tag": {"application": "", "device_type": "camera", "product": "ky-pz100", "vendor": "jvc"}}
@@ -2188,7 +2188,7 @@
 {"filterword": "dek-1f3bf4", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3bf4", "vendor": ""}}
 {"filterword": "jcg-01172b", "tag": {"application": "", "device_type": "modem", "product": "jcg-01172b", "vendor": ""}}
 {"filterword": "pr2000", "tag": {"application": "", "device_type": "router", "product": "pr2000", "vendor": "cyclades"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(TEW-\\w+)\\(ANNEX A\\)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "TRENDnet"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(TEW-\\w+)\\(ANNEX A\\)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "TRENDnet"}}
 {"filterword": "r800", "tag": {"application": "", "device_type": "switch", "product": "r800", "vendor": "logitech"}}
 {"filterword": "dir-625", "tag": {"application": "", "device_type": "router", "product": "dir-625", "vendor": "d-link"}}
 {"filterword": "jpfj58j012", "tag": {"application": "", "device_type": "printer", "product": "jpfj58j012", "vendor": "hp"}}
@@ -2529,7 +2529,7 @@
 {"filterword": "wdr4310", "tag": {"application": "", "device_type": "router", "product": "wdr4310", "vendor": "tp-link"}}
 {"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\n<meta name=\\\"GENERATOR\\\" content=\\\"Active WebCam ([\\d.]+) \\(http://www\\.pysoft\\.com\\) \\[Unregistered\\]\\\">\\r\\n\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "", "vendor": "Active"}}
 {"filterword": "w906", "tag": {"application": "", "device_type": "encoder", "product": "w906", "vendor": "hyundai"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(DCS-\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(DCS-\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "att2ebz76r", "tag": {"application": "", "device_type": "gateway", "product": "att2ebz76r", "vendor": ""}}
 {"filterword": "att7avw3zu", "tag": {"application": "", "device_type": "gateway", "product": "att7avw3zu", "vendor": ""}}
 {"filterword": "ro8410669", "tag": {"application": "", "device_type": "", "product": "ro8410669", "vendor": "planet"}}
@@ -2596,7 +2596,7 @@
 {"filterword": "wr3005n3", "tag": {"application": "", "device_type": "router", "product": "wr3005n3", "vendor": "binatone"}}
 {"filterword": "jp8lb43982", "tag": {"application": "", "device_type": "printer", "product": "jp8lb43982", "vendor": "hp"}}
 {"filterword": "wr1505n3", "tag": {"application": "", "device_type": "router", "product": "wr1505n3", "vendor": "binatone"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Linksys (WAG\\w+)\\n\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Linksys (WAG\\w+)\\n\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: HyNetOS/([\\w._-]+)\\r\\n.*<title>(CS\\d+) SNMP/Web Adapter</title>", "tag": {"application": "", "device_type": "power-device", "product": "mh 6000 ups", "vendor": "Effekta"}}
 {"filterword": "d5111", "tag": {"application": "", "device_type": "camera", "product": "d5111", "vendor": "zavio"}}
 {"filterword": "m4300-28g", "tag": {"application": "", "device_type": "switch", "product": "m4300-28g", "vendor": "netgear"}}
@@ -2657,7 +2657,7 @@
 {"filterword": "flexfabric-20", "tag": {"application": "", "device_type": "switch", "product": "flexfabric-20", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.0 301 Moved Permanently\\r\\nLocation: HTTP://[^:]+:\\d+/printer/index\\.html\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "ztc 105sl", "vendor": "Zebra"}}
 {"filterword": "care1st", "tag": {"application": "", "device_type": "gateway", "product": "care1st", "vendor": "trust"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nCache-Control: no-cache\\r\\nPragma: no-cache\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Frameset//EN\\\">\\r\\n<!-- Copyright \\(c\\) 2000-2002, Fuji Xerox Co\\., Ltd\\. All Rights Reserved\\. -->\\r\\n<HTML>\\r\\n<HEAD>\\r\\n<META HTTP-EQUIV=\\\"Content-Type\\\" CONTENT=\\\"text/html; charset=ISO-8859-1\\\">\\r\\n<TITLE>\\r\\n(DocuPrint [\\w._-]+) - ([\\w._-]+)\\r\\n</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Fuji Xerox"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nCache-Control: no-cache\\r\\nPragma: no-cache\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Frameset//EN\\\">\\r\\n<!-- Copyright \\(c\\) 2000-2002, Fuji Xerox Co\\., Ltd\\. All Rights Reserved\\. -->\\r\\n<HTML>\\r\\n<HEAD>\\r\\n<META HTTP-EQUIV=\\\"Content-Type\\\" CONTENT=\\\"text/html; charset=ISO-8859-1\\\">\\r\\n<TITLE>\\r\\n(DocuPrint [\\w._-]+) - ([\\w._-]+)\\r\\n</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Fuji Xerox"}}
 {"filterword": "bl-vp101", "tag": {"application": "", "device_type": "camera", "product": "bl-vp101", "vendor": "panasonic"}}
 {"filterword": "att2pyn33v", "tag": {"application": "", "device_type": "gateway", "product": "att2pyn33v", "vendor": ""}}
 {"filterword": "can2go", "tag": {"application": "", "device_type": "gateway", "product": "can2go", "vendor": ""}}
@@ -2743,7 +2743,7 @@
 {"filterword": "iad605", "tag": {"application": "", "device_type": "router", "product": "iad605", "vendor": "tilgin"}}
 {"filterword": "cu4it", "tag": {"application": "", "device_type": "", "product": "cu4it", "vendor": "tot"}}
 {"filterword": "jcg-9bc5a3", "tag": {"application": "", "device_type": "modem", "product": "jcg-9bc5a3", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?MIME-Version: [\\d.]+\\r\\nServer: JC-HTTPD/([\\d.]+)\\r\\n.*<title>(C[-+\\w]+)</title>", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "Oki Data"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?MIME-Version: [\\d.]+\\r\\nServer: JC-HTTPD/([\\d.]+)\\r\\n.*<title>(C[-+\\w]+)</title>", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "Oki Data"}}
 {"filterword": "jpunb46616", "tag": {"application": "", "device_type": "", "product": "jpunb46616", "vendor": "hp"}}
 {"filterword": "c3350", "tag": {"application": "", "device_type": "camera", "product": "c3350", "vendor": "samsung"}}
 {"filterword": "jpdlb00416", "tag": {"application": "", "device_type": "", "product": "jpdlb00416", "vendor": "hp"}}
@@ -2920,7 +2920,7 @@
 {"filterword": "yvdr6", "tag": {"application": "", "device_type": "", "product": "yvdr6", "vendor": "planet"}}
 {"filterword": "sg300", "tag": {"application": "", "device_type": "gateway", "product": "sg300", "vendor": "cyberguard"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r.*\\nServer: Apache\\r.*\\nX-DellKACE-Appliance: (\\w+)\\r\\nX-DellKACE-Host: ([\\w.-]+)\\r\\nX-DellKACE-Version: ([\\d.]+)\\r\\n", "tag": {"application": "dell:kace_$1_systems_management_appliance_software:$3", "device_type": "remote management", "product": "kace management appliance", "vendor": "Dell"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nConnection: close\\r\\nCache-Control: no-store\\r\\nContent-Type: text/html; charset=utf-8\\r\\nContent-Length: \\d+\\r\\n\\r\\n<script>RT='/(DGS-\\d\\w+(?:-\\d+))_([\\d.]+)/';</script>", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nConnection: close\\r\\nCache-Control: no-store\\r\\nContent-Type: text/html; charset=utf-8\\r\\nContent-Length: \\d+\\r\\n\\r\\n<script>RT='/(DGS-\\d\\w+(?:-\\d+))_([\\d.]+)/';</script>", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "att3lxe5ga", "tag": {"application": "", "device_type": "gateway", "product": "att3lxe5ga", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Digest realm=\\\"Thomson_cwmp_([\\w._-]+)\\\", nonce=", "tag": {"application": "", "device_type": "router", "product": "tr-069 remote access", "vendor": "Thomson"}}
 {"filterword": "smg-1016m", "tag": {"application": "", "device_type": "gateway", "product": "smg-1016m", "vendor": "eltex"}}
@@ -2976,7 +2976,7 @@
 {"filterword": "mfc8710dw", "tag": {"application": "", "device_type": "printer", "product": "mfc8710dw", "vendor": "brother"}}
 {"filterword": "g2crowd", "tag": {"application": "", "device_type": "", "product": "g2crowd", "vendor": "mentor"}}
 {"filterword": "ne56r41u", "tag": {"application": "", "device_type": "gateway", "product": "ne56r41u", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nConnection: close\\r\\nDate: .*\\r\\nAccept-Ranges: bytes\\r\\nContent-Type: text/html\\r\\nExpires: Mon, 01 Jul 1980 00:00:00 GMT\\r\\nCache-Control: no-cache, no-store, must-revalidate\\r\\nPragma: no-cache\\r\\nWWW-Authenticate: Basic realm=\"(D[A-Z0-9-]+)\"\\r\\nContent-Length: 17\\r\\n\\r\\n401 Unauthorized\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nConnection: close\\r\\nDate: .*\\r\\nAccept-Ranges: bytes\\r\\nContent-Type: text/html\\r\\nExpires: Mon, 01 Jul 1980 00:00:00 GMT\\r\\nCache-Control: no-cache, no-store, must-revalidate\\r\\nPragma: no-cache\\r\\nWWW-Authenticate: Basic realm=\"(D[A-Z0-9-]+)\"\\r\\nContent-Length: 17\\r\\n\\r\\n401 Unauthorized\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "cs-wmv04n2", "tag": {"application": "", "device_type": "camera", "product": "cs-wmv04n2", "vendor": "planex"}}
 {"filterword": "r6300v2", "tag": {"application": "", "device_type": "router", "product": "r6300v2", "vendor": "netgear"}}
 {"filterword": "dek-1f3a80", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3a80", "vendor": ""}}
@@ -2991,7 +2991,7 @@
 {"filterword": "adn-4101", "tag": {"application": "", "device_type": "router", "product": "adn-4101", "vendor": "planet"}}
 {"filterword": "f23", "tag": {"application": "", "device_type": "camera", "product": "f23", "vendor": "sony"}}
 {"filterword": "7800tn", "tag": {"application": "", "device_type": "modem", "product": "7800tn", "vendor": "bec"}}
-{"filterword": "^HTTP/1\\.1 200 Ok\\r\\nServer: ZyXEL Modem\\r\\n.*<title>\\.::Welcome to ZyXEL ([^:<]+?)::\\.</title>", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "ZyXEL"}}
+{"filterword": "^HTTP/1\\.1 200 Ok\\r\\nServer: ZyXEL Modem\\r\\n.*<title>\\.::Welcome to ZyXEL ([^:<]+?)::\\.</title>", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "ZyXEL"}}
 {"filterword": "blw-54cw3", "tag": {"application": "", "device_type": "router", "product": "blw-54cw3", "vendor": "planex"}}
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: Embedded HTTPD v([\\d.]+), \\d+\\(c\\) Delta Networks Inc\\.\\r\\n.*<title>NETGEAR Router</title>", "tag": {"application": "", "device_type": "router", "product": "networks embedded", "vendor": "Delta"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: NetPort Software ([\\w._-]+)\\r\\n.*<title>([^-<\\r\\n]+) - VSX 8000</title>\\n<link rel=\\\"stylesheet\\\" href=\\\"sabrestyle\\.css\\\"", "tag": {"application": "", "device_type": "camera", "product": "netport", "vendor": ""}}
@@ -3039,7 +3039,7 @@
 {"filterword": "dcs-2100g", "tag": {"application": "", "device_type": "camera", "product": "dcs-2100g", "vendor": "d-link"}}
 {"filterword": "dek-33e8e0", "tag": {"application": "", "device_type": "modem", "product": "dek-33e8e0", "vendor": ""}}
 {"filterword": "t2a", "tag": {"application": "", "device_type": "router", "product": "t2a", "vendor": "encore"}}
-{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"TP-LINK SOHO Router (R[\\w/]+)\\\"", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"TP-LINK SOHO Router (R[\\w/]+)\\\"", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "dir-615", "tag": {"application": "", "device_type": "router", "product": "dir-615", "vendor": "d-link"}}
 {"filterword": "dek-2ab430", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab430", "vendor": ""}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nCache-Control: no-cache\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\n\\r\\n<html><body><h1>200 OK</h1>\\nService ready\\.\\n</body></html>\\n$", "tag": {"application": "haproxy:haproxy", "device_type": "load balancer", "product": "", "vendor": "HAProxy"}}
@@ -3057,7 +3057,7 @@
 {"filterword": "sl-j2920w", "tag": {"application": "", "device_type": "printer", "product": "sl-j2920w", "vendor": "samsung"}}
 {"filterword": "nv79c49u", "tag": {"application": "", "device_type": "gateway", "product": "nv79c49u", "vendor": ""}}
 {"filterword": "jpkjb10933", "tag": {"application": "", "device_type": "", "product": "jpkjb10933", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (EWS-NIC\\w+)/([\\d.]+)\\r\\n.*<title>(WorkCentre \\w+)</title>", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Xerox"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (EWS-NIC\\w+)/([\\d.]+)\\r\\n.*<title>(WorkCentre \\w+)</title>", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Xerox"}}
 {"filterword": "sx60", "tag": {"application": "", "device_type": "camera", "product": "sx60", "vendor": "canon"}}
 {"filterword": "m3", "tag": {"application": "", "device_type": "camera", "product": "m3", "vendor": "huawei"}}
 {"filterword": "ath9k", "tag": {"application": "", "device_type": "", "product": "ath9k", "vendor": "atheros"}}
@@ -3080,7 +3080,7 @@
 {"filterword": "jpsn857g2r", "tag": {"application": "", "device_type": "printer", "product": "jpsn857g2r", "vendor": "hp"}}
 {"filterword": "jcg-9d5a17", "tag": {"application": "", "device_type": "modem", "product": "jcg-9d5a17", "vendor": ""}}
 {"filterword": "fcs-3061", "tag": {"application": "", "device_type": "camera", "product": "fcs-3061", "vendor": "levelone"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(DSL-[\\w+]+) Admin Login\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(DSL-[\\w+]+) Admin Login\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "wbr-3407a", "tag": {"application": "", "device_type": "router", "product": "wbr-3407a", "vendor": "levelone"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nPragma: no-cache\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"Demo9\\\"\\r\\nContent-Type: text/html\\r\\nContent-Length: 236\\r\\n\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "codec t150", "vendor": "Tandberg"}}
 {"filterword": "dek-2ab3c4", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab3c4", "vendor": ""}}
@@ -3351,7 +3351,7 @@
 {"filterword": "gn-br01g", "tag": {"application": "", "device_type": "router", "product": "gn-br01g", "vendor": "gigabyte"}}
 {"filterword": "p5515", "tag": {"application": "", "device_type": "camera", "product": "p5515", "vendor": "axis"}}
 {"filterword": "cp5225n", "tag": {"application": "", "device_type": "printer", "product": "cp5225n", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-type: text/html\\n\\n<html>\\n<head>\\n<meta name=\\\"description\\\" content=\\\"Belkin ([-\\w_.+]+)\\\">\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Belkin"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-type: text/html\\n\\n<html>\\n<head>\\n<meta name=\\\"description\\\" content=\\\"Belkin ([-\\w_.+]+)\\\">\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Belkin"}}
 {"filterword": "f0v69a", "tag": {"application": "", "device_type": "printer", "product": "f0v69a", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.1 404 Not Found\\r\\nContent-Length: 72\\r\\nDate: .* GMT\\r\\n\\r\\n<html><head><title>not found</title></head><body>not found</body></html>$", "tag": {"application": "", "device_type": "media device", "product": "bravia", "vendor": "Sony"}}
 {"filterword": "einatnewwin10", "tag": {"application": "", "device_type": "gateway", "product": "einatnewwin10", "vendor": "technicolor"}}
@@ -3460,7 +3460,7 @@
 {"filterword": "dsm-5", "tag": {"application": "", "device_type": "encoder", "product": "dsm-5", "vendor": "encore"}}
 {"filterword": "n66257", "tag": {"application": "", "device_type": "gateway", "product": "n66257", "vendor": "technicolor"}}
 {"filterword": "awgr54", "tag": {"application": "", "device_type": "router", "product": "awgr54", "vendor": "ativa"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\nWWW-Authenticate: Basic realm=\\\"Sony Network Camera (SNC-\\w+)\\\"\\r\\nContent-Type: text/html\\r\\nServer: NetEVI/([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "Sony"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\nWWW-Authenticate: Basic realm=\\\"Sony Network Camera (SNC-\\w+)\\\"\\r\\nContent-Type: text/html\\r\\nServer: NetEVI/([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "Sony"}}
 {"filterword": "f3100", "tag": {"application": "", "device_type": "camera", "product": "f3100", "vendor": "zavio"}}
 {"filterword": "wwdc17", "tag": {"application": "", "device_type": "camera", "product": "wwdc17", "vendor": "probe"}}
 {"filterword": "ies-1000", "tag": {"application": "", "device_type": "switch", "product": "ies-1000", "vendor": "zyxel"}}
@@ -3509,7 +3509,7 @@
 {"filterword": "pages1", "tag": {"application": "", "device_type": "", "product": "pages1", "vendor": "option"}}
 {"filterword": "att090", "tag": {"application": "", "device_type": "gateway", "product": "att090", "vendor": ""}}
 {"filterword": "dek-1f3f84", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3f84", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 401 Authorization Required\\r\\nWWW-Authenticate: BASIC realm=\"(DPR?-\\d[^)]+)\"\\r\\n\\r\\nPassword Error\\.", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.0 401 Authorization Required\\r\\nWWW-Authenticate: BASIC realm=\"(DPR?-\\d[^)]+)\"\\r\\n\\r\\nPassword Error\\.", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "wnrt-300", "tag": {"application": "", "device_type": "router", "product": "wnrt-300", "vendor": "planet"}}
 {"filterword": "dsl-ac68u", "tag": {"application": "", "device_type": "router", "product": "dsl-ac68u", "vendor": "asus"}}
 {"filterword": "jcg-9bda8b", "tag": {"application": "", "device_type": "modem", "product": "jcg-9bda8b", "vendor": ""}}
@@ -3565,7 +3565,7 @@
 {"filterword": "mfc-8910dw", "tag": {"application": "", "device_type": "printer", "product": "mfc-8910dw", "vendor": "brother"}}
 {"filterword": "t303", "tag": {"application": "", "device_type": "camera", "product": "t303", "vendor": "ericsson"}}
 {"filterword": "t3500", "tag": {"application": "", "device_type": "printer", "product": "t3500", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nDate: .*\\r\\nMIME-version: 1\\.0\\r?\\nServer: ZOT-PS-(\\d+)/([\\w._-]+)\\r?\\nWWW-Authenticate: Basic realm=\\\"(TL-[\\w._-]+)\\\"\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Zero One Technology"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nDate: .*\\r\\nMIME-version: 1\\.0\\r?\\nServer: ZOT-PS-(\\d+)/([\\w._-]+)\\r?\\nWWW-Authenticate: Basic realm=\\\"(TL-[\\w._-]+)\\\"\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Zero One Technology"}}
 {"filterword": "c7200", "tag": {"application": "", "device_type": "printer", "product": "c7200", "vendor": "hp"}}
 {"filterword": "jsw2016", "tag": {"application": "", "device_type": "", "product": "jsw2016", "vendor": ""}}
 {"filterword": "kvm-410", "tag": {"application": "", "device_type": "switch", "product": "kvm-410", "vendor": "d-link"}}
@@ -3660,7 +3660,7 @@
 {"filterword": "vevg2660", "tag": {"application": "", "device_type": "router", "product": "vevg2660", "vendor": "netgear"}}
 {"filterword": "^HTTP/1\\.1 200 (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: MoxaHttp/([\\w._-]+)\\r\\n.*<TITLE>NPort Web Console</TITLE>", "tag": {"application": "", "device_type": "specialized", "product": "", "vendor": "Moxa"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?S[eE][rR][vV][eE][rR]: HDHomeRun/1\\.0\\r\\n.*<div class=\\\"S\\\">Model: ([\\w._-]+)\\n?<br/>Device ID: ([\\w._-]+)\\n?<br/>Firmware: ([\\w._-]+)\\n?</div>", "tag": {"application": "", "device_type": "media device", "product": "hdhomerun $1", "vendor": "SiliconDust"}}
-{"filterword": "^HTTP/1\\.[01] 401 Unauthorized.*\\r\\nWWW-Authenticate: Basic [rR]ealm=\\\"DSL-(\\w+)\\\"", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.[01] 401 Unauthorized.*\\r\\nWWW-Authenticate: Basic [rR]ealm=\\\"DSL-(\\w+)\\\"", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "em2000", "tag": {"application": "", "device_type": "dvr", "product": "em2000", "vendor": "pelco"}}
 {"filterword": "ce320a", "tag": {"application": "", "device_type": "printer", "product": "ce320a", "vendor": "hp"}}
 {"filterword": "net5301t", "tag": {"application": "", "device_type": "camera", "product": "net5301t", "vendor": "pelco"}}
@@ -3970,7 +3970,7 @@
 {"filterword": "dcs-940l", "tag": {"application": "", "device_type": "camera", "product": "dcs-940l", "vendor": "d-link"}}
 {"filterword": "top5", "tag": {"application": "", "device_type": "camera", "product": "top5", "vendor": "hot"}}
 {"filterword": "gs2200-48", "tag": {"application": "", "device_type": "switch", "product": "gs2200-48", "vendor": "zyxel"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\n.*<meta name=\\\"Author\\\" content=\\\"FireBrick Ltd\\\">\\n<meta name=\\\"Description\\\" content=\\\"FireBrick (\\d+) Control pages\\\">", "tag": {"application": "", "device_type": "firewall", "product": "1", "vendor": "FireBrick"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\n.*<meta name=\\\"Author\\\" content=\\\"FireBrick Ltd\\\">\\n<meta name=\\\"Description\\\" content=\\\"FireBrick (\\d+) Control pages\\\">", "tag": {"application": "", "device_type": "firewall", "product": "$1", "vendor": "FireBrick"}}
 {"filterword": "a32p011004137", "tag": {"application": "", "device_type": "printer", "product": "a32p011004137", "vendor": "konica minolta"}}
 {"filterword": "gp200", "tag": {"application": "", "device_type": "copier", "product": "gp200", "vendor": "canon"}}
 {"filterword": "rtl2832", "tag": {"application": "", "device_type": "", "product": "rtl2832", "vendor": "asus"}}
@@ -4066,7 +4066,7 @@
 {"filterword": "sp300e", "tag": {"application": "", "device_type": "gateway", "product": "sp300e", "vendor": ""}}
 {"filterword": "nine9", "tag": {"application": "", "device_type": "router", "product": "nine9", "vendor": "option"}}
 {"filterword": "jp5nb12328", "tag": {"application": "", "device_type": "", "product": "jp5nb12328", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 404 Not Found\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<html>\\n<head>\\n<title>(SPA\\w+) Configuration Utility</title>\\n", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Cisco"}}
+{"filterword": "^HTTP/1\\.1 404 Not Found\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<html>\\n<head>\\n<title>(SPA\\w+) Configuration Utility</title>\\n", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Cisco"}}
 {"filterword": "sd51", "tag": {"application": "", "device_type": "gateway", "product": "sd51", "vendor": "juniper"}}
 {"filterword": "elux16x2", "tag": {"application": "", "device_type": "dvr", "product": "elux16x2", "vendor": "everfocus"}}
 {"filterword": "eye4fraud", "tag": {"application": "", "device_type": "switch", "product": "eye4fraud", "vendor": "cisco"}}
@@ -4075,7 +4075,7 @@
 {"filterword": "x30", "tag": {"application": "", "device_type": "camera", "product": "x30", "vendor": "launch"}}
 {"filterword": "e6g86b", "tag": {"application": "", "device_type": "printer", "product": "e6g86b", "vendor": "hp"}}
 {"filterword": "trial50", "tag": {"application": "", "device_type": "", "product": "trial50", "vendor": "microsoft"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*<title>([\\w-]+) Network Camera</title>", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "Panasonic"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*<title>([\\w-]+) Network Camera</title>", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "Panasonic"}}
 {"filterword": "dek-33e460", "tag": {"application": "", "device_type": "modem", "product": "dek-33e460", "vendor": ""}}
 {"filterword": "pdp-11", "tag": {"application": "", "device_type": "", "product": "pdp-11", "vendor": "alpha"}}
 {"filterword": "dek-1f3cb8", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3cb8", "vendor": ""}}
@@ -4113,7 +4113,7 @@
 {"filterword": "rgw208en", "tag": {"application": "", "device_type": "gateway", "product": "rgw208en", "vendor": ""}}
 {"filterword": "dx1000", "tag": {"application": "", "device_type": "", "product": "dx1000", "vendor": "hot"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"FC330A\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "cellular network access point", "vendor": "Airvana"}}
-{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\"NETGEAR (WNR\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\"NETGEAR (WNR\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "movie2k16", "tag": {"application": "", "device_type": "router", "product": "movie2k16", "vendor": "alice"}}
 {"filterword": "es5461", "tag": {"application": "", "device_type": "printer", "product": "es5461", "vendor": "oki"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\nDate: .*\\r\\n\\r\\n<html lang=\"en\"> <head> <meta charset=\"utf-8\"/> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/> <title>Google Wifi</title>", "tag": {"application": "", "device_type": "wap", "product": "wifi", "vendor": "Google"}}
@@ -4202,7 +4202,7 @@
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: Router/([\\d.]+)\\r\\nContent-Type: text/html\\r\\nPragma: no-cache\\r\\nExpires: 0\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic Realm=\\\"Login as admin\\\"\\r\\n\\r\\n", "tag": {"application": "", "device_type": "router", "product": "", "vendor": ""}}
 {"filterword": "r1660", "tag": {"application": "", "device_type": "router", "product": "r1660", "vendor": "tp-link"}}
 {"filterword": "ps1810-8g", "tag": {"application": "", "device_type": "switch", "product": "ps1810-8g", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nContent-type: text/html\\r\\nCache-Control: public\\r\\nPragma: cache\\r\\nExpires: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Linksys (WR\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nContent-type: text/html\\r\\nCache-Control: public\\r\\nPragma: cache\\r\\nExpires: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Linksys (WR\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "cnfxh17408", "tag": {"application": "", "device_type": "", "product": "cnfxh17408", "vendor": "hp"}}
 {"filterword": "sx420w", "tag": {"application": "", "device_type": "printer", "product": "sx420w", "vendor": "apple"}}
 {"filterword": "cngxc11210", "tag": {"application": "", "device_type": "", "product": "cngxc11210", "vendor": "hp"}}
@@ -4250,7 +4250,7 @@
 {"filterword": "t3500ps", "tag": {"application": "", "device_type": "printer", "product": "t3500ps", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\nConnection: close\\r\\nDate: .*\\r\\nServer: RMC Webserver ([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "remote management", "product": "rmc", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 302 Redirect\\r\\nServer: GoAhead-Webs\\r\\n(?:[^\\r\\n]+\\r\\n)*?Location: https://Device/config/log_off_page\\.htm\\r\\n", "tag": {"application": "goahead:goahead_webserver", "device_type": "switch", "product": "webserver", "vendor": "GoAhead"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Alcatel Lucent ([\\w._-]+) ([\\w._-]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n$", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Alcatel-Lucent"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Alcatel Lucent ([\\w._-]+) ([\\w._-]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n$", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Alcatel-Lucent"}}
 {"filterword": "mss100", "tag": {"application": "", "device_type": "switch", "product": "mss100", "vendor": "lantronix"}}
 {"filterword": "^HTTP/1\\.1 302 Found\\r\\nConnection: Keep-Alive\\r\\nServer: (\\w+) IP PRO/([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "gigaset $1 dect", "vendor": "Siemens"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"ADSL Router \\(ANNEX A\\)\\\"\\r\\n.*System Authentication Failed\\.", "tag": {"application": "", "device_type": "router", "product": "", "vendor": "TRENDnet"}}
@@ -4331,9 +4331,9 @@
 {"filterword": "2161ds", "tag": {"application": "", "device_type": "switch", "product": "2161ds", "vendor": "dell"}}
 {"filterword": "jcg-90f68b", "tag": {"application": "", "device_type": "modem", "product": "jcg-90f68b", "vendor": ""}}
 {"filterword": "ddr2200", "tag": {"application": "", "device_type": "gateway", "product": "ddr2200", "vendor": "cisco"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?MIME-Version: [\\d.]+\\r\\nServer: JC-HTTPD/([\\d.]+)\\r\\n.*<TITLE>(IB-[-+\\w]+)</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "Kyocera"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?MIME-Version: [\\d.]+\\r\\nServer: JC-HTTPD/([\\d.]+)\\r\\n.*<TITLE>(IB-[-+\\w]+)</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "Kyocera"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\nContent-type: text/html\\r\\nDate: .*\\r\\nConnection: close\\r\\nExpires: Fri, 01 Jan 1990 00:00:00 GMT\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache, no-store, must-revalidate\\r\\nLast-Modified: Mon, 30 Aug 2010 22:16:44 GMT\\r\\nContent-length: 1350\\r\\n\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "network", "vendor": "TiVo"}}
-{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nDate: .* GMT\\r\\nMIME-version: 1\\.0\\r?\\nServer: ZOT-PS-(\\d+)/([\\w._-]+)\\r?\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Zero One Technology"}}
+{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nDate: .* GMT\\r\\nMIME-version: 1\\.0\\r?\\nServer: ZOT-PS-(\\d+)/([\\w._-]+)\\r?\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Zero One Technology"}}
 {"filterword": "c7hvad", "tag": {"application": "", "device_type": "", "product": "c7hvad", "vendor": "microsoft"}}
 {"filterword": "att4i2m4zu", "tag": {"application": "", "device_type": "gateway", "product": "att4i2m4zu", "vendor": ""}}
 {"filterword": "jcg-01307b", "tag": {"application": "", "device_type": "modem", "product": "jcg-01307b", "vendor": ""}}
@@ -4583,7 +4583,7 @@
 {"filterword": "^HTTP/1\\.0 200 Ok\\r\\nServer: ZiBASE([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "zibase home automation", "vendor": "Zodianet"}}
 {"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*\\r\\nConnection: Close\\r\\nServer: LANCOM ([\\w._+/-]+) VPN (?:\\(Annex B\\) )?([\\w. /]+)\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "$1 VPN", "vendor": "Lancom"}}
 {"filterword": "tgu187313346348", "tag": {"application": "", "device_type": "router", "product": "tgu187313346348", "vendor": "juniper"}}
-{"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*\\r\\nWWW-Authenticate: Basic Realm=\\\"D-Link ([-\\w_.]+) Router\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*\\r\\nWWW-Authenticate: Basic Realm=\\\"D-Link ([-\\w_.]+) Router\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nServer: IP_SHARER WEB ([\\w._-]+)\\r\\nContent-type: text/html\\r\\n\\r\\nunknown \\(.*\\) is managing this device", "tag": {"application": "speedstream:ip_sharer_web:$1", "device_type": "router", "product": "IP_SHARER web", "vendor": ""}}
 {"filterword": "dcs-3220", "tag": {"application": "", "device_type": "camera", "product": "dcs-3220", "vendor": "d-link"}}
 {"filterword": "d300", "tag": {"application": "", "device_type": "router", "product": "d300", "vendor": "kingston"}}
@@ -4850,7 +4850,7 @@
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nContent-Type: text/html\\r\\nDate: .*\\r\\nLast-Modified: .*\\r\\nAccept-Ranges: bytes\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"WebAdmin\\\"\\r\\n\\r\\n<HTML>\\n<HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\\n<BODY BGCOLOR=\\\"#cc9999\\\" TEXT=\\\"#000000\\\" LINK=\\\"#2020ff\\\" VLINK=\\\"#4040cc\\\">\\n", "tag": {"application": "", "device_type": "router", "product": "dsl", "vendor": "ActionTec"}}
 {"filterword": "studio148", "tag": {"application": "", "device_type": "", "product": "studio148", "vendor": "dark"}}
 {"filterword": "jpfj5dh008", "tag": {"application": "", "device_type": "printer", "product": "jpfj5dh008", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"Please enter your user name and password on (DSL-[\\w+]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"Please enter your user name and password on (DSL-[\\w+]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "dek-33e794", "tag": {"application": "", "device_type": "modem", "product": "dek-33e794", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 200 (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: Swiftbase Ltd\\. Embedded Web Server \\(v([\\w._-]+)\\)\\r\\n.*<TITLE>Swift-CM2</TITLE>", "tag": {"application": "", "device_type": "specialized", "product": "ltd. climate monitor", "vendor": "Swiftbase"}}
 {"filterword": "arm64", "tag": {"application": "", "device_type": "", "product": "arm64", "vendor": "apple"}}
@@ -4926,7 +4926,7 @@
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nCONNECTION: close\\r\\n(?:Date: .*\\r\\nLast-Modified: .*\\r\\nEtag: \"\\d+:[\\da-f]+\"\\r\\n)?CONTENT-LENGTH: \\d+\\r\\n(?:P3P: CP=CAO PSA OUR\\r\\n)?(?:CACHE-CONTROL: max-age=0\\r\\n)?CONTENT-TYPE: text/html\\r\\n\\r\\n\\xef\\xbb\\xbf<!DOCTYPE html(?: PUBLIC \"-//W3C//DTD XHTML 1\\.0 Strict//EN\" \"http://www\\.w3\\.org/TR/xhtml1/DTD/xhtml1-strict\\.dtd\")?>\\r\\n<html> *\\r\\n *<head>\\r\\n *<title>", "tag": {"application": "", "device_type": "camera", "product": "", "vendor": "Dahua"}}
 {"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: MediabolicMWEB/\\r\\nConnection: close\\r\\n\\r\\n<h1>Error</h1>Page not found!\\r\\n$", "tag": {"application": "", "device_type": "misc device", "product": "", "vendor": "Mediabolic"}}
 {"filterword": "att9pkt9kg", "tag": {"application": "", "device_type": "gateway", "product": "att9pkt9kg", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 200 OK \\r\\nCache-Control: max-age=60\\r\\nContent-type: text/html; charset=ISO-8859-1\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Frameset//EN\\\" >\\r\\n<HTML>\\r\\n    <HEAD><TITLE>SandvallsangFSK: (\\w+)</TITLE>", "tag": {"application": "", "device_type": "voip adapter", "product": "1", "vendor": "Kirk"}}
+{"filterword": "^HTTP/1\\.0 200 OK \\r\\nCache-Control: max-age=60\\r\\nContent-type: text/html; charset=ISO-8859-1\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Frameset//EN\\\" >\\r\\n<HTML>\\r\\n    <HEAD><TITLE>SandvallsangFSK: (\\w+)</TITLE>", "tag": {"application": "", "device_type": "voip adapter", "product": "$1", "vendor": "Kirk"}}
 {"filterword": "cm1312", "tag": {"application": "", "device_type": "printer", "product": "cm1312", "vendor": "hp"}}
 {"filterword": "ts3", "tag": {"application": "", "device_type": "camera", "product": "ts3", "vendor": "panasonic"}}
 {"filterword": "mfc-j625dw", "tag": {"application": "", "device_type": "printer", "product": "mfc-j625dw", "vendor": "brother"}}
@@ -4961,14 +4961,14 @@
 {"filterword": "ex2200-24t", "tag": {"application": "", "device_type": "switch", "product": "ex2200-24t", "vendor": "juniper"}}
 {"filterword": "gxd-1610m", "tag": {"application": "", "device_type": "camera", "product": "gxd-1610m", "vendor": "eneo"}}
 {"filterword": "cnfxh20688", "tag": {"application": "", "device_type": "printer", "product": "cnfxh20688", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nDate: .*\\r\\nServer: Slinger ([\\d.]+)\\r\\nConnection: close \\r\\nLast-modified: .*\\r\\nContent-Type: text/html\\r\\nExpires: 0\\r\\n\\r\\n.*<BR>\\n\\nZebra Technologies<BR>\\nZTC (\\w+)", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "Zebra"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nDate: .*\\r\\nServer: Slinger ([\\d.]+)\\r\\nConnection: close \\r\\nLast-modified: .*\\r\\nContent-Type: text/html\\r\\nExpires: 0\\r\\n\\r\\n.*<BR>\\n\\nZebra Technologies<BR>\\nZTC (\\w+)", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "Zebra"}}
 {"filterword": "ir4044-snvnr", "tag": {"application": "", "device_type": "scanner", "product": "ir4044-snvnr", "vendor": "hp"}}
 {"filterword": "msm720", "tag": {"application": "", "device_type": "switch", "product": "msm720", "vendor": "hp"}}
 {"filterword": "D-Link VoIP Router", "tag": {"application": "", "device_type": "router", "product": "voip", "vendor": "d-link"}}
 {"filterword": "dek-33e398", "tag": {"application": "", "device_type": "modem", "product": "dek-33e398", "vendor": ""}}
 {"filterword": "av-1", "tag": {"application": "", "device_type": "camera", "product": "av-1", "vendor": "canon"}}
 {"filterword": "wrt1", "tag": {"application": "", "device_type": "router", "product": "wrt1", "vendor": "linksys"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: (DPH-\\w+)\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: (DPH-\\w+)\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "dek-1f34e4", "tag": {"application": "", "device_type": "modem", "product": "dek-1f34e4", "vendor": ""}}
 {"filterword": "a7r", "tag": {"application": "", "device_type": "camera", "product": "a7r", "vendor": "sony"}}
 {"filterword": "dcs-7010l", "tag": {"application": "", "device_type": "camera", "product": "dcs-7010l", "vendor": "d-link"}}
@@ -4989,7 +4989,7 @@
 {"filterword": "nb403", "tag": {"application": "", "device_type": "", "product": "nb403", "vendor": "vtech"}}
 {"filterword": "^HTTP/1\\.0 403 Forbidden\\r\\nContent-Type: text/html\\r\\n\\r\\n<html><head><link href=c rel=stylesheet></head><body><div class=b><form><br>Wachtwoord:<input type=password name=w><input type=submit value=Login></form></div><!--Content-Type: Content-Type: Content-Type: Content-Type: Content-Type: Content-Type: --></body></html>", "tag": {"application": "", "device_type": "misc device", "product": "ls110 energy monitor", "vendor": "YouLess"}}
 {"filterword": "oma22", "tag": {"application": "", "device_type": "", "product": "oma22", "vendor": "tot"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-Type: text/html;charset=iso-8859-1\\r\\nContent-Length: \\d+\\r\\nServer: Grandstream (BT\\w+) ([\\w._-]+)\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Grandstream"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-Type: text/html;charset=iso-8859-1\\r\\nContent-Length: \\d+\\r\\nServer: Grandstream (BT\\w+) ([\\w._-]+)\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Grandstream"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nCache-Control: no-cache\\r\\nConnection: close\\r\\n\\r\\n<html><head><title>Basic Status</title></head><frameset rows=\\\"\\*,0\\\" border=0 frameborder=no framespacing=0><frame src=\\\"basic\\.htm\\\" name=\\\"main\\\"><frame src=\\\"hide\\.htm\\\" name=\\\"Hide\\\" marginwidth=0 marginheight=0 border=0></frameset></html>\\n", "tag": {"application": "", "device_type": "wap", "product": "wireless", "vendor": "NetComm"}}
 {"filterword": "z2100", "tag": {"application": "", "device_type": "printer", "product": "z2100", "vendor": "hp"}}
 {"filterword": "c610n", "tag": {"application": "", "device_type": "printer", "product": "c610n", "vendor": "oki"}}
@@ -5062,7 +5062,7 @@
 {"filterword": "jcg-a0009f", "tag": {"application": "", "device_type": "modem", "product": "jcg-a0009f", "vendor": ""}}
 {"filterword": "atlhqcolfloor2a", "tag": {"application": "", "device_type": "printer", "product": "atlhqcolfloor2a", "vendor": "xerox"}}
 {"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: 2wire Gateway\\r\\n", "tag": {"application": "", "device_type": "router", "product": "homeportal", "vendor": "2Wire"}}
-{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"BSkyB (\\w+) \\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "BSkyB"}}
+{"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"BSkyB (\\w+) \\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "BSkyB"}}
 {"filterword": "bw554", "tag": {"application": "", "device_type": "", "product": "bw554", "vendor": "sbs"}}
 {"filterword": "lj2300", "tag": {"application": "", "device_type": "printer", "product": "lj2300", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: TP-LINK Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"Web Smart Switch\\\"", "tag": {"application": "", "device_type": "switch", "product": "web smart", "vendor": "TP-LINK"}}
@@ -5175,7 +5175,7 @@
 {"filterword": "jcg-9bc8a3", "tag": {"application": "", "device_type": "modem", "product": "jcg-9bc8a3", "vendor": ""}}
 {"filterword": "h267n", "tag": {"application": "", "device_type": "router", "product": "h267n", "vendor": "zte"}}
 {"filterword": "gsm7252s", "tag": {"application": "", "device_type": "switch", "product": "gsm7252s", "vendor": "netgear"}}
-{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\"(WGR\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\"(WGR\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r \\nContent-type: text/xml\\r\\n.*<resolved count='\\d+' ommitted='\\d+' chumbhowld_ver='([\\w._-]+)'>\\n<resolve interface='\\d+' name='([\\w._-]+)' type='_http\\._tcp\\.'", "tag": {"application": "", "device_type": "media device", "product": "one chumbhowld", "vendor": "Chumby"}}
 {"filterword": "di-604", "tag": {"application": "", "device_type": "router", "product": "di-604", "vendor": "d-link"}}
 {"filterword": "r800a", "tag": {"application": "", "device_type": "camera", "product": "r800a", "vendor": "ericsson"}}
@@ -5244,7 +5244,7 @@
 {"filterword": "e709n", "tag": {"application": "", "device_type": "printer", "product": "e709n", "vendor": "hp"}}
 {"filterword": "nslu2", "tag": {"application": "", "device_type": "router", "product": "nslu2", "vendor": "zoom"}}
 {"filterword": "at-img624", "tag": {"application": "", "device_type": "gateway", "product": "at-img624", "vendor": "Allied Telesis"}}
-{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: TP-LINK Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"TP-LINK Router ([\\w+-]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: TP-LINK Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"TP-LINK Router ([\\w+-]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "bb-hcm331", "tag": {"application": "", "device_type": "camera", "product": "bb-hcm331", "vendor": "panasonic"}}
 {"filterword": "h267a", "tag": {"application": "", "device_type": "modem", "product": "h267a", "vendor": "zte"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nDate: .*\\r\\nServer: Gateway \\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "netgate vpn", "vendor": "AT&T"}}
@@ -5274,7 +5274,7 @@
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: IP_SHARER WEB ([\\w._-]+)\\r\\nWWW-Authenticate: Basic realm=\\\"(AT-\\w+)\\\"\\r\\nContent-type: text/html\\r\\n\\r\\n401 Unauthorized", "tag": {"application": "alliedtelesyn:ip_sharer_web:$1", "device_type": "router", "product": "IP_SHARER web", "vendor": ""}}
 {"filterword": "dek-2ab350", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab350", "vendor": ""}}
 {"filterword": "eg18x", "tag": {"application": "", "device_type": "surveillance", "product": "eg18x", "vendor": "tornado"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"(RT-[^\"]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Asus"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"(RT-[^\"]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Asus"}}
 {"filterword": "v15", "tag": {"application": "", "device_type": "camera", "product": "v15", "vendor": "mobotix"}}
 {"filterword": "comm100", "tag": {"application": "", "device_type": "switch", "product": "comm100", "vendor": "option"}}
 {"filterword": "jcg-9bb4fb", "tag": {"application": "", "device_type": "modem", "product": "jcg-9bb4fb", "vendor": ""}}
@@ -5375,7 +5375,7 @@
 {"filterword": "wv-sp302", "tag": {"application": "", "device_type": "camera", "product": "wv-sp302", "vendor": "panasonic"}}
 {"filterword": "dek-33e3f8", "tag": {"application": "", "device_type": "modem", "product": "dek-33e3f8", "vendor": ""}}
 {"filterword": "m402dne", "tag": {"application": "", "device_type": "", "product": "m402dne", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html;\\r\\n.*<TITLE>Aastra ([\\w._+-]+)</TITLE>", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Aastra"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html;\\r\\n.*<TITLE>Aastra ([\\w._+-]+)</TITLE>", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Aastra"}}
 {"filterword": "arm-204", "tag": {"application": "", "device_type": "router", "product": "arm-204", "vendor": "airlive"}}
 {"filterword": "m5c", "tag": {"application": "", "device_type": "gateway", "product": "m5c", "vendor": ""}}
 {"filterword": "dek-2ab274", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab274", "vendor": ""}}
@@ -5510,7 +5510,7 @@
 {"filterword": "^HTTP/1\\.1 401 Authorization Required\\r\\nWWW-Authenticate: Basic realm=\"Linksys ([\\w._-]+)\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "", "vendor": "Linksys"}}
 {"filterword": "dek-2ab2f0", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab2f0", "vendor": ""}}
 {"filterword": "m452nw", "tag": {"application": "", "device_type": "printer", "product": "m452nw", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 404 Not Found\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<html>\\r\\n<head>\\r\\n<title>(SPA\\d\\d\\d[\\w._-]*) Configuration Utility</title>", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Cisco"}}
+{"filterword": "^HTTP/1\\.1 404 Not Found\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<html>\\r\\n<head>\\r\\n<title>(SPA\\d\\d\\d[\\w._-]*) Configuration Utility</title>", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Cisco"}}
 {"filterword": "fat32", "tag": {"application": "", "device_type": "encoder", "product": "fat32", "vendor": "microsoft"}}
 {"filterword": "dek-33ecfc", "tag": {"application": "", "device_type": "modem", "product": "dek-33ecfc", "vendor": ""}}
 {"filterword": "jcg-a4ec87", "tag": {"application": "", "device_type": "modem", "product": "jcg-a4ec87", "vendor": ""}}
@@ -5628,11 +5628,11 @@
 {"filterword": "top100", "tag": {"application": "", "device_type": "camera", "product": "top100", "vendor": "option"}}
 {"filterword": "att7hec3pz", "tag": {"application": "", "device_type": "gateway", "product": "att7hec3pz", "vendor": ""}}
 {"filterword": "tew-638pap", "tag": {"application": "", "device_type": "camera", "product": "tew-638pap", "vendor": "trendnet"}}
-{"filterword": "^HTTP/1\\.[01] 200 OK\\r\\nConnection: close\\r\\nContent-Type: text/html; charset=utf-8\\r\\nContent-Length: \\d+\\r\\nCache-Control: max-age=0, no-store, no-cache\\r\\nx-enc: Ext1, Basic\\r\\nServer: Dell (\\w+) Mono MFP, sn=(\\w+)\\r\\n\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Dell"}}
+{"filterword": "^HTTP/1\\.[01] 200 OK\\r\\nConnection: close\\r\\nContent-Type: text/html; charset=utf-8\\r\\nContent-Length: \\d+\\r\\nCache-Control: max-age=0, no-store, no-cache\\r\\nx-enc: Ext1, Basic\\r\\nServer: Dell (\\w+) Mono MFP, sn=(\\w+)\\r\\n\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Dell"}}
 {"filterword": "kr2", "tag": {"application": "", "device_type": "gateway", "product": "kr2", "vendor": "kyocera"}}
 {"filterword": "opa627", "tag": {"application": "", "device_type": "surveillance", "product": "opa627", "vendor": "shock"}}
 {"filterword": "dek-1f3638", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3638", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 200 OK \\r\\n.*<title>NAT: innovaphone (\\w+)</title>", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Innovaphone"}}
+{"filterword": "^HTTP/1\\.0 200 OK \\r\\n.*<title>NAT: innovaphone (\\w+)</title>", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Innovaphone"}}
 {"filterword": "frt-420sn", "tag": {"application": "", "device_type": "router", "product": "frt-420sn", "vendor": "planet"}}
 {"filterword": "jcg-9bde2b", "tag": {"application": "", "device_type": "modem", "product": "jcg-9bde2b", "vendor": ""}}
 {"filterword": "e1w", "tag": {"application": "", "device_type": "switch", "product": "e1w", "vendor": "efficient"}}
@@ -5674,7 +5674,7 @@
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nDate: Sat, 22 Oct 2016 15:45:40 GMT\\r\\nServer: http server 1\\.0\\r\\nContent-type: text/html; charset=UTF-8\\r\\nLast-modified: Thu, 01 Sep 2016 02:17:20 GMT\\r\\nAccept-Ranges: bytes\\r\\nContent-length: 580\\r\\nVary: Accept-Encoding\\r\\nConnection: close\\r\\n\\r\\n<html style=\"background:#007cef\">\\n<head>\\n", "tag": {"application": "owncloud:owncloud", "device_type": "misc device", "product": "nas", "vendor": "OwnCloud"}}
 {"filterword": "bcc200", "tag": {"application": "", "device_type": "camera", "product": "bcc200", "vendor": "apple"}}
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d.*\\r\\nServer: B[iI][gG]-?IP\\r\\n", "tag": {"application": "", "device_type": "load balancer", "product": "big-ip", "vendor": "F5"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .* GMT\\r\\nWWW-Authenticate: Basic realm=\\\"(E\\d+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .* GMT\\r\\nWWW-Authenticate: Basic realm=\\\"(E\\d+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "hg1351", "tag": {"application": "", "device_type": "router", "product": "hg1351", "vendor": "tilgin"}}
 {"filterword": "at-8948", "tag": {"application": "", "device_type": "switch", "product": "at-8948", "vendor": "Allied Telesis"}}
 {"filterword": "d9l18a", "tag": {"application": "", "device_type": "printer", "product": "d9l18a", "vendor": "hp"}}
@@ -5763,7 +5763,7 @@
 {"filterword": "p255", "tag": {"application": "", "device_type": "printer", "product": "p255", "vendor": "xerox"}}
 {"filterword": "t2i", "tag": {"application": "", "device_type": "camera", "product": "t2i", "vendor": "canon"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\n.*getElementById\\(\\\"cTextChg\\\"\\)\\.innerHTML = \\\"<p>Die soeben durchgef&uuml;hrte System&uuml;berpr&uuml;fung hat ergeben,<br>\\\" \\+\\n \\\"dass ihr Bildschirm nicht die minimal erforderliche Aufl\\xf6sung hat\\.</p>", "tag": {"application": "", "device_type": "wap", "product": "speedport w 501v", "vendor": "T-Com"}}
-{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router Webserver\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"\\d+Mbps Wireless \\w+ Router (RNX-\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Rosewill"}}
+{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router Webserver\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"\\d+Mbps Wireless \\w+ Router (RNX-\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Rosewill"}}
 {"filterword": "hl-2130", "tag": {"application": "", "device_type": "printer", "product": "hl-2130", "vendor": "brother"}}
 {"filterword": "fc7020", "tag": {"application": "", "device_type": "", "product": "fc7020", "vendor": "tot"}}
 {"filterword": "jhr-n835r", "tag": {"application": "", "device_type": "router", "product": "jhr-n835r", "vendor": "jcg"}}
@@ -5961,7 +5961,7 @@
 {"filterword": "smc6128l2", "tag": {"application": "", "device_type": "switch", "product": "smc6128l2", "vendor": "smc"}}
 {"filterword": "mr816", "tag": {"application": "", "device_type": "router", "product": "mr816", "vendor": "mercury"}}
 {"filterword": "jpjg006680", "tag": {"application": "", "device_type": "printer", "product": "jpjg006680", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\n<TITLE>KONICA MINOLTA PageScope Web Connection for (\\w+)</TITLE>\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Konica Minolta"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\n<TITLE>KONICA MINOLTA PageScope Web Connection for (\\w+)</TITLE>\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Konica Minolta"}}
 {"filterword": "plnk-936dfb", "tag": {"application": "", "device_type": "modem", "product": "plnk-936dfb", "vendor": ""}}
 {"filterword": "it06291340484", "tag": {"application": "", "device_type": "router", "product": "it06291340484", "vendor": "Allied Telesis"}}
 {"filterword": "p2715q", "tag": {"application": "", "device_type": "", "product": "p2715q", "vendor": "dell"}}
@@ -6004,7 +6004,7 @@
 {"filterword": "k600", "tag": {"application": "", "device_type": "camera", "product": "k600", "vendor": "ericsson"}}
 {"filterword": "tc8715d", "tag": {"application": "", "device_type": "modem", "product": "tc8715d", "vendor": "technicolor"}}
 {"filterword": "jp5nb62297", "tag": {"application": "", "device_type": "", "product": "jp5nb62297", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Httpd-Webs\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"Linksys (WR[\\w+]+) ver\\. (\\d+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Httpd-Webs\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"Linksys (WR[\\w+]+) ver\\. (\\d+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "^HTTP/1\\.[01] \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: Ubicom/([\\d.]+)\\r\\n.*<title>(DI-\\w+)</title>\\n", "tag": {"application": "ubicom:httpd:$1", "device_type": "router", "product": "", "vendor": "Ubicom"}}
 {"filterword": "dek-33ee74", "tag": {"application": "", "device_type": "modem", "product": "dek-33ee74", "vendor": ""}}
 {"filterword": "dcs-4602ev", "tag": {"application": "", "device_type": "camera", "product": "dcs-4602ev", "vendor": "d-link"}}
@@ -6041,7 +6041,7 @@
 {"filterword": "wbr-6802", "tag": {"application": "", "device_type": "router", "product": "wbr-6802", "vendor": "levelone"}}
 {"filterword": "hw0036", "tag": {"application": "", "device_type": "camera", "product": "hw0036", "vendor": "wanscam"}}
 {"filterword": "tes0080", "tag": {"application": "", "device_type": "switch", "product": "tes0080", "vendor": "cyclades"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-type: text/html\\r\\nCache-Control: no-cache\\r\\n\\r\\n<BODY><CENTER><H2><BR><BR>LevelOne (GSW-\\w+)", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "LevelOne"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-type: text/html\\r\\nCache-Control: no-cache\\r\\n\\r\\n<BODY><CENTER><H2><BR><BR>LevelOne (GSW-\\w+)", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "LevelOne"}}
 {"filterword": "plnk-947fdb", "tag": {"application": "", "device_type": "modem", "product": "plnk-947fdb", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 401 Not Authorized\\r\\nServer: WSTL CPE 1\\.0\\r\\nMIME-version: 1\\.0\\r\\nDate: [A-Z]{3} [A-Z]{3} \\d\\d \\d\\d:\\d\\d:\\d\\d \\d\\d\\d\\d GMT\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\nContent-Length: \\d+\\r\\nWWW-Authenticate: Digest realm=\"Westell Secure\",", "tag": {"application": "", "device_type": "router", "product": "tr-069", "vendor": "Westell"}}
 {"filterword": "hl-3170cdw", "tag": {"application": "", "device_type": "printer", "product": "hl-3170cdw", "vendor": "brother"}}
@@ -6113,7 +6113,7 @@
 {"filterword": "c610a", "tag": {"application": "", "device_type": "switch", "product": "c610a", "vendor": "siemens"}}
 {"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\nServer: GoAhead-Webs\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"DCM-202\\\"\\r\\n", "tag": {"application": "goahead:goahead_webserver", "device_type": "router", "product": "webserver", "vendor": "GoAhead"}}
 {"filterword": "f610a", "tag": {"application": "", "device_type": "camera", "product": "f610a", "vendor": "zavio"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nHTTP/1\\.0 200 OK\\r\\nServer: (\\w+)\\r\\nConnection: close\\r\\nCache-Control: must-revalidate = no-cache\\r\\nContent-Type: text/html\\r\\nExpires: 0\\r\\nLast-Modified: 0\\r\\n\\r\\n<html><head>\\r\\n<title>Netgear Access Point http config</title>", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": ""}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nHTTP/1\\.0 200 OK\\r\\nServer: (\\w+)\\r\\nConnection: close\\r\\nCache-Control: must-revalidate = no-cache\\r\\nContent-Type: text/html\\r\\nExpires: 0\\r\\nLast-Modified: 0\\r\\n\\r\\n<html><head>\\r\\n<title>Netgear Access Point http config</title>", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": ""}}
 {"filterword": "wl-5420cam", "tag": {"application": "", "device_type": "camera", "product": "wl-5420cam", "vendor": "airlive"}}
 {"filterword": "d7400", "tag": {"application": "", "device_type": "printer", "product": "d7400", "vendor": "hp"}}
 {"filterword": "lw310", "tag": {"application": "", "device_type": "router", "product": "lw310", "vendor": "sweex"}}
@@ -6276,7 +6276,7 @@
 {"filterword": "jprj67s01h", "tag": {"application": "", "device_type": "printer", "product": "jprj67s01h", "vendor": "hp"}}
 {"filterword": "mfc-8690dw", "tag": {"application": "", "device_type": "printer", "product": "mfc-8690dw", "vendor": "brother"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR DG\\w+  \\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<html>\\n<head>\\n\\n<meta name=\\\"description\\\" content=\\\"DG(\\w+) FR \\d+\\\">\\n", "tag": {"application": "", "device_type": "wap", "product": "dg$1 fr", "vendor": "Netgear"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nConnection: Close\\r\\nServer: SwyxConnect ([\\w._-]+) \\(Annex B\\) ([\\w._ /-]+)\\r\\nCache-Control: no-cache\\r\\nExpires: Thu, 31 Dec 1999 00:00:00 GMT\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "SwyxConnect"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nConnection: Close\\r\\nServer: SwyxConnect ([\\w._-]+) \\(Annex B\\) ([\\w._ /-]+)\\r\\nCache-Control: no-cache\\r\\nExpires: Thu, 31 Dec 1999 00:00:00 GMT\\r\\n", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "SwyxConnect"}}
 {"filterword": "te100-p1p", "tag": {"application": "", "device_type": "printer", "product": "te100-p1p", "vendor": "trendnet"}}
 {"filterword": "jpsj8c501d", "tag": {"application": "", "device_type": "printer", "product": "jpsj8c501d", "vendor": "hp"}}
 {"filterword": "a50", "tag": {"application": "", "device_type": "", "product": "a50", "vendor": "kare"}}
@@ -6520,7 +6520,7 @@
 {"filterword": "tn4230", "tag": {"application": "", "device_type": "camera", "product": "tn4230", "vendor": "compro"}}
 {"filterword": "wl54ag", "tag": {"application": "", "device_type": "router", "product": "wl54ag", "vendor": "nec"}}
 {"filterword": "af622a", "tag": {"application": "", "device_type": "switch", "product": "af622a", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (DG[-\\w+]+) \\\"", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (DG[-\\w+]+) \\\"", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: Virata-EmWeb/R([\\d_]+)\\r\\n.*<!-- Begin Hiding\\n         netscapeVersion =", "tag": {"application": "virata:emweb:$SUBST(1,\"_\",\".\")", "device_type": "printer", "product": "emweb", "vendor": "Virata"}}
 {"filterword": "dek-33f1b8", "tag": {"application": "", "device_type": "modem", "product": "dek-33f1b8", "vendor": ""}}
 {"filterword": "vfg6005", "tag": {"application": "", "device_type": "gateway", "product": "vfg6005", "vendor": "zyxel"}}
@@ -6642,7 +6642,7 @@
 {"filterword": "^HTTP/1\\.[01] \\d\\d\\d .*<title>Welcome to eDR400--login</title>", "tag": {"application": "", "device_type": "camera", "product": "powerplex edr400", "vendor": "EverFocus"}}
 {"filterword": "usg-300", "tag": {"application": "", "device_type": "gateway", "product": "usg-300", "vendor": "zyxel"}}
 {"filterword": "dpc3848v", "tag": {"application": "", "device_type": "gateway", "product": "dpc3848v", "vendor": "generic"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Digest realm=\\\"(iRMC S\\d)@iRMC([0-9A-F]{6})\\\", qop=\\\"auth\\\", nonce=\\\"[0-9a-f-]+\\\", opaque=\\\"[0-9a-f]+\\\", stale=\\\"FALSE\\\" \\r\\n(?:Connection: close\\r\\n)?Cache-Control: no-cache\\r\\nPragma: no-cache\\r\\nContent-Type: text/html\\r\\nTransfer-Encoding: chunked\\r\\n\\r\\n296\\r\\n", "tag": {"application": "", "device_type": "remote management", "product": "1", "vendor": "Fujitsu"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Digest realm=\\\"(iRMC S\\d)@iRMC([0-9A-F]{6})\\\", qop=\\\"auth\\\", nonce=\\\"[0-9a-f-]+\\\", opaque=\\\"[0-9a-f]+\\\", stale=\\\"FALSE\\\" \\r\\n(?:Connection: close\\r\\n)?Cache-Control: no-cache\\r\\nPragma: no-cache\\r\\nContent-Type: text/html\\r\\nTransfer-Encoding: chunked\\r\\n\\r\\n296\\r\\n", "tag": {"application": "", "device_type": "remote management", "product": "$1", "vendor": "Fujitsu"}}
 {"filterword": "wa805n", "tag": {"application": "", "device_type": "camera", "product": "wa805n", "vendor": "tp-link"}}
 {"filterword": "d3q21a", "tag": {"application": "", "device_type": "printer", "product": "d3q21a", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Web Server\\r\\n.*<title>Dell OpenManage Switch Administrator</title>", "tag": {"application": "", "device_type": "switch", "product": "openmanage", "vendor": "Dell"}}
@@ -6659,7 +6659,7 @@
 {"filterword": "c01-dcs932l", "tag": {"application": "", "device_type": "encoder", "product": "c01-dcs932l", "vendor": "d-link"}}
 {"filterword": "mfc-9450cdn", "tag": {"application": "", "device_type": "printer", "product": "mfc-9450cdn", "vendor": "brother"}}
 {"filterword": "sep70ca9b9f5c99", "tag": {"application": "", "device_type": "gateway", "product": "sep70ca9b9f5c99", "vendor": "technicolor"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nDate: .*\\r\\nServer:  \\r\\nCache-Control: no-cache, private\\r\\nPragma: no-cache\\r\\nExpires: .*\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Transitional//EN\\\"\\r\\n\\\"http://www\\.w3\\.org/TR/html4/loose\\.dtd\\\">\\r\\n<html>\\r\\n<head>\\r\\n<title>(NWA[\\w-]+)</title>", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "ZyXEL"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nDate: .*\\r\\nServer:  \\r\\nCache-Control: no-cache, private\\r\\nPragma: no-cache\\r\\nExpires: .*\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Transitional//EN\\\"\\r\\n\\\"http://www\\.w3\\.org/TR/html4/loose\\.dtd\\\">\\r\\n<html>\\r\\n<head>\\r\\n<title>(NWA[\\w-]+)</title>", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "ZyXEL"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: WebServer\\(ipcamera\\)\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "http/onvif/p2p/rtsp/vod multi-server", "vendor": "DB power"}}
 {"filterword": "dek-33ec54", "tag": {"application": "", "device_type": "modem", "product": "dek-33ec54", "vendor": ""}}
 {"filterword": "n-8-1", "tag": {"application": "", "device_type": "gateway", "product": "n-8-1", "vendor": "gemtek"}}
@@ -6733,7 +6733,7 @@
 {"filterword": "cts-sx80-ip60", "tag": {"application": "", "device_type": "camera", "product": "cts-sx80-ip60", "vendor": "cisco"}}
 {"filterword": "tew-673gru", "tag": {"application": "", "device_type": "router", "product": "tew-673gru", "vendor": "trendnet"}}
 {"filterword": "dek-33e378", "tag": {"application": "", "device_type": "modem", "product": "dek-33e378", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"DYNEX (DX-E402)\\\"", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "DYNEX"}}
+{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"DYNEX (DX-E402)\\\"", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "DYNEX"}}
 {"filterword": "dek-33ef14", "tag": {"application": "", "device_type": "modem", "product": "dek-33ef14", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: d-Box network\\r\\n\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "streaming audio", "vendor": "Dreambox"}}
 {"filterword": "2621xm", "tag": {"application": "", "device_type": "router", "product": "2621xm", "vendor": "cisco"}}
@@ -6744,7 +6744,7 @@
 {"filterword": "dt-29-b01w", "tag": {"application": "", "device_type": "switch", "product": "dt-29-b01w", "vendor": "nec"}}
 {"filterword": "jcg-005873", "tag": {"application": "", "device_type": "modem", "product": "jcg-005873", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: Motion-httpd/([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "motion-httpd", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\nContent-type: text/html\\r\\nDate: .*\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"(WRT[^\"]+)\\\"\\r\\n\\r\\n<HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\\n<BODY><H1>401 Unauthorized</H1>\\n\\n</BODY>\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\nContent-type: text/html\\r\\nDate: .*\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"(WRT[^\"]+)\\\"\\r\\n\\r\\n<HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\\n<BODY><H1>401 Unauthorized</H1>\\n\\n</BODY>\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "cnybb07039", "tag": {"application": "", "device_type": "printer", "product": "cnybb07039", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.1 400 Bad Request\\r\\nConnection: close\\r\\nDate: .*\\r\\nX-AV-Client-Info\\.sony\\.com: av=([\\d.]+); cn=\"Sony Corporation\"; mn=\"([^\"]+)\"; mv=\"([\\d.]+)\";\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "$2 http media client", "vendor": "Sony"}}
 {"filterword": "msm310-r", "tag": {"application": "", "device_type": "router", "product": "msm310-r", "vendor": "hp"}}
@@ -6771,7 +6771,7 @@
 {"filterword": "^HTTP/1\\.0 302 Redirect\\r\\nServer: Hikvision-Webs\\r\\nDate: .*\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-Type: text/html\\r\\nLocation: http://([\\w.-]+):\\d+/index\\.[asphtm]+\\r\\n\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "", "vendor": "Hikvision"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: Askey/([\\d.]+)\\r\\nMIME-version: 1\\.0\\r\\nContent-type: text/html\\r\\n\\r\\n.*<b>This \\r\\n        website is blocked by the URL filter of Wireless Router\\. Please browse to another \\r\\n        site or go back\\.</b>", "tag": {"application": "", "device_type": "wap", "product": "", "vendor": "Askey"}}
 {"filterword": "r4299g", "tag": {"application": "", "device_type": "router", "product": "r4299g", "vendor": "tp-link"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nCache-Control: no-cache\\r\\nConnection: close\\r\\nPragma: no-cache\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\nAccept-Ranges: bytes\\r\\n\\r\\n<!DOCTYPE html PUBLIC \\\"-//W3C//DTD XHTML 1\\.0 Transitional//EN\\\" \\\"http://www\\.w3\\.org/TR/xhtml1/DTD/xhtml1-transitional\\.dtd\\\">\\r\\n<html xmlns=\\\"http://www\\.w3\\.org/1999/xhtml\\\">\\r\\n<head>\\r\\n    <title>([\\w._-]+)</title>", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "ACTi"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nCache-Control: no-cache\\r\\nConnection: close\\r\\nPragma: no-cache\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\nAccept-Ranges: bytes\\r\\n\\r\\n<!DOCTYPE html PUBLIC \\\"-//W3C//DTD XHTML 1\\.0 Transitional//EN\\\" \\\"http://www\\.w3\\.org/TR/xhtml1/DTD/xhtml1-transitional\\.dtd\\\">\\r\\n<html xmlns=\\\"http://www\\.w3\\.org/1999/xhtml\\\">\\r\\n<head>\\r\\n    <title>([\\w._-]+)</title>", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "ACTi"}}
 {"filterword": "tg01", "tag": {"application": "", "device_type": "camera", "product": "tg01", "vendor": "toshiba"}}
 {"filterword": "jphad17686", "tag": {"application": "", "device_type": "printer", "product": "jphad17686", "vendor": "hp"}}
 {"filterword": "r128", "tag": {"application": "", "device_type": "camera", "product": "r128", "vendor": "pci"}}
@@ -6806,7 +6806,7 @@
 {"filterword": "att478", "tag": {"application": "", "device_type": "gateway", "product": "att478", "vendor": ""}}
 {"filterword": "dx-e401", "tag": {"application": "", "device_type": "router", "product": "dx-e401", "vendor": "dynex"}}
 {"filterword": "jcg-95e8ef", "tag": {"application": "", "device_type": "modem", "product": "jcg-95e8ef", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: Linux, HTTP/1\\.1, (DSL-[\\w]+) Ver ([A-Z][A-Z])_([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: Linux, HTTP/1\\.1, (DSL-[\\w]+) Ver ([A-Z][A-Z])_([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "m277c6", "tag": {"application": "", "device_type": "printer", "product": "m277c6", "vendor": "hp"}}
 {"filterword": "dek-2c0c34", "tag": {"application": "", "device_type": "modem", "product": "dek-2c0c34", "vendor": ""}}
 {"filterword": "u20", "tag": {"application": "", "device_type": "scanner", "product": "u20", "vendor": "hot"}}
@@ -6841,7 +6841,7 @@
 {"filterword": "w3blog", "tag": {"application": "", "device_type": "router", "product": "w3blog", "vendor": "hot"}}
 {"filterword": "^HTTP/1\\.0 400 Bad Request\\r\\nServer: Technicolor WebServer/([\\w._-]+)\\r\\nContent-Type: text/html\\r\\nContent-Length: 58\\r\\n\\r\\nHTTP/1\\.0 400 Bad Request: Invalid or incomplete request\\.\\r\\n\\r\\n\\r\\n$", "tag": {"application": "", "device_type": "voip adapter", "product": "tg787 voip", "vendor": "Technicolor"}}
 {"filterword": "r910", "tag": {"application": "", "device_type": "scanner", "product": "r910", "vendor": "dell"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorised\\r\\nServer: ATR-HTTP-Server/([\\d.]+)\\r\\nContent-Type: text/html\\r\\nWWW-Authenticate: Basic realm=\\\"Allied Telesyn AT-(AR\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "2", "vendor": "Allied Telesis"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorised\\r\\nServer: ATR-HTTP-Server/([\\d.]+)\\r\\nContent-Type: text/html\\r\\nWWW-Authenticate: Basic realm=\\\"Allied Telesyn AT-(AR\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$2", "vendor": "Allied Telesis"}}
 {"filterword": "m4a785", "tag": {"application": "", "device_type": "", "product": "m4a785", "vendor": "asus"}}
 {"filterword": "jcg-a4c867", "tag": {"application": "", "device_type": "modem", "product": "jcg-a4c867", "vendor": ""}}
 {"filterword": "2010w", "tag": {"application": "", "device_type": "router", "product": "2010w", "vendor": "samsung"}}
@@ -7043,7 +7043,7 @@
 {"filterword": "cb540a", "tag": {"application": "", "device_type": "printer", "product": "cb540a", "vendor": "hp"}}
 {"filterword": "p660", "tag": {"application": "", "device_type": "router", "product": "p660", "vendor": "zyxel"}}
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nServer: Embedded HTTP Server USR([\\w._-]+)\\r\\nWWW-Authenticate: Basic realm=\\\"([^\"]+)\\\"\\r\\nConnection: close\\r\\n\\r\\n<", "tag": {"application": "", "device_type": "router", "product": "embedded http server", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: Web Switch\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\n\\r\\n<script language=JavaScript><!--\\nvar g_Lan=\\d+;\\nvar stitle = \"([^\"]+)\";", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: Web Switch\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\n\\r\\n<script language=JavaScript><!--\\nvar g_Lan=\\d+;\\nvar stitle = \"([^\"]+)\";", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "vas44", "tag": {"application": "", "device_type": "switch", "product": "vas44", "vendor": "hot"}}
 {"filterword": "jcg-a4c86f", "tag": {"application": "", "device_type": "modem", "product": "jcg-a4c86f", "vendor": ""}}
 {"filterword": "dmc-gh2", "tag": {"application": "", "device_type": "camera", "product": "dmc-gh2", "vendor": "panasonic"}}
@@ -7127,7 +7127,7 @@
 {"filterword": "s5720-52x", "tag": {"application": "", "device_type": "switch", "product": "s5720-52x", "vendor": "huawei"}}
 {"filterword": "jcg-00ff7f", "tag": {"application": "", "device_type": "modem", "product": "jcg-00ff7f", "vendor": ""}}
 {"filterword": "aie-1313l", "tag": {"application": "", "device_type": "", "product": "aie-1313l", "vendor": "hot"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (\\w+) ADSL2\\+ Modem\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (\\w+) ADSL2\\+ Modem\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "m630f", "tag": {"application": "", "device_type": "printer", "product": "m630f", "vendor": "hp"}}
 {"filterword": "dek-1f32ec", "tag": {"application": "", "device_type": "modem", "product": "dek-1f32ec", "vendor": ""}}
 {"filterword": "cm1312nfi", "tag": {"application": "", "device_type": "printer", "product": "cm1312nfi", "vendor": "hp"}}
@@ -7186,7 +7186,7 @@
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nCache-Control: no-cache\\r\\nContent-Type:text/html\\r\\nContent-Length:  *\\d+\\r\\n\\r\\n\\n<html>\\n<head>\\n<Script language=\\\"javascript\\\">\\n.*<title>VoIP Login</title>\\n", "tag": {"application": "", "device_type": "voip adapter", "product": "mva11a voip", "vendor": "Minitar"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: http server\\r\\nDate: .*\\r\\nCache-Control: no-cache,no-store\\r\\nWWW-Authenticate: Basic realm=\\\"Citadel\\\"\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "networks citadel", "vendor": "Atera"}}
 {"filterword": "more3d", "tag": {"application": "", "device_type": "", "product": "more3d", "vendor": "mentor"}}
-{"filterword": "^HTTP/1.0 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\"(GN-\\w+)\"", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Gigabyte"}}
+{"filterword": "^HTTP/1.0 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\"(GN-\\w+)\"", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Gigabyte"}}
 {"filterword": "adsl-350", "tag": {"application": "", "device_type": "router", "product": "adsl-350", "vendor": "westermo"}}
 {"filterword": "ads-1100w", "tag": {"application": "", "device_type": "camera", "product": "ads-1100w", "vendor": "brother"}}
 {"filterword": "kx-hgw500", "tag": {"application": "", "device_type": "modem", "product": "kx-hgw500", "vendor": "panasonic"}}
@@ -7264,7 +7264,7 @@
 {"filterword": "c2100", "tag": {"application": "", "device_type": "scanner", "product": "c2100", "vendor": "dell"}}
 {"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(ES-\\w+) at [^\"]*\\\"\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Allegro-Software-RomPager/([\\w.]+)\\r\\n", "tag": {"application": "allegro:rompager:$2", "device_type": "switch", "product": "rompager", "vendor": "Allegro"}}
 {"filterword": "k7v45b", "tag": {"application": "", "device_type": "printer", "product": "k7v45b", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache, must-revalidate\\r\\nContent-type: text/html\\r\\nExpires: Tue, 02 Jan 2000 01:00:00 GMT\\r\\n.*<title>(DIR-[\\w._-]+)</title>.*<meta name=\\\"copyright\\\" content=\\\"Copyright \\(C\\) 2008 D-Link Russia\\\" />", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache, must-revalidate\\r\\nContent-type: text/html\\r\\nExpires: Tue, 02 Jan 2000 01:00:00 GMT\\r\\n.*<title>(DIR-[\\w._-]+)</title>.*<meta name=\\\"copyright\\\" content=\\\"Copyright \\(C\\) 2008 D-Link Russia\\\" />", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "at-8824", "tag": {"application": "", "device_type": "switch", "product": "at-8824", "vendor": "Allied Telesis"}}
 {"filterword": "p5210", "tag": {"application": "", "device_type": "camera", "product": "p5210", "vendor": "samsung"}}
 {"filterword": "q6055-e", "tag": {"application": "", "device_type": "camera", "product": "q6055-e", "vendor": "axis"}}
@@ -7369,11 +7369,11 @@
 {"filterword": "dcs-2100", "tag": {"application": "", "device_type": "camera", "product": "dcs-2100", "vendor": "d-link"}}
 {"filterword": "dek-33f138", "tag": {"application": "", "device_type": "modem", "product": "dek-33f138", "vendor": ""}}
 {"filterword": "l0s49an140", "tag": {"application": "", "device_type": "printer", "product": "l0s49an140", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nConnection: close\\r\\nServer: NetworkScanner WebServer Ver([\\w._-]+)\\r\\nCache-Control: no-cache\\r\\nContent-Type: TEXT/HTML\\r\\n\\r\\n<HTML>\\r\\n<HEAD>\\r\\n<TITLE>([\\w._-]+)</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "Kyocera"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nConnection: close\\r\\nServer: NetworkScanner WebServer Ver([\\w._-]+)\\r\\nCache-Control: no-cache\\r\\nContent-Type: TEXT/HTML\\r\\n\\r\\n<HTML>\\r\\n<HEAD>\\r\\n<TITLE>([\\w._-]+)</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "Kyocera"}}
 {"filterword": "gbe2c", "tag": {"application": "", "device_type": "switch", "product": "gbe2c", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.1 404 Not Found\\r\\nServer: Asterisk/([\\w._+-]+)\\r\\n", "tag": {"application": "digium:asterisk:$1", "device_type": "pbx", "product": "asterisk", "vendor": ""}}
 {"filterword": "npif95a24", "tag": {"application": "", "device_type": "printer", "product": "npif95a24", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(DCS-\\w+)\\\"\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: WIC-2300\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(DCS-\\w+)\\\"\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: WIC-2300\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "jp1nb55404", "tag": {"application": "", "device_type": "", "product": "jp1nb55404", "vendor": "hp"}}
 {"filterword": "lcd511", "tag": {"application": "", "device_type": "router", "product": "lcd511", "vendor": "launch"}}
 {"filterword": "rt-ac68u", "tag": {"application": "", "device_type": "router", "product": "rt-ac68u", "vendor": "asus"}}
@@ -7400,7 +7400,7 @@
 {"filterword": "mfc-9320cw", "tag": {"application": "", "device_type": "printer", "product": "mfc-9320cw", "vendor": "brother"}}
 {"filterword": "sl-j1760w", "tag": {"application": "", "device_type": "printer", "product": "sl-j1760w", "vendor": "samsung"}}
 {"filterword": "xgs2210", "tag": {"application": "", "device_type": "switch", "product": "xgs2210", "vendor": "zyxel"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(DIR-\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(DIR-\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "att6ujz6ur", "tag": {"application": "", "device_type": "gateway", "product": "att6ujz6ur", "vendor": ""}}
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Connection: close\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html.*\\r\\n\\r\\n<!DOCTYPE html\\nPUBLIC.*\\n<title>MikroTik RouterOS Managing Webpage</title>\\n", "tag": {"application": "", "device_type": "router", "product": "config", "vendor": "MikroTik"}}
 {"filterword": "ch1", "tag": {"application": "", "device_type": "switch", "product": "ch1", "vendor": "com3"}}
@@ -7538,7 +7538,7 @@
 {"filterword": "at-wa7400", "tag": {"application": "", "device_type": "router", "product": "at-wa7400", "vendor": "Allied Telesis"}}
 {"filterword": "m552", "tag": {"application": "", "device_type": "printer", "product": "m552", "vendor": "hp"}}
 {"filterword": "ec3a", "tag": {"application": "", "device_type": "router", "product": "ec3a", "vendor": "ibm"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (EWS-NIC\\w+)/([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Xerox"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: (EWS-NIC\\w+)/([\\d.]+)\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Xerox"}}
 {"filterword": "wap5605", "tag": {"application": "", "device_type": "router", "product": "wap5605", "vendor": "zyxel"}}
 {"filterword": "D-LINK SYSTEMS, INC. | WIRELESS ROUTER", "tag": {"application": "", "device_type": "router", "product": "wireless", "vendor": "d-link"}}
 {"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?WWW-Authenticate: Digest  realm=\\\"pap user\\\".*<title>Linksys PAP2 Configuration</title>", "tag": {"application": "", "device_type": "voip adapter", "product": "pap2 voip", "vendor": "Linksys"}}
@@ -7563,7 +7563,7 @@
 {"filterword": "cam03", "tag": {"application": "", "device_type": "camera", "product": "cam03", "vendor": "d-link"}}
 {"filterword": "dcs-3716", "tag": {"application": "", "device_type": "camera", "product": "dcs-3716", "vendor": "d-link"}}
 {"filterword": "dek-33e8e4", "tag": {"application": "", "device_type": "modem", "product": "dek-33e8e4", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\"FAST Wireless N Router (FW\\d+R)\"\\r\\nContent-Type: text/html\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Fastcom"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\"FAST Wireless N Router (FW\\d+R)\"\\r\\nContent-Type: text/html\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Fastcom"}}
 {"filterword": "jcg-9bfeab", "tag": {"application": "", "device_type": "modem", "product": "jcg-9bfeab", "vendor": ""}}
 {"filterword": "a6", "tag": {"application": "", "device_type": "camera", "product": "a6", "vendor": "samsung"}}
 {"filterword": "hero5", "tag": {"application": "", "device_type": "", "product": "hero5", "vendor": "cnet"}}
@@ -7601,7 +7601,7 @@
 {"filterword": "2000m", "tag": {"application": "", "device_type": "printer", "product": "2000m", "vendor": "microsoft"}}
 {"filterword": "dpc3939", "tag": {"application": "", "device_type": "router", "product": "dpc3939", "vendor": "technicolor"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nCONNECTION: close\\r\\n(?:Date: .*\\r\\nLast-Modified: .*\\r\\nEtag: \"\\d+:[\\da-f]+\"\\r\\n)?CONTENT-LENGTH: \\d+\\r\\n(?:P3P: CP=CAO PSA OUR\\r\\n)?(?:CACHE-CONTROL: max-age=0\\r\\n)?CONTENT-TYPE: text/html\\r\\n\\r\\n\\xef\\xbb\\xbf<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1\\.0 Strict//EN\" \"http://www\\.w3\\.org/TR/xhtml1/DTD/xhtml1-strict\\.dtd\">\\r\\n<html> *\\r\\n *<head>\\r\\n *<title>", "tag": {"application": "", "device_type": "camera", "product": "", "vendor": "Dahua"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Sitecom WL-([-.\\w]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Sitecom"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Sitecom WL-([-.\\w]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Sitecom"}}
 {"filterword": "dcp-l2540dn", "tag": {"application": "", "device_type": "printer", "product": "dcp-l2540dn", "vendor": "brother"}}
 {"filterword": "srx3600", "tag": {"application": "", "device_type": "gateway", "product": "srx3600", "vendor": "juniper"}}
 {"filterword": "td-w8950n", "tag": {"application": "", "device_type": "modem", "product": "td-w8950n", "vendor": "tp-link"}}
@@ -7688,7 +7688,7 @@
 {"filterword": "d4360", "tag": {"application": "", "device_type": "printer", "product": "d4360", "vendor": "hp"}}
 {"filterword": "e3000", "tag": {"application": "", "device_type": "router", "product": "e3000", "vendor": "linksys"}}
 {"filterword": "plnk-93905f", "tag": {"application": "", "device_type": "modem", "product": "plnk-93905f", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 200 OK \\r\\n.*<title>: innovaphone (\\w+)</title>", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Innovaphone"}}
+{"filterword": "^HTTP/1\\.0 200 OK \\r\\n.*<title>: innovaphone (\\w+)</title>", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Innovaphone"}}
 {"filterword": "cq880a", "tag": {"application": "", "device_type": "printer", "product": "cq880a", "vendor": "hp"}}
 {"filterword": "AXIS 2100 Network Camera", "tag": {"application": "", "device_type": "camera", "product": "2100", "vendor": "axis"}}
 {"filterword": "t11", "tag": {"application": "", "device_type": "router", "product": "t11", "vendor": "brocade"}}
@@ -7737,7 +7737,7 @@
 {"filterword": "dek-33e618", "tag": {"application": "", "device_type": "modem", "product": "dek-33e618", "vendor": ""}}
 {"filterword": "laptop-sgquo5as", "tag": {"application": "", "device_type": "gateway", "product": "laptop-sgquo5as", "vendor": "technicolor"}}
 {"filterword": "rs812", "tag": {"application": "", "device_type": "rackstation", "product": "rs812", "vendor": "synology"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(WN-\\w+)\\\"\\r\\n.*<title> Authorization warning</title>", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Ovislink"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\n(?:[^\\r\\n]+\\r\\n)*?WWW-Authenticate: Basic realm=\\\"(WN-\\w+)\\\"\\r\\n.*<title> Authorization warning</title>", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Ovislink"}}
 {"filterword": "wr300nq", "tag": {"application": "", "device_type": "router", "product": "wr300nq", "vendor": "readynet"}}
 {"filterword": "ex1", "tag": {"application": "", "device_type": "rackstation", "product": "ex1", "vendor": "sony"}}
 {"filterword": "^HTTP/1\\.0 302 Redirect\\r\\nServer: GoAhead-Webs\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-Type: text/html\\r\\nLocation: https://(iDRAC-\\w+)(?::443)?(?:/Applications/dellUI/login\\.htm)?\\r\\n\\r\\n", "tag": {"application": "goahead:goahead_webserver", "device_type": "remote management", "product": "webserver", "vendor": "GoAhead"}}
@@ -7880,7 +7880,7 @@
 {"filterword": "att7g3xku5", "tag": {"application": "", "device_type": "gateway", "product": "att7g3xku5", "vendor": ""}}
 {"filterword": "dek-33e924", "tag": {"application": "", "device_type": "modem", "product": "dek-33e924", "vendor": ""}}
 {"filterword": "jcg-a4ccf3", "tag": {"application": "", "device_type": "modem", "product": "jcg-a4ccf3", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<!---CAS:0003--><HTML><HEAD>\\n<TITLE>(FBR-[\\w._-]+)  Broadband NAT Router Web-Console</TITLE>", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "LevelOne"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<!---CAS:0003--><HTML><HEAD>\\n<TITLE>(FBR-[\\w._-]+)  Broadband NAT Router Web-Console</TITLE>", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "LevelOne"}}
 {"filterword": "1701hg", "tag": {"application": "", "device_type": "router", "product": "1701hg", "vendor": "2wire"}}
 {"filterword": "wg102", "tag": {"application": "", "device_type": "router", "product": "wg102", "vendor": "netgear"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: http server ([\\w._-]+)\\r\\n.*<script>\\npr=\\(document\\.location\\.protocol == 'https:'\\) \\? 'https' : 'http';\\npt=\\(location\\.port == ''\\) \\? '' : ':' \\+ location\\.port;\\nredirect_suffix = \\\"/redirect\\.html\\?count=\\\"\\+Math\\.random\\(\\);", "tag": {"application": "", "device_type": "misc device", "product": "ts-219, ts-239, or ts-509", "vendor": "QNAP"}}
@@ -7891,7 +7891,7 @@
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nServer: NetPort Software ([\\d.]+)\\r\\nDate: .*\\r\\nContent-type: text/html\\r\\n\\r\\n<html>\\r\\n<head>\\r\\n<meta http-equiv=\\\"content-type\\\" content=\\\"text/html;charset=Shift_JIS\\\">\\r\\n<title>NEC Projector LAN Control</title>\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "netport", "vendor": ""}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: UOS\\r\\n.*<title>TippingPoint Log On</title>\\r\\n<meta http-equiv=\\\"Cache-Control\\\" content=\\\"no-store\\\" />.*<!--\\r\\n////////////////////////////////////////////\\r\\n// Copyright TippingPoint 2002, 2003, 2004 and 2005\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "110 or 1200e ips", "vendor": "HP"}}
 {"filterword": "max-200m1", "tag": {"application": "", "device_type": "router", "product": "max-200m1", "vendor": "zyxel"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (\\w+) *\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (\\w+) *\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "wob-200np", "tag": {"application": "", "device_type": "camera", "product": "wob-200np", "vendor": "brickcom"}}
 {"filterword": "m275nw", "tag": {"application": "", "device_type": "printer", "product": "m275nw", "vendor": "hp"}}
 {"filterword": "lne3003", "tag": {"application": "", "device_type": "camera", "product": "lne3003", "vendor": "lorex"}}
@@ -8053,7 +8053,7 @@
 {"filterword": "p4014n", "tag": {"application": "", "device_type": "printer", "product": "p4014n", "vendor": "hp"}}
 {"filterword": "psus4", "tag": {"application": "", "device_type": "printer", "product": "psus4", "vendor": "linksys"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: NETGEAR Firewall\\r\\n", "tag": {"application": "", "device_type": "router", "product": "fr-series", "vendor": "Netgear"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nCACHE-CONTROL: no-cache\\r\\nDate: .*\\r\\nConnection: Keep-Alive\\r\\nContent-Type: text/html\\r\\nContent-Length: \\d+\\r\\n\\r\\n<html>\\n<head>\\n<META http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\\r\\n<link rel=\"icon\" type=\"image/icon\" href=\"/favicon\\.ico\"/>\\n<title>(H\\w+)</title>\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Huawei"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nCACHE-CONTROL: no-cache\\r\\nDate: .*\\r\\nConnection: Keep-Alive\\r\\nContent-Type: text/html\\r\\nContent-Length: \\d+\\r\\n\\r\\n<html>\\n<head>\\n<META http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\\r\\n<link rel=\"icon\" type=\"image/icon\" href=\"/favicon\\.ico\"/>\\n<title>(H\\w+)</title>\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Huawei"}}
 {"filterword": "2017h", "tag": {"application": "", "device_type": "gateway", "product": "2017h", "vendor": "apple"}}
 {"filterword": "abts-1", "tag": {"application": "", "device_type": "", "product": "abts-1", "vendor": "microsoft"}}
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nWWW-Authenticate: Basic realm=\\\"EvoCam\\\"", "tag": {"application": "", "device_type": "camera", "product": "http interface", "vendor": "EvoCam"}}
@@ -8192,7 +8192,7 @@
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: Ubicom/([\\d.]+)\\r\\n.*<title>D-Link Gaming Router : Login</title>", "tag": {"application": "ubicom:httpd:$1", "device_type": "router", "product": "", "vendor": "Ubicom"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: Embedded HTTP Server ([\\w._ -]+)\\r\\nWWW-Authenticate: Basic realm=\\\"AP-Router\\\"\\r\\nConnection: close\\r\\n\\r\\n<HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\\n<BODY BGCOLOR=\\\"#ffffff\\\"><H4>401 Unauthorized</H4></BODY></HTML>\\n", "tag": {"application": "", "device_type": "router", "product": "embedded http server", "vendor": ""}}
 {"filterword": "wnr1000v3", "tag": {"application": "", "device_type": "router", "product": "wnr1000v3", "vendor": "netgear"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Web Server\\r\\nContent-Type: text/html\\r\\n(?:[^\\r\\n]+\\r\\n)*?\\r\\n   \\r\\n<!DOCTYPE HTML PUBLIC.*<TITLE>NETGEAR ([^<]+)</TITLE>", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Web Server\\r\\nContent-Type: text/html\\r\\n(?:[^\\r\\n]+\\r\\n)*?\\r\\n   \\r\\n<!DOCTYPE HTML PUBLIC.*<TITLE>NETGEAR ([^<]+)</TITLE>", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "jcg-a12333", "tag": {"application": "", "device_type": "modem", "product": "jcg-a12333", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nConnection: close\\r\\nContent-Type: text/html\\r\\nCache-Control: no-cache\\r\\nExpires: -1\\r\\n\\r\\n<html>\\n<head>\\n<title>Redirect to Login</title>\\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/style\\.css\">\\n", "tag": {"application": "", "device_type": "switch", "product": "prosafe gigabit web managed (plus)", "vendor": "Netgear"}}
 {"filterword": "cp105b", "tag": {"application": "", "device_type": "router", "product": "cp105b", "vendor": "xerox"}}
@@ -8413,9 +8413,9 @@
 {"filterword": "^HTTP/1\\.0 200 Document follows\\r\\nServer: IP_SHARER WEB ([\\w._-]+)\\r\\nContent-type: text/html\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.0 Transitional//EN\\\">\\n\\n<html><head><title>Setup</title>", "tag": {"application": "siemens:ip_sharer_web:$1", "device_type": "router", "product": "IP_SHARER web", "vendor": ""}}
 {"filterword": "jcg-90fbbb", "tag": {"application": "", "device_type": "modem", "product": "jcg-90fbbb", "vendor": ""}}
 {"filterword": "a9u19a", "tag": {"application": "", "device_type": "", "product": "a9u19a", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Frameset//EN\\\">\\r\\n<!-- Copyright \\(c\\) 2000-2\\d\\d\\d, Fuji Xerox Co\\., Ltd\\. All Rights Reserved\\. -->\\r\\n<HTML>.*<TITLE>\\r\\n([\\w -]+?) +- [\\d.]+\\r\\n</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Fuji Xerox"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Frameset//EN\\\">\\r\\n<!-- Copyright \\(c\\) 2000-2\\d\\d\\d, Fuji Xerox Co\\., Ltd\\. All Rights Reserved\\. -->\\r\\n<HTML>.*<TITLE>\\r\\n([\\w -]+?) +- [\\d.]+\\r\\n</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Fuji Xerox"}}
 {"filterword": "s5720-52p", "tag": {"application": "", "device_type": "switch", "product": "s5720-52p", "vendor": "huawei"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-Type: text/html\\r\\nSet-Cookie: rg_cookie_session_id=.*<!--- Page\\(page_login\\)=\\[Login\\] --->.*<TITLE>(MP\\d\\w+)</TITLE>", "tag": {"application": "", "device_type": "voip adapter", "product": "1", "vendor": "Audiocodes"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nContent-Type: text/html\\r\\nSet-Cookie: rg_cookie_session_id=.*<!--- Page\\(page_login\\)=\\[Login\\] --->.*<TITLE>(MP\\d\\w+)</TITLE>", "tag": {"application": "", "device_type": "voip adapter", "product": "$1", "vendor": "Audiocodes"}}
 {"filterword": "test2", "tag": {"application": "", "device_type": "", "product": "test2", "vendor": "option"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nContent-type: text/html\\r\\nAccept-Ranges: bytes\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"GeneralUser/Administrator\\\"\\r\\n\\r\\n<HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\\n<BODY BGCOLOR=\\\"#cc9999\\\"><H2>401 Unauthorized</H2>\\n<HR>\\nAuthorization required for the URL '/'\\.\\n</BODY></HTML>\\n$", "tag": {"application": "acme:thttpd", "device_type": "camera", "product": "thttpd", "vendor": ""}}
 {"filterword": "dg150", "tag": {"application": "", "device_type": "gateway", "product": "dg150", "vendor": "inteno"}}
@@ -8430,7 +8430,7 @@
 {"filterword": "dek-2ac008", "tag": {"application": "", "device_type": "modem", "product": "dek-2ac008", "vendor": ""}}
 {"filterword": "dek-33ec98", "tag": {"application": "", "device_type": "modem", "product": "dek-33ec98", "vendor": ""}}
 {"filterword": "dek-33e61c", "tag": {"application": "", "device_type": "modem", "product": "dek-33e61c", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<!---CAS:0003--><HTML><HEAD>\\n<TITLE>(WBR-[\\w._-]+) Wireless Broadband NAT Router Web-Console</TITLE>", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "LevelOne"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n<!---CAS:0003--><HTML><HEAD>\\n<TITLE>(WBR-[\\w._-]+) Wireless Broadband NAT Router Web-Console</TITLE>", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "LevelOne"}}
 {"filterword": "gm-816hd", "tag": {"application": "", "device_type": "switch", "product": "gm-816hd", "vendor": "neo"}}
 {"filterword": "att8pfp2vy", "tag": {"application": "", "device_type": "gateway", "product": "att8pfp2vy", "vendor": ""}}
 {"filterword": "ip570", "tag": {"application": "", "device_type": "camera", "product": "ip570", "vendor": "compro"}}
@@ -8447,7 +8447,7 @@
 {"filterword": "jcg-a4eebf", "tag": {"application": "", "device_type": "modem", "product": "jcg-a4eebf", "vendor": ""}}
 {"filterword": "tew-692gr", "tag": {"application": "", "device_type": "router", "product": "tew-692gr", "vendor": "trendnet"}}
 {"filterword": "td-w8101g", "tag": {"application": "", "device_type": "router", "product": "td-w8101g", "vendor": "tp-link"}}
-{"filterword": "^HTTP/1\\.0 501 Not Implemented\\r\\nDate: .*\\r\\nMIME-version: 1\\.0\\r?\\nServer: ZOT-PS-(\\d+)/([\\w._-]+)\\r?\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Zero One Technology"}}
+{"filterword": "^HTTP/1\\.0 501 Not Implemented\\r\\nDate: .*\\r\\nMIME-version: 1\\.0\\r?\\nServer: ZOT-PS-(\\d+)/([\\w._-]+)\\r?\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Zero One Technology"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nConnection: close\\r\\nCache-Control: no-cache\\r\\nPragma: no-cache\\r\\nExpires: -1\\r\\n\\r\\n<SCRIPT language=\"javascript\">\\r\\nvar logonInfo = new Array\\(\\r\\n\\t\\d,/\\*\\xb4\\xed\\xce\\xf3\\xc0\\xe0\\xd0\\xcd, 0:\\xce\\xde\\xb4\\xed\\xce\\xf3;1:\\xd3\\xc3\\xbb\\xa7\\xc3\\xfb\\xbb\\xf2\\xd5\\xdf\\xc3\\xdc\\xc2\\xeb\\xb4\\xed\\xce\\xf3;2:\\xb8\\xc3\\xd3\\xc3\\xbb\\xa7\\xb2\\xbb\\xd4\\xca\\xd0\\xed\\xb5\\xc7\\xc2\\xbc;3:\\xb8\\xc3\\xd3\\xc3\\xbb\\xa7\\xb5\\xc7\\xc2\\xbc\\xca\\xfd\\xd2\\xd1\\xc2\\xfa\\.;4\\xb5\\xc7\\xc2\\xbc\\xd3\\xc3\\xbb\\xa7\\xca\\xfd\\xd2\\xd1\\xc2\\xfa\\xa3\\xac\\xd7\\xee\\xb6\\xe0\\xd6\\xbb\\xc4\\xdc\\xd4\\xca\\xd0\\xed16\\xb8\\xf6\\xd3\\xc3\\xbb\\xa7\\xcd\\xac\\xca\\xb1\\xb5\\xc7\\xc2\\xbc;5\\xd3\\xc3\\xbb\\xa7\\xbb\\xe1\\xbb\\xb0\\xb3\\xac\\xca\\xb1\\*/\\r\\n\\t0,0\\);", "tag": {"application": "", "device_type": "switch", "product": "easy smart", "vendor": "TP-LINK"}}
 {"filterword": "5550dn", "tag": {"application": "", "device_type": "printer", "product": "5550dn", "vendor": "xerox"}}
 {"filterword": "wr1043nd", "tag": {"application": "", "device_type": "router", "product": "wr1043nd", "vendor": "tp-link"}}
@@ -8589,7 +8589,7 @@
 {"filterword": "wl-161", "tag": {"application": "", "device_type": "router", "product": "wl-161", "vendor": "sitecom"}}
 {"filterword": "ba-1", "tag": {"application": "", "device_type": "modem", "product": "ba-1", "vendor": "actiontec"}}
 {"filterword": "ncb-541w", "tag": {"application": "", "device_type": "camera", "product": "ncb-541w", "vendor": "wansview"}}
-{"filterword": "^HTTP/1\\.0 404 Not Found\\r\\nSERVER: corega ([\\w-]+)\\r\\nCONTENT-LENGTH: 48\\r\\nCONTENT-TYPE: text/html\\r\\n\\r\\n<html><body><h1>404 Not Found</h1></body></html>$", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Corega"}}
+{"filterword": "^HTTP/1\\.0 404 Not Found\\r\\nSERVER: corega ([\\w-]+)\\r\\nCONTENT-LENGTH: 48\\r\\nCONTENT-TYPE: text/html\\r\\n\\r\\n<html><body><h1>404 Not Found</h1></body></html>$", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Corega"}}
 {"filterword": "ads-1500w", "tag": {"application": "", "device_type": "scanner", "product": "ads-1500w", "vendor": "brother"}}
 {"filterword": "route466", "tag": {"application": "", "device_type": "", "product": "route466", "vendor": ""}}
 {"filterword": "dmc-zs8k", "tag": {"application": "", "device_type": "camera", "product": "dmc-zs8k", "vendor": "panasonic"}}
@@ -8638,7 +8638,7 @@
 {"filterword": "f510e", "tag": {"application": "", "device_type": "camera", "product": "f510e", "vendor": "zavio"}}
 {"filterword": "att674", "tag": {"application": "", "device_type": "gateway", "product": "att674", "vendor": ""}}
 {"filterword": "bl-vp104w", "tag": {"application": "", "device_type": "camera", "product": "bl-vp104w", "vendor": "panasonic"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (D\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: \\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"NETGEAR (D\\w+)\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "lif-200", "tag": {"application": "", "device_type": "gateway", "product": "lif-200", "vendor": ""}}
 {"filterword": "ex3300-24p", "tag": {"application": "", "device_type": "switch", "product": "ex3300-24p", "vendor": "juniper"}}
 {"filterword": "ds-7002hv", "tag": {"application": "", "device_type": "switch", "product": "ds-7002hv", "vendor": "evolution"}}
@@ -8716,7 +8716,7 @@
 {"filterword": "^HTTP/1\\.0 501 Document Follows\\r\\nContent-Type: text/html\\r\\nContent-Length: 106\\r\\n\\r\\n<HEAD><TITLE>501 Method Not Implemented</TITLE></HEAD>\\r\\n<BODY><H1>501 Method Not Implemented</H1>\\r\\n</BODY>$", "tag": {"application": "", "device_type": "misc device", "product": "storageworks msl2024 tape library", "vendor": "HP"}}
 {"filterword": "cngxc10563", "tag": {"application": "", "device_type": "printer", "product": "cngxc10563", "vendor": "hp"}}
 {"filterword": "jprlc19324", "tag": {"application": "", "device_type": "", "product": "jprlc19324", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: \\r\\nContent-Type: text/html; charset=iso-8859-1\\r\\n.*<meta name=\\\"description\\\" content=\\\"(DG\\d+)\\\">\\r\\n<title>NetGear Gateway Setup</title>", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: \\r\\nContent-Type: text/html; charset=iso-8859-1\\r\\n.*<meta name=\\\"description\\\" content=\\\"(DG\\d+)\\\">\\r\\n<title>NetGear Gateway Setup</title>", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "bw2", "tag": {"application": "", "device_type": "", "product": "bw2", "vendor": "hp"}}
 {"filterword": "nc-ds124wsu", "tag": {"application": "", "device_type": "router", "product": "nc-ds124wsu", "vendor": "nucom"}}
 {"filterword": "m12w", "tag": {"application": "", "device_type": "printer", "product": "m12w", "vendor": "hp"}}
@@ -8815,7 +8815,7 @@
 {"filterword": "dwl-7100ap", "tag": {"application": "", "device_type": "router", "product": "dwl-7100ap", "vendor": "d-link"}}
 {"filterword": "^HTTP/1\\.0 501 Not Implemented\\r\\nServer: Waveplus HTTPD\\r\\n", "tag": {"application": "", "device_type": "router", "product": "waveplus", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nContent-type: text/html\\r\\nWWW-Authenticate: Basic realm=\\\"Thomson\\\"\\r\\nConnection: close\\r\\nPragma: no-cache\\r\\n\\r\\n<html><head><title>HTTP 401 - Unauthorized</title></head><body><h4>HTTP 401 - Unauthorized</h4><p>Authorization is required to access the configuration server\\.<p>You must enter the correct username and/or password\\.</body></html>\\r\\n$", "tag": {"application": "", "device_type": "router", "product": "twg850", "vendor": "Thomson"}}
-{"filterword": "^HTTP/1\\.0 401 Authorization Required\\r\\nWWW-Authenticate: BASIC realm=(DCS-\\w+)\\r\\n\\r\\nPassword Error\\. $", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.0 401 Authorization Required\\r\\nWWW-Authenticate: BASIC realm=(DCS-\\w+)\\r\\n\\r\\nPassword Error\\. $", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "r473", "tag": {"application": "", "device_type": "router", "product": "r473", "vendor": "tp-link"}}
 {"filterword": "mundo007", "tag": {"application": "", "device_type": "modem", "product": "mundo007", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\n.*<meta name=\\\"COPYRIGHT\\\" content=\\\"&copy; \\d+ Cisco Systems\\. All Rights Reserved\\.\\\">.*<title>ACE 4710 DM - Login</title>", "tag": {"application": "cisco:application_control_engine_software", "device_type": "load balancer", "product": "application control engine 4710 dm", "vendor": "Cisco"}}
@@ -9094,7 +9094,7 @@
 {"filterword": "tl-wa801nd", "tag": {"application": "", "device_type": "gateway", "product": "tl-wa801nd", "vendor": "technicolor"}}
 {"filterword": "hl-l2305w", "tag": {"application": "", "device_type": "printer", "product": "hl-l2305w", "vendor": "brother"}}
 {"filterword": "n66270", "tag": {"application": "", "device_type": "gateway", "product": "n66270", "vendor": "technicolor"}}
-{"filterword": "^HTTP/1\\.1 200 Ok\\r\\nServer: micro_httpd\\r\\n.*<title>ADSL Router</title>\\r\\n\\r\\n\\r\\n<script language=\\\"javascript\\\">\\r\\n<!--\\r\\nvar ModemVer='(DSL-[\\w._+-]+)';", "tag": {"application": "acme:micro_httpd", "device_type": "router", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 200 Ok\\r\\nServer: micro_httpd\\r\\n.*<title>ADSL Router</title>\\r\\n\\r\\n\\r\\n<script language=\\\"javascript\\\">\\r\\n<!--\\r\\nvar ModemVer='(DSL-[\\w._+-]+)';", "tag": {"application": "acme:micro_httpd", "device_type": "router", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "m7650dnf", "tag": {"application": "", "device_type": "printer", "product": "m7650dnf", "vendor": "lenovo"}}
 {"filterword": "m332x", "tag": {"application": "", "device_type": "printer", "product": "m332x", "vendor": "samsung"}}
 {"filterword": "free1800-1800", "tag": {"application": "", "device_type": "", "product": "free1800-1800", "vendor": "efficient"}}
@@ -9103,7 +9103,7 @@
 {"filterword": "q6471a", "tag": {"application": "", "device_type": "camera", "product": "q6471a", "vendor": "hp"}}
 {"filterword": "jpllc19758", "tag": {"application": "", "device_type": "", "product": "jpllc19758", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: UOS\\r\\n.*<title>3Com Log On</title>", "tag": {"application": "", "device_type": "misc device", "product": "x5 unified security platform ips", "vendor": "3Com"}}
-{"filterword": "^HTTP/1\\.0 401 Authorization Required\\r\\nServer: alphapd\\r\\nDate: .*\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-type: text/html\\r\\nWWW-Authenticate: Digest realm=\\\"(TV-IP\\d\\d\\d\\w*)\\\",qop=\\\"auth\\\", nonce=\\\"[a-f0-9]+\\\"\\r\\n\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "TRENDnet"}}
+{"filterword": "^HTTP/1\\.0 401 Authorization Required\\r\\nServer: alphapd\\r\\nDate: .*\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-type: text/html\\r\\nWWW-Authenticate: Digest realm=\\\"(TV-IP\\d\\d\\d\\w*)\\\",qop=\\\"auth\\\", nonce=\\\"[a-f0-9]+\\\"\\r\\n\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "TRENDnet"}}
 {"filterword": "s5700", "tag": {"application": "", "device_type": "switch", "product": "s5700", "vendor": "huawei"}}
 {"filterword": "e4200", "tag": {"application": "", "device_type": "router", "product": "e4200", "vendor": "cisco"}}
 {"filterword": "j2ee", "tag": {"application": "", "device_type": "scanner", "product": "j2ee", "vendor": "oracle"}}
@@ -9162,7 +9162,7 @@
 {"filterword": "jcg-9e1013", "tag": {"application": "", "device_type": "modem", "product": "jcg-9e1013", "vendor": ""}}
 {"filterword": "c9655dn", "tag": {"application": "", "device_type": "printer", "product": "c9655dn", "vendor": "oki"}}
 {"filterword": "dek-33eda4", "tag": {"application": "", "device_type": "modem", "product": "dek-33eda4", "vendor": ""}}
-{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Linksys ([\\w._-]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"Linksys ([\\w._-]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "^HTTP/1\\.0 200 Ok\\r\\nServer: httpd\\r\\nDate:.*\\n\\t\\t<title>(WRT54\\w+) - Info</title>", "tag": {"application": "", "device_type": "wap", "product": "DD-WRT milli_httpd", "vendor": ""}}
 {"filterword": "cs6000i", "tag": {"application": "", "device_type": "router", "product": "cs6000i", "vendor": "brother"}}
 {"filterword": "rx100m2", "tag": {"application": "", "device_type": "camera", "product": "rx100m2", "vendor": "sony"}}
@@ -9256,7 +9256,7 @@
 {"filterword": "hd-4h4", "tag": {"application": "", "device_type": "dvr", "product": "hd-4h4", "vendor": "everfocus"}}
 {"filterword": "rg60se", "tag": {"application": "", "device_type": "router", "product": "rg60se", "vendor": "msi"}}
 {"filterword": "gm5", "tag": {"application": "", "device_type": "camera", "product": "gm5", "vendor": "apple"}}
-{"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: \\r\\nDate: .*\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Transitional//EN\\\">\\n<html>\\n<head>\\n<title>OSBRiDGE (\\w+) Login Page</title>\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "OSBRiDGE"}}
+{"filterword": "^HTTP/1\\.0 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: \\r\\nDate: .*\\r\\n\\r\\n<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4\\.01 Transitional//EN\\\">\\n<html>\\n<head>\\n<title>OSBRiDGE (\\w+) Login Page</title>\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "OSBRiDGE"}}
 {"filterword": "abm300", "tag": {"application": "", "device_type": "switch", "product": "abm300", "vendor": "3m"}}
 {"filterword": "dek-1f3afc", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3afc", "vendor": ""}}
 {"filterword": "all2200", "tag": {"application": "", "device_type": "camera", "product": "all2200", "vendor": "allnet"}}
@@ -9306,7 +9306,7 @@
 {"filterword": "lupr1555", "tag": {"application": "", "device_type": "printer", "product": "lupr1555", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.0 302 Redirect\\r\\nServer: Http Server\\r\\nDate: .* \\d\\d\\d\\d\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-Type: text/html\\r\\nLocation: http:///login\\.asp\\r\\n\\r\\n<html><head></head><body>\\r\\n\\t\\tThis document has moved to a new <a href=\\\"http:///login\\.asp\\\">location</a>\\.\\r\\n\\t\\tPlease update your documents to reflect the new location\\.\\r\\n\\t\\t</body></html>\\r\\n\\r\\n$", "tag": {"application": "", "device_type": "wap", "product": "n60", "vendor": "Tenda"}}
 {"filterword": "dcp-l8450cdw", "tag": {"application": "", "device_type": "printer", "product": "dcp-l8450cdw", "vendor": "brother"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: VB\\r\\n.*<TITLE>Network Camera (VB-\\w+)/(VB-\\w+)</TITLE>", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "Canon"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: VB\\r\\n.*<TITLE>Network Camera (VB-\\w+)/(VB-\\w+)</TITLE>", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "Canon"}}
 {"filterword": "ica-5550v", "tag": {"application": "", "device_type": "camera", "product": "ica-5550v", "vendor": "planet"}}
 {"filterword": "dek-2ab448", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab448", "vendor": ""}}
 {"filterword": "dek-2ab09c", "tag": {"application": "", "device_type": "modem", "product": "dek-2ab09c", "vendor": ""}}
@@ -9371,7 +9371,7 @@
 {"filterword": "dwl-1040ap", "tag": {"application": "", "device_type": "router", "product": "dwl-1040ap", "vendor": "d-link"}}
 {"filterword": "^HTTP/1\\.1 400 Page not found\\r\\nServer: GoAhead-Webs\\r\\nDate: .*\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-Type: text/html\\r\\n\\r\\n<html><head><title>Document Error: Page not found</title></head>\\r\\n\\t\\t<body><h2>Access Error: Page not found</h2>\\r\\n\\t\\t<p>Bad request type</p></body></html>\\r\\n\\r\\n", "tag": {"application": "goahead:goahead_webserver", "device_type": "wap", "product": "webserver", "vendor": "GoAhead"}}
 {"filterword": "a809", "tag": {"application": "", "device_type": "printer", "product": "a809", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma:no-cache\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\n\\r\\n<html>\\n<head>\\n<title>INTERMEC ([\\d+/]+); IP", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Intermec"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma:no-cache\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\n\\r\\n<html>\\n<head>\\n<title>INTERMEC ([\\d+/]+); IP", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Intermec"}}
 {"filterword": "tw100-s4w1ca", "tag": {"application": "", "device_type": "router", "product": "tw100-s4w1ca", "vendor": "trendnet"}}
 {"filterword": "att7ner3zc", "tag": {"application": "", "device_type": "gateway", "product": "att7ner3zc", "vendor": ""}}
 {"filterword": "jcg-9bec87", "tag": {"application": "", "device_type": "modem", "product": "jcg-9bec87", "vendor": ""}}
@@ -9532,7 +9532,7 @@
 {"filterword": "^HTTP/1\\.1 301 Moved Permanently\\r\\nDate: .*\\r\\nConnection: close\\r\\nLocation: index\\.htm\\r\\nServer: WMI (V[\\w._-]+)\\r\\n\\r\\n$", "tag": {"application": "", "device_type": "switch", "product": "wmi", "vendor": ""}}
 {"filterword": "d4210", "tag": {"application": "", "device_type": "camera", "product": "d4210", "vendor": "zavio"}}
 {"filterword": "1681v", "tag": {"application": "", "device_type": "modem", "product": "1681v", "vendor": ""}}
-{"filterword": "^HTTP/1\\.0 403 Request error by HTTP PROXY\\r\\nContent-Type: text/html\\r\\nProxy-Connection: close\\r\\nConnection: close\\r\\n\\r\\n<html><head><meta http-equiv=\\\"Content-Language\\\" content=\\\"en-us\\\"><title>Cisco ([\\w._-]+)</title>", "tag": {"application": "", "device_type": "firewall", "product": "1", "vendor": "Cisco"}}
+{"filterword": "^HTTP/1\\.0 403 Request error by HTTP PROXY\\r\\nContent-Type: text/html\\r\\nProxy-Connection: close\\r\\nConnection: close\\r\\n\\r\\n<html><head><meta http-equiv=\\\"Content-Language\\\" content=\\\"en-us\\\"><title>Cisco ([\\w._-]+)</title>", "tag": {"application": "", "device_type": "firewall", "product": "$1", "vendor": "Cisco"}}
 {"filterword": "a33", "tag": {"application": "", "device_type": "camera", "product": "a33", "vendor": "sony"}}
 {"filterword": "tn920", "tag": {"application": "", "device_type": "camera", "product": "tn920", "vendor": "compro"}}
 {"filterword": "^HTTP/1\\.0 \\d\\d\\d .*\\r\\nConnection: close\\r\\nServer: XES 8830 WindWeb/([\\d.]+)\\r\\n", "tag": {"application": "windriver:windweb:$1", "device_type": "printer", "product": "windweb", "vendor": ""}}
@@ -9568,7 +9568,7 @@
 {"filterword": "cnwch38187", "tag": {"application": "", "device_type": "", "product": "cnwch38187", "vendor": "hp"}}
 {"filterword": "3050r", "tag": {"application": "", "device_type": "gateway", "product": "3050r", "vendor": ""}}
 {"filterword": "a10", "tag": {"application": "", "device_type": "switch", "product": "a10", "vendor": "apple"}}
-{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: HTTPD\\r\\n.*\\r\\n<title>([\\w-]+) Network Camera</title>", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "Panasonic"}}
+{"filterword": "^HTTP/1\\.1 \\d\\d\\d (?:[^\\r\\n]*\\r\\n(?!\\r\\n))*?Server: HTTPD\\r\\n.*\\r\\n<title>([\\w-]+) Network Camera</title>", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "Panasonic"}}
 {"filterword": "td-w8151n", "tag": {"application": "", "device_type": "router", "product": "td-w8151n", "vendor": "tp-link"}}
 {"filterword": "ms2", "tag": {"application": "", "device_type": "switch", "product": "ms2", "vendor": "safer"}}
 {"filterword": "r402m", "tag": {"application": "", "device_type": "router", "product": "r402m", "vendor": "soho"}}
@@ -9624,7 +9624,7 @@
 {"filterword": "dgs-3450", "tag": {"application": "", "device_type": "switch", "product": "dgs-3450", "vendor": "d-link"}}
 {"filterword": "mg3000", "tag": {"application": "", "device_type": "printer", "product": "mg3000", "vendor": "canon"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: PRINT_SERVER WEB ([\\d.]+)\\r\\nContent-type: text/html\\r\\nWWW-Authenticate: Basic realm=\\\"NeedPassword\\\"\\r\\n\\r\\n401 Unauthorized$", "tag": {"application": "", "device_type": "printer", "product": "", "vendor": ""}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type:text/html\\r\\nExpires: Thu, 1 Jan 1998 00:00:00 GMT\\r\\nPragma: no-cache\\r\\nServer: LPC Http Server/V1\\.0\\r\\n.*<TITLE>KONICA MINOLTA Page Scope Web Connection for (\\d+)</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Konica Minolta"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type:text/html\\r\\nExpires: Thu, 1 Jan 1998 00:00:00 GMT\\r\\nPragma: no-cache\\r\\nServer: LPC Http Server/V1\\.0\\r\\n.*<TITLE>KONICA MINOLTA Page Scope Web Connection for (\\d+)</TITLE>", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Konica Minolta"}}
 {"filterword": "jp8lc16490", "tag": {"application": "", "device_type": "printer", "product": "jp8lc16490", "vendor": "hp"}}
 {"filterword": "dsl-g624t", "tag": {"application": "", "device_type": "router", "product": "dsl-g624t", "vendor": "d-link"}}
 {"filterword": "hdsps-ja8", "tag": {"application": "", "device_type": "", "product": "hdsps-ja8", "vendor": "hp"}}
@@ -9766,7 +9766,7 @@
 {"filterword": "7800x", "tag": {"application": "", "device_type": "router", "product": "7800x", "vendor": "billion"}}
 {"filterword": "cnfeb09643", "tag": {"application": "", "device_type": "printer", "product": "cnfeb09643", "vendor": "hp"}}
 {"filterword": "e4w46a", "tag": {"application": "", "device_type": "printer", "product": "e4w46a", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(FVL[\\w+]+)\\\"\\r\\nContent-type: text/html\\r\\n\\r\\n401 Unauthorized", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(FVL[\\w+]+)\\\"\\r\\nContent-type: text/html\\r\\n\\r\\n401 Unauthorized", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nConnection: close\\r\\nContent-Encoding: gzip\\r\\nContent-Type: text/html; charset=iso-8859-1\\r\\n\\r\\n\\x1f\\x8b\\x08\\0\\0\\0\\0\\0\\x02\\x03\\xa5\\x93Mo", "tag": {"application": "", "device_type": "switch", "product": "procurve 1800-24g", "vendor": "HP"}}
 {"filterword": "i2b", "tag": {"application": "", "device_type": "camera", "product": "i2b", "vendor": "zoom"}}
 {"filterword": "jp8lb55627", "tag": {"application": "", "device_type": "printer", "product": "jp8lb55627", "vendor": "hp"}}
@@ -9826,7 +9826,7 @@
 {"filterword": "offfrrelays300", "tag": {"application": "", "device_type": "gateway", "product": "offfrrelays300", "vendor": ""}}
 {"filterword": "cz152a", "tag": {"application": "", "device_type": "printer", "product": "cz152a", "vendor": "hp"}}
 {"filterword": "pa-w40t", "tag": {"application": "", "device_type": "router", "product": "pa-w40t", "vendor": "solwise"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-type: text/html\\r\\nCache-Control: no-cache\\r\\n\\r\\n.*<b>Welcome to PLANET ([\\w-]+) Web Management</b>", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "Planet"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-type: text/html\\r\\nCache-Control: no-cache\\r\\n\\r\\n.*<b>Welcome to PLANET ([\\w-]+) Web Management</b>", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "Planet"}}
 {"filterword": "jp8lb71238", "tag": {"application": "", "device_type": "", "product": "jp8lb71238", "vendor": "hp"}}
 {"filterword": "cnwch46424", "tag": {"application": "", "device_type": "", "product": "cnwch46424", "vendor": "hp"}}
 {"filterword": "hes-319m2w", "tag": {"application": "", "device_type": "router", "product": "hes-319m2w", "vendor": "huawei"}}
@@ -9982,7 +9982,7 @@
 {"filterword": "ex8208", "tag": {"application": "", "device_type": "switch", "product": "ex8208", "vendor": "juniper"}}
 {"filterword": "ird1218", "tag": {"application": "", "device_type": "gateway", "product": "ird1218", "vendor": ""}}
 {"filterword": "ob-500ap", "tag": {"application": "", "device_type": "camera", "product": "ob-500ap", "vendor": "brickcom"}}
-{"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma:no-cache\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\n\\r\\n<html>\\n<head>\\n<title>AXIS ([\\d/+]+); IP address: [\\d.]+</title>\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "AXIS"}}
+{"filterword": "^HTTP/1\\.0 200 OK\\r\\nPragma:no-cache\\r\\nContent-Length: \\d+\\r\\nContent-Type: text/html\\r\\n\\r\\n<html>\\n<head>\\n<title>AXIS ([\\d/+]+); IP address: [\\d.]+</title>\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "AXIS"}}
 {"filterword": "t420", "tag": {"application": "", "device_type": "", "product": "t420", "vendor": "lenovo"}}
 {"filterword": "cnych67563", "tag": {"application": "", "device_type": "", "product": "cnych67563", "vendor": "hp"}}
 {"filterword": "p225", "tag": {"application": "", "device_type": "printer", "product": "p225", "vendor": "efficient"}}
@@ -10001,7 +10001,7 @@
 {"filterword": "msm765zl", "tag": {"application": "", "device_type": "switch", "product": "msm765zl", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\nServer: http server ([\\w._-]+)\\r\\n(?:[^\\r\\n]+\\r\\n)*?Content-length: 553\\r\\n.*{\\nlocation\\.href=pr\\+\\\"://\\\"\\+location\\.hostname\\+pt\\+redirect_suffix;\\n}\\nelse\\t//could be ipv6 addr\\n", "tag": {"application": "", "device_type": "misc device", "product": "hs-210 or ts-219p", "vendor": "QNAP"}}
 {"filterword": "wr741nd", "tag": {"application": "", "device_type": "router", "product": "wr741nd", "vendor": "tp-link"}}
-{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"(TL-\\w+) SOHO Router \\w+ Series\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^HTTP/1\\.1 401 N/A\\r\\nServer: Router\\r\\nConnection: close\\r\\nWWW-Authenticate: Basic realm=\\\"(TL-\\w+) SOHO Router \\w+ Series\\\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "jcg-8b0813", "tag": {"application": "", "device_type": "modem", "product": "jcg-8b0813", "vendor": ""}}
 {"filterword": "ddw36557", "tag": {"application": "", "device_type": "", "product": "ddw36557", "vendor": ""}}
 {"filterword": "wj-gxe100", "tag": {"application": "", "device_type": "video", "product": "wj-gxe100", "vendor": "panasonic"}}
@@ -10036,14 +10036,14 @@
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nServer: Virata-EmWeb/R([\\d_]+)\\r\\nContent-Type: text/html;charset=utf-8\\r\\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\\r\\nCache-Control: no-cache\\r\\nPragma: no-cache\\r\\n\\r\\n<!--  DOCTYPE tag is included to support the XHTML  -->\\n<!DOCTYPE html\\n   PUBLIC ", "tag": {"application": "virata:emweb:$SUBST(1,\"_\",\".\")", "device_type": "printer", "product": "emweb", "vendor": "Virata"}}
 {"filterword": "sight66", "tag": {"application": "", "device_type": "router", "product": "sight66", "vendor": "creative"}}
 {"filterword": "cnhxh70816", "tag": {"application": "", "device_type": "", "product": "cnhxh70816", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"(WRT[-\\w]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: httpd\\r\\nDate: .*\\r\\nWWW-Authenticate: Basic realm=\\\"(WRT[-\\w]+)\\\"\\r\\nContent-Type: text/html\\r\\nConnection: close\\r\\n\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "ves-1012", "tag": {"application": "", "device_type": "router", "product": "ves-1012", "vendor": "zyxel"}}
 {"filterword": "dcp-9022cdw", "tag": {"application": "", "device_type": "printer", "product": "dcp-9022cdw", "vendor": "brother"}}
 {"filterword": "g3111", "tag": {"application": "", "device_type": "gateway", "product": "g3111", "vendor": "moxa"}}
 {"filterword": "sc-300w", "tag": {"application": "", "device_type": "camera", "product": "sc-300w", "vendor": "airlive"}}
 {"filterword": "lura1", "tag": {"application": "", "device_type": "encoder", "product": "lura1", "vendor": "hot"}}
 {"filterword": "w150nr", "tag": {"application": "", "device_type": "router", "product": "w150nr", "vendor": "dmz"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Web Server\\r\\n.*<TITLE>NetGear ([\\w._-]+)</TITLE>", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Web Server\\r\\n.*<TITLE>NetGear ([\\w._-]+)</TITLE>", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "at-8724xl", "tag": {"application": "", "device_type": "switch", "product": "at-8724xl", "vendor": "Allied Telesis"}}
 {"filterword": "des-3010f", "tag": {"application": "", "device_type": "switch", "product": "des-3010f", "vendor": "d-link"}}
 {"filterword": "pmw-ex1", "tag": {"application": "", "device_type": "camera", "product": "pmw-ex1", "vendor": "sony"}}
@@ -10096,7 +10096,7 @@
 {"filterword": "jcg-9261db", "tag": {"application": "", "device_type": "modem", "product": "jcg-9261db", "vendor": ""}}
 {"filterword": "^HTTP/1\\.0 200 OK\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: Muratec Server Ver\\.([\\w._-]+)\\r\\n.*<TITLE>Administration tool for IF-300</TITLE>\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "if-300 network module", "vendor": "Muratec"}}
 {"filterword": "jp8rb80200", "tag": {"application": "", "device_type": "printer", "product": "jp8rb80200", "vendor": "hp"}}
-{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(DCS-\\w+)\\\"\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: DCS-\\w+\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^HTTP/1\\.1 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\\\"(DCS-\\w+)\\\"\\r\\n(?:[^\\r\\n]+\\r\\n)*?Server: DCS-\\w+\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "i3-5005u", "tag": {"application": "", "device_type": "router", "product": "i3-5005u", "vendor": "hp"}}
 {"filterword": "wapprov5", "tag": {"application": "", "device_type": "gateway", "product": "wapprov5", "vendor": ""}}
 {"filterword": "^HTTP/1\\.1 \\d\\d\\d .*\\r\\nServer: GoAhead-Webs\\r\\nDate: .*\\r\\nPragma: no-cache\\r\\nCache-Control: no-cache\\r\\nContent-Type: text/html\\r\\nP3P: CP=\\\"NON DSP CURa OUR NOR UNI\\\"\\r\\nLocation: http://[\\d.]+/auth\\.asp\\r\\n\\r\\n<html><head></head><body>\\r\\nMoved to this <a href=\\\"http://[\\d.]+/auth\\.asp\\\">location</a>\\.\\r\\n<!-- response_code_begin ERIC_RESPONSE_OK", "tag": {"application": "goahead:goahead_webserver", "device_type": "remote management", "product": "webserver", "vendor": "GoAhead"}}
@@ -10188,7 +10188,7 @@
 {"filterword": "mt882", "tag": {"application": "", "device_type": "router", "product": "mt882", "vendor": "huawei"}}
 {"filterword": "^HTTP/1\\.0 401 Unauthorized\\r\\nServer: uhttpd/([\\w._-]+).*WWW-Authenticate: Basic realm=\\\"NETGEAR ([\\w-]+)\\\"\\r\\n", "tag": {"application": "", "device_type": "wap", "product": "uhttpd", "vendor": ""}}
 {"filterword": "phab2", "tag": {"application": "", "device_type": "camera", "product": "phab2", "vendor": "lenovo"}}
-{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\"MET-(\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Linksys"}}
+{"filterword": "^HTTP/1\\.[01] 401 Unauthorized\\r\\nWWW-Authenticate: Basic realm=\"MET-(\\w+)\"\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Linksys"}}
 {"filterword": "s600", "tag": {"application": "", "device_type": "printer", "product": "s600", "vendor": "zebra"}}
 {"filterword": "mf668", "tag": {"application": "", "device_type": "modem", "product": "mf668", "vendor": "zte"}}
 {"filterword": "ds-3e0326p", "tag": {"application": "", "device_type": "switch", "product": "ds-3e0326p", "vendor": "hikvision"}}

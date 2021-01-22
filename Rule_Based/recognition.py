@@ -1,5 +1,5 @@
 import re
-from lables.extra_rules import FTP, HTTP, RTSP, SMTP, TELNET
+from lables.rules import FTP, HTTP, RTSP, SMTP, TELNET
 
 from preprocess import clean_all
 
@@ -94,9 +94,8 @@ def tag_rules(protocol,banner,device_type,vendor):
     tag_list = list()
     
     banner = clean_all(protocol,banner)
-    all_rule = rules(protocol,device_type,vendor)
-    tag_list = tag_all(banner,all_rule,tag_list)
-
+    device_rules = rules(protocol,device_type,vendor)
+    tag_list = tag_all(banner,device_rules,tag_list)
 
     if tag_list is not None:
         return tag_list

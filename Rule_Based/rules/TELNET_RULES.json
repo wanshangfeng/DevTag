@@ -186,7 +186,7 @@
 {"filterword": "da-vision21", "tag": {"application": "", "device_type": "switch", "product": "da-vision21", "vendor": "ubiquoss"}}
 {"filterword": "d4684446", "tag": {"application": "", "device_type": "switch", "product": "d4684446", "vendor": "ubiquoss"}}
 {"filterword": "e255n012", "tag": {"application": "", "device_type": "switch", "product": "e255n012", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to TRENDnet Print Server  \\*\\r\\n\\*          Telnet Console            \\*\\r\\n\\*+\\r\\n\\r\\nServer Name    : *([\\w._-]+) *\\0\\0\\0\\0\\0\\0\\r\\nServer Model   : *([\\w._-]+) *\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\r\\nF/W Version    : *([\\w._-]+) *\\0\\0\\0\\0\\r\\nMAC Address    : *([0-9A-F ]+) *\\r\\nUptime         : *([^\\r\\n]*)\\r\\n\\nPlease Enter Password: ", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "TRENDnet"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to TRENDnet Print Server  \\*\\r\\n\\*          Telnet Console            \\*\\r\\n\\*+\\r\\n\\r\\nServer Name    : *([\\w._-]+) *\\0\\0\\0\\0\\0\\0\\r\\nServer Model   : *([\\w._-]+) *\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\r\\nF/W Version    : *([\\w._-]+) *\\0\\0\\0\\0\\r\\nMAC Address    : *([0-9A-F ]+) *\\r\\nUptime         : *([^\\r\\n]*)\\r\\n\\nPlease Enter Password: ", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "TRENDnet"}}
 {"filterword": "v6824xg", "tag": {"application": "", "device_type": "switch", "product": "v6824xg", "vendor": "dasan"}}
 {"filterword": "commodoreestate1-7", "tag": {"application": "", "device_type": "switch", "product": "commodoreestate1-7", "vendor": "ubiquoss"}}
 {"filterword": "sinhak1f", "tag": {"application": "", "device_type": "switch", "product": "sinhak1f", "vendor": "ubiquoss"}}
@@ -199,9 +199,9 @@
 {"filterword": "samsunhyundai107", "tag": {"application": "", "device_type": "switch", "product": "samsunhyundai107", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01\\x1b\\[1;1H\\x1b\\[2K\\x1b\\[2;1H\\x1b\\[2K\\x1b\\[3;1H\\x1b\\[2K\\x1b\\[4;1H\\x1b\\[2K\\x1b\\[5;1H\\x1b\\[2K\\x1b\\[6;.*Business Policy Switch 2000", "tag": {"application": "", "device_type": "switch", "product": "business policy 2000", "vendor": "Nortel"}}
 {"filterword": "dgb-3gongdan", "tag": {"application": "", "device_type": "switch", "product": "dgb-3gongdan", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\x1b\\[0;0H\\x1b\\[0J\\x1b\\[0;0H\\x1b\\[0J\\x1b\\[1;28HAT-([-\\w_.]+) Login Menu\\x1b\\[5;18HAT-[-\\w_.]+ Local Management System Version ([\\d.]+) \\x1b", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "Allied Telesis"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\x1b\\[0;0H\\x1b\\[0J\\x1b\\[0;0H\\x1b\\[0J\\x1b\\[1;28HAT-([-\\w_.]+) Login Menu\\x1b\\[5;18HAT-[-\\w_.]+ Local Management System Version ([\\d.]+) \\x1b", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "Allied Telesis"}}
 {"filterword": "xot-72604-1589", "tag": {"application": "", "device_type": "switch", "product": "xot-72604-1589", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\n\\r +\\*+\\n\\r +Welcome to (ZXDSL [\\w._-]+)\\n\\r +\\*+\\n\\r\\n\\rZTE Corporation, Software Release VIK-([-\\w_.]+)\\n\\r", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "ZyXEL"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\n\\r +\\*+\\n\\r +Welcome to (ZXDSL [\\w._-]+)\\n\\r +\\*+\\n\\r\\n\\rZTE Corporation, Software Release VIK-([-\\w_.]+)\\n\\r", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "ZyXEL"}}
 {"filterword": "e254n012", "tag": {"application": "", "device_type": "switch", "product": "e254n012", "vendor": "ubiquoss"}}
 {"filterword": "d4125007-ba", "tag": {"application": "", "device_type": "switch", "product": "d4125007-ba", "vendor": "ubiquoss"}}
 {"filterword": "fcz1810c24m", "tag": {"application": "", "device_type": "router", "product": "fcz1810c24m", "vendor": "cisco"}}
@@ -386,7 +386,7 @@
 {"filterword": "e308n111", "tag": {"application": "", "device_type": "switch", "product": "e308n111", "vendor": "ubiquoss"}}
 {"filterword": "e602n111", "tag": {"application": "", "device_type": "switch", "product": "e602n111", "vendor": "ubiquoss"}}
 {"filterword": "d4580379", "tag": {"application": "", "device_type": "switch", "product": "d4580379", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream ([\\w-]+) Command Shell\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Grandstream"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream ([\\w-]+) Command Shell\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Grandstream"}}
 {"filterword": "e504n221", "tag": {"application": "", "device_type": "switch", "product": "e504n221", "vendor": "ubiquoss"}}
 {"filterword": "g178u151", "tag": {"application": "", "device_type": "switch", "product": "g178u151", "vendor": "ubiquoss"}}
 {"filterword": "wnr854t", "tag": {"application": "", "device_type": "router", "product": "wnr854t", "vendor": "netgear"}}
@@ -398,7 +398,7 @@
 {"filterword": "c887va", "tag": {"application": "", "device_type": "router", "product": "c887va", "vendor": "cisco"}}
 {"filterword": "g0170201", "tag": {"application": "", "device_type": "switch", "product": "g0170201", "vendor": "ubiquoss"}}
 {"filterword": "srx1400", "tag": {"application": "", "device_type": "gateway", "product": "srx1400", "vendor": "juniper"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(F[\\w._-]+)\\r\\n\\rLogin: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "ZTE"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(F[\\w._-]+)\\r\\n\\rLogin: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "ZTE"}}
 {"filterword": "euljiro3ga", "tag": {"application": "", "device_type": "switch", "product": "euljiro3ga", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\nPLi dm500 Jade \\d+ \\(based on ([\\w._-]+)\\)\\r\\n\\rwelcome on your dreambox! - Kernel ([\\w._-]+) \\([\\d:]+\\)\\.\\r\\n\\rdm500 login: ", "tag": {"application": "", "device_type": "media device", "product": "500", "vendor": "Dreambox"}}
 {"filterword": "pop4", "tag": {"application": "", "device_type": "encoder", "product": "pop4", "vendor": "evolution"}}
@@ -465,7 +465,7 @@
 {"filterword": "e137n101", "tag": {"application": "", "device_type": "switch", "product": "e137n101", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x03\\xff\\xfd\\x18\\xff\\xfb\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\x1b\\[2J\\x1b\\[H\\x0fUser Access Login\\r\\n\\r\\nUsername:", "tag": {"application": "", "device_type": "router", "product": "netvanta", "vendor": "Adtran"}}
 {"filterword": "eip3170", "tag": {"application": "", "device_type": "gateway", "product": "eip3170", "vendor": "moxa"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03 Willkommen am THOMSON ([\\w._ -]+)\\r\\n   Plattform:CANT-P  Firmware:([\\w._-]+)  Seriennummer:([\\w._-]+)\\r\\n Bitte identifizieren Sie sich mit Ihrem Benutzernamen und Kennwort\\r\\n--------------------------------------------------------------------------------\\r\\n\\r\\n\\r\\n\\r\\n\\nUsername : ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Thomson"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03 Willkommen am THOMSON ([\\w._ -]+)\\r\\n   Plattform:CANT-P  Firmware:([\\w._-]+)  Seriennummer:([\\w._-]+)\\r\\n Bitte identifizieren Sie sich mit Ihrem Benutzernamen und Kennwort\\r\\n--------------------------------------------------------------------------------\\r\\n\\r\\n\\r\\n\\r\\n\\nUsername : ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Thomson"}}
 {"filterword": "r6700", "tag": {"application": "", "device_type": "modem", "product": "r6700", "vendor": "netgear"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\n\\r +\\*+\\n\\r +Welcome to ([-\\w_.]+) *\\n\\r +\\*+\\n\\r\\n\\rZoom Software Release Zoom (X5 GS Ver [-\\w_.]+)\\n\\r", "tag": {"application": "", "device_type": "router", "product": "", "vendor": "Zoom"}}
 {"filterword": "dir-868l", "tag": {"application": "", "device_type": "router", "product": "dir-868l", "vendor": "d-link"}}
@@ -560,7 +560,7 @@
 {"filterword": "e420n004", "tag": {"application": "", "device_type": "switch", "product": "e420n004", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Dynalink ADSL2\\+ Router RTA1320NZ .*\\r\\nSoftware Version: ([-\\w_.]+)\\r\\n", "tag": {"application": "", "device_type": "router", "product": "rta1320nz", "vendor": "Dynalink"}}
 {"filterword": "asr5000", "tag": {"application": "", "device_type": "gateway", "product": "asr5000", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03([\\w-]+) Ver ([-\\w_.]+) TELNET server\\.\\r\\0\\nCopyright\\(C\\)[\\d-]+ KYOCERA MITA Corporation\\r\\0\\nCopyright\\(C\\)[\\d-]+ Revised Edition KYOCERA MITA Corporation\\r\\0\\nAll Rights Reserved\\.\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Kyocera"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03([\\w-]+) Ver ([-\\w_.]+) TELNET server\\.\\r\\0\\nCopyright\\(C\\)[\\d-]+ KYOCERA MITA Corporation\\r\\0\\nCopyright\\(C\\)[\\d-]+ Revised Edition KYOCERA MITA Corporation\\r\\0\\nAll Rights Reserved\\.\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Kyocera"}}
 {"filterword": "gb-e213n101", "tag": {"application": "", "device_type": "switch", "product": "gb-e213n101", "vendor": "ubiquoss"}}
 {"filterword": "v2824-2g", "tag": {"application": "", "device_type": "switch", "product": "v2824-2g", "vendor": "dasan"}}
 {"filterword": "d4749711", "tag": {"application": "", "device_type": "switch", "product": "d4749711", "vendor": "ubiquoss"}}
@@ -633,7 +633,7 @@
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\.\\r\\n\\r\\nWelcome to the SX-2000 \\(vxTarget\\)\\r\\n\\r\\nlogin: \\0", "tag": {"application": "", "device_type": "pbx", "product": "sx-2000", "vendor": "Mitel"}}
 {"filterword": "e209n105", "tag": {"application": "", "device_type": "switch", "product": "e209n105", "vendor": "ubiquoss"}}
 {"filterword": "gsw20151", "tag": {"application": "", "device_type": "switch", "product": "gsw20151", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x1f\\xff\\xfd\\x18\\xff\\xfd \\xff\\xfb\\x03\\*{48}\\r\\nWelcome to ZXAN product (\\w+) of ZTE Corporation\\r\\n\\*{48}\\r\\n\\r\\nUsername:", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "ZTE"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x1f\\xff\\xfd\\x18\\xff\\xfd \\xff\\xfb\\x03\\*{48}\\r\\nWelcome to ZXAN product (\\w+) of ZTE Corporation\\r\\n\\*{48}\\r\\n\\r\\nUsername:", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "ZTE"}}
 {"filterword": "d4732437", "tag": {"application": "", "device_type": "switch", "product": "d4732437", "vendor": "ubiquoss"}}
 {"filterword": "a4001n1", "tag": {"application": "", "device_type": "router", "product": "a4001n1", "vendor": "adb"}}
 {"filterword": "dgs-1510-28x", "tag": {"application": "", "device_type": "switch", "product": "dgs-1510-28x", "vendor": "d-link"}}
@@ -659,7 +659,7 @@
 {"filterword": "np-6250", "tag": {"application": "", "device_type": "printer", "product": "np-6250", "vendor": "canon"}}
 {"filterword": "p8724l3", "tag": {"application": "", "device_type": "switch", "product": "p8724l3", "vendor": "ubiquoss"}}
 {"filterword": "sw15", "tag": {"application": "", "device_type": "router", "product": "sw15", "vendor": "apple"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\*+\\r\\n\\r\\* +\\*\\r\\n\\r\\*   The Gemini Project   \\*\\r\\n\\r\\* +\\*\\r\\n\\r\\*+\\r\\n\\r\\r\\n\\rOpenDreambox ([\\w._-]+) (\\w+)\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "1", "vendor": "Dreambox"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\*+\\r\\n\\r\\* +\\*\\r\\n\\r\\*   The Gemini Project   \\*\\r\\n\\r\\* +\\*\\r\\n\\r\\*+\\r\\n\\r\\r\\n\\rOpenDreambox ([\\w._-]+) (\\w+)\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "$1", "vendor": "Dreambox"}}
 {"filterword": "air5452", "tag": {"application": "", "device_type": "router", "product": "air5452", "vendor": "airties"}}
 {"filterword": "d4721469", "tag": {"application": "", "device_type": "switch", "product": "d4721469", "vendor": "ubiquoss"}}
 {"filterword": "das-3224", "tag": {"application": "", "device_type": "switch", "product": "das-3224", "vendor": "d-link"}}
@@ -762,7 +762,7 @@
 {"filterword": "e209n102", "tag": {"application": "", "device_type": "switch", "product": "e209n102", "vendor": "ubiquoss"}}
 {"filterword": "l1", "tag": {"application": "", "device_type": "router", "product": "l1", "vendor": "cisco"}}
 {"filterword": "d4420346", "tag": {"application": "", "device_type": "switch", "product": "d4420346", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream ([\\w._-]+) Command Shell Copyright [\\d-]+\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Grandstream"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream ([\\w._-]+) Command Shell Copyright [\\d-]+\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Grandstream"}}
 {"filterword": "bladecenter2", "tag": {"application": "", "device_type": "switch", "product": "bladecenter2", "vendor": "ibm"}}
 {"filterword": "e0910691", "tag": {"application": "", "device_type": "switch", "product": "e0910691", "vendor": "ubiquoss"}}
 {"filterword": "rt-212", "tag": {"application": "", "device_type": "router", "product": "rt-212", "vendor": "airties"}}
@@ -781,7 +781,7 @@
 {"filterword": "e310n281", "tag": {"application": "", "device_type": "switch", "product": "e310n281", "vendor": "ubiquoss"}}
 {"filterword": "taepyrong2", "tag": {"application": "", "device_type": "switch", "product": "taepyrong2", "vendor": "ubiquoss"}}
 {"filterword": "e5120011", "tag": {"application": "", "device_type": "switch", "product": "e5120011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[2J\\x1b\\[H\\x1b\\[2J\\x1b\\[H ------------------------------------------------------------------------------\\r\\r\\n                                D A T A C O M\\r\\r\\n +(DM\\w+) - G\\.SHDSL 2 Wire Modem Router\\r\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Datacom"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[2J\\x1b\\[H\\x1b\\[2J\\x1b\\[H ------------------------------------------------------------------------------\\r\\r\\n                                D A T A C O M\\r\\r\\n +(DM\\w+) - G\\.SHDSL 2 Wire Modem Router\\r\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Datacom"}}
 {"filterword": "g916w011", "tag": {"application": "", "device_type": "switch", "product": "g916w011", "vendor": "ubiquoss"}}
 {"filterword": "hu17", "tag": {"application": "", "device_type": "router", "product": "hu17", "vendor": "cisco"}}
 {"filterword": "st605", "tag": {"application": "", "device_type": "gateway", "product": "st605", "vendor": "thomson"}}
@@ -848,7 +848,7 @@
 {"filterword": "e0250013", "tag": {"application": "", "device_type": "switch", "product": "e0250013", "vendor": "ubiquoss"}}
 {"filterword": "ws-c3750-24ps", "tag": {"application": "", "device_type": "", "product": "ws-c3750-24ps", "vendor": "cisco"}}
 {"filterword": "hompeulleoseubuggul2-2", "tag": {"application": "", "device_type": "switch", "product": "hompeulleoseubuggul2-2", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\r\\n\\nIQinVision (\\w+) Version V([\\d/.()]+)\\n\\r\\nType HELP at the 'Local_2> ' prompt for assistance\\.\\n\\r\\nLogin password> ", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "IQinVision"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\r\\n\\nIQinVision (\\w+) Version V([\\d/.()]+)\\n\\r\\nType HELP at the 'Local_2> ' prompt for assistance\\.\\n\\r\\nLogin password> ", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "IQinVision"}}
 {"filterword": "d4723064", "tag": {"application": "", "device_type": "switch", "product": "d4723064", "vendor": "ubiquoss"}}
 {"filterword": "e0060631", "tag": {"application": "", "device_type": "switch", "product": "e0060631", "vendor": "ubiquoss"}}
 {"filterword": "j9575a", "tag": {"application": "", "device_type": "switch", "product": "j9575a", "vendor": "hewlett-packard"}}
@@ -876,7 +876,7 @@
 {"filterword": "e421n011", "tag": {"application": "", "device_type": "switch", "product": "e421n011", "vendor": "ubiquoss"}}
 {"filterword": "g0080121", "tag": {"application": "", "device_type": "switch", "product": "g0080121", "vendor": "ubiquoss"}}
 {"filterword": "ipp6", "tag": {"application": "", "device_type": "switch", "product": "ipp6", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfe\\x01\\n\\r\\n\\r\\n\\r\\n\\n\\n\\n\\r\\t={51}\\n\\r\\t       Samsung ([\\w()-]+) Configuration\\n\\r\\t={51}\\n\\r\\n\\r\\tTo configure the Access Point, the password is required\\.\\n\\r\\tEnter password:", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Samsung"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfe\\x01\\n\\r\\n\\r\\n\\r\\n\\n\\n\\n\\r\\t={51}\\n\\r\\t       Samsung ([\\w()-]+) Configuration\\n\\r\\t={51}\\n\\r\\n\\r\\tTo configure the Access Point, the password is required\\.\\n\\r\\tEnter password:", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Samsung"}}
 {"filterword": "^\\xff\\xfb\\\"\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfb\\x1f\\xff\\xfb\\x18Login: ", "tag": {"application": "", "device_type": "switch", "product": "s50n", "vendor": "Force10"}}
 {"filterword": "usg40w", "tag": {"application": "", "device_type": "gateway", "product": "usg40w", "vendor": "zyxel"}}
 {"filterword": "ydp-e158n201", "tag": {"application": "", "device_type": "switch", "product": "ydp-e158n201", "vendor": "ubiquoss"}}
@@ -1252,7 +1252,7 @@
 {"filterword": "d4685170", "tag": {"application": "", "device_type": "switch", "product": "d4685170", "vendor": "ubiquoss"}}
 {"filterword": "e096n062", "tag": {"application": "", "device_type": "switch", "product": "e096n062", "vendor": "ubiquoss"}}
 {"filterword": "e563n011", "tag": {"application": "", "device_type": "switch", "product": "e563n011", "vendor": "ubiquoss"}}
-{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nDell (?:Laser Printer )?(?:Printer )?(?:Dell )?([\\w._+-]+) .*Ethernet internal network device, with a hardware\\r\\naddress of [0-9A-F]{12} ([0-9A-F]{12}) \\(MSB, Canonical\\)\\.\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Dell"}}
+{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nDell (?:Laser Printer )?(?:Printer )?(?:Dell )?([\\w._+-]+) .*Ethernet internal network device, with a hardware\\r\\naddress of [0-9A-F]{12} ([0-9A-F]{12}) \\(MSB, Canonical\\)\\.\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Dell"}}
 {"filterword": "kumhol2-1", "tag": {"application": "", "device_type": "switch", "product": "kumhol2-1", "vendor": "ubiquoss"}}
 {"filterword": "usg60w", "tag": {"application": "", "device_type": "gateway", "product": "usg60w", "vendor": "zyxel"}}
 {"filterword": "sfgl194920qf", "tag": {"application": "", "device_type": "router", "product": "sfgl194920qf", "vendor": "cisco"}}
@@ -1301,7 +1301,7 @@
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\n\\r\\nLogin: \\r\\n\\r\\nYou must supply a username\\r\\n\\r\\nLogin: \\r\\n\\r\\nYou must supply a username\\r\\n\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "", "vendor": "Billion"}}
 {"filterword": "vpc-x1200", "tag": {"application": "", "device_type": "camera", "product": "vpc-x1200", "vendor": "sanyo"}}
 {"filterword": "g6650061", "tag": {"application": "", "device_type": "switch", "product": "g6650061", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfe\\x01\\r\\n\\r\\n\\*{59}\\r\\n\\*\\s*DVTel (DVT-\\w+) - ([\\w._-]+)\\s*\\*\\r\\n\\*{59}\\r\\nMain Menu\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "DVTel"}}
+{"filterword": "^\\xff\\xfe\\x01\\r\\n\\r\\n\\*{59}\\r\\n\\*\\s*DVTel (DVT-\\w+) - ([\\w._-]+)\\s*\\*\\r\\n\\*{59}\\r\\nMain Menu\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "DVTel"}}
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Actiontec DSL Gateway\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "gt704-wgb", "vendor": "Actiontec"}}
 {"filterword": "fgt50a", "tag": {"application": "", "device_type": "router", "product": "fgt50a", "vendor": "fortinet"}}
 {"filterword": "rs353xx", "tag": {"application": "", "device_type": "router", "product": "rs353xx", "vendor": "bintec"}}
@@ -1357,7 +1357,7 @@
 {"filterword": "d4721448", "tag": {"application": "", "device_type": "switch", "product": "d4721448", "vendor": "ubiquoss"}}
 {"filterword": "ea2700", "tag": {"application": "", "device_type": "router", "product": "ea2700", "vendor": "linksys"}}
 {"filterword": "rs120", "tag": {"application": "", "device_type": "router", "product": "rs120", "vendor": "bintec"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03                        =======================\\r\\n                        Welcome to (ZXDSL [\\w._-]+)\\r\\n                        =======================\\r\\nLogin:", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "ZyXEL"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03                        =======================\\r\\n                        Welcome to (ZXDSL [\\w._-]+)\\r\\n                        =======================\\r\\nLogin:", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "ZyXEL"}}
 {"filterword": "d4855679", "tag": {"application": "", "device_type": "switch", "product": "d4855679", "vendor": "ubiquoss"}}
 {"filterword": "g3840151", "tag": {"application": "", "device_type": "switch", "product": "g3840151", "vendor": "ubiquoss"}}
 {"filterword": "gw000011", "tag": {"application": "", "device_type": "switch", "product": "gw000011", "vendor": "ubiquoss"}}
@@ -1405,7 +1405,7 @@
 {"filterword": "e5024", "tag": {"application": "", "device_type": "switch", "product": "e5024", "vendor": "ubiquoss"}}
 {"filterword": "cisco2801", "tag": {"application": "", "device_type": "router", "product": "2801", "vendor": "cisco"}}
 {"filterword": "cw-16v1a317", "tag": {"application": "", "device_type": "switch", "product": "cw-16v1a317", "vendor": "sentry"}}
-{"filterword": "^\\xff\\xfb\\x01([\\w._-]+) Ver\\. ([\\w._-]+) \\(c\\) Copyright \\d+-\\d+ Redline Communications Inc\\.\\r\\n\\r\\nUsername:\\0", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Redline"}}
+{"filterword": "^\\xff\\xfb\\x01([\\w._-]+) Ver\\. ([\\w._-]+) \\(c\\) Copyright \\d+-\\d+ Redline Communications Inc\\.\\r\\n\\r\\nUsername:\\0", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Redline"}}
 {"filterword": "^\\xff\\xfb\\x01\\r\\r\\nUser Access Verification\\r\\r\\n\\r\\r\\nUsername:", "tag": {"application": "cisco:telnet", "device_type": "firewall", "product": "pix 500 series", "vendor": "Cisco"}}
 {"filterword": "2970g", "tag": {"application": "", "device_type": "switch", "product": "2970g", "vendor": "cisco"}}
 {"filterword": "gsw20071", "tag": {"application": "", "device_type": "switch", "product": "gsw20071", "vendor": "ubiquoss"}}
@@ -1574,7 +1574,7 @@
 {"filterword": "d4658827", "tag": {"application": "", "device_type": "switch", "product": "d4658827", "vendor": "ubiquoss"}}
 {"filterword": "os6900-t20", "tag": {"application": "", "device_type": "", "product": "os6900-t20", "vendor": "lucent"}}
 {"filterword": "1000v", "tag": {"application": "", "device_type": "router", "product": "1000v", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\*.*\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w._+-]+)\\0", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "D-Link"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\*.*\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w._+-]+)\\0", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "D-Link"}}
 {"filterword": "d-46047", "tag": {"application": "", "device_type": "", "product": "d-46047", "vendor": "cisco"}}
 {"filterword": "dobong622-26", "tag": {"application": "", "device_type": "switch", "product": "dobong622-26", "vendor": "ubiquoss"}}
 {"filterword": "^\\r\\nSorry, this system is engaged\\.\\r\\n$", "tag": {"application": "", "device_type": "router", "product": "satellite", "vendor": "DirecWay"}}
@@ -1720,7 +1720,7 @@
 {"filterword": "e169n013", "tag": {"application": "", "device_type": "switch", "product": "e169n013", "vendor": "ubiquoss"}}
 {"filterword": "dgb-100ygayak", "tag": {"application": "", "device_type": "switch", "product": "dgb-100ygayak", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfb\\x18\\r\\nWelcome Visiting Huawei Home Gateway\\r\\nCopyright by Huawei Technologies Co\\., Ltd\\.\\r\\n\\r\\nLogin:", "tag": {"application": "", "device_type": "router", "product": "home", "vendor": "Huawei"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w_.+-]+)\\0", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "D-Link"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w_.+-]+)\\0", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "D-Link"}}
 {"filterword": "e192n062", "tag": {"application": "", "device_type": "switch", "product": "e192n062", "vendor": "ubiquoss"}}
 {"filterword": "g16", "tag": {"application": "", "device_type": "camera", "product": "g16", "vendor": "canon"}}
 {"filterword": "gsw20211", "tag": {"application": "", "device_type": "switch", "product": "gsw20211", "vendor": "ubiquoss"}}
@@ -1783,10 +1783,10 @@
 {"filterword": "ds1010", "tag": {"application": "", "device_type": "diskstation", "product": "ds1010", "vendor": "synology"}}
 {"filterword": "cscuv94579", "tag": {"application": "", "device_type": "scanner", "product": "cscuv94579", "vendor": "cisco"}}
 {"filterword": "d500016077120", "tag": {"application": "", "device_type": "switch", "product": "d500016077120", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03BR-telnet@(FES\\w+) Router>", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "Foundry"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03BR-telnet@(FES\\w+) Router>", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "Foundry"}}
 {"filterword": "g831u081", "tag": {"application": "", "device_type": "switch", "product": "g831u081", "vendor": "ubiquoss"}}
 {"filterword": "e213n101", "tag": {"application": "", "device_type": "switch", "product": "e213n101", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfc\\x01\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\xff\\xfb\\x18\\xff\\xfd\\x1f\\xff\\xfb\\x1f\\xff\\xfb\\\"\\xff\\xfb\\x05PTLDOR69SH3HT4000HG6 Hatteras (\\w+)\\r\\nLogin: ", "tag": {"application": "", "device_type": "pbx", "product": "1", "vendor": "Hatteras"}}
+{"filterword": "^\\xff\\xfc\\x01\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\xff\\xfb\\x18\\xff\\xfd\\x1f\\xff\\xfb\\x1f\\xff\\xfb\\\"\\xff\\xfb\\x05PTLDOR69SH3HT4000HG6 Hatteras (\\w+)\\r\\nLogin: ", "tag": {"application": "", "device_type": "pbx", "product": "$1", "vendor": "Hatteras"}}
 {"filterword": "at-ar450s", "tag": {"application": "", "device_type": "router", "product": "at-ar450s", "vendor": "Allied Telesis"}}
 {"filterword": "da-4980039", "tag": {"application": "", "device_type": "switch", "product": "da-4980039", "vendor": "ubiquoss"}}
 {"filterword": "d500013538047", "tag": {"application": "", "device_type": "switch", "product": "d500013538047", "vendor": "ubiquoss"}}
@@ -1811,7 +1811,7 @@
 {"filterword": "f660rv1", "tag": {"application": "", "device_type": "router", "product": "f660rv1", "vendor": "zte"}}
 {"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\x07HP (\\w+)  Ethernet SNMP Module\\r\\n ROM B\\.([\\d.]+)\\r\\n EEPROM A\\.([\\d.]+)\\r\\n HW B\\.([\\d.]+)\\r\\n\\r\\nEnter password: ", "tag": {"application": "", "device_type": "hub", "product": "AdvanceStack $1", "vendor": "HP"}}
 {"filterword": "m02000020-6000", "tag": {"application": "", "device_type": "switch", "product": "m02000020-6000", "vendor": "ubiquoss"}}
-{"filterword": "^\\x1b\\[H\\x1b\\[J\\r\\x1b\\[100B\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfd\\x1f\\n\\n\\n\\n(DGS-[\\w-]+) login: ", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^\\x1b\\[H\\x1b\\[J\\r\\x1b\\[100B\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfd\\x1f\\n\\n\\n\\n(DGS-[\\w-]+) login: ", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "c1921-4shdsl", "tag": {"application": "", "device_type": "router", "product": "c1921-4shdsl", "vendor": "cisco"}}
 {"filterword": "e310n211", "tag": {"application": "", "device_type": "switch", "product": "e310n211", "vendor": "ubiquoss"}}
 {"filterword": "g293w011", "tag": {"application": "", "device_type": "switch", "product": "g293w011", "vendor": "ubiquoss"}}
@@ -1979,7 +1979,7 @@
 {"filterword": "e505n101", "tag": {"application": "", "device_type": "switch", "product": "e505n101", "vendor": "ubiquoss"}}
 {"filterword": "e409n011", "tag": {"application": "", "device_type": "switch", "product": "e409n011", "vendor": "ubiquoss"}}
 {"filterword": "dsl5005en", "tag": {"application": "", "device_type": "modem", "product": "dsl5005en", "vendor": "aztech"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream (GXW\\w+) \\( Boot:[\\d.]+  Loader:[\\d.]+  App:([\\d.]+)  HW: [\\w.]+ \\) Command Shell\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Grandstream"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream (GXW\\w+) \\( Boot:[\\d.]+  Loader:[\\d.]+  App:([\\d.]+)  HW: [\\w.]+ \\) Command Shell\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Grandstream"}}
 {"filterword": "north1f", "tag": {"application": "", "device_type": "switch", "product": "north1f", "vendor": "ubiquoss"}}
 {"filterword": "sindolim-line2", "tag": {"application": "", "device_type": "switch", "product": "sindolim-line2", "vendor": "ubiquoss"}}
 {"filterword": "g012w051", "tag": {"application": "", "device_type": "switch", "product": "g012w051", "vendor": "ubiquoss"}}
@@ -2002,7 +2002,7 @@
 {"filterword": "dr3800", "tag": {"application": "", "device_type": "router", "product": "dr3800", "vendor": "generic"}}
 {"filterword": "vwic2-1mft", "tag": {"application": "", "device_type": "router", "product": "vwic2-1mft", "vendor": "cisco"}}
 {"filterword": "ac4000", "tag": {"application": "", "device_type": "router", "product": "ac4000", "vendor": "linksys"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\*+\\r\\n\\r\\* +\\*\\r\\n\\r\\*   The Gemini Project   \\*\\r\\n\\r\\* +\\*\\r\\n\\r\\*+\\r\\n\\r\\r\\n\\rOpenDreambox ([\\w._-]+) (\\w+)\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "1", "vendor": "Dreambox"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\*+\\r\\n\\r\\* +\\*\\r\\n\\r\\*   The Gemini Project   \\*\\r\\n\\r\\* +\\*\\r\\n\\r\\*+\\r\\n\\r\\r\\n\\rOpenDreambox ([\\w._-]+) (\\w+)\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "$1", "vendor": "Dreambox"}}
 {"filterword": "g217u011", "tag": {"application": "", "device_type": "switch", "product": "g217u011", "vendor": "ubiquoss"}}
 {"filterword": "f7d8302", "tag": {"application": "", "device_type": "router", "product": "f7d8302", "vendor": "belkin"}}
 {"filterword": "ds214play", "tag": {"application": "", "device_type": "diskstation", "product": "ds214play", "vendor": "synology"}}
@@ -2117,7 +2117,7 @@
 {"filterword": "e0040031", "tag": {"application": "", "device_type": "switch", "product": "e0040031", "vendor": "ubiquoss"}}
 {"filterword": "e700n101", "tag": {"application": "", "device_type": "switch", "product": "e700n101", "vendor": "ubiquoss"}}
 {"filterword": "e498n001", "tag": {"application": "", "device_type": "switch", "product": "e498n001", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n(FVX\\w+) login: ", "tag": {"application": "", "device_type": "firewall", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n(FVX\\w+) login: ", "tag": {"application": "", "device_type": "firewall", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "wl-5470ap", "tag": {"application": "", "device_type": "router", "product": "wl-5470ap", "vendor": "airlive"}}
 {"filterword": "sfgl194723lr", "tag": {"application": "", "device_type": "router", "product": "sfgl194723lr", "vendor": "cisco"}}
 {"filterword": "iqm32n", "tag": {"application": "", "device_type": "camera", "product": "iqm32n", "vendor": "iqinvision"}}
@@ -2226,7 +2226,7 @@
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[H\\x1b\\[J\\r\\nWireless Router Manager Console , Version : ([\\w._-]+)\\r\\nPlease enter your password : ", "tag": {"application": "", "device_type": "wap", "product": "wla-9000ap", "vendor": "Ovislink"}}
 {"filterword": "c3640-is", "tag": {"application": "", "device_type": "router", "product": "c3640-is", "vendor": "cisco"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\x1b\\[2J\\x1b\\[Hname:", "tag": {"application": "", "device_type": "router", "product": "", "vendor": "Netopia"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[1;1H\\x1b\\[2K\\x1b\\[2;1H\\x1b\\[2K\\x1b\\[3;1H\\x1b.*BayStack ([-\\w_.]+) .*HW:(\\w+)  FW:V([\\d.]+) SW:V([\\d.]+)\\x1b", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "BayStack"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[1;1H\\x1b\\[2K\\x1b\\[2;1H\\x1b\\[2K\\x1b\\[3;1H\\x1b.*BayStack ([-\\w_.]+) .*HW:(\\w+)  FW:V([\\d.]+) SW:V([\\d.]+)\\x1b", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "BayStack"}}
 {"filterword": "e579m101", "tag": {"application": "", "device_type": "switch", "product": "e579m101", "vendor": "ubiquoss"}}
 {"filterword": "eth0", "tag": {"application": "", "device_type": "switch", "product": "eth0", "vendor": "cisco"}}
 {"filterword": "nbg6616", "tag": {"application": "", "device_type": "router", "product": "nbg6616", "vendor": "zyxel"}}
@@ -2238,7 +2238,7 @@
 {"filterword": "jisan1", "tag": {"application": "", "device_type": "switch", "product": "jisan1", "vendor": "ubiquoss"}}
 {"filterword": "^\\x0c\\r\\nusername: \\r\\npassword: \\r\\nUsername and password are invalid\\. Try again\\.\\. \\r\\n\\r\\nusername: ", "tag": {"application": "", "device_type": "media device", "product": "dsp avs raven-m video server", "vendor": "Mango"}}
 {"filterword": "e757n054", "tag": {"application": "", "device_type": "switch", "product": "e757n054", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\n\\r\\n\\r\\n\\r\\n(BCM\\w+) Broadband Router\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Broadcom"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\n\\r\\n\\r\\n\\r\\n(BCM\\w+) Broadband Router\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Broadcom"}}
 {"filterword": "uc500", "tag": {"application": "", "device_type": "gateway", "product": "uc500", "vendor": "cisco"}}
 {"filterword": "h99668-2", "tag": {"application": "", "device_type": "router", "product": "h99668-2", "vendor": "intel"}}
 {"filterword": "d1071371", "tag": {"application": "", "device_type": "switch", "product": "d1071371", "vendor": "ubiquoss"}}
@@ -2267,7 +2267,7 @@
 {"filterword": "toptec2", "tag": {"application": "", "device_type": "switch", "product": "toptec2", "vendor": "ubiquoss"}}
 {"filterword": "ds1515", "tag": {"application": "", "device_type": "diskstation", "product": "ds1515", "vendor": "synology"}}
 {"filterword": "acx4000", "tag": {"application": "", "device_type": "", "product": "acx4000", "vendor": "juniper"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\r\\n(TA \\w+)\\r\\n\\n\\n\\ruser: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Adtran"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\r\\n(TA \\w+)\\r\\n\\n\\n\\ruser: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Adtran"}}
 {"filterword": "dir-300", "tag": {"application": "", "device_type": "router", "product": "dir-300", "vendor": "d-link"}}
 {"filterword": "d4683524", "tag": {"application": "", "device_type": "switch", "product": "d4683524", "vendor": "ubiquoss"}}
 {"filterword": "m20", "tag": {"application": "", "device_type": "router", "product": "m20", "vendor": "juniper"}}
@@ -2326,7 +2326,7 @@
 {"filterword": "fgl191243e1", "tag": {"application": "", "device_type": "router", "product": "fgl191243e1", "vendor": "cisco"}}
 {"filterword": "d4761195", "tag": {"application": "", "device_type": "switch", "product": "d4761195", "vendor": "ubiquoss"}}
 {"filterword": "vmg8924-b10a", "tag": {"application": "", "device_type": "router", "product": "vmg8924-b10a", "vendor": "zyxel"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\r\\n\\r\\nProduct type: Avaya (\\w+) Media Gateway Release ([\\w._-]+)\\r\\n\\r\\n\\r\\n\\r\\nLogin: ", "tag": {"application": "", "device_type": "media device", "product": "1", "vendor": "Avaya"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\r\\n\\r\\nProduct type: Avaya (\\w+) Media Gateway Release ([\\w._-]+)\\r\\n\\r\\n\\r\\n\\r\\nLogin: ", "tag": {"application": "", "device_type": "media device", "product": "$1", "vendor": "Avaya"}}
 {"filterword": "e269n062", "tag": {"application": "", "device_type": "switch", "product": "e269n062", "vendor": "ubiquoss"}}
 {"filterword": "g502n", "tag": {"application": "", "device_type": "gateway", "product": "g502n", "vendor": ""}}
 {"filterword": "g1050011", "tag": {"application": "", "device_type": "switch", "product": "g1050011", "vendor": "ubiquoss"}}
@@ -2705,7 +2705,7 @@
 {"filterword": "^220 SB06D2F0 FTP server \\(INTERFACE version ([\\w._-]+)\\) ready\\.\\n", "tag": {"application": "", "device_type": "printer", "product": "mita km-1530", "vendor": "Kyocera"}}
 {"filterword": "g825u021", "tag": {"application": "", "device_type": "switch", "product": "g825u021", "vendor": "ubiquoss"}}
 {"filterword": "dvr816", "tag": {"application": "", "device_type": "dvr", "product": "dvr816", "vendor": "lilin"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(BCM\\w+) ADSL Router version ([\\w._-]+ \\([\\w._-]+\\))\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Broadcom"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(BCM\\w+) ADSL Router version ([\\w._-]+ \\([\\w._-]+\\))\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Broadcom"}}
 {"filterword": "kb-0401", "tag": {"application": "", "device_type": "gateway", "product": "kb-0401", "vendor": ""}}
 {"filterword": "r3000", "tag": {"application": "", "device_type": "router", "product": "r3000", "vendor": "actiontec"}}
 {"filterword": "d4710731", "tag": {"application": "", "device_type": "switch", "product": "d4710731", "vendor": "ubiquoss"}}
@@ -2725,7 +2725,7 @@
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03RemoteX Telnet Server V([\\d.]+)\\n\\r\\n\\rc:\\\\>", "tag": {"application": "", "device_type": "game console", "product": "", "vendor": "RemoteX"}}
 {"filterword": "d4575923", "tag": {"application": "", "device_type": "switch", "product": "d4575923", "vendor": "ubiquoss"}}
 {"filterword": "suyu130-94", "tag": {"application": "", "device_type": "switch", "product": "suyu130-94", "vendor": "ubiquoss"}}
-{"filterword": "^Welcome to ([\\w._-]+)\\.\\r\\r\\nUnauthorized access is punishable by law\\.\\r\\r\\n\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\n\\((GSM[\\w._-]+)\\) \\r\\nUser:", "tag": {"application": "", "device_type": "switch", "product": "2", "vendor": "Netgear"}}
+{"filterword": "^Welcome to ([\\w._-]+)\\.\\r\\r\\nUnauthorized access is punishable by law\\.\\r\\r\\n\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\n\\((GSM[\\w._-]+)\\) \\r\\nUser:", "tag": {"application": "", "device_type": "switch", "product": "$2", "vendor": "Netgear"}}
 {"filterword": "e110n101", "tag": {"application": "", "device_type": "switch", "product": "e110n101", "vendor": "ubiquoss"}}
 {"filterword": "ea9500", "tag": {"application": "", "device_type": "router", "product": "ea9500", "vendor": "linksys"}}
 {"filterword": "ccu1", "tag": {"application": "", "device_type": "gateway", "product": "ccu1", "vendor": ""}}
@@ -2847,7 +2847,7 @@
 {"filterword": "ws-c3550-48", "tag": {"application": "", "device_type": "switch", "product": "ws-c3550-48", "vendor": "cisco"}}
 {"filterword": "e377n101", "tag": {"application": "", "device_type": "switch", "product": "e377n101", "vendor": "ubiquoss"}}
 {"filterword": "cisco837", "tag": {"application": "", "device_type": "router", "product": "837", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\n\\r +\\*+\\n\\r +\\*   POSTEF ADSL Modem/Router ([\\w._-]+) ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "POSTEF"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\n\\r +\\*+\\n\\r +\\*   POSTEF ADSL Modem/Router ([\\w._-]+) ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "POSTEF"}}
 {"filterword": "ap-900", "tag": {"application": "", "device_type": "router", "product": "ap-900", "vendor": "draytek"}}
 {"filterword": "e210n080", "tag": {"application": "", "device_type": "switch", "product": "e210n080", "vendor": "ubiquoss"}}
 {"filterword": "e106n101", "tag": {"application": "", "device_type": "switch", "product": "e106n101", "vendor": "ubiquoss"}}
@@ -2876,7 +2876,7 @@
 {"filterword": "d500025804288", "tag": {"application": "", "device_type": "switch", "product": "d500025804288", "vendor": "ubiquoss"}}
 {"filterword": "hub01", "tag": {"application": "", "device_type": "switch", "product": "hub01", "vendor": "ubiquoss"}}
 {"filterword": "clgrab21-suei03", "tag": {"application": "", "device_type": "router", "product": "clgrab21-suei03", "vendor": "telus"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n  \\r\\nModel name : easyRAID ([\\w._+-]+)\\r\\nFirmware version : ([\\w._-]+)\\r\\nBootcode version : ([\\w._-]+)\\r\\nSerial number : (\\w+)\\r\\nCPU type: [^\\r]*\\r\\nInstalled memory : ([^\\r]+)\\r\\nController type: [^\\r]*\\r\\nDisk slot number: [^\\r]*\\r\\nDisk state : [^\\r]*\\r\\n  \\r\\n=== Welcome to CLI ([\\w._-]+) ===\\r\\nPlease input password: ", "tag": {"application": "", "device_type": "misc device", "product": "1", "vendor": "easyRAID"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n  \\r\\nModel name : easyRAID ([\\w._+-]+)\\r\\nFirmware version : ([\\w._-]+)\\r\\nBootcode version : ([\\w._-]+)\\r\\nSerial number : (\\w+)\\r\\nCPU type: [^\\r]*\\r\\nInstalled memory : ([^\\r]+)\\r\\nController type: [^\\r]*\\r\\nDisk slot number: [^\\r]*\\r\\nDisk state : [^\\r]*\\r\\n  \\r\\n=== Welcome to CLI ([\\w._-]+) ===\\r\\nPlease input password: ", "tag": {"application": "", "device_type": "misc device", "product": "$1", "vendor": "easyRAID"}}
 {"filterword": "g0920102", "tag": {"application": "", "device_type": "switch", "product": "g0920102", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03USR ADSL Gateway\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "", "vendor": "USRobotics"}}
 {"filterword": "^\\xff\\xfb\\x01\\r\\n3Com Access Point 7760 login: ", "tag": {"application": "", "device_type": "wap", "product": "7760", "vendor": "3Com"}}
@@ -2889,7 +2889,7 @@
 {"filterword": "1300d", "tag": {"application": "", "device_type": "camera", "product": "1300d", "vendor": "canon"}}
 {"filterword": "des-3828", "tag": {"application": "", "device_type": "switch", "product": "des-3828", "vendor": "d-link"}}
 {"filterword": "ol-1070-01", "tag": {"application": "", "device_type": "router", "product": "ol-1070-01", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\nZyXEL ([\\w._-]+) login: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "ZyXEL"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\nZyXEL ([\\w._-]+) login: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "ZyXEL"}}
 {"filterword": "grnbpqco-tekhb02", "tag": {"application": "", "device_type": "router", "product": "grnbpqco-tekhb02", "vendor": "telus"}}
 {"filterword": "d4656238", "tag": {"application": "", "device_type": "switch", "product": "d4656238", "vendor": "ubiquoss"}}
 {"filterword": "g1050021", "tag": {"application": "", "device_type": "switch", "product": "g1050021", "vendor": "ubiquoss"}}
@@ -2933,7 +2933,7 @@
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03Username : ", "tag": {"application": "", "device_type": "router", "product": "speedtouch admin interface", "vendor": "Alcatel/Thomson"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\x1b\\[0m\\x1b\\[2J\\x1b\\[0m\\x1b\\[2J\\x1b\\[2;66H\\x1b\\[1m\\x1b\\[21;1H\\x1b\\[0m-+\\x1b\\[22;2H\\x1b\\[0mFunction:\\x1b\\[23;2H\\x1b\\[0mMessage:\\x1b\\[24;2H\\x1b\\[7mCTRL\\+R = Refresh +\\x1b\\[8;12H\\x1b\\[0mIBM BladeCenter 4-Port Gb Ethernet Switch Module Console", "tag": {"application": "", "device_type": "switch", "product": "bladecenter 4-port gb", "vendor": "IBM"}}
 {"filterword": "e220n120", "tag": {"application": "", "device_type": "switch", "product": "e220n120", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n(DGFV\\w+) login: ", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n(DGFV\\w+) login: ", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "d4922345", "tag": {"application": "", "device_type": "switch", "product": "d4922345", "vendor": "ubiquoss"}}
 {"filterword": "bv1260", "tag": {"application": "", "device_type": "gateway", "product": "bv1260", "vendor": "oki"}}
 {"filterword": "^\\xff\\xfb\\x01$", "tag": {"application": "", "device_type": "bridge", "product": "2870w wireless ethernet bridge", "vendor": "SMC"}}
@@ -2967,12 +2967,12 @@
 {"filterword": "e0770371", "tag": {"application": "", "device_type": "switch", "product": "e0770371", "vendor": "ubiquoss"}}
 {"filterword": "^\\r\\nEfficient ([-.\\w ]+) Router \\(([-.\\d/]+)\\) v(\\d[-.\\w]+) Ready\\r\\n\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x01\\xff\\xfe\\x01Login: ", "tag": {"application": "", "device_type": "router", "product": "", "vendor": "Efficient"}}
 {"filterword": "d4685247", "tag": {"application": "", "device_type": "switch", "product": "d4685247", "vendor": "ubiquoss"}}
-{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nDell (?:Laser Printer )?(?:Printer )?(?:Dell )?([\\w._+-]+) .*Ethernet internal network device", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Dell"}}
+{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nDell (?:Laser Printer )?(?:Printer )?(?:Dell )?([\\w._+-]+) .*Ethernet internal network device", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Dell"}}
 {"filterword": "konghak3", "tag": {"application": "", "device_type": "switch", "product": "konghak3", "vendor": "ubiquoss"}}
 {"filterword": "rt-n56u", "tag": {"application": "", "device_type": "router", "product": "rt-n56u", "vendor": "asus"}}
 {"filterword": "g920w011", "tag": {"application": "", "device_type": "switch", "product": "g920w011", "vendor": "ubiquoss"}}
 {"filterword": "3347w", "tag": {"application": "", "device_type": "switch", "product": "3347w", "vendor": "netopia"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Huawei (SmartAX \\w+)\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Huawei"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Huawei (SmartAX \\w+)\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Huawei"}}
 {"filterword": "eds-405a", "tag": {"application": "", "device_type": "switch", "product": "eds-405a", "vendor": "moxa"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfb\\x03\\xff\\xfd\\x03\\xff\\xfb\\x05\\xff\\xfd\\x05Welcome to Telnet Server ([\\w._-]+)\\r\\n\\x1b\\[0m\\x1b\\[2J\\x1b\\[05;28HDimension Switch (ES-\\w+)\\x1b\\[07;22H", "tag": {"application": "", "device_type": "switch", "product": "$2 dimension", "vendor": "ZyXEL"}}
 {"filterword": "e576m102", "tag": {"application": "", "device_type": "switch", "product": "e576m102", "vendor": "ubiquoss"}}
@@ -3051,7 +3051,7 @@
 {"filterword": "rs-232", "tag": {"application": "", "device_type": "gateway", "product": "rs-232", "vendor": ""}}
 {"filterword": "tsk4", "tag": {"application": "", "device_type": "switch", "product": "tsk4", "vendor": "ubiquoss"}}
 {"filterword": "g2070011", "tag": {"application": "", "device_type": "switch", "product": "g2070011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03SHARP (MX-\\w+) Ver ([-\\w_.]+) TELNET server\\.", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Sharp"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03SHARP (MX-\\w+) Ver ([-\\w_.]+) TELNET server\\.", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Sharp"}}
 {"filterword": "d4696988", "tag": {"application": "", "device_type": "switch", "product": "d4696988", "vendor": "ubiquoss"}}
 {"filterword": "fast-2444", "tag": {"application": "", "device_type": "router", "product": "fast-2444", "vendor": "sagem"}}
 {"filterword": "e622n101", "tag": {"application": "", "device_type": "switch", "product": "e622n101", "vendor": "ubiquoss"}}
@@ -3199,7 +3199,7 @@
 {"filterword": "mec-2", "tag": {"application": "", "device_type": "switch", "product": "mec-2", "vendor": "ubiquoss"}}
 {"filterword": "e527n102", "tag": {"application": "", "device_type": "switch", "product": "e527n102", "vendor": "ubiquoss"}}
 {"filterword": "xws-c6509-e", "tag": {"application": "", "device_type": "switch", "product": "xws-c6509-e", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w._+-]+)\\0+\\r\\nF/W Version    :  ([\\w._-]+) *\\0.\\0+\\r\\nMAC Address    :  ([\\w ]+)", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "D-Link"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w._+-]+)\\0+\\r\\nF/W Version    :  ([\\w._-]+) *\\0.\\0+\\r\\nMAC Address    :  ([\\w ]+)", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "D-Link"}}
 {"filterword": "exodium-b23", "tag": {"application": "", "device_type": "switch", "product": "exodium-b23", "vendor": "ubiquoss"}}
 {"filterword": "fg-110c", "tag": {"application": "", "device_type": "router", "product": "fg-110c", "vendor": "fortinet"}}
 {"filterword": "des-3026", "tag": {"application": "", "device_type": "switch", "product": "des-3026", "vendor": "d-link"}}
@@ -3321,7 +3321,7 @@
 {"filterword": "xot-4238526", "tag": {"application": "", "device_type": "switch", "product": "xot-4238526", "vendor": "ubiquoss"}}
 {"filterword": "plus500", "tag": {"application": "", "device_type": "router", "product": "plus500", "vendor": "linksys"}}
 {"filterword": "synyets023834060152", "tag": {"application": "", "device_type": "switch", "product": "synyets023834060152", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfe\\x01\\r\\n\\r\\nWelcome to TSP100LAN TELNET Utility\\.\\r\\nCopyright\\(C\\) \\d\\d\\d\\d Star Micronics co\\., Ltd\\.\\r\\n\\r\\n<< Connected Device >>\\r\\n   Device Model : (TSP[\\w._-]+) \\(.*\\)\\r\\n   MAC Address  : ([0-9A-F:]+)\\r\\n\\r\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Star Micronics"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfe\\x01\\r\\n\\r\\nWelcome to TSP100LAN TELNET Utility\\.\\r\\nCopyright\\(C\\) \\d\\d\\d\\d Star Micronics co\\., Ltd\\.\\r\\n\\r\\n<< Connected Device >>\\r\\n   Device Model : (TSP[\\w._-]+) \\(.*\\)\\r\\n   MAC Address  : ([0-9A-F:]+)\\r\\n\\r\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Star Micronics"}}
 {"filterword": "dpc3010", "tag": {"application": "", "device_type": "modem", "product": "dpc3010", "vendor": "cisco"}}
 {"filterword": "g348n011", "tag": {"application": "", "device_type": "switch", "product": "g348n011", "vendor": "ubiquoss"}}
 {"filterword": "spa514g", "tag": {"application": "", "device_type": "switch", "product": "spa514g", "vendor": "cisco"}}
@@ -3400,7 +3400,7 @@
 {"filterword": "dongbu-e3f", "tag": {"application": "", "device_type": "switch", "product": "dongbu-e3f", "vendor": "ubiquoss"}}
 {"filterword": "ga10n001", "tag": {"application": "", "device_type": "switch", "product": "ga10n001", "vendor": "ubiquoss"}}
 {"filterword": "e510n101", "tag": {"application": "", "device_type": "switch", "product": "e510n101", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x18\\xff\\xfd\\x1f\\xff\\xfb\\x01\\x1b\\[2J\\x1b\\[\\?7l\\x1b\\[[03];23r\\x1b\\[\\?6l\\x1b\\[1;1H\\x1b\\[\\?25l\\x1b\\[1;1HHP ([A-Z\\d]+) Switch (\\d+\\w+?)\\r\\r\\nSoftware revision ([\\w.]+)\\r\\r\\n", "tag": {"application": "", "device_type": "switch", "product": "2", "vendor": "HP"}}
+{"filterword": "^\\xff\\xfd\\x18\\xff\\xfd\\x1f\\xff\\xfb\\x01\\x1b\\[2J\\x1b\\[\\?7l\\x1b\\[[03];23r\\x1b\\[\\?6l\\x1b\\[1;1H\\x1b\\[\\?25l\\x1b\\[1;1HHP ([A-Z\\d]+) Switch (\\d+\\w+?)\\r\\r\\nSoftware revision ([\\w.]+)\\r\\r\\n", "tag": {"application": "", "device_type": "switch", "product": "$2", "vendor": "HP"}}
 {"filterword": "e265n032", "tag": {"application": "", "device_type": "switch", "product": "e265n032", "vendor": "ubiquoss"}}
 {"filterword": "aepeulpaponeroom2", "tag": {"application": "", "device_type": "switch", "product": "aepeulpaponeroom2", "vendor": "ubiquoss"}}
 {"filterword": "ex4600", "tag": {"application": "", "device_type": "switch", "product": "ex4600", "vendor": "juniper"}}
@@ -3539,7 +3539,7 @@
 {"filterword": "gbe2c", "tag": {"application": "", "device_type": "switch", "product": "gbe2c", "vendor": "hp"}}
 {"filterword": "ct-820c", "tag": {"application": "", "device_type": "gateway", "product": "ct-820c", "vendor": "comtrend"}}
 {"filterword": "g411w011", "tag": {"application": "", "device_type": "switch", "product": "g411w011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03                        =======================\\r\\n                               ([\\w._-]+) +\\r\\n                        =======================\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03                        =======================\\r\\n                               ([\\w._-]+) +\\r\\n                        =======================\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "ol-16597-01", "tag": {"application": "", "device_type": "switch", "product": "ol-16597-01", "vendor": "cisco"}}
 {"filterword": "^\\xff\\xfb\\x01\\x1b\\[2J\\x1b\\[32897132;1H\\x1b\\[0m\\x1b\\[1;1H \\*\\*\\*\\*\\*      \\*\\*\\*     \\*     \\*    \\*\\*\\*\\*\\*   \\*\\*\\*\\*\\*\\*\\*\\*\\*     \\*\\*\\*       \\*\\*\\*\\*\\*  \\*      \\*\\x1b\\[2;1H \\*    \\*    \\*   \\*    \\*     \\*   \\*            \\*        \\*   \\*     \\*       \\*      \\*\\x1b\\[3;1H", "tag": {"application": "", "device_type": "switch", "product": "baystack 470-24t", "vendor": "Nortel"}}
 {"filterword": "ag800", "tag": {"application": "", "device_type": "gateway", "product": "ag800", "vendor": ""}}
@@ -3653,7 +3653,7 @@
 {"filterword": "sbg3300", "tag": {"application": "", "device_type": "gateway", "product": "sbg3300", "vendor": "zyxel"}}
 {"filterword": "g0060051", "tag": {"application": "", "device_type": "switch", "product": "g0060051", "vendor": "ubiquoss"}}
 {"filterword": "fgl184420xn", "tag": {"application": "", "device_type": "router", "product": "fgl184420xn", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w_.+-]+)\\0+\\r\\nF/W Version    :  ([\\w._-]+) *\\0.\\0+\\r\\nMAC Address    :  ([\\w ]+)\\r\\nUptime         :  ([^\\r\\n]+)\\r\\n\\n", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "D-Link"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w_.+-]+)\\0+\\r\\nF/W Version    :  ([\\w._-]+) *\\0.\\0+\\r\\nMAC Address    :  ([\\w ]+)\\r\\nUptime         :  ([^\\r\\n]+)\\r\\n\\n", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "D-Link"}}
 {"filterword": "me-c3750-24te", "tag": {"application": "", "device_type": "switch", "product": "me-c3750-24te", "vendor": "cisco"}}
 {"filterword": "commodoreestate2-9", "tag": {"application": "", "device_type": "switch", "product": "commodoreestate2-9", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x03\\r\\0\\n\\r\\0\\n\\r\\0\\n\\r\\0\\n- NetQue AppleTalk/NetWare/TCP/LAT Printer Server", "tag": {"application": "", "device_type": "printer", "product": "netque", "vendor": "EMULEX"}}
@@ -3717,7 +3717,7 @@
 {"filterword": "d4849367", "tag": {"application": "", "device_type": "switch", "product": "d4849367", "vendor": "ubiquoss"}}
 {"filterword": "k02017777-3184", "tag": {"application": "", "device_type": "switch", "product": "k02017777-3184", "vendor": "ubiquoss"}}
 {"filterword": "cng800", "tag": {"application": "", "device_type": "gateway", "product": "cng800", "vendor": ""}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03(NS-\\w+) Ver ([\\w._-]+) TELNET server\\.\\r\\0\\nCopyright \\(C\\) 2001-2002 KYOCERA MITA CORPORATION\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Okidata"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03(NS-\\w+) Ver ([\\w._-]+) TELNET server\\.\\r\\0\\nCopyright \\(C\\) 2001-2002 KYOCERA MITA CORPORATION\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Okidata"}}
 {"filterword": "terasen023834060076", "tag": {"application": "", "device_type": "switch", "product": "terasen023834060076", "vendor": "ubiquoss"}}
 {"filterword": "d4842976", "tag": {"application": "", "device_type": "switch", "product": "d4842976", "vendor": "ubiquoss"}}
 {"filterword": "skg10000", "tag": {"application": "", "device_type": "gateway", "product": "skg10000", "vendor": ""}}
@@ -3768,7 +3768,7 @@
 {"filterword": "g2830011", "tag": {"application": "", "device_type": "switch", "product": "g2830011", "vendor": "ubiquoss"}}
 {"filterword": "sg300-10mp", "tag": {"application": "", "device_type": "switch", "product": "sg300-10mp", "vendor": "cisco"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfb\\x03\\xff\\xfd\\x03\\xff\\xfb\\x05\\xff\\xfd\\x05\\r\\n\\*\\*\\* Welcome to VTM   \\*\\*\\*\\r\\n\\r\\n\\r\\n\\rLogin   : ", "tag": {"application": "", "device_type": "remote management", "product": "ftserver vtm", "vendor": "Stratus"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Siemens ADSL (SL[\\w._-]+) IS \\r\\nSoftware Version: ([\\w._-]+)\\r\\nLogin name: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Siemens"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Siemens ADSL (SL[\\w._-]+) IS \\r\\nSoftware Version: ([\\w._-]+)\\r\\nLogin name: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Siemens"}}
 {"filterword": "^Telnet server disabled\\r\\n$", "tag": {"application": "", "device_type": "load balancer", "product": "big-ip", "vendor": "F5"}}
 {"filterword": "e302n101", "tag": {"application": "", "device_type": "switch", "product": "e302n101", "vendor": "ubiquoss"}}
 {"filterword": "nas02", "tag": {"application": "", "device_type": "router", "product": "nas02", "vendor": "buffalo"}}
@@ -3778,7 +3778,7 @@
 {"filterword": "rs230au", "tag": {"application": "", "device_type": "router", "product": "rs230au", "vendor": "bintec"}}
 {"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03NS-\\w+ Ver ([\\w._-]+) TELNET server\\.\\r\\0\\nCopyright \\(c\\) 2001 KYOCERA MITA CORPORATION\\r\\0\\nCopyright \\(c\\) 2003 Revised Edition KYOCERA MITA CORPORATION\\r\\0\\nAll Rights Reserved\\.\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "km-2550", "vendor": "Kyocera"}}
 {"filterword": "des-3200", "tag": {"application": "", "device_type": "switch", "product": "des-3200", "vendor": "d-link"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Alice Modem WLAN ([\\w._-]+)\\r\\nAlice Software Version: ([\\w._-]+)\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Alice"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Alice Modem WLAN ([\\w._-]+)\\r\\nAlice Software Version: ([\\w._-]+)\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Alice"}}
 {"filterword": "kunyoungaptl212", "tag": {"application": "", "device_type": "switch", "product": "kunyoungaptl212", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\n\\r +\\*+\\n\\r +Welcome to SMC DSL MODEM\\n\\r +\\*+\\n\\r\\n\\rSMC Network Inc\\., Software Release ([^\\r\\n]+)\\n\\r", "tag": {"application": "", "device_type": "router", "product": "dsl", "vendor": "SMC"}}
 {"filterword": "gsw20131", "tag": {"application": "", "device_type": "switch", "product": "gsw20131", "vendor": "ubiquoss"}}
@@ -3858,7 +3858,7 @@
 {"filterword": "samsun1ga287", "tag": {"application": "", "device_type": "switch", "product": "samsun1ga287", "vendor": "ubiquoss"}}
 {"filterword": "fgl191224t9", "tag": {"application": "", "device_type": "router", "product": "fgl191224t9", "vendor": "cisco"}}
 {"filterword": "g4020011", "tag": {"application": "", "device_type": "switch", "product": "g4020011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\nWelcome to IFBD-HE05/06 TELNET Utility\\.\\r\\nCopyright\\(C\\) 2005 Star Micronics co\\., Ltd\\.\\r\\n\\r\\n<< Connected Device >>\\r\\n    Device Model: (\\w+) \\(STR_T-001\\)\\r\\n    NIC Product : IFBD-HE05/06\\r\\n    MAC Address : ([0-9A-F:]+)\\r\\n\\r\\n\\r \\r\\nlogin: \\r\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Star Micronics"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\nWelcome to IFBD-HE05/06 TELNET Utility\\.\\r\\nCopyright\\(C\\) 2005 Star Micronics co\\., Ltd\\.\\r\\n\\r\\n<< Connected Device >>\\r\\n    Device Model: (\\w+) \\(STR_T-001\\)\\r\\n    NIC Product : IFBD-HE05/06\\r\\n    MAC Address : ([0-9A-F:]+)\\r\\n\\r\\n\\r \\r\\nlogin: \\r\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Star Micronics"}}
 {"filterword": "e253n022", "tag": {"application": "", "device_type": "switch", "product": "e253n022", "vendor": "ubiquoss"}}
 {"filterword": "e502n111", "tag": {"application": "", "device_type": "switch", "product": "e502n111", "vendor": "ubiquoss"}}
 {"filterword": "ig601", "tag": {"application": "", "device_type": "router", "product": "ig601", "vendor": ""}}
@@ -3969,7 +3969,7 @@
 {"filterword": "d500002898919", "tag": {"application": "", "device_type": "switch", "product": "d500002898919", "vendor": "ubiquoss"}}
 {"filterword": "dorimsa1", "tag": {"application": "", "device_type": "switch", "product": "dorimsa1", "vendor": "ubiquoss"}}
 {"filterword": "r7500", "tag": {"application": "", "device_type": "router", "product": "r7500", "vendor": "netgear"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfe\\x01\\n\\rTerminal shell v1\\.0\\n\\r\\rCopyright \\xa9\\d+ Netopia, Inc\\.  All rights reserved\\.\\n\\r\\rNetopia Model ([\\w-]+) Wireless DSL Ethernet Switch\\n\\rRunning Netopia SOC OS version ([\\d.]+ \\(build \\w+\\))\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Netopia"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfe\\x01\\n\\rTerminal shell v1\\.0\\n\\r\\rCopyright \\xa9\\d+ Netopia, Inc\\.  All rights reserved\\.\\n\\r\\rNetopia Model ([\\w-]+) Wireless DSL Ethernet Switch\\n\\rRunning Netopia SOC OS version ([\\d.]+ \\(build \\w+\\))\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Netopia"}}
 {"filterword": "ws-c2960s", "tag": {"application": "", "device_type": "switch", "product": "ws-c2960s", "vendor": "cisco"}}
 {"filterword": "e139n404", "tag": {"application": "", "device_type": "switch", "product": "e139n404", "vendor": "ubiquoss"}}
 {"filterword": "byeolgwan1b1f", "tag": {"application": "", "device_type": "switch", "product": "byeolgwan1b1f", "vendor": "ubiquoss"}}
@@ -4005,7 +4005,7 @@
 {"filterword": "smg-1016m", "tag": {"application": "", "device_type": "gateway", "product": "smg-1016m", "vendor": ""}}
 {"filterword": "spiad2911-24fxs", "tag": {"application": "", "device_type": "router", "product": "spiad2911-24fxs", "vendor": "cisco"}}
 {"filterword": "ip-2000hw", "tag": {"application": "", "device_type": "dvr", "product": "ip-2000hw", "vendor": "verint"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Dynalink Wireless ADSL2\\+ Router (\\w+) \\r\\nSoftware Version: ([\\w._-]+)\\r\\nLogin name: ", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Dynalink"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Dynalink Wireless ADSL2\\+ Router (\\w+) \\r\\nSoftware Version: ([\\w._-]+)\\r\\nLogin name: ", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Dynalink"}}
 {"filterword": "rg-5421g", "tag": {"application": "", "device_type": "router", "product": "rg-5421g", "vendor": "eltex"}}
 {"filterword": "^100 HELLO [0-9A-F]{8} - KSHELL V([\\w._-]+)\\r\\n", "tag": {"application": "", "device_type": "power-device", "product": "netio-230a power controller", "vendor": "Koukaam"}}
 {"filterword": "mia305-43", "tag": {"application": "", "device_type": "switch", "product": "mia305-43", "vendor": "ubiquoss"}}
@@ -4186,7 +4186,7 @@
 {"filterword": "dongyangbill2", "tag": {"application": "", "device_type": "switch", "product": "dongyangbill2", "vendor": "ubiquoss"}}
 {"filterword": "gs25", "tag": {"application": "", "device_type": "switch", "product": "gs25", "vendor": "ubiquoss"}}
 {"filterword": "4850gts", "tag": {"application": "", "device_type": "switch", "product": "4850gts", "vendor": "avaya"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\x1b\\[2J\\x1b\\[1;1H\\x1b\\[1mwb-adtran-\\w+       ADTRAN (TDU-\\w+)\\x1b\\[0m\\x1b\\[2;1HConnecting\\.\\.\\.\\.", "tag": {"application": "", "device_type": "pbx", "product": "1", "vendor": "Adtran"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\x1b\\[2J\\x1b\\[1;1H\\x1b\\[1mwb-adtran-\\w+       ADTRAN (TDU-\\w+)\\x1b\\[0m\\x1b\\[2;1HConnecting\\.\\.\\.\\.", "tag": {"application": "", "device_type": "pbx", "product": "$1", "vendor": "Adtran"}}
 {"filterword": "cve-2014-6382", "tag": {"application": "", "device_type": "router", "product": "cve-2014-6382", "vendor": "juniper"}}
 {"filterword": "d4646678", "tag": {"application": "", "device_type": "switch", "product": "d4646678", "vendor": "ubiquoss"}}
 {"filterword": "g422u011", "tag": {"application": "", "device_type": "switch", "product": "g422u011", "vendor": "ubiquoss"}}
@@ -4228,16 +4228,16 @@
 {"filterword": "commodoreestate2-8", "tag": {"application": "", "device_type": "switch", "product": "commodoreestate2-8", "vendor": "ubiquoss"}}
 {"filterword": "fosco202dong3", "tag": {"application": "", "device_type": "switch", "product": "fosco202dong3", "vendor": "ubiquoss"}}
 {"filterword": "fgl193311b9", "tag": {"application": "", "device_type": "router", "product": "fgl193311b9", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfe\\x01Connected\\x1b\\[K\\r\\n\\x1b\\[1;1HAironet (BR\\w+) V([\\d.]+) +\\x1b", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Aironet"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfe\\x01Connected\\x1b\\[K\\r\\n\\x1b\\[1;1HAironet (BR\\w+) V([\\d.]+) +\\x1b", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Aironet"}}
 {"filterword": "sx20", "tag": {"application": "", "device_type": "camera", "product": "sx20", "vendor": "cisco"}}
 {"filterword": "hanmase2-1", "tag": {"application": "", "device_type": "switch", "product": "hanmase2-1", "vendor": "ubiquoss"}}
 {"filterword": "des-3200-28p", "tag": {"application": "", "device_type": "switch", "product": "des-3200-28p", "vendor": "d-link"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03Imagistics (\\w+) Ver ([\\d.]+) TELNET server\\.\\r\\0\\n\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Imagistics"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03Imagistics (\\w+) Ver ([\\d.]+) TELNET server\\.\\r\\0\\n\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Imagistics"}}
 {"filterword": "srx240h2", "tag": {"application": "", "device_type": "gateway", "product": "srx240h2", "vendor": "juniper"}}
 {"filterword": "p5024h", "tag": {"application": "", "device_type": "switch", "product": "p5024h", "vendor": "ubiquoss"}}
 {"filterword": "gs-e611n102", "tag": {"application": "", "device_type": "switch", "product": "gs-e611n102", "vendor": "ubiquoss"}}
 {"filterword": "g503m013", "tag": {"application": "", "device_type": "switch", "product": "g503m013", "vendor": "ubiquoss"}}
-{"filterword": "^\\x1b\\[0;37;40m\\x1b\\[2J\\x1b\\[0;37;40m\\x1b\\[1m\\x1b\\[15;22HAT-(\\w+), version ([\\d.]+)\\x1b", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "Allied Telesis"}}
+{"filterword": "^\\x1b\\[0;37;40m\\x1b\\[2J\\x1b\\[0;37;40m\\x1b\\[1m\\x1b\\[15;22HAT-(\\w+), version ([\\d.]+)\\x1b", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "Allied Telesis"}}
 {"filterword": "nc-wr644gacv", "tag": {"application": "", "device_type": "router", "product": "nc-wr644gacv", "vendor": "nucom"}}
 {"filterword": "j9575a", "tag": {"application": "", "device_type": "switch", "product": "j9575a", "vendor": "hp"}}
 {"filterword": "l4", "tag": {"application": "", "device_type": "switch", "product": "l4", "vendor": "cisco"}}
@@ -4280,7 +4280,7 @@
 {"filterword": "dcs-5300", "tag": {"application": "", "device_type": "camera", "product": "dcs-5300", "vendor": "d-link"}}
 {"filterword": "e3200", "tag": {"application": "", "device_type": "router", "product": "e3200", "vendor": "cisco"}}
 {"filterword": "e296n108", "tag": {"application": "", "device_type": "switch", "product": "e296n108", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\r\\n-> \\*\\*\\*  EPSON Network Print Server \\(([^)]+)\\)  \\*", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Epson"}}
+{"filterword": "^\\xff\\xfb\\x01\\r\\n-> \\*\\*\\*  EPSON Network Print Server \\(([^)]+)\\)  \\*", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Epson"}}
 {"filterword": "g9010081", "tag": {"application": "", "device_type": "switch", "product": "g9010081", "vendor": "ubiquoss"}}
 {"filterword": "fgl182321hm", "tag": {"application": "", "device_type": "router", "product": "fgl182321hm", "vendor": "cisco"}}
 {"filterword": "s1970e", "tag": {"application": "", "device_type": "video", "product": "s1970e", "vendor": "verint"}}
@@ -4359,7 +4359,7 @@
 {"filterword": "sangnam3", "tag": {"application": "", "device_type": "switch", "product": "sangnam3", "vendor": "ubiquoss"}}
 {"filterword": "gongneung441-48", "tag": {"application": "", "device_type": "switch", "product": "gongneung441-48", "vendor": "ubiquoss"}}
 {"filterword": "rt-n13u", "tag": {"application": "", "device_type": "router", "product": "rt-n13u", "vendor": "asus"}}
-{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nDell (?:Laser Printer )?(?:Printer )?(?:Dell )?([\\w._+-]+) .*Ethernet internal network device, with a hardware\\r\\naddress of ([0-9A-F:]{17}) \\(MSB, Canonical\\)\\.\\r\\nIt's an ethernet card\\.\\r\\nNetwork Firmware Version is V([\\w._-]+)\\(\\w+(?: MFP)?\\) ([\\d-]+)\\.\\r\\nSystem Up Time is ([^\\r\\n.]+)\\.\\r\\n\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Dell"}}
+{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nDell (?:Laser Printer )?(?:Printer )?(?:Dell )?([\\w._+-]+) .*Ethernet internal network device, with a hardware\\r\\naddress of ([0-9A-F:]{17}) \\(MSB, Canonical\\)\\.\\r\\nIt's an ethernet card\\.\\r\\nNetwork Firmware Version is V([\\w._-]+)\\(\\w+(?: MFP)?\\) ([\\d-]+)\\.\\r\\nSystem Up Time is ([^\\r\\n.]+)\\.\\r\\n\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Dell"}}
 {"filterword": "e564n101", "tag": {"application": "", "device_type": "switch", "product": "e564n101", "vendor": "ubiquoss"}}
 {"filterword": "g026w011", "tag": {"application": "", "device_type": "switch", "product": "g026w011", "vendor": "ubiquoss"}}
 {"filterword": "e529n101", "tag": {"application": "", "device_type": "switch", "product": "e529n101", "vendor": "ubiquoss"}}
@@ -4419,7 +4419,7 @@
 {"filterword": "e858n021", "tag": {"application": "", "device_type": "switch", "product": "e858n021", "vendor": "ubiquoss"}}
 {"filterword": "mf30", "tag": {"application": "", "device_type": "router", "product": "mf30", "vendor": "zte"}}
 {"filterword": "idis-2391", "tag": {"application": "", "device_type": "switch", "product": "idis-2391", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n\\r        Welcome to Intermec Printer\\r\\n\\r\\r\\n\\r\\d+-(\\w+)-\\w+ login: ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Intermec"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n\\r        Welcome to Intermec Printer\\r\\n\\r\\r\\n\\r\\d+-(\\w+)-\\w+ login: ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Intermec"}}
 {"filterword": "^\\xff\\xfb\\x01\\r\\npassword: ", "tag": {"application": "", "device_type": "router", "product": "networks instant internet", "vendor": "Nortel"}}
 {"filterword": "fsg2200hnu", "tag": {"application": "", "device_type": "gateway", "product": "fsg2200hnu", "vendor": "zyxel"}}
 {"filterword": "gongneung567-12", "tag": {"application": "", "device_type": "switch", "product": "gongneung567-12", "vendor": "ubiquoss"}}
@@ -4599,7 +4599,7 @@
 {"filterword": "ap2650", "tag": {"application": "", "device_type": "gateway", "product": "ap2650", "vendor": ""}}
 {"filterword": "reges-e0350011", "tag": {"application": "", "device_type": "switch", "product": "reges-e0350011", "vendor": "ubiquoss"}}
 {"filterword": "sbg3300-n", "tag": {"application": "", "device_type": "gateway", "product": "sbg3300-n", "vendor": "zyxel"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03Welcome to (DCS-\\w+) telnet daemon\\r\\n\\r\\nPassword:", "tag": {"application": "", "device_type": "camera", "product": "1", "vendor": "D-Link"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03Welcome to (DCS-\\w+) telnet daemon\\r\\n\\r\\nPassword:", "tag": {"application": "", "device_type": "camera", "product": "$1", "vendor": "D-Link"}}
 {"filterword": "e123m101", "tag": {"application": "", "device_type": "switch", "product": "e123m101", "vendor": "ubiquoss"}}
 {"filterword": "dgs-3420-28tc", "tag": {"application": "", "device_type": "switch", "product": "dgs-3420-28tc", "vendor": "d-link"}}
 {"filterword": "e177n101", "tag": {"application": "", "device_type": "switch", "product": "e177n101", "vendor": "ubiquoss"}}
@@ -4611,7 +4611,7 @@
 {"filterword": "d4119743", "tag": {"application": "", "device_type": "switch", "product": "d4119743", "vendor": "ubiquoss"}}
 {"filterword": "d4937048", "tag": {"application": "", "device_type": "switch", "product": "d4937048", "vendor": "ubiquoss"}}
 {"filterword": "sbg3500-n", "tag": {"application": "", "device_type": "router", "product": "sbg3500-n", "vendor": "zyxel"}}
-{"filterword": "^\\xff\\xfa\\x18\\x01\\xff\\xf0\\xff\\xfb\\x01\\xff\\xfb\\x03Ambit (U\\w+) CableModem\\r\\n\\r\\nlogin: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Ambit"}}
+{"filterword": "^\\xff\\xfa\\x18\\x01\\xff\\xf0\\xff\\xfb\\x01\\xff\\xfb\\x03Ambit (U\\w+) CableModem\\r\\n\\r\\nlogin: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Ambit"}}
 {"filterword": "^\\xff\\xfb\\x01AN-30 Ver\\. ([\\d.]+) \\(c\\) Copyright 2000-2002 Redline Communications Inc\\.\\r\\n\\r\\nUsername:\\0", "tag": {"application": "", "device_type": "wap", "product": "communications an-30 wireless bridge", "vendor": "Redline"}}
 {"filterword": "dsl-2740b", "tag": {"application": "", "device_type": "router", "product": "dsl-2740b", "vendor": "d-link"}}
 {"filterword": "ns-025-001", "tag": {"application": "", "device_type": "router", "product": "ns-025-001", "vendor": "nokia"}}
@@ -4661,7 +4661,7 @@
 {"filterword": "fh303", "tag": {"application": "", "device_type": "router", "product": "fh303", "vendor": "tenda"}}
 {"filterword": "cisco2901-", "tag": {"application": "", "device_type": "camera", "product": "2901-", "vendor": "cisco"}}
 {"filterword": "gb05ua42", "tag": {"application": "", "device_type": "switch", "product": "gb05ua42", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\r\\nPON 262194 PAAMCO (TA \\w+) Gen3\\r\\n\\n\\n\\ruser: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Adtran"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\r\\nPON 262194 PAAMCO (TA \\w+) Gen3\\r\\n\\n\\n\\ruser: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Adtran"}}
 {"filterword": "fhk143072ua", "tag": {"application": "", "device_type": "router", "product": "fhk143072ua", "vendor": "soho"}}
 {"filterword": "no2", "tag": {"application": "", "device_type": "switch", "product": "no2", "vendor": "ubiquoss"}}
 {"filterword": "sn4635", "tag": {"application": "", "device_type": "router", "product": "sn4635", "vendor": ""}}
@@ -4721,7 +4721,7 @@
 {"filterword": "e228n102", "tag": {"application": "", "device_type": "switch", "product": "e228n102", "vendor": "ubiquoss"}}
 {"filterword": "^\\r\\n\\*{52}\\r\\n\\* Welcome to telnet_debug {26}\\*\\r\\n\\* built-ins are: {35}\\*\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "laserjet debug", "vendor": "HP"}}
 {"filterword": "e0060352", "tag": {"application": "", "device_type": "switch", "product": "e0060352", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream (HT[\\w._-]+) Command Shell", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Grandstream"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream (HT[\\w._-]+) Command Shell", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Grandstream"}}
 {"filterword": "^\\xff\\xfb\\x01\\n\\rSSH service name not present in rcvd msg\\n\\rSSH Session task 0x\\w+: Version Exchange Failed\\n\\r\\n\\r\\n\\rSSH service name not present in rcvd msg\\n\\r", "tag": {"application": "cisco:telnet", "device_type": "wap", "product": "aironet 350-series", "vendor": "Cisco"}}
 {"filterword": "d4689354", "tag": {"application": "", "device_type": "switch", "product": "d4689354", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01VPAD01 V([\\d.]+) settings\\r\\nPassword:", "tag": {"application": "", "device_type": "voip adapter", "product": "vpad01", "vendor": "E-tech"}}
@@ -4758,7 +4758,7 @@
 {"filterword": "net-500062286042", "tag": {"application": "", "device_type": "switch", "product": "net-500062286042", "vendor": "ubiquoss"}}
 {"filterword": "^Halt! Who goes there\\?\\n[\\w/+]+\\n", "tag": {"application": "", "device_type": "phone", "product": "vo debug", "vendor": "Polycom"}}
 {"filterword": "netengine40e", "tag": {"application": "", "device_type": "router", "product": "netengine40e", "vendor": "huawei"}}
-{"filterword": "^\\xff\\xfb\\x01\\r\\n\\r\\nWelcome to KONICA MINOLTA (bizhub [\\w._-]+)\\r\\nIP : [\\d.]+\\r\\nHost Name : ([\\w._-]+)\\r\\n\\r\\nEnter Password:", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Konica Minolta"}}
+{"filterword": "^\\xff\\xfb\\x01\\r\\n\\r\\nWelcome to KONICA MINOLTA (bizhub [\\w._-]+)\\r\\nIP : [\\d.]+\\r\\nHost Name : ([\\w._-]+)\\r\\n\\r\\nEnter Password:", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Konica Minolta"}}
 {"filterword": "lg24c", "tag": {"application": "", "device_type": "gateway", "product": "lg24c", "vendor": ""}}
 {"filterword": "^\\r\\nSorry, Access to Telnet is Denied\\.\\r\\n$", "tag": {"application": "", "device_type": "voip adapter", "product": "vt1000v voip", "vendor": "Motorola"}}
 {"filterword": "g6650101", "tag": {"application": "", "device_type": "switch", "product": "g6650101", "vendor": "ubiquoss"}}
@@ -4774,7 +4774,7 @@
 {"filterword": "e720n071", "tag": {"application": "", "device_type": "switch", "product": "e720n071", "vendor": "ubiquoss"}}
 {"filterword": "st65", "tag": {"application": "", "device_type": "camera", "product": "st65", "vendor": "samsung"}}
 {"filterword": "st200f", "tag": {"application": "", "device_type": "camera", "product": "st200f", "vendor": "samsung"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03EthernetBoard OkiLAN ([\\w._-]+) Ver 0([\\w._-]+) TELNET server\\.\\r\\0\\n\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "OkiLAN"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03EthernetBoard OkiLAN ([\\w._-]+) Ver 0([\\w._-]+) TELNET server\\.\\r\\0\\n\\r\\0\\nlogin: ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "OkiLAN"}}
 {"filterword": "exodium-a43", "tag": {"application": "", "device_type": "switch", "product": "exodium-a43", "vendor": "ubiquoss"}}
 {"filterword": "da-6f", "tag": {"application": "", "device_type": "switch", "product": "da-6f", "vendor": "ubiquoss"}}
 {"filterword": "fgl191224t5", "tag": {"application": "", "device_type": "router", "product": "fgl191224t5", "vendor": "cisco"}}
@@ -4795,7 +4795,7 @@
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03                        =======================\\r\\n                               DSL-500B       \\r\\n                        =======================\\r\\nLogin:", "tag": {"application": "", "device_type": "router", "product": "dsl-500b", "vendor": "D-Link"}}
 {"filterword": "g355m013", "tag": {"application": "", "device_type": "switch", "product": "g355m013", "vendor": "ubiquoss"}}
 {"filterword": "fe0-9", "tag": {"application": "", "device_type": "router", "product": "fe0-9", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\x07HP ([\\w+]+) AdvanceStack 10BT Switching Hub Management Module\\r\\n", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "HP"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\r\\n\\x07HP ([\\w+]+) AdvanceStack 10BT Switching Hub Management Module\\r\\n", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "HP"}}
 {"filterword": "cisco887va", "tag": {"application": "", "device_type": "router", "product": "887va", "vendor": "cisco"}}
 {"filterword": "g0340191", "tag": {"application": "", "device_type": "switch", "product": "g0340191", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01\\r\\n([-\\w_.]+) wireless  login: $", "tag": {"application": "", "device_type": "router", "product": "c54apt wireless", "vendor": "Conceptronic"}}
@@ -4939,7 +4939,7 @@
 {"filterword": "^\\xff\\xfb\\x01\\r\\nPassword:\\r\\nLogged in as guest\\r\\n", "tag": {"application": "", "device_type": "router", "product": "comsat", "vendor": "Linkstar"}}
 {"filterword": "c5650n", "tag": {"application": "", "device_type": "printer", "product": "c5650n", "vendor": "oki"}}
 {"filterword": "e310n271", "tag": {"application": "", "device_type": "switch", "product": "e310n271", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[1;1H\\x1b\\[2K\\x1b.*BayStack ([-\\w_.]+) Main Menu\\x1b", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "BayStack"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[1;1H\\x1b\\[2K\\x1b.*BayStack ([-\\w_.]+) Main Menu\\x1b", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "BayStack"}}
 {"filterword": "e2620-24", "tag": {"application": "", "device_type": "switch", "product": "e2620-24", "vendor": "hp"}}
 {"filterword": "e270n093", "tag": {"application": "", "device_type": "switch", "product": "e270n093", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[2J\\x1b\\[4;26HUsername: \\x1b\\[7;1m\\[  \\]\\x1b\\[0m\\x1b\\[5;26HPassword: \\[ \\*{15} \\]\\x1b\\[23;1H\\x1b\\[2KEnter text, press <Return> or <Enter> when complete\\.\\x1b\\[14;26HEnter Username: ", "tag": {"application": "", "device_type": "switch", "product": "ers 5600-series", "vendor": "Avaya"}}
@@ -4976,7 +4976,7 @@
 {"filterword": "v313", "tag": {"application": "", "device_type": "printer", "product": "v313", "vendor": "dell"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\r\\n\\nLantronix MSS1 Version STI3\\.5/5\\(981103\\)\\n\\r\\nType HELP at the 'Local_2> ' prompt for assistance\\.\\n\\r\\nLogin password> ", "tag": {"application": "", "device_type": "bridge", "product": "mss1 micro serial server serial-to-ethernet bridge", "vendor": "Lantronix"}}
 {"filterword": "e346n101", "tag": {"application": "", "device_type": "switch", "product": "e346n101", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream (\\w+) Command Shell Copyright 2006-20\\d\\d\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Grandstream"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfb\\x01\\xff\\xfb\\x03Grandstream (\\w+) Command Shell Copyright 2006-20\\d\\d\\r\\nPassword: ", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Grandstream"}}
 {"filterword": "g226f095", "tag": {"application": "", "device_type": "switch", "product": "g226f095", "vendor": "ubiquoss"}}
 {"filterword": "ap5", "tag": {"application": "", "device_type": "camera", "product": "ap5", "vendor": "tenda"}}
 {"filterword": "ws-c4948-10ge", "tag": {"application": "", "device_type": "switch", "product": "ws-c4948-10ge", "vendor": "cisco"}}
@@ -5281,7 +5281,7 @@
 {"filterword": "^\\xff\\xfb\\x01login : ", "tag": {"application": "", "device_type": "switch", "product": "omni 6400 or 8600", "vendor": "Alcatel"}}
 {"filterword": "n600", "tag": {"application": "", "device_type": "router", "product": "n600", "vendor": "buffalo"}}
 {"filterword": "mx80", "tag": {"application": "", "device_type": "", "product": "mx80", "vendor": "juniper"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\nOpenDreambox ([-\\w_.]+) (dm\\w+)\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "2", "vendor": "Dreambox"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\nOpenDreambox ([-\\w_.]+) (dm\\w+)\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "$2", "vendor": "Dreambox"}}
 {"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfd\\x1f\\xff\\xfd\\x18\\r\\ntelnet session telnet0 on /dev/ptyb0\\r\\n\\r\\n\\r\\nSystem is in trial for (\\d+) day\\(s\\) and this will expire in (\\d+) day\\(s\\)\\r\\nlogin: ", "tag": {"application": "", "device_type": "switch", "product": "networks x460", "vendor": "Extreme"}}
 {"filterword": "r209-z", "tag": {"application": "", "device_type": "router", "product": "r209-z", "vendor": "vodafone"}}
 {"filterword": "chang657-150", "tag": {"application": "", "device_type": "switch", "product": "chang657-150", "vendor": "ubiquoss"}}
@@ -5325,7 +5325,7 @@
 {"filterword": "c1861-srst", "tag": {"application": "", "device_type": "router", "product": "c1861-srst", "vendor": "cisco"}}
 {"filterword": "s10", "tag": {"application": "", "device_type": "router", "product": "s10", "vendor": "lenovo"}}
 {"filterword": "fvs318gv2", "tag": {"application": "", "device_type": "router", "product": "fvs318gv2", "vendor": "netgear"}}
-{"filterword": "^\\xff\\xfb\\x01\\r\\n\\r\\nWelcome to Trango Broadband Wireless (\\w+)-AP \\w+\\r\\nPassword: ", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Trango"}}
+{"filterword": "^\\xff\\xfb\\x01\\r\\n\\r\\nWelcome to Trango Broadband Wireless (\\w+)-AP \\w+\\r\\nPassword: ", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Trango"}}
 {"filterword": "wsr-1166dd", "tag": {"application": "", "device_type": "router", "product": "wsr-1166dd", "vendor": "buffalo"}}
 {"filterword": "e121m024", "tag": {"application": "", "device_type": "switch", "product": "e121m024", "vendor": "ubiquoss"}}
 {"filterword": "zse2", "tag": {"application": "", "device_type": "switch", "product": "zse2", "vendor": "smc"}}
@@ -5524,7 +5524,7 @@
 {"filterword": "wndr4300v1", "tag": {"application": "", "device_type": "router", "product": "wndr4300v1", "vendor": "netgear"}}
 {"filterword": "e390", "tag": {"application": "", "device_type": "camera", "product": "e390", "vendor": "samsung"}}
 {"filterword": "g363m001", "tag": {"application": "", "device_type": "switch", "product": "g363m001", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03                  OkiLAN ([\\w._-]+) Configuration Utility\\r\\n\\r\\n Type your password\\. Press Enter when finished\\.\\r\\n\\r\\n Password: ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "OkiLAN"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03                  OkiLAN ([\\w._-]+) Configuration Utility\\r\\n\\r\\n Type your password\\. Press Enter when finished\\.\\r\\n\\r\\n Password: ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "OkiLAN"}}
 {"filterword": "ap1100f", "tag": {"application": "", "device_type": "gateway", "product": "ap1100f", "vendor": "addpac"}}
 {"filterword": "sfgl194423zu", "tag": {"application": "", "device_type": "router", "product": "sfgl194423zu", "vendor": "cisco"}}
 {"filterword": "ssangmun498-93", "tag": {"application": "", "device_type": "switch", "product": "ssangmun498-93", "vendor": "ubiquoss"}}
@@ -5563,7 +5563,7 @@
 {"filterword": "da-7905858", "tag": {"application": "", "device_type": "switch", "product": "da-7905858", "vendor": "ubiquoss"}}
 {"filterword": "cisco886-k9", "tag": {"application": "", "device_type": "router", "product": "886-k9", "vendor": "cisco"}}
 {"filterword": "^\\xff\\xfb\\x01\\r\\n#-+\\r\\n# Tasman Networks Inc\\. Telnet Login\\r\\n#", "tag": {"application": "", "device_type": "router", "product": "networks", "vendor": "Tasman"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03(SI[\\w._-]+ Callisto[\\w._+-]+) Router \\(version ([\\w._-]+)\\)\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Iskratel"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03(SI[\\w._-]+ Callisto[\\w._+-]+) Router \\(version ([\\w._-]+)\\)\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Iskratel"}}
 {"filterword": "g6300051", "tag": {"application": "", "device_type": "switch", "product": "g6300051", "vendor": "ubiquoss"}}
 {"filterword": "e100n267", "tag": {"application": "", "device_type": "switch", "product": "e100n267", "vendor": "ubiquoss"}}
 {"filterword": "e473n031", "tag": {"application": "", "device_type": "switch", "product": "e473n031", "vendor": "ubiquoss"}}
@@ -5615,7 +5615,7 @@
 {"filterword": "ver1", "tag": {"application": "", "device_type": "encoder", "product": "ver1", "vendor": "d-link"}}
 {"filterword": "test-108d", "tag": {"application": "", "device_type": "switch", "product": "test-108d", "vendor": "ubiquoss"}}
 {"filterword": "ew190011", "tag": {"application": "", "device_type": "switch", "product": "ew190011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfe\\x01\\n\\rTerminal shell v1\\.0\\n\\r\\rCopyright \\xa92008 Motorola, Inc\\.  All rights reserved\\.\\n\\r\\rNetopia Model ([\\d-]+)(?: AnnexA)? High-Power Wireless DSL Ethernet Managed Switch\\n\\rRunning Netopia SOC OS version ([\\w.-]+ \\(build \\w+\\))\\n", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "Netopia"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfe\\x01\\n\\rTerminal shell v1\\.0\\n\\r\\rCopyright \\xa92008 Motorola, Inc\\.  All rights reserved\\.\\n\\r\\rNetopia Model ([\\d-]+)(?: AnnexA)? High-Power Wireless DSL Ethernet Managed Switch\\n\\rRunning Netopia SOC OS version ([\\w.-]+ \\(build \\w+\\))\\n", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "Netopia"}}
 {"filterword": "rfs7000", "tag": {"application": "", "device_type": "switch", "product": "rfs7000", "vendor": "motorola"}}
 {"filterword": "hg556a", "tag": {"application": "", "device_type": "router", "product": "hg556a", "vendor": "echolife"}}
 {"filterword": "gw420011", "tag": {"application": "", "device_type": "switch", "product": "gw420011", "vendor": "ubiquoss"}}
@@ -5646,7 +5646,7 @@
 {"filterword": "e121n601", "tag": {"application": "", "device_type": "switch", "product": "e121n601", "vendor": "ubiquoss"}}
 {"filterword": "koreashpping9361", "tag": {"application": "", "device_type": "switch", "product": "koreashpping9361", "vendor": "ubiquoss"}}
 {"filterword": "ap-710", "tag": {"application": "", "device_type": "router", "product": "ap-710", "vendor": "draytek"}}
-{"filterword": "^\\xff\\xfd\\x18\\xff\\xfd\\x1f\\xff\\xfb\\x01\\x1b\\[2J\\x1b\\[\\?7l\\x1b\\[[03];23r\\x1b\\[\\?6l\\x1b\\[1;1H\\x1b\\[\\?25l\\x1b\\[1;1HHP ([A-Z\\d]+) ((\\d+)-\\w+) Switch\\r\\r\\nSoftware revision ([\\w.]+)\\r\\r\\n\\r\\r\\n(?:\\(C\\) )?Copyright", "tag": {"application": "", "device_type": "switch", "product": "2", "vendor": "HP"}}
+{"filterword": "^\\xff\\xfd\\x18\\xff\\xfd\\x1f\\xff\\xfb\\x01\\x1b\\[2J\\x1b\\[\\?7l\\x1b\\[[03];23r\\x1b\\[\\?6l\\x1b\\[1;1H\\x1b\\[\\?25l\\x1b\\[1;1HHP ([A-Z\\d]+) ((\\d+)-\\w+) Switch\\r\\r\\nSoftware revision ([\\w.]+)\\r\\r\\n\\r\\r\\n(?:\\(C\\) )?Copyright", "tag": {"application": "", "device_type": "switch", "product": "$2", "vendor": "HP"}}
 {"filterword": "djnrd-p8624-ipv6", "tag": {"application": "", "device_type": "switch", "product": "djnrd-p8624-ipv6", "vendor": "ubiquoss"}}
 {"filterword": "npe-g2", "tag": {"application": "", "device_type": "router", "product": "npe-g2", "vendor": "cisco"}}
 {"filterword": "nmtcgn010", "tag": {"application": "", "device_type": "router", "product": "nmtcgn010", "vendor": "cisco"}}
@@ -5677,7 +5677,7 @@
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfb\\x03\\xff\\xfd\\x03\\xff\\xfb\\x05\\xff\\xfd\\x05\\xff\\xfd\\x1fSpeedStream Telnet Server\\r\\n\\r\\n\\r\\nlogin: ", "tag": {"application": "", "device_type": "router", "product": "", "vendor": "SpeedStream"}}
 {"filterword": "k2fibmulticast", "tag": {"application": "", "device_type": "switch", "product": "k2fibmulticast", "vendor": "cisco"}}
 {"filterword": "mx104-prem", "tag": {"application": "", "device_type": "router", "product": "mx104-prem", "vendor": "huawei"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\x1b\\[0m\\x1b\\[2J\\x1b\\[0m\\x1b\\[2J\\x1b\\[21;1H\\x1b\\[0m\\*+\\x1b\\[22;1H\\x1b\\[0mMessage Area:\\x1b\\[24;1H\\x1b\\[7mCTRL\\+R = Refresh +\\x1b\\[9;16H\\x1b\\[0m(SSR[\\w._-]+) Stackable Fast Ethernet Switch Console Management", "tag": {"application": "", "device_type": "switch", "product": "1", "vendor": "Amer.com"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03\\x1b\\[0m\\x1b\\[2J\\x1b\\[0m\\x1b\\[2J\\x1b\\[21;1H\\x1b\\[0m\\*+\\x1b\\[22;1H\\x1b\\[0mMessage Area:\\x1b\\[24;1H\\x1b\\[7mCTRL\\+R = Refresh +\\x1b\\[9;16H\\x1b\\[0m(SSR[\\w._-]+) Stackable Fast Ethernet Switch Console Management", "tag": {"application": "", "device_type": "switch", "product": "$1", "vendor": "Amer.com"}}
 {"filterword": "arg-1211", "tag": {"application": "", "device_type": "router", "product": "arg-1211", "vendor": "argtek"}}
 {"filterword": "jdgn1000", "tag": {"application": "", "device_type": "router", "product": "jdgn1000", "vendor": "netgear"}}
 {"filterword": "emg2926-q10a", "tag": {"application": "", "device_type": "router", "product": "emg2926-q10a", "vendor": "zyxel"}}
@@ -5700,7 +5700,7 @@
 {"filterword": "e008w011", "tag": {"application": "", "device_type": "switch", "product": "e008w011", "vendor": "ubiquoss"}}
 {"filterword": "d4761308", "tag": {"application": "", "device_type": "switch", "product": "d4761308", "vendor": "ubiquoss"}}
 {"filterword": "loopback2", "tag": {"application": "", "device_type": "router", "product": "loopback2", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\n\\r\\0\\*\\*\\* Siemens (\\w+) \\*\\*\\*\\n\\r\\0\\r\\0\\nSerial Number (\\d+)  MAC address ([0-9A-F]{12})\\n\\r\\0Software version ([^\\r]+)\\r\\0\\nPassword :", "tag": {"application": "", "device_type": "remote management", "product": "1", "vendor": "Siemens"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\n\\r\\0\\*\\*\\* Siemens (\\w+) \\*\\*\\*\\n\\r\\0\\r\\0\\nSerial Number (\\d+)  MAC address ([0-9A-F]{12})\\n\\r\\0Software version ([^\\r]+)\\r\\0\\nPassword :", "tag": {"application": "", "device_type": "remote management", "product": "$1", "vendor": "Siemens"}}
 {"filterword": "e255n062", "tag": {"application": "", "device_type": "switch", "product": "e255n062", "vendor": "ubiquoss"}}
 {"filterword": "rt-n12", "tag": {"application": "", "device_type": "router", "product": "rt-n12", "vendor": "asus"}}
 {"filterword": "xot-72604-2793", "tag": {"application": "", "device_type": "switch", "product": "xot-72604-2793", "vendor": "ubiquoss"}}
@@ -5732,7 +5732,7 @@
 {"filterword": "e201n104", "tag": {"application": "", "device_type": "switch", "product": "e201n104", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\nLogin: \\r\\r\\nPassword: \\r\\r\\n\\r\\r\\nLogin failed\\r\\r\\n\\r\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "santis", "vendor": "Siemens"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x01\\xff\\xfb\\x01\\xff\\xfb\\x03\\xff\\xfd\\x18\\xff\\xfd\\x1f\\r\\n\\*+\\r\\n\\* Copyright \\(c\\) \\d+-\\d+ Hangzhou H3C Tech\\. Co\\., Ltd\\. All rights reserved\\.  \\*\\r\\n\\* Without the owner's prior written consent,", "tag": {"application": "", "device_type": "switch", "product": "", "vendor": "H3C"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\nWelcome to (OpenPhone \\w+) IP\\r\\n\\rVersion ([\\w._-]+)\\r\\n\\r\\r\\n\\rlast reset cause: software reset \\(memory controller also reset\\)\\r\\n\\r\\r\\n\\r([\\w._-]+) login: ", "tag": {"application": "", "device_type": "phone", "product": "1", "vendor": "Aastra"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\nWelcome to (OpenPhone \\w+) IP\\r\\n\\rVersion ([\\w._-]+)\\r\\n\\r\\r\\n\\rlast reset cause: software reset \\(memory controller also reset\\)\\r\\n\\r\\r\\n\\r([\\w._-]+) login: ", "tag": {"application": "", "device_type": "phone", "product": "$1", "vendor": "Aastra"}}
 {"filterword": "tx-251", "tag": {"application": "", "device_type": "router", "product": "tx-251", "vendor": "brother"}}
 {"filterword": "d500015088547", "tag": {"application": "", "device_type": "switch", "product": "d500015088547", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n\\rEXFO (BV[\\w._-]+)\\r\\n\\r\\r\\n\\rWARNING: This system is for use by authorized users only!\\r\\n\\r\\r\\n\\rPassword: ", "tag": {"application": "", "device_type": "specialized", "product": "$1 Ethernet test device", "vendor": "Exfo"}}
@@ -5802,7 +5802,7 @@
 {"filterword": "j9088a", "tag": {"application": "", "device_type": "switch", "product": "j9088a", "vendor": "hp"}}
 {"filterword": "sc8830", "tag": {"application": "", "device_type": "camera", "product": "sc8830", "vendor": "samsung"}}
 {"filterword": "e009w011", "tag": {"application": "", "device_type": "switch", "product": "e009w011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[2J\\x1b\\[H\\x1b\\[2J\\x1b\\[H ------------------------------------------------------------------------------\\r\\r\\n                                D A T A C O M\\r\\r\\n +(DM\\w+) - Minimux Router\\r\\r\\n", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Datacom"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[2J\\x1b\\[H\\x1b\\[2J\\x1b\\[H ------------------------------------------------------------------------------\\r\\r\\n                                D A T A C O M\\r\\r\\n +(DM\\w+) - Minimux Router\\r\\r\\n", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Datacom"}}
 {"filterword": "rs232bu", "tag": {"application": "", "device_type": "gateway", "product": "rs232bu", "vendor": "bintec"}}
 {"filterword": "da-500001868335", "tag": {"application": "", "device_type": "switch", "product": "da-500001868335", "vendor": "ubiquoss"}}
 {"filterword": "iqeye511", "tag": {"application": "", "device_type": "camera", "product": "iqeye511", "vendor": "iqinvision"}}
@@ -5823,7 +5823,7 @@
 {"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03Login: ", "tag": {"application": "", "device_type": "wap", "product": "3g mobile", "vendor": "MPR-L8"}}
 {"filterword": "km3-p", "tag": {"application": "", "device_type": "router", "product": "km3-p", "vendor": "axis"}}
 {"filterword": "em08n101", "tag": {"application": "", "device_type": "switch", "product": "em08n101", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03([\\w-]+) Ver ([-\\w_.]+) TELNET server\\.\\r\\0\\nCopyright \\(C\\) [\\d-]+ KYOCERA CORPORATION\\r\\0\\nCopyright \\(C\\) [\\d-]+ KYOCERA MITA CORPORATION\\r\\0\\nlogin:", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Kyocera"}}
+{"filterword": "^\\xff\\xfd\\x03\\xff\\xfb\\x01\\xff\\xfb\\x03([\\w-]+) Ver ([-\\w_.]+) TELNET server\\.\\r\\0\\nCopyright \\(C\\) [\\d-]+ KYOCERA CORPORATION\\r\\0\\nCopyright \\(C\\) [\\d-]+ KYOCERA MITA CORPORATION\\r\\0\\nlogin:", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Kyocera"}}
 {"filterword": "da-18960367", "tag": {"application": "", "device_type": "switch", "product": "da-18960367", "vendor": "ubiquoss"}}
 {"filterword": "gs-g918w011", "tag": {"application": "", "device_type": "switch", "product": "gs-g918w011", "vendor": "ubiquoss"}}
 {"filterword": "e0590011", "tag": {"application": "", "device_type": "switch", "product": "e0590011", "vendor": "ubiquoss"}}
@@ -5947,7 +5947,7 @@
 {"filterword": "da-4979960", "tag": {"application": "", "device_type": "switch", "product": "da-4979960", "vendor": "ubiquoss"}}
 {"filterword": "^\\n\\rCMI SEC\\n\\rProgram: +\\d+\\n\\rMajor\\.Minor\\.Rel:  ([\\w._-]+)\\n\\rMAC Address:      ([\\w:]+)\\n\\r\\n\\rPress <ENTER> to go into setup mode\\.", "tag": {"application": "", "device_type": "specialized", "product": "ip timeclock", "vendor": "ADP"}}
 {"filterword": "asr1001", "tag": {"application": "", "device_type": "router", "product": "asr1001", "vendor": "cisco"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(TD-\\w+) [\\d.]+ DSL Modem Router\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "TP-LINK"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(TD-\\w+) [\\d.]+ DSL Modem Router\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "TP-LINK"}}
 {"filterword": "e105n101", "tag": {"application": "", "device_type": "switch", "product": "e105n101", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfd\\x18\\xff\\xfb\\x01\\n\\r\\n\\r\\rAccount:", "tag": {"application": "", "device_type": "router", "product": "vigor", "vendor": "DrayTek"}}
 {"filterword": "d500005526044", "tag": {"application": "", "device_type": "switch", "product": "d500005526044", "vendor": "ubiquoss"}}
@@ -6014,10 +6014,10 @@
 {"filterword": "asr1002-10g", "tag": {"application": "", "device_type": "router", "product": "asr1002-10g", "vendor": "cisco"}}
 {"filterword": "c702", "tag": {"application": "", "device_type": "camera", "product": "c702", "vendor": "ericsson"}}
 {"filterword": "tx32", "tag": {"application": "", "device_type": "", "product": "tx32", "vendor": "motorola"}}
-{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nLexmark ([\\w._+-]+) Ethernet internal network device, with a hardware\\r\\naddress of (\\w+) (\\w+) ", "tag": {"application": "", "device_type": "printer", "product": "1", "vendor": "Lexmark"}}
+{"filterword": "^(?:\\xff\\xfb\\x01\\xff\\xfd\\x01\\xff\\xfe\\x01\\xff\\xfd\\x03\\xff\\xfb\\x03)?\\*+\\r\\n\\r\\nThis session allows you to set the TCPIP parameters for your\\r\\nLexmark ([\\w._+-]+) Ethernet internal network device, with a hardware\\r\\naddress of (\\w+) (\\w+) ", "tag": {"application": "", "device_type": "printer", "product": "$1", "vendor": "Lexmark"}}
 {"filterword": "e035n101", "tag": {"application": "", "device_type": "switch", "product": "e035n101", "vendor": "ubiquoss"}}
 {"filterword": "hyosung4607011", "tag": {"application": "", "device_type": "switch", "product": "hyosung4607011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(BCM[\\w._-]+) xDSL Router\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Broadcom"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03(BCM[\\w._-]+) xDSL Router\\r\\nLogin: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Broadcom"}}
 {"filterword": "myeongryun-p3624-dc", "tag": {"application": "", "device_type": "switch", "product": "myeongryun-p3624-dc", "vendor": "ubiquoss"}}
 {"filterword": "1941w", "tag": {"application": "", "device_type": "router", "product": "1941w", "vendor": "cisco"}}
 {"filterword": "g289n032", "tag": {"application": "", "device_type": "switch", "product": "g289n032", "vendor": "ubiquoss"}}
@@ -6084,7 +6084,7 @@
 {"filterword": "exodium-a23", "tag": {"application": "", "device_type": "switch", "product": "exodium-a23", "vendor": "ubiquoss"}}
 {"filterword": "rg613lh", "tag": {"application": "", "device_type": "", "product": "rg613lh", "vendor": "Allied Telesis"}}
 {"filterword": "d4628768", "tag": {"application": "", "device_type": "switch", "product": "d4628768", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w_.+-]+)\\0+\\r\\nF/W Version    :  ([\\w._-]+)  \\0.\\0+\\r\\nMAC Address    :  ([\\w ]+)\\r\\nUptime         :  ([^\\r\\n]+)\\r\\n\\nPlease Enter Password: ", "tag": {"application": "", "device_type": "printer", "product": "2", "vendor": "D-Link"}}
+{"filterword": "^\\xff\\xfb\\x03\\xff\\xfb\\x01\\r\\n\\n\\*+\\r\\n\\*  Welcome to D-Link Print Server  \\*\\r\\n\\* +Telnet Console +\\*\\r\\n\\*+\\r\\n\\r\\nServer Name    :  ([\\w._-]+)\\0+\\r\\nServer Model   :  ([\\w_.+-]+)\\0+\\r\\nF/W Version    :  ([\\w._-]+)  \\0.\\0+\\r\\nMAC Address    :  ([\\w ]+)\\r\\nUptime         :  ([^\\r\\n]+)\\r\\n\\nPlease Enter Password: ", "tag": {"application": "", "device_type": "printer", "product": "$2", "vendor": "D-Link"}}
 {"filterword": "e490n101", "tag": {"application": "", "device_type": "switch", "product": "e490n101", "vendor": "ubiquoss"}}
 {"filterword": "mb3170", "tag": {"application": "", "device_type": "gateway", "product": "mb3170", "vendor": "moxa"}}
 {"filterword": "rt042", "tag": {"application": "", "device_type": "router", "product": "rt042", "vendor": "cisco"}}
@@ -6094,7 +6094,7 @@
 {"filterword": "^\\n\\rTA-004 -WB Slic-175SW-122M : CLI\\n\\rLogin : ", "tag": {"application": "", "device_type": "voip adapter", "product": "svg6000r voip", "vendor": "Fujian"}}
 {"filterword": "us2640", "tag": {"application": "", "device_type": "gateway", "product": "us2640", "vendor": "zte"}}
 {"filterword": "e579n102", "tag": {"application": "", "device_type": "switch", "product": "e579n102", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03([\\w -]+) ADSL2\\+/VDSL2 WLAN Router\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "1", "vendor": "TeleWell"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03([\\w -]+) ADSL2\\+/VDSL2 WLAN Router\\r\\nLogin: ", "tag": {"application": "", "device_type": "wap", "product": "$1", "vendor": "TeleWell"}}
 {"filterword": "e487n010", "tag": {"application": "", "device_type": "switch", "product": "e487n010", "vendor": "ubiquoss"}}
 {"filterword": "iq765n", "tag": {"application": "", "device_type": "camera", "product": "iq765n", "vendor": "vicon"}}
 {"filterword": "w2003n", "tag": {"application": "", "device_type": "router", "product": "w2003n", "vendor": "bintec"}}
@@ -6110,7 +6110,7 @@
 {"filterword": "sfgl18432604", "tag": {"application": "", "device_type": "router", "product": "sfgl18432604", "vendor": "cisco"}}
 {"filterword": "up-2850p", "tag": {"application": "", "device_type": "printer", "product": "up-2850p", "vendor": "icu"}}
 {"filterword": "d4124726", "tag": {"application": "", "device_type": "switch", "product": "d4124726", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\n\\((FSM\\w+)\\) \\r\\nUser:", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\n\\((FSM\\w+)\\) \\r\\nUser:", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "e101n053", "tag": {"application": "", "device_type": "switch", "product": "e101n053", "vendor": "ubiquoss"}}
 {"filterword": "^\\xff\\xfb\\x01\\xff\\xfb\\x03\\x1b\\[2J\\x1b\\[0m\\x1b\\[1;1H\\x1b\\[2;1H\\x1b\\[3;1H\\x1b\\[4;1H ###      ###  ###########   ##########  ############# ########### ###\\x1b\\[5;1H ####     ### ############# ############ ############# ########### ###\\x1b\\[6;1H[ #]{70}\\x1b\\[7;1H[ #]{70}\\x1b\\[8;1H[ #]{70}\\x1b\\[9;1H[ #]{70}\\x1b\\[10;1H[ #]{70}\\x1b\\[11;1H[ #]{70}\\x1b\\[12;1H[ #]{78}\\x1b\\[13;1H[ #]{78}\\x1b\\[14;1H\\x1b\\[15;1H\\x1b\\[16;1HEnter Ctrl-Y to begin\\.\\x1b\\[18;3H\\*{38}", "tag": {"application": "", "device_type": "switch", "product": "4548", "vendor": "Nortel"}}
 {"filterword": "^\\xff\\xfb\\x01\\x1b\\[2J\\x1b\\[0m\\x1b\\[1;1H\\x1b\\[2;1H\\x1b\\[3;1H\\x1b\\[4;1H ###      ###  ###########   ##########  #############", "tag": {"application": "", "device_type": "switch", "product": "baystack 470-48t", "vendor": "Nortel"}}
@@ -6135,9 +6135,9 @@
 {"filterword": "ruh2", "tag": {"application": "", "device_type": "router", "product": "ruh2", "vendor": "sagem"}}
 {"filterword": "ac1750", "tag": {"application": "", "device_type": "router", "product": "ac1750", "vendor": "d-link"}}
 {"filterword": "g114u011", "tag": {"application": "", "device_type": "switch", "product": "g114u011", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f(?:\\xff\\xfd!)?\\xff\\xfb\\x01\\xff\\xfb\\x03[\\r\\n]*Grandstream ([\\w-]+)  V([\\w.]+) Command Shell", "tag": {"application": "", "device_type": "voip adapter", "product": "1", "vendor": "Grandstream"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f(?:\\xff\\xfd!)?\\xff\\xfb\\x01\\xff\\xfb\\x03[\\r\\n]*Grandstream ([\\w-]+)  V([\\w.]+) Command Shell", "tag": {"application": "", "device_type": "voip adapter", "product": "$1", "vendor": "Grandstream"}}
 {"filterword": "commodoreestate1-11", "tag": {"application": "", "device_type": "switch", "product": "commodoreestate1-11", "vendor": "ubiquoss"}}
-{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n(FVS\\w+) login: ", "tag": {"application": "", "device_type": "router", "product": "1", "vendor": "Netgear"}}
+{"filterword": "^\\xff\\xfd\\x01\\xff\\xfd\\x1f\\xff\\xfd!\\xff\\xfb\\x01\\xff\\xfb\\x03\\r\\r\\n\\r\\n(FVS\\w+) login: ", "tag": {"application": "", "device_type": "router", "product": "$1", "vendor": "Netgear"}}
 {"filterword": "dm991cr", "tag": {"application": "", "device_type": "router", "product": "dm991cr", "vendor": "datacom"}}
 {"filterword": "nbg5715", "tag": {"application": "", "device_type": "router", "product": "nbg5715", "vendor": "zyxel"}}
 {"filterword": "e770n013", "tag": {"application": "", "device_type": "switch", "product": "e770n013", "vendor": "ubiquoss"}}
