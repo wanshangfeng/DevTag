@@ -6,8 +6,9 @@ import os
 from decoders import JSONDecoder
 from encoders import JSONEncoder
 from log import Logger
-from preprocess import clean_all
-from recognition import tag_rules
+from banner_preprocess import clean_banner
+from recognition import tag_banner
+import path_config
 
 from datetime import datetime
 
@@ -49,7 +50,7 @@ def main():
     logger.info("vendor: %s" %vendor)  
 
     dirname, fname = os.path.split(os.path.abspath(__file__))
-    file = dirname + '/test/' + 'DevTag-'+protocol+'.json'
+    file = dirname + '/'+path_config.test_path+ '/DevTag-'+protocol+'.json'
 
     if part_or_all == 'part':
         logger.info("The DevTag provides the part tag")
@@ -61,7 +62,7 @@ def main():
     for line in args.filename:
         line_to_json = json.loads(line)
         banner = line_to_json['banner']
-        tag_list = tag_rules(protocol, banner, device_type, vendor)
+        tag_list = tag_banner(protocol, banner, device_type, vendor)
         
         #delete same tag
         tag_delete_same_list = []

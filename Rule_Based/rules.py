@@ -1,10 +1,10 @@
 import json
+import path_config as path 
 
 
 def generate_rules_from_protocol(protocol_rule_name,device_type,vendor):
-    openfile = "rules/"+protocol_rule_name
     rules = list()
-    with open(openfile,'r',encoding='utf-8') as f:
+    with open(protocol_rule_name,'r',encoding='utf-8') as f:
         for line in f:
             line = line.lower()
             line_to_json = json.loads(line)
@@ -31,7 +31,7 @@ class FTP():
             self.rule = list() 
 
         def generate_rules(self,device_type,vendor):
-            self.rule = generate_rules_from_protocol("FTP_RULES.json",device_type,vendor)
+            self.rule = generate_rules_from_protocol(path.FTP_rules_data,device_type,vendor)
 
             
 
@@ -41,7 +41,7 @@ class HTTP():
             self.rule = list()
         
         def generate_rules(self,device_type,vendor):
-            self.rule = generate_rules_from_protocol("HTTP_RULES.json",device_type,vendor)
+            self.rule = generate_rules_from_protocol(path.HTTP_rules_data,device_type,vendor)
 
 
 
@@ -51,7 +51,7 @@ class RTSP():
             self.rule = list() 
 
         def generate_rules(self,device_type,vendor):
-            self.rule = generate_rules_from_protocol("RTSP_RULES.json",device_type,vendor)
+            self.rule = generate_rules_from_protocol(path.RTSP_rules_data,device_type,vendor)
 
 
 class SMTP():
@@ -60,7 +60,7 @@ class SMTP():
             self.rule = list() 
 
         def generate_rules(self,device_type,vendor):
-            self.rule = generate_rules_from_protocol("SMTP_RULES.json",device_type,vendor)
+            self.rule = generate_rules_from_protocol(path.SMTP_rules_data,device_type,vendor)
 
 
 class TELNET():
@@ -69,5 +69,5 @@ class TELNET():
             self.rule = list() 
 
         def generate_rules(self,device_type,vendor):
-            self.rule = generate_rules_from_protocol("TELNET_RULES.json",device_type,vendor)
+            self.rule = generate_rules_from_protocol(path.TELNET_rules_data,device_type,vendor)
 

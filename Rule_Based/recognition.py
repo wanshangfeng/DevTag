@@ -1,10 +1,10 @@
 import re
-from lables.rules import FTP, HTTP, RTSP, SMTP, TELNET
+from rules import FTP, HTTP, RTSP, SMTP, TELNET
 
-from preprocess import clean_all
+from banner_preprocess import clean_banner
 
 
-def rules(protocol, device_type, vendor):
+def extra_rules(protocol, device_type, vendor):
     rule = None
 
     if protocol.lower() == "ftp":
@@ -23,7 +23,7 @@ def rules(protocol, device_type, vendor):
 
 regex_note = ['$1','$2','$3','$4','$5']
 
-def tag_all(banner, all_rules, tag_list):
+def recognition_banner(banner, all_rules, tag_list):
 
     if len(all_rules) < 1:
         return None
@@ -89,13 +89,13 @@ def tag_all(banner, all_rules, tag_list):
         return None
 
 
-def tag_rules(protocol,banner,device_type,vendor):
+def tag_banner(protocol,banner,device_type,vendor):
 
     tag_list = list()
     
-    banner = clean_all(protocol,banner)
-    device_rules = rules(protocol,device_type,vendor)
-    tag_list = tag_all(banner,device_rules,tag_list)
+    banner = clean_banner(protocol,banner)
+    device_rules = extra_rules(protocol,device_type,vendor)
+    tag_list = recognition_banner(banner,device_rules,tag_list)
 
     if tag_list is not None:
         return tag_list

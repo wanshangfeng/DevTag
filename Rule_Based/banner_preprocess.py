@@ -1,8 +1,6 @@
-## 对banner数据进行一下预处理
-
 import re
 
-def clean_all(protocol,banner):
+def clean_banner(protocol,banner):
     banner = banner.lower()
     # banner = banner.replace(r"\r\n","")
 
