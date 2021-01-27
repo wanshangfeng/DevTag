@@ -10,7 +10,6 @@ embed_path = dataset + "/data/embedding_banner"  # 训练集对应的词向量�
 
 
 pretrain_path = "pretrained/index_wv.pkl"          # 预训练词向量
-tfidf_path = "pretrained/tfidf_vec.pkl"   # tfidf向量
 
 user_test_path = 'test'  # 测试数据目录
 user_test_pre_path = user_test_path + '/test-pre.txt'   # 预处理后的测试数据
