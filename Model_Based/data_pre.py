@@ -1,74 +1,56 @@
 import re
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from bs4 import BeautifulSoup
+import json
+
+def extracTextFromHtml(html):
+    html_a = html
+    try:
+        soup = BeautifulSoup(html, 'html.parser')
+    except:
+        return ""
+    if str(type(soup.script)) != str("<type 'NoneType'>"):
+        for scripts in soup.find_all('script'):
+            if scripts.string:
+                html_a = html_a.replace(str(scripts.string), '')
+    if str(type(soup.style)) != str("<type 'NoneType'>"):
+        for styles in soup.find_all('style'):
+            if styles.string:
+                html_a = html_a.replace(str(styles.string), '')
+    try:
+        soup = BeautifulSoup(html_a, 'ihtml.parser')
+    except:
+        soup = BeautifulSoup(html_a, 'lxml')
+    text = soup.get_text()
+    return text
 
 
 def preprocessing(text):
-    text = filter_tags(text)
-    # 分词
-    tokens = [word for word in word_tokenize(text)]
-    # 去停词
+    # 从网页中提取文本信息
+    text = extracTextFromHtml(text)
+    text = ' '.join(text.split())
+    # 去除时间、ip地址等信息
+    time_pattern1 = "(0\d{1}|1\d{1}|2[0-3]):([0-5]\d{1})"
+    time_pattern2 = "(0\d{1}|1\d{1}|2[0-3]):[0-5]\d{1}:([0-5]\d{1})"
+    ip_pattern = "((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))"
+    p_ip = re.compile(ip_pattern)
+    p_time1 = re.compile(time_pattern1)
+    p_time2 = re.compile(time_pattern2)
+    text = p_ip.sub(" ", text)
+    text = p_time2.sub(" ", text)
+    text = p_time1.sub(" ", text)
+
+    text = text.replace(r'\r', ' ').replace(r'\n', ' ').replace(r'\t', ' ')  # 去除\r, \n, \t
+    text = re.sub(u"([^\u4e00-\u9fa5\u0041-\u005a\u0061-\u007a])", ' ', text)  # 提取英文字符和数字
+
+
+    tokens = [word for word in word_tokenize(text)]  # 分词
     stop = stopwords.words('english')
-    tokens = [word for word in tokens if word not in stop]
-    # 去特殊字符
-    characters = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&',
-                  '!', '*', '@', '#', '$', '%', '-', '...', '200', '|', '=', '+']  # ,'-'
-    tokens = [word for word in tokens if word not in characters]
-    # 大小写转换，统一为小写
-    tokens = [word.lower() for word in tokens]
+    tokens = [word for word in tokens if word not in stop]  # 去停词
+    tokens = [word.lower() for word in tokens]  # 大小写转换，统一为小写
     # print(tokens)
     return tokens
-
-
-# 过滤HTML中的标签
-# 将HTML中标签等信息去掉
-# @param htmlstr HTML字符串
-def filter_tags(htmlstr):
-    re_cdata = re.compile('//<!\[CDATA\[[^>]*//\]\]>', re.I)                 # 匹配CDATA
-    re_script = re.compile('<\s*script[^>]*>[^<]*<\s*/\s*script\s*>', re.I)  # Script
-    re_style = re.compile('<\s*style[^>]*>[^<]*<\s*/\s*style\s*>', re.I)     # style
-    re_br = re.compile('<br\s*?/?>')            # 处理换行
-    re_h = re.compile('</?\w+[^>]*>')           # HTML标签
-    re_comment = re.compile('<!--[^>]*-->')     # HTML注释
-    re_stopwords = re.compile('\u3000')         # 去除无用的'\u3000'字符
-    re_chinese = re.compile(r'[\u4e00-\u9fa5]') # 汉字
-    s = re_cdata.sub('', htmlstr)    # 去掉CDATA
-    s = re_script.sub('', s)         # 去掉SCRIPT
-    s = re_style.sub('', s)          # 去掉style
-    s = re_br.sub('\n', s)           # 将br转换为换行
-    s = re_h.sub('', s)              # 去掉HTML 标签
-    s = re_comment.sub('', s)        # 去掉HTML注释
-    s = re_stopwords.sub('', s)      # 去除无用的'\u3000'字符
-    s = re_chinese.sub('', s)        # 排除汉字
-    blank_line = re.compile('\n+')  # 去掉多余的空行
-    s = blank_line.sub('\n', s)
-    s = replaceCharEntity(s)        # 替换实体
-    # 提取英文字符和数字
-    s = re.sub(u"([^\u4e00-\u9fa5\u0041-\u005a\u0061-\u007a])", " ", s)
-    return s
-
-
-def replaceCharEntity(htmlstr):
-    """使用正常的字符替换HTML中特殊的字符实体"""
-    CHAR_ENTITIES = {'nbsp':' ','160':' ',
-                  'lt':'<','60':'<',
-                  'gt':'>','62':'>',
-                  'amp':'&','38':'&',
-                  'quot':'"','34':'"',}
-
-    re_charEntity=re.compile(r'&#?(?P<name>\w+);')
-    sz=re_charEntity.search(htmlstr)
-    while sz:
-        entity = sz.group()  # entity全称，如&gt;
-        key = sz.group('name')  # 去除&;后entity,如&gt;为gt
-        try:
-            htmlstr = re_charEntity.sub(CHAR_ENTITIES[key], htmlstr, 1)
-            sz = re_charEntity.search(htmlstr)
-        except KeyError:
-            # 以空串代替
-            htmlstr = re_charEntity.sub('', htmlstr, 1)
-            sz = re_charEntity.search(htmlstr)
-    return htmlstr
 
 
 def test_data_pre(path, to_path):
@@ -79,7 +61,9 @@ def test_data_pre(path, to_path):
         print('Processing ', file)
         with open(file, 'r', encoding='utf-8') as f, open(to_path, 'w', encoding='utf-8') as f2:
             for line in f.readlines():
-                text = preprocessing(line)
+                dict = json.loads(line)
+                text = preprocessing(dict['banner'])
+                # print(text)
                 f2.write(' '.join(text)+'\n')
 
 
@@ -119,7 +103,7 @@ def all_data_pre():
 
     banner_data = []
     tag_data = []
-    filepath_list = ['data3_49000/somedata49000.json']  # 原始数据路径
+    filepath_list = ['dataset/data.json']  # 原始数据路径
     for file in filepath_list:  # 遍历文件夹
         print('正在处理', file)
         with open(file, 'r', encoding='utf-8') as f:

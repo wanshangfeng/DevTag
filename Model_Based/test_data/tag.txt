@@ -1,2 +1,0 @@
-{"device_type": "router", "vendor": "tp-link", "product": "c7"}
-{"device_type": "switch", "vendor": "hp", "product": "p5"}

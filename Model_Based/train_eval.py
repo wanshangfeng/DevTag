@@ -8,6 +8,7 @@ import time
 from utils import get_time_dif
 from tensorboardX import SummaryWriter
 import path_config as path
+import json
 
 
 # 权重初始化，默认xavier
@@ -106,13 +107,22 @@ def test(config, model, test_iter, use_type):
             for each in predict_all:
                 if config.class_list[each]:
                     device_type, brand, product = config.class_list[each].split('/')
-                    f.write('{"device_type": "' + device_type + '", ' +
-                            '"vendor": "' + brand + '", ' +
-                            '"product": "' + product + '"}' + '\n')
+                    devtag = {
+                        'brand': brand,
+                        'product': product,
+                        'device_type': device_type
+                    }
+                    json.dump(devtag, f)
+                    f.write('\n')
                 else:
-                    f.write('{"device_type": "unknown", ' +
-                            '"vendor": "unknown", ' +
-                            '"product": "unknown"} ' + '\n')
+                    devtag = {
+                        'brand': "unknown",
+                        'product': "unknown",
+                        'device_type': "unknown"
+                    }
+                    json.dump(devtag, f)
+                    f.write('\n')
+
         print("Save tags to ", path.user_test_result_path)
     time_dif = get_time_dif(start_time)
     print("Time usage:", time_dif)

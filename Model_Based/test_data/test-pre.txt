@@ -1,2 +1,0 @@
-http ok r ndate wed dec gmt r ncontent type text html r nserver energyict rtu c ee r n r n r n r n r n r n r n r n r n r n r n r n r n r n r n r n r n r n
-http ok r ndate wed dec gmt r nserver boa r nconnection close r ncontent type text html n n doctype html public w c dtd xhtml transitional en http www w org tr xhtml dtd xhtml transitional dtd n n n nrtu access n n n n n n trtu access n n n n n restricted area n n n tpassword n n n n n n n n n n n n n n n gateway p n n n n n
