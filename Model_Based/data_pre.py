@@ -63,7 +63,7 @@ def preprocessing(text):
     tokens = [word.strip('.') for word in tokens]
     stop = stopwords.words('english')
     tokens = [word for word in tokens if word not in stop]  # 去停词
-    characters = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', "'", "''", '``', '..',
+    characters = ['', ',', '.', ':', ';', '?', '(', ')', '[', ']', '&', "'", "''", '``', '..',
                   '!', '*', '@', '#', '$', '%', '-', '...', '|', '=', '+', '//', "'s", "n't"]
     tokens = [word for word in tokens if word not in characters]  # 去特殊字符
     # print(tokens)
