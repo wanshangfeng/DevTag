@@ -108,7 +108,7 @@ def test(config, model, test_iter, use_type):
             for each in predict_all:
                 device_type, brand, product = config.class_list[each].split('/')
                 devtag = {
-                    'brand': brand,
+                    'vendor': brand,
                     'product': product,
                     'device_type': device_type
                 }
