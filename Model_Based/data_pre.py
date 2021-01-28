@@ -28,31 +28,43 @@ def extracTextFromHtml(html):
 
 
 def preprocessing(text):
-    # 从网页中提取文本信息
+    # 从网页中提取文本信息, 非网页文本保持不变
     text = extracTextFromHtml(text)
     text = ' '.join(text.split())
     # 去除时间、ip地址等信息
     time_pattern1 = "(0\d{1}|1\d{1}|2[0-3]):([0-5]\d{1})"
-    time_pattern2 = "(0\d{1}|1\d{1}|2[0-3]):[0-5]\d{1}:([0-5]\d{1})"
-    ip_pattern = "((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))"
+    time_pattern2 = "(0\d{1}|1\d{1}|2[0-3]):[0-5]\d{1}:([0-5]\d{0,1})"
+    ip_pattern = " ((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))"
+    mac_pattern = "([A-Fa-f0-9]{2}:){5}[A-Fa-f0-9]{2}"
+    date_pattern1 = "(Mon|Tues|Tue|Wed|Thur|Thu|Fri|Sat|Sun),\s+(\d|\d\d)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Oct|Nov|Dec)\s+\d\d\d\d"
+    date_pattern2 = "(Mon|Tues|Tue|Wed|Thur|Thu|Fri|Sat|Sun)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Oct|Nov|Dec)\s+(\d|\d\d)\s+\d\d:\d\d:\d\d\s+\d\d\d\d"
+    p_date1 = re.compile(date_pattern1)
+    p_date2 = re.compile(date_pattern2)
+    p_mac = re.compile(mac_pattern)
     p_ip = re.compile(ip_pattern)
     p_time1 = re.compile(time_pattern1)
     p_time2 = re.compile(time_pattern2)
+
+    text = p_date1.sub(" ", text)
+    text = p_date2.sub(" ", text)
+    text = p_mac.sub(" ", text)
     text = p_ip.sub(" ", text)
     text = p_time2.sub(" ", text)
     text = p_time1.sub(" ", text)
 
     text = text.replace(r'\r', ' ').replace(r'\n', ' ').replace(r'\t', ' ')  # 去除\r, \n, \t
     text = re.sub(u"([^\u0030 -\u0039\u0041 -\u005a\u0061-\u007a])", '', text)  # 提取英文字符和数字
-    text = ' '.join(re.split('-|/|=|:', text))
+    text = ' '.join(re.split('/|=|:', text))
     # print(text)
 
     tokens = [word for word in word_tokenize(text)]  # 分词
     tokens = [word.lower() for word in tokens]  # 大小写转换，统一为小写
+    tokens = [word.strip('-') for word in tokens]  # 去除单词首尾特殊符号
+    tokens = [word.strip('.') for word in tokens]
     stop = stopwords.words('english')
     tokens = [word for word in tokens if word not in stop]  # 去停词
-    characters = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', "'", "''", '``',
-                  '!', '*', '@', '#', '$', '%', '-', '...', '|', '=', '+', '//']
+    characters = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', "'", "''", '``', '..',
+                  '!', '*', '@', '#', '$', '%', '-', '...', '|', '=', '+', '//', "'s", "n't"]
     tokens = [word for word in tokens if word not in characters]  # 去特殊字符
     # print(tokens)
     return tokens

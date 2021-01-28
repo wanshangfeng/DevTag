@@ -1,4 +1,4 @@
-{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "gateway", "product": "a1", "device_type": "gateway"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
@@ -35,19 +35,27 @@
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
-{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
-{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
-{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "foscam", "product": " ip4", "device_type": "ipcam"}
+{"brand": "hp", "product": "g6", "device_type": "printer"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "hp", "product": "g6", "device_type": "printer"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
@@ -75,14 +83,6 @@
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "hp", "product": "g6", "device_type": "printer"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
@@ -93,7 +93,7 @@
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
-{"brand": "hp", "product": "g6", "device_type": "printer"}
+{"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}
 {"brand": "enterasys", "product": "c2", "device_type": "switch"}

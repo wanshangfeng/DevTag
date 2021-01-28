@@ -102,28 +102,19 @@ def test(config, model, test_iter, use_type):
                 outputs = model(texts)
                 pred = torch.max(outputs.data, 1)[1].cpu().numpy()
                 predict_all = np.append(predict_all, pred)
-        # 输出tags
+
+        # 输出DevTag
         with open(path.user_test_result_path, 'w', encoding='utf-8') as f:
             for each in predict_all:
-                if config.class_list[each]:
-                    device_type, brand, product = config.class_list[each].split('/')
-                    devtag = {
-                        'brand': brand,
-                        'product': product,
-                        'device_type': device_type
-                    }
-                    json.dump(devtag, f)
-                    f.write('\n')
-                else:
-                    devtag = {
-                        'brand': "unknown",
-                        'product': "unknown",
-                        'device_type': "unknown"
-                    }
-                    json.dump(devtag, f)
-                    f.write('\n')
-
-        print("Save tags to ", path.user_test_result_path)
+                device_type, brand, product = config.class_list[each].split('/')
+                devtag = {
+                    'brand': brand,
+                    'product': product,
+                    'device_type': device_type
+                }
+                json.dump(devtag, f)
+                f.write('\n')
+        print("Save DevTag to ", path.user_test_result_path)
     time_dif = get_time_dif(start_time)
     print("Time usage:", time_dif)
 
