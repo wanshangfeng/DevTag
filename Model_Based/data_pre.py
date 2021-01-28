@@ -4,6 +4,7 @@ from nltk.tokenize import word_tokenize
 from bs4 import BeautifulSoup
 import json
 
+
 def extracTextFromHtml(html):
     html_a = html
     try:
@@ -42,13 +43,17 @@ def preprocessing(text):
     text = p_time1.sub(" ", text)
 
     text = text.replace(r'\r', ' ').replace(r'\n', ' ').replace(r'\t', ' ')  # 去除\r, \n, \t
-    text = re.sub(u"([^\u4e00-\u9fa5\u0041-\u005a\u0061-\u007a])", ' ', text)  # 提取英文字符和数字
-
+    text = re.sub(u"([^\u0030 -\u0039\u0041 -\u005a\u0061-\u007a])", '', text)  # 提取英文字符和数字
+    text = ' '.join(re.split('-|/|=|:', text))
+    # print(text)
 
     tokens = [word for word in word_tokenize(text)]  # 分词
+    tokens = [word.lower() for word in tokens]  # 大小写转换，统一为小写
     stop = stopwords.words('english')
     tokens = [word for word in tokens if word not in stop]  # 去停词
-    tokens = [word.lower() for word in tokens]  # 大小写转换，统一为小写
+    characters = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', "'", "''", '``',
+                  '!', '*', '@', '#', '$', '%', '-', '...', '|', '=', '+', '//']
+    tokens = [word for word in tokens if word not in characters]  # 去特殊字符
     # print(tokens)
     return tokens
 
