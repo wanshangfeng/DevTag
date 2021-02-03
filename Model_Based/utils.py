@@ -8,7 +8,7 @@ import time
 from datetime import timedelta
 import path_config as path
 
-MAX_VOCAB_SIZE = 10000  # 词表长度限制
+MAX_VOCAB_SIZE = 50000  # 词表长度限制
 UNK, PAD = '<UNK>', '<PAD>'  # 未知字，padding符号
 
 
@@ -79,9 +79,9 @@ class DatasetIterater(object):
     def __init__(self, batches, batch_size, device):
         self.batch_size = batch_size
         self.batches = batches
-        self.n_batches = len(batches) / batch_size
+        self.n_batches = len(batches) // batch_size
         self.residue = False  # 记录batch数量是否为整数
-        if self.n_batches == 0 or (len(batches) % self.n_batches != 0):
+        if len(batches) % self.batch_size != 0:
             self.residue = True
         self.index = 0
         self.device = device
