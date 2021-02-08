@@ -64,11 +64,7 @@ def main():
         banner = line_to_json['banner']
         tag_list = tag_banner(protocol, banner, device_type, vendor)
         
-        #delete same tag
-        tag_delete_same_list = []
-        [tag_delete_same_list.append(i) for i in tag_list if not i in tag_delete_same_list]
-
-        if tag_delete_same_list is None:
+        if tag_list is None:
             logger.info("don't find a tag")
             
             with open(file, 'a', encoding='utf-8') as f:
@@ -80,6 +76,10 @@ def main():
                 f.write("\n")
 
             continue
+
+        #delete same tag
+        tag_delete_same_list = []
+        [tag_delete_same_list.append(i) for i in tag_list if not i in tag_delete_same_list]
             
         if part_or_all == "part":
             first_tag = tag_delete_same_list[0]
