@@ -29,7 +29,7 @@
 {"filterword": "sc07a304", "tag": {"application": "", "device_type": "camera", "product": "sc07a304", "vendor": "foscam"}}
 {"filterword": "^RTSP/1\\.0 200 OK\\r\\nServer: GM Streaming Server v([\\w._-]+)\\r\\nPublic: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE\\r\\n\\r\\n$", "tag": {"application": "", "device_type": "camera", "product": "GM streaming server", "vendor": ""}}
 {"filterword": "dc-fz80", "tag": {"application": "", "device_type": "camera", "product": "dc-fz80", "vendor": "panasonic"}}
-{"filterword": "c3750-ipservicesk9", "tag": {"application": "", "device_type": "switch", "product": "c3750-ipservicesk9", "vendor": "cisco"}}
+{"filterword": "c3750", "tag": {"application": "", "device_type": "switch", "product": "c3750", "vendor": "cisco"}}
 {"filterword": "b110c", "tag": {"application": "", "device_type": "printer", "product": "b110c", "vendor": "hp"}}
 {"filterword": "^HTTP/1\\.1 200 OK\\r\\nContent-Type: application/x-rtsp-tunnelled\\r\\nServer: H264DVR ([\\d.]+)\\r\\nConnection: close\\r\\nCache-Control: private\\r\\n\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "h264", "vendor": ""}}
 {"filterword": "dcs-2120", "tag": {"application": "", "device_type": "camera", "product": "dcs-2120", "vendor": "d-link"}}
@@ -48,7 +48,7 @@
 {"filterword": "cnr-wcam43g", "tag": {"application": "", "device_type": "camera", "product": "cnr-wcam43g", "vendor": "canyon"}}
 {"filterword": "^RTSP/1\\.0 200 OK\\r\\nCSeq: -1\\r\\nDate: .* GMT\\r\\nPublic: OPTIONS, DESCRIBE, PLAY, SETUP, TEARDOWN\\r\\n\\r\\n$", "tag": {"application": "", "device_type": "camera", "product": "ip7131 or ip7138", "vendor": "Vivotek"}}
 {"filterword": "scnc2700w", "tag": {"application": "", "device_type": "camera", "product": "scnc2700w", "vendor": "sharx"}}
-{"filterword": "k3v2", "tag": {"application": "", "device_type": "camera", "product": "k3v2", "vendor": "huawei"}}
+{"filterword": "k3v2", "tag": {"application": "", "device_type": "", "product": "k3v2", "vendor": "huawei"}}
 {"filterword": "^RTSP/1\\.0 400 Bad Request\\r\\nDate: .*\\r\\nAllow: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, STATS\\r\\n\\r\\n", "tag": {"application": "", "device_type": "media device", "product": "tv-server", "vendor": "MediaPortal"}}
 {"filterword": "^RTSP/1\\.0 400 Bad Request\\r\\nDate: .*\\r\\nAllow: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE\\r\\n\\r\\n", "tag": {"application": "", "device_type": "camera", "product": "ip surveillance rtpsd", "vendor": "NUUO"}}
 {"filterword": "scnc3605n", "tag": {"application": "", "device_type": "camera", "product": "scnc3605n", "vendor": "sharx"}}

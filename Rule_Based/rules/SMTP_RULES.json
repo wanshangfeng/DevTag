@@ -23,7 +23,7 @@
 {"filterword": "^220 ([-\\w_.]+) ESMTP MailFrontier \\(([\\d.]+)\\)\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "MailFrontier"}}
 {"filterword": "^220\\s+(DP-\\d+)\\r\\n250-Hello\\r\\n250-DSN\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "", "vendor": "Panasonic"}}
 {"filterword": "^220 ([\\w._-]+) WebShielde1000/SMTP Ready\\.\\r\\n", "tag": {"application": "", "device_type": "misc device", "product": "webshield e1000", "vendor": "McAfee"}}
-{"filterword": "Microsft Exchange", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "exchange server", "vendor": "microsoft"}}
+{"filterword": "Microsft Exchange", "tag": {"application": "", "device_type": "", "product": "exchange server", "vendor": "microsoft"}}
 {"filterword": "^220 [\\*\\d\\ ]{2,300}\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "pix sanitized", "vendor": "Cisco"}}
 {"filterword": "^220 ([-\\w_.]+) Server ESMTP ready at .*\\r\\n241-\\r\\n$", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "BorderWare"}}
 {"filterword": "^220 ([-\\w_.]+) ESMTP\\r\\n214-The following commands are recognized\\r\\n214-\\tauth\\tdata\\tehlo\\t", "tag": {"application": "", "device_type": "specialized", "product": "", "vendor": "IronPort"}}
@@ -34,13 +34,13 @@
 {"filterword": "^220 ([-\\w_.]+) ESMTP\\r\\n214-The following commands are recognized\\r\\n214-\\tauth\\tdata\\tehlo\\teuq_full\\r\\n214-\\thelo\\thelp\\tmail\\tnoop\\r\\n214 \\tquit\\trcpt\\trset\\tvrfy\\r\\n", "tag": {"application": "", "device_type": "specialized", "product": "c600", "vendor": "IronPort"}}
 {"filterword": "^220 Canon[-.\\w]+ ESMTP Ready\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "smtp server", "vendor": "Canon"}}
 {"filterword": "^220 ([-\\w_.]+) ESMTP BorderWare MXtreme Mail Firewall\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "mxtreme", "vendor": "BorderWare"}}
-{"filterword": "Postfix", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "postfix", "vendor": ""}}
-{"filterword": "Microsoft ESMTP MAIL Service", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "exchange server", "vendor": "microsoft"}}
+{"filterword": "Postfix", "tag": {"application": "", "device_type": "", "product": "postfix", "vendor": ""}}
+{"filterword": "Microsoft ESMTP MAIL Service", "tag": {"application": "", "device_type": "", "product": "exchange server", "vendor": "microsoft"}}
 {"filterword": "^220 Service ready KM([\\w._-]+) smtpd\\r\\n", "tag": {"application": "", "device_type": "printer", "product": "bizhub $1", "vendor": "Konica Minolta"}}
 {"filterword": "^220 ([-\\w_.]+) SMTP Ready 12\\.\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "Tunix"}}
-{"filterword": "Sendmail", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "sendmail", "vendor": ""}}
+{"filterword": "Sendmail", "tag": {"application": "", "device_type": "", "product": "sendmail", "vendor": ""}}
 {"filterword": "^220 CheckPoint FireWall-1 secure SMTP server\\r\\n$", "tag": {"application": "checkpoint:firewall-1", "device_type": "firewall", "product": "", "vendor": "CheckPoint"}}
-{"filterword": "Exim", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "exim", "vendor": ""}}
+{"filterword": "Exim", "tag": {"application": "", "device_type": "", "product": "exim", "vendor": ""}}
 {"filterword": "^220 ([-\\w_.]+) Tumbleweed MMS SMTP Relay Service ready\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "", "vendor": "Tumbleweed"}}
 {"filterword": "^220 network-box ESMTP\\r\\n", "tag": {"application": "", "device_type": "firewall", "product": "box", "vendor": "Network"}}
-{"filterword": "gsmtp", "information": {"conflict": "", "general": ""}, "tag": {"application": "", "device_type": "", "product": "", "vendor": "Google"}}
+{"filterword": "gsmtp", "tag": {"application": "", "device_type": "", "product": "", "vendor": "Google"}}
