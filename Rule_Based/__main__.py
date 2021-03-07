@@ -86,6 +86,9 @@ def main():
             with open(file, 'a', encoding='utf-8') as f:
                 json.dump(first_tag, f, sort_keys=True)
                 f.write('\n')
+            with open(file,'a',encoding='utf-8') as f:
+                f.write("==================================")
+                f.write('\n')
         if part_or_all == "all":
             for tag in tag_delete_same_list:
                 with open(file, 'a', encoding='utf-8') as f:
