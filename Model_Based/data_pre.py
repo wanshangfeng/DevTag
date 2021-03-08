@@ -73,15 +73,18 @@ def preprocessing(text):
 def test_data_pre(path, to_path):
     """对测试数据做预处理"""
     filepath = [path]
+    banners = []
     print("Data preprocessing...")
     for file in filepath:
         print('Processing ', file)
         with open(file, 'r', encoding='utf-8') as f, open(to_path, 'w', encoding='utf-8') as f2:
             for line in f.readlines():
                 dict = json.loads(line)
+                banners.append(dict['banner'])
                 text = preprocessing(dict['banner'])
                 # print(text)
                 f2.write(' '.join(text)+'\n')
+    return banners
 
 
 def all_data_pre():
@@ -97,12 +100,9 @@ def all_data_pre():
             for line in labels:
                 f.write(''.join(line) + '\n')
 
-    def split_train_test_val(banner_data, tag_data):
-        X_train, X_test, y_train, y_test = train_test_split(banner_data, tag_data, test_size=0.2, random_state=2)
-        X_test, X_val, y_test, y_val = train_test_split(X_test, y_test, test_size=0.5, random_state=2)
-        # print(len(X_train), len(y_train), len(X_test), len(y_test))
-        X_train, _, y_train, _ = train_test_split(X_train, y_train, test_size=0.95, random_state=2)
-        # print(len(X_train), len(y_train), len(X_test), len(y_test))
+    def split_train_test_val(X, y):
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=2,stratify=y)  # 非平衡数据按lable的比例分
+        X_test, X_val, y_test, y_val = train_test_split(X_test, y_test, test_size=0.5, random_state=2, stratify=y_test)
         return X_train, X_test, X_val, y_train, y_test, y_val
 
     def y_to_id(labels, y_train, y_test, y_val):
@@ -120,7 +120,7 @@ def all_data_pre():
 
     banner_data = []
     tag_data = []
-    filepath_list = ['dataset/data.json']  # 原始数据路径
+    filepath_list = ['yourdata.json']  # 原始数据路径
     for file in filepath_list:  # 遍历文件夹
         print('正在处理', file)
         with open(file, 'r', encoding='utf-8') as f:
@@ -131,7 +131,8 @@ def all_data_pre():
                 tag_data.append(np.array(dic['device_type'].lower() + '/' + dic['brand'].lower() + '/' + dic['product'].lower()))
     labels = np.unique(tag_data)
     for label in labels:
-        print(label, tag_data.count(label))
+        print(str(label)+','+ str(tag_data.count(label)))
+
     save_labels(path.class_path, labels)
     # 打乱数据
     banner_data = np.array(banner_data)

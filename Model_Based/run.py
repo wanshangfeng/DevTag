@@ -50,14 +50,12 @@ if __name__ == '__main__':
         from data_pre import test_data_pre
         start_time = time.time()
         config.test_path = path.user_test_pre_path  # Preprocessed data
-        test_data_pre(args.file, config.test_path)
+        banners = test_data_pre(args.file, config.test_path)
         vocab, test_data = build_dataset(config, args.type)
         test_iter = build_iterator(test_data, config)
-        time_dif = get_time_dif(start_time)
-        print("Time usage:", time_dif)
 
         config.n_vocab = len(vocab)
         model = x.Model(config).to(config.device)
         init_network(model)
         print(model.parameters)
-        test(config, model, test_iter, args.type)
+        test(config, model, test_iter, args.type, banners)

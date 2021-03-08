@@ -1,171 +1,104 @@
+access/cisco/ipv4
+access/cisco/wap200
+access/cisco/wap4400n
+access/d-link/dap-1360
+access/linksys/n300
+access/linksys/wap54g
+access/netgear/wg302v2
+access/thomson/mon0
+ca/inca/2014s
 camera/acer/s200
-camera/acti/ e69
-camera/acti/c3
-camera/acti/e25
-camera/airsight/p2p
-camera/alpha/a7r
-camera/amcrest/ 1080p
-camera/ansel/fb2
-camera/ascend/g700
-camera/aspect/iq3
-camera/aviosys/9000a
-camera/axis/m20
-camera/axis/p13
-camera/axis/p33
-camera/axis/q17
-camera/brickcom/v5
-camera/brickcom/v6
-camera/canon/ a80
-camera/canon/ a85
-camera/canon/ a95
-camera/canon/ d30
+camera/alpha/win32
+camera/american/home2
+camera/avtech/avn801
+camera/axis/m1054
+camera/axis/m3006
+camera/beward/2710r
 camera/canon/c100
-camera/canon/d30
-camera/canon/g10
-camera/canon/g11
-camera/canon/g15
-camera/canon/g16
+camera/canon/c200
 camera/canon/n100
 camera/canon/s100
-camera/canon/sl1
-camera/canon/sl2
-camera/canon/t5
-camera/canon/t6
-camera/canon/t70
-camera/cnet/c64
+camera/canon/vb-c10
+camera/canon/vb-c50i
+camera/canon/vb-c60
+camera/canon/vb-h41
+camera/canon/vb-m40
+camera/canon/vb-m600
 camera/cnet/n1000
-camera/creative/m17
-camera/creative/s1
-camera/dahua/r2
-camera/ericsson/x10
-camera/flir/e5
+camera/d-link/5020l
+camera/d-link/c931
+camera/d-link/dcs-2120
+camera/d-link/dcs-930l
+camera/d-link/dcs-932l
+camera/d-link/home-1
 camera/flir/m500
-camera/grandstream/ gxv3000
-camera/grandstream/ v100r001
-camera/hawei/ y5
-camera/hikvision/v3
-camera/huawei/m3
-camera/huawei/p10
-camera/huawei/p8
-camera/huawei/r11
-camera/huawei/s7
-camera/huawei/y5
-camera/hyundai/f1s
-camera/instar/mp4
-camera/intel/d36
-camera/iti/web2000
-camera/kodak/sp1
-camera/launch/x30
-camera/lenovo/ k4
+camera/geovision/geohttpserver for s
+camera/hikvision/hikvision-webs
+camera/hot/cam2cam
+camera/hot/flirt4free
 camera/lenovo/n500
-camera/lenovo/p70
-camera/lenovo/s90
 camera/lenovo/s930
-camera/lg/ g4
-camera/lg/ g5
-camera/lg/ l40
-camera/lg/ v10
-camera/lg/g3
-camera/lg/g4
-camera/lg/g5
-camera/lg/k10
-camera/lg/l3
-camera/lg/v10
-camera/mobotix/q25
-camera/mobotix/v15
-camera/motorola/ v3
-camera/nokia/ e5
-camera/nokia/ e71
-camera/nokia/ n8
-camera/nokia/ n85
-camera/nokia/c6
-camera/nokia/n73
-camera/nokia/n75
-camera/nokia/n86
-camera/nokia/n9
+camera/lg/2017p
+camera/linksys/wvc54gc
+camera/microseven/m7cam
+camera/minolta/x700
+camera/motorola/iso9001
 camera/nokia/n900
-camera/nokia/q1
-camera/panasonic/ g7
-camera/panasonic/cm1
-camera/panasonic/dl1
-camera/panasonic/g7
-camera/panasonic/p11
-camera/panasonic/t40
-camera/panasonic/t41
-camera/pci/l41
-camera/samsng/ a5
-camera/samsng/ j1
-camera/samsng/ j3
-camera/samsng/ j5
-camera/samsng/ j7
-camera/samsung/a6
-camera/samsung/a8
-camera/samsung/b88
-camera/samsung/c9
-camera/samsung/e63
-camera/samsung/j3
-camera/samsung/j600
-camera/samsung/j700
-camera/samsung/on5
-camera/samsung/s2
-camera/samsung/s3
+camera/panasonic/sw395
+camera/panasonic/sw458
+camera/probe/2014r
+camera/samsung/2017w
+camera/samsung/e800
 camera/samsung/s500
-camera/sony/ z1
-camera/sony/ z3
-camera/sony/ z5
 camera/sony/a300
-camera/sony/a33
-camera/sony/a9
-camera/sony/fl1
-camera/tandberg/c90
+camera/sony/a400
+camera/sony/snc-er580
+camera/sun/sp30
+camera/topica/e911
 camera/tp-link/wpa2-psk
-camera/verizon/a7
-camera/zavio/b5110
 camera/zoom/b500
-camera/zoom/i2b
 camera/zte/f600
-camera/zte/z9
-gateway/3m/dg3
-gateway/ascom/db1
-gateway/avaya/g350
-gateway/avaya/g430
-gateway/avaya/g450
+copier/american/mx-3070n
+copier/ricoh/c2004
+copier/ricoh/c3004
+dvr/avtech/mpeg4
+dvr/everfocus/ecor960-16x1
+dvr/panasonic/sf438
+dvr/vista/h264
+dvr/zoom/channel10
+encoder/moxa/5210a
+encoder/moxa/5250a
+ethernet unit/omron/cj1w-etn21
 gateway/cisco/ipv6
-gateway/cisco/r2
-gateway/cisco/rfgw-1
-gateway/cisco/z1
+gateway/cradlepoint/mbr-800
+gateway/cradlepoint/mbr1200
 gateway/d-link/dsl-2750b
 gateway/gateway/1781a
+gateway/gateway/1781ef
 gateway/gateway/1781va
-gateway/gateway/a1
+gateway/gateway/1783vaw
 gateway/gateway/a840
-gateway/gateway/b1
-gateway/gateway/dh3
-gateway/gateway/dns1
-gateway/gateway/h2
+gateway/gateway/a850
 gateway/gateway/html5
-gateway/gateway/i2p
-gateway/gateway/ip3
-gateway/gateway/l69
-gateway/gateway/md5
-gateway/gateway/mt4
-gateway/gateway/p20
-gateway/gateway/r10
+gateway/gateway/ipn3g
+gateway/gateway/php5
+gateway/gateway/rg-301w
+gateway/gateway/rg-501h
 gateway/gateway/rs232
-gateway/gateway/vg2000
+gateway/gateway/vip4g
+gateway/gateway/wlc-4006
 gateway/hp/wpa2
-gateway/ironport/c600
 gateway/juniper/srx100b
 gateway/juniper/srx100h
 gateway/juniper/srx1400
 gateway/juniper/srx210
 gateway/juniper/srx240
+gateway/juniper/srx300
 gateway/juniper/srx320
 gateway/juniper/srx340
 gateway/juniper/srx345
 gateway/juniper/srx650
 gateway/linksys/ag300
-gateway/linksys/wag160n
 gateway/linksys/wag200g
 gateway/linksys/wag54gs
 gateway/mocet/ig7600
@@ -173,18 +106,25 @@ gateway/moxa/g3110
 gateway/moxa/g3110-hspa
 gateway/moxa/g3111
 gateway/moxa/g3150-hsdpa
-gateway/panasonic/v8
+gateway/nec/2016s
+gateway/nomadix/ag 5900
+gateway/polycom/b600
+gateway/technicolor/server1
 gateway/zte/f411
 gateway/zyxel/p-660hn
-ipcam/foscam/ ip4
-ipcam/microsoft/v6
-modem/airties/ar-141
-modem/airties/rt-205
-modem/airties/rt-211
-modem/airties/wav-180
-modem/d-link/dsl-2540b
+gateway/zyxel/uag2100
+gateway/zyxel/uag5100
+gateway/zyxel/usg110
+gateway/zyxel/usg310
+i/mikrotik/rb450
+i/option/test2
+it/dark/x240
+media device/panasonic/wj-hd316 digital disk recorder
+media device/tivo/to go
+misc device/zyxel/zywall
 modem/d-link/dsl-2750u
 modem/gateway/1681v
+modem/gateway/m1000
 modem/linksys/wag320n
 modem/moxa/g3100
 modem/netgear/cwge111
@@ -194,59 +134,71 @@ modem/netgear/dgn3500
 modem/netgear/dgnd3700
 modem/netgear/dm111p
 modem/netgear/dm111pspv2
-modem/telewell/tw-eav510
 modem/tp-link/adsl2
-modem/tp-link/d7
 modem/tp-link/n600
 modem/tp-link/td-w8950n
 modem/tp-link/td-w8960n
 modem/zte/h108n
 modem/zte/h267a
-modem/zte/mf668
+modem/zyxel/p-660h-t1
+modem/zyxel/p-660hw-t
+modem/zyxel/p-660hw-t3v2
+modem/zyxel/p-660r-d1
+modem/zyxel/p-660r-t1v2
+modem/zyxel/p-660ru-t
+modem/zyxel/p-660ru-t1v2
+modem/zyxel/p660hw-t1
+modem/zyxel/p660r-t1
+modem/zyxel/p660ru-t1
+modem/zyxel/p660ru-t3
 modem/zyxel/pk5001z
-printer/apc/v7
-printer/brother/dcp-7055w
+nvr/laview/1080p
+phone/linksys/spa2102 vo
+printer/apple/2017r
 printer/brother/dcp-7065dn
-printer/brother/dcp-8080dn
-printer/brother/dcp-8085dn
+printer/brother/hl-2270dw
+printer/brother/hl-2280dw
+printer/brother/hl-4150cdn
+printer/brother/hl-4570cdw
+printer/brother/hl-5250dn
+printer/brother/hl-5350dn
 printer/brother/mfc-7360n
-printer/brother/mfc-7365dn
 printer/brother/mfc-7440n
 printer/brother/mfc-7460dn
 printer/brother/mfc-7820n
 printer/brother/mfc-7840w
 printer/brother/mfc-7860dw
-printer/brother/mfc-8380dn
 printer/brother/mfc-8480dn
-printer/brother/mfc-8690dw
 printer/brother/mfc-8880dn
+printer/brother/mfc-8890dw
+printer/brother/mfc-9120cn
+printer/brother/mfc-9460cdn
+printer/brother/mfc-9970cdw
 printer/brother/mfc-l2700dw
-printer/canon/ip90
-printer/canon/pro-2000
+printer/brother/w3layouts
+printer/canon/i-sensys mf8040cn
 printer/dark/lan-72mbps
-printer/dell/b2375dfw
 printer/dell/b2375dnf
+printer/dell/ews-nic3
 printer/dell/s5840cdn
 printer/hp/3050a
-printer/hp/a3
 printer/hp/a809
+printer/hp/a910
 printer/hp/a9j40a
 printer/hp/a9j40b
 printer/hp/a9j48b
 printer/hp/a9u23a
 printer/hp/a9u23c
 printer/hp/b6t06a
-printer/hp/b9s57c
 printer/hp/b9s59a
+printer/hp/b9s61a
 printer/hp/b9s63a
 printer/hp/b9s64a
 printer/hp/b9s65a
 printer/hp/b9s80a
 printer/hp/b9s81a
-printer/hp/b9s83a
 printer/hp/c309a
 printer/hp/c310
-printer/hp/c4380
 printer/hp/c4700
 printer/hp/c6200
 printer/hp/c6300
@@ -257,7 +209,19 @@ printer/hp/cm2320fxi
 printer/hp/cm2320nf
 printer/hp/cm749a
 printer/hp/cm752a
+printer/hp/cn577a
+printer/hp/cn579a
 printer/hp/cn583a
+printer/hp/color laserjet mfp m277dw
+printer/hp/color laserjet mfp m277n
+printer/hp/color laserjet mfp m281fdn
+printer/hp/color laserjet mfp m281fdw
+printer/hp/color laserjet mfp m377dw
+printer/hp/color laserjet mfp m476dn
+printer/hp/color laserjet mfp m476dw
+printer/hp/color laserjet mfp m477fdn
+printer/hp/color laserjet mfp m477fdw
+printer/hp/color laserjet mfp m477fnw
 printer/hp/cq877a
 printer/hp/cq877b
 printer/hp/cr768
@@ -268,27 +232,35 @@ printer/hp/cx017b
 printer/hp/cx018a
 printer/hp/cx042a
 printer/hp/cx042b
-printer/hp/cx047b
-printer/hp/cx052a
 printer/hp/cx052b
-printer/hp/cx054b
-printer/hp/cz279a
-printer/hp/cz279c
-printer/hp/cz282c
 printer/hp/cz284b
-printer/hp/d3a78b
+printer/hp/d3q16b
 printer/hp/d3q19a
 printer/hp/d3q20a
 printer/hp/d3q20b
 printer/hp/d9l19a
-printer/hp/e1e94b
+printer/hp/deskjet 2540 series
+printer/hp/deskjet 2600 series
+printer/hp/deskjet 3540 series
+printer/hp/deskjet 3630 series
+printer/hp/deskjet 3700 series
+printer/hp/deskjet 3830 series
+printer/hp/deskjet 4530 series
 printer/hp/e3e02a
 printer/hp/e4w43a
 printer/hp/e4w44a
 printer/hp/e4w47a
 printer/hp/e709a
 printer/hp/e709n
+printer/hp/e710n
 printer/hp/e809a
+printer/hp/envy 4510 series
+printer/hp/envy 4520 series
+printer/hp/envy 5530 series
+printer/hp/envy 5540 series
+printer/hp/envy 5640 series
+printer/hp/envy 5660 series
+printer/hp/envy 7640 series
 printer/hp/f0m65a
 printer/hp/f0v70b
 printer/hp/f0v71b
@@ -302,16 +274,11 @@ printer/hp/f1j04a
 printer/hp/f4500
 printer/hp/f8b04a
 printer/hp/f8b06a
-printer/hp/g0v47a
-printer/hp/g0v48c
-printer/hp/g1
 printer/hp/g1w52a
 printer/hp/g510g
 printer/hp/g510n
-printer/hp/g6
 printer/hp/j2d37a
 printer/hp/j6u61b
-printer/hp/j6u66a
 printer/hp/j6u67a
 printer/hp/j6u69a
 printer/hp/j6u70b
@@ -319,7 +286,6 @@ printer/hp/j7k36a
 printer/hp/j9v80b
 printer/hp/j9v90a
 printer/hp/j9v91a
-printer/hp/j9v93b
 printer/hp/j9v95b
 printer/hp/k4t93a
 printer/hp/k4t99b
@@ -329,134 +295,217 @@ printer/hp/k7g86a
 printer/hp/k7v40a
 printer/hp/k7v45b
 printer/hp/k9b54a
-printer/hp/k9b55a
 printer/hp/k9h49a
 printer/hp/k9h50a
 printer/hp/k9h52a
 printer/hp/k9t05b
 printer/hp/k9t07b
 printer/hp/k9t09b
-printer/hp/m1213nf
-printer/hp/m1522n
-printer/hp/m226dw
-printer/hp/m227fdw
+printer/hp/laserjet 200 color m251nw
+printer/hp/laserjet 200 colormfp m276nw
+printer/hp/laserjet 400 color m451dn
+printer/hp/laserjet 400 color m451dw
+printer/hp/laserjet 400 color m451nw
+printer/hp/laserjet 400 colormfp m475dn
+printer/hp/laserjet 400 m401dn
+printer/hp/laserjet 400 m401dne
+printer/hp/laserjet 400 m401n
+printer/hp/laserjet 400 mfp m425dn
+printer/hp/laserjet 500 colormfp m570dn
+printer/hp/laserjet mfp m130fn
+printer/hp/laserjet mfp m130fw
+printer/hp/laserjet mfp m227fdn
+printer/hp/laserjet mfp m227fdw
+printer/hp/laserjet mfp m426dw
+printer/hp/laserjet mfp m426fdn
+printer/hp/laserjet mfp m426fdw
+printer/hp/laserjet p2055dn
+printer/hp/laserjet p2055x
+printer/hp/laserjet pro m201dw
+printer/hp/laserjet pro m501dn
+printer/hp/laserjet pro m706n
+printer/hp/laserjet pro mfp m225dw
+printer/hp/laserjet pro mfp m521dn
 printer/hp/m251nw
 printer/hp/m2727
 printer/hp/m274n
+printer/hp/m276nw
 printer/hp/m277c6
 printer/hp/m277dw
-printer/hp/m281fdw
+printer/hp/m277n
 printer/hp/m2q28a
 printer/hp/m375nw
 printer/hp/m401dn
+printer/hp/m401dne
 printer/hp/m401dw
+printer/hp/m401n
 printer/hp/m425dn
-printer/hp/m426fdn
+printer/hp/m425dw
 printer/hp/m451dn
 printer/hp/m451dw
 printer/hp/m451nw
 printer/hp/m475dn
+printer/hp/m475dw
+printer/hp/m476dn
+printer/hp/m476dw
 printer/hp/m476nw
-printer/hp/m477fdn
-printer/hp/m477fdw
 printer/hp/m506
+printer/hp/m521dw
+printer/hp/m570dn
+printer/hp/m570dw
+printer/hp/m600
 printer/hp/m601
 printer/hp/m605
-printer/hp/m606
 printer/hp/m680
 printer/hp/m750
-printer/hp/m806
 printer/hp/m9l81a
+printer/hp/officejet 3830 series
+printer/hp/officejet 4630 series
+printer/hp/officejet 4650 series
+printer/hp/officejet 5740 series
+printer/hp/officejet 6600
+printer/hp/officejet 6700
+printer/hp/officejet 6950
+printer/hp/officejet 6960
+printer/hp/officejet 7110 series
+printer/hp/officejet 7510 series
+printer/hp/officejet 7610 series
+printer/hp/officejet pro 6830
+printer/hp/officejet pro 6970
+printer/hp/officejet pro 8100
+printer/hp/officejet pro 8600
+printer/hp/officejet pro 8720
+printer/hp/officejet pro x476dw mfp
+printer/hp/officejet pro x576dw mfp
 printer/hp/p1606dn
+printer/hp/p2015
 printer/hp/p2035n
 printer/hp/p2055
 printer/hp/p2055dn
 printer/hp/p4c85a
+printer/hp/pagewide pro 477dw mfp
+printer/hp/photosmart 5520 series
+printer/hp/photosmart 7520 series
 printer/hp/t0f32a
 printer/hp/t0f33a
 printer/hp/t0g25a
-printer/hp/x3b09a
+printer/hp/x451dn
 printer/hp/x476dn
-printer/inca/s50i
-printer/lenovo/i5
-printer/lexmark/ z23
+printer/kyocera/mfp
+printer/lexmark/c935
+printer/lexmark/cx510de
 printer/lexmark/cx725
+printer/lexmark/e260dn
+printer/lexmark/ms312dn
+printer/lexmark/ms610dn
+printer/lexmark/ms621dn
+printer/lexmark/ms810
+printer/lexmark/mx310dn
+printer/lexmark/mx611dhe
+printer/lexmark/t652
+printer/lexmark/xc4140
 printer/lexmark/xc4150
-printer/minolta/4000p
+printer/microsoft/2000m
+printer/microsoft/2016p
 printer/oki/c110
 printer/oki/c5200
 printer/samsung/c140x
-printer/samsung/c1860
-printer/samsung/clp-410
 printer/samsung/clp-680
 printer/samsung/m337x
-printer/sun/bee3
-printer/xerox/m205
-printer/xerox/n17
-printer/xerox/p255
+printer/virata/emweb
+printer/xerox/ews-nic5
+printer/zebra/rfstp002
+printer/zebranet/zbr-79071
 router/actiontec/r3000
-router/airlive/wl-1500r
-router/allied/ar415s
-router/allied/ar450s
-router/allied/at-ar750s
+router/airlive/ap60
+router/allnet/vpn10
 router/asus/gt-ac5300
-router/asus/n10
+router/asus/nod32
+router/asus/rt-ac66u
 router/asus/rt-ac68u
 router/asus/rt-n10u
 router/asus/rt-n12
-router/asus/rt-n14u
 router/asus/rt-n16
+router/asus/rt-n18u
+router/asus/rt-n56u
+router/asus/rt-n66u
 router/asus/wl-500g
 router/asus/wl-500w
-router/asus/wl-520gu
 router/bec/6300vnl
 router/bec/7800tn
 router/belkin/n150
+router/billion/6300nx
 router/billion/7300n
 router/billion/7300ra
 router/billion/7800n
 router/billion/8800nl
-router/binatone/wr1500n
+router/binatone/wr1505n3
 router/binatone/wr3005n3
-router/buffalo/g54
 router/buffalo/n300
 router/cisco/base64
 router/cisco/e2000
-router/cisco/g2
-router/cisco/rp1
+router/cisco/rv016
 router/cisco/rv042
 router/cisco/rv082
-router/cisco/sp2
-router/cisco/t3
-router/cisco/wrvs4400n
 router/cisco/ws-c3550-24
-router/cradlepoint/aer1650
 router/d-link/ac1200
 router/d-link/ac1750
-router/d-link/di-504
+router/d-link/dgl-5500a1
+router/d-link/dhp-1320
+router/d-link/dir-300
 router/d-link/dir-320
+router/d-link/dir-400
+router/d-link/dir-524
+router/d-link/dir-600
+router/d-link/dir-600m
+router/d-link/dir-610
+router/d-link/dir-615
+router/d-link/dir-652
+router/d-link/dir-655
+router/d-link/dir-657
+router/d-link/dir-685
+router/d-link/dir-825
+router/d-link/dir-827
+router/d-link/dir-835
+router/d-link/dir-850l
+router/d-link/dir-855
+router/d-link/dir-857
+router/d-link/dir-862l
+router/d-link/dir-866l
+router/d-link/dir-868l
 router/d-link/dsl-2540u
+router/d-link/dsl-2640b
 router/d-link/dsl-2640u
-router/d-link/dsl-2745
+router/d-link/dsl-2641b
 router/d-link/dsl-2750e
-router/d-link/dsl-500g
+router/d-link/dsl-502t
 router/d-link/dsl-526b
+router/d-link/wbr-1310
+router/d-link/wbr-2200
 router/dd-wrt/jffs2
 router/dd-wrt/tl-wr740n
-router/dd-wrt/v3
-router/dd-wrt/x86
-router/digi/x2
-router/evolution/x1
-router/evolution/x5
-router/f5/f5
+router/dd-wrt/wndr3700v4
+router/ehome/eh100
 router/gateway/n450
 router/intelbras/tl-wr841nd
-router/ironport/c30
+router/iptime/a1004ns
+router/iptime/a104ns
+router/iptime/a2004ns
+router/iptime/a3003ns
+router/iptime/a3004ns
+router/iptime/a5004ns
+router/iptime/a6004ns
+router/iptime/a704ns
+router/iptime/a8004ns
+router/iptime/a804ns
+router/iptime/n7004ns
+router/iptime/n704bcm
+router/iptime/n704ns
+router/iptime/n904ns
+router/juniper/m10i
+router/juniper/mx104
 router/juniper/mx240
-router/lenovo/d1
-router/lenovo/f14
-router/lg/l9
-router/linksys/befsr81
+router/juniper/mx80
 router/linksys/befvp41
 router/linksys/e1000
 router/linksys/e1200
@@ -466,168 +515,178 @@ router/linksys/e2500
 router/linksys/e3000
 router/linksys/e3200
 router/linksys/e4200
+router/linksys/e900
 router/linksys/ea2700
-router/linksys/ie9
 router/linksys/n750
 router/linksys/wag120n
-router/linksys/wrt300n
 router/linksys/wrt54g
 router/linksys/wrt54gl
 router/linksys/wrt600n
 router/linksys/wrv54g
-router/microsoft/ie6
+router/logitech/m100
+router/mikrotik/rb1100
+router/mikrotik/rb2011
+router/mikrotik/rb750
+router/mikrotik/rb951
 router/nec/ix2105
-router/netgear/ac1900
+router/netgear/ac1200
+router/netgear/d7800
 router/netgear/dg834
-router/netgear/dg934g
 router/netgear/dgn2000
 router/netgear/dgn2200
+router/netgear/dgnd3300
+router/netgear/ex2700
 router/netgear/n600
+router/netgear/n750
 router/netgear/r6250
 router/netgear/r6300
 router/netgear/r6400
 router/netgear/r6900v2
 router/netgear/r7000
+router/netgear/r7500
+router/netgear/r7500-100nas
+router/netgear/r7800
 router/netgear/r8000
+router/netgear/r9000
 router/netgear/wgr614
 router/netgear/wgr614v9
 router/netgear/wndr3300
+router/netgear/wndr3700
+router/netgear/wndr3800
+router/netgear/wndr4300
+router/netgear/wndr4500v3
+router/netgear/wndr4700
 router/netgear/wnr1000v3
+router/netgear/wnr2000v5
+router/netgear/wnr2200
 router/netgear/wnr3500
+router/netgear/wnr3500lv1
 router/netgear/wnr614
-router/netgear/wnr834b
-router/netgear/x10
-router/netgear/x4
-router/o2/o2
-router/phicomm/k2
+router/philips/2017b
 router/planet/wnrt-627
-router/samsung/m1
 router/siemens/sl2-141
-router/smc/smcwbr14s
-router/sweex/lw050v2
-router/sweex/lw321
-router/tcl/t1
+router/soho/fr40
+router/sonus/tenor multipath switch
+router/sonus/vxworks
+router/soundwin/w200
+router/speedport/w 723v typ b
 router/totolink/a2004ns
-router/totolink/f1
+router/totolink/a5004ns
+router/totolink/n150rt
 router/totolink/n151rt
-router/tp-link/c5
-router/tp-link/c7
-router/tp-link/c8
-router/tp-link/c9
-router/tp-link/d2
+router/tp-link/c1900
+router/tp-link/mr3020
+router/tp-link/mr3220
 router/tp-link/mr3420
+router/tp-link/n750
+router/tp-link/r460
+router/tp-link/r480t
+router/tp-link/r600vpn
+router/tp-link/r860
 router/tp-link/td-w8960n
 router/tp-link/td-w8968
 router/tp-link/tl-wdr3600
-router/tp-link/tl-wpa4530
+router/tp-link/tl-wdr4300
 router/tp-link/tl-wr1043nd
 router/tp-link/tl-wr720n
+router/tp-link/tl-wr741n
 router/tp-link/tl-wr741nd
 router/tp-link/tl-wr841hp
 router/tp-link/tl-wr841n
+router/tp-link/tl-wr940n
 router/tp-link/tl-wr941hp
 router/tp-link/tl-wr941nd
+router/tp-link/wa801n
+router/tp-link/wdr3500
+router/tp-link/wdr3600
+router/tp-link/wdr4300
+router/tp-link/wr1042nd
+router/tp-link/wr1043n
+router/tp-link/wr1043nd
+router/tp-link/wr340g
+router/tp-link/wr740n
+router/tp-link/wr741n
+router/tp-link/wr741nd
+router/tp-link/wr743nd
+router/tp-link/wr840n
+router/tp-link/wr841n
+router/tp-link/wr842nd
+router/tp-link/wr843nd
+router/tp-link/wr940n
+router/tp-link/wr941n
+router/tp-link/wr941nd
+router/trendnet/tew-634gru
 router/trendnet/tew-651br
 router/trendnet/tew-652brp
+router/trendnet/tew-673gru
+router/trendnet/tew-712br
 router/trendnet/tw100-s4w1ca
 router/vizio/xwr100
+router/westell/tr-069
 router/westermo/adsl-350
 router/westermo/mrd-310
 router/westermo/mrd-315
+router/westermo/mrd-330
 router/westermo/mrd-350
 router/westermo/mrd-455
 router/zte/f609
-router/zte/f660
-router/zyxel/d1
+router/zte/ox253p
+router/zyxel/nbg334w
 router/zyxel/p-660w
 router/zyxel/p-661h
 router/zyxel/p-873hnup
-router/zyxel/t1
 router/zyxel/vsg1432-b101
 router/zyxel/vsg1435-b101
-router/zyxel/z2
-switch/3com/h3c
-switch/adtran/1224r
-switch/adtran/1531p
-switch/adtran/1534p
-switch/allied/9924t
-switch/allied/at-8624t
-switch/allied/at-9924sp
-switch/allied/g6f
-switch/asus/net4
+scanner/honeywell/rs-232
+scanner/hp/cv078a
+specialized/omron/plc cj2m
+switch/axis/rs485
 switch/cisco/1000v
-switch/cisco/b22
-switch/cisco/h2o
-switch/cisco/ips1
-switch/cisco/sc0
-switch/com3/ch1
-switch/cosy/talk2m
+switch/cisco/ws-c3550-48
 switch/d-link/dir-330
-switch/enterasys/c2
-switch/geovision/j2000
-switch/hp/4000m
-switch/hp/j4110a
-switch/hp/j4813a
-switch/hp/j4850a
-switch/hp/j4899a
-switch/hp/j4899b
-switch/hp/j4900a
-switch/hp/j4900b
-switch/hp/j4902a
-switch/hp/j4904a
-switch/hp/j4906a
+switch/hp/gbe2
 switch/hp/j9279a
-switch/hp/p5
 switch/huawei/s5700
-switch/huawei/sw1
+switch/huawei/s6720
+switch/huawei/s9306
 switch/huawei/v100r003
 switch/ibm/g8000
+switch/juniper/ex2200
 switch/juniper/ex2200-24t
 switch/juniper/ex3200-24t
 switch/juniper/ex3200-48t
 switch/juniper/ex3300-24t
 switch/juniper/ex4200
+switch/juniper/ex4200-24t
 switch/juniper/ex4300-24t
 switch/juniper/ex4300-48p
 switch/juniper/ex4300-48t
 switch/juniper/ex4550-32f
-switch/lenovo/g7052
 switch/logitech/r800
-switch/microsoft/e3
-switch/microsoft/ie5
-switch/microsoft/ie8
-switch/motorola/h17
 switch/netgear/fs728tp
-switch/netgear/fsm726v3
-switch/netgear/gc510p
 switch/netgear/gs108t
 switch/netgear/gs110tp
 switch/netgear/gs510tp
+switch/netgear/gs716t
 switch/netgear/gs724t
 switch/netgear/gs724tv4
-switch/netgear/gs728ts
-switch/netgear/gs728txs
-switch/netgear/gs748t
-switch/netgear/gs752ts
-switch/netgear/gsm7224
-switch/netgear/gsm7224v2
-switch/netgear/gsm7248v2
-switch/netgear/m4100-50g
+switch/netgear/gs748tv5
+switch/netgear/m4100-26g
 switch/netgear/m4300
-switch/netgear/m4300-28g
-switch/netgear/v1
-switch/netgear/xs712t
-switch/o2/re4
-switch/option/a12
-switch/option/sha-1
-switch/pci/e14
 switch/polycom/ni-1
-switch/polycom/v2
-switch/rm/rm2
-switch/safer/cr3
-switch/safer/ms2
-switch/sony/ps4
-switch/trust/bs1
-switch/verizon/b33
-switch/yokogawa/gm10
-switch/zyxel/gs2210-24hp
+switch/zoom/fs01
+video/axis/m7014
+video/axis/p7214
+video/cisco/mpeg-4
+video/moxa/5110a
+voip adapter/oki/bv1250
+wap/asus/rt-ac87r
+wap/asus/rt-ac87u
+wap/huawei/hg532e
+wap/linksys/wrt100
+wap/linksys/wrt110
+wap/linksys/wrt150n
+wap/netgear/wnr2000v2
+wap/tomato/firmware
+wap/western digital/mynet n900
+wap/zyxel/virtual web
