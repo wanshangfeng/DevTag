@@ -10,7 +10,7 @@ import path_config as path
 
 
 def word2vector(X_train):
-    """词向量"""
+    """训练词向量"""
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     logger.info("running %s" % ' '.join(sys.argv))
     wv_model = Word2Vec(X_train, size=wv_size, window=6, sg=1, min_count=5, workers=multiprocessing.cpu_count(), iter=10)
