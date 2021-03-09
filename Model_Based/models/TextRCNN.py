@@ -30,7 +30,7 @@ class Config(object):
         self.num_epochs = 100                                            # epoch数
         self.batch_size = 128                                           # mini-batch大小
         self.pad_size = 100                                              # 每句话处理成的长度(短填长切)
-        self.learning_rate = 1e-4                                       # 学习率
+        self.learning_rate = 1e-3                                       # 学习率
         self.embed = self.embedding_pretrained.size(1)\
             if self.embedding_pretrained is not None else 300           # 字向量维度, 若使用了预训练词向量，则维度统一
         self.hidden_size = 256                                          # lstm隐藏层
@@ -54,7 +54,7 @@ class Model(nn.Module):
 
     def forward(self, x):
         x, _ = x
-        embed = self.embedding(x)  # [batch_size, seq_len, embeding]=[64, 32, 64]
+        embed = self.embedding(x)
         out, _ = self.lstm(embed)
         out = torch.cat((embed, out), 2)
         out = F.relu(out)
