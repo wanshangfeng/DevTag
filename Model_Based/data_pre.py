@@ -73,18 +73,15 @@ def preprocessing(text):
 def test_data_pre(path, to_path):
     """对测试数据做预处理"""
     filepath = [path]
-    banners = []
     print("Data preprocessing...")
     for file in filepath:
         print('Processing ', file)
         with open(file, 'r', encoding='utf-8') as f, open(to_path, 'w', encoding='utf-8') as f2:
             for line in f.readlines():
                 dict = json.loads(line)
-                banners.append(dict['banner'])
                 text = preprocessing(dict['banner'])
                 # print(text)
                 f2.write(' '.join(text)+'\n')
-    return banners
 
 
 def all_data_pre():

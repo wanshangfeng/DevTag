@@ -82,7 +82,7 @@ def train(config, model, train_iter, val_iter, test_iter):
     test(config, model, test_iter, use_type="train")
 
 
-def test(config, model, test_iter, use_type, banners=[]):
+def test(config, model, test_iter, use_type):
     # test
     model.load_state_dict(torch.load(config.save_path))
     model.eval()
@@ -111,7 +111,6 @@ def test(config, model, test_iter, use_type, banners=[]):
                     'vendor': brand,
                     'product': product,
                     'device_type': device_type,
-                    'banner': banners[each]
                 }
                 json.dump(devtag, f)
                 f.write('\n')
