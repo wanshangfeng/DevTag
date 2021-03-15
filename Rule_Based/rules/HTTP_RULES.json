@@ -7496,7 +7496,7 @@
 {"filterword": "nx430", "tag": {"application": "", "device_type": "gateway", "product": "nx430", "vendor": ""}}
 {"filterword": "HDHomeRun Main Menu", "tag": {"application": "", "device_type": "tv tuner", "product": "hdhomerun", "vendor": "silicondust"}}
 {"filterword": "tew-680mb", "tag": {"application": "", "device_type": "router", "product": "tew-680mb", "vendor": "trendnet"}}
-{"filterword": "^HTTP/1\\.1 200 OK\\nContent-Type: text/html; charset=UTF-8\\nContent-Length: \\d+\\n\\n<html>\\n<!--\\n \\* WiFi Keyboard - Remote Keyboard for Android\\.\\n \\* Copyright \\(C\\) 2011 Ivan Volosyuk\\n", "tag": {"application": "", "device_type": "phone", "product": "keyboard for android", "vendor": "WiFi"}}
+{"filterword": "^HTTP/1\\.1 200 OK\\nContent-Type: text/html; charset=UTF-8\\nContent-Length: \\d+\\n\\n<html>\\n<!--\\n \\* WiFi Keyboard - Remote Keyboard for Android\\.\\n \\* Copyright \\(C\\) 2011 Ivan Volosyuk\\n", "tag": {"application": "", "device_type": "phone", "product": "WiFi keyboard for android", "vendor": ""}}
 {"filterword": "dek-1f3858", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3858", "vendor": ""}}
 {"filterword": "dek-1f3f60", "tag": {"application": "", "device_type": "modem", "product": "dek-1f3f60", "vendor": ""}}
 {"filterword": "att7eq8hdx", "tag": {"application": "", "device_type": "gateway", "product": "att7eq8hdx", "vendor": ""}}
