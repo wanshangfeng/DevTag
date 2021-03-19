@@ -9,6 +9,7 @@ ___DevTag___ is a tool that recognizes information about IoT devices, including 
 The input is the remote host's banner in the application-layer protocol, and the output is the tag of the remote host. 
 The Tag format is the <device_type, vendor, product_info>.
 
+And here is [Devtag](http://www.infolab.top/research/DevTag/) web link.
 
 ## The Rule-based Approach 
 
