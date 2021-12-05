@@ -1,0 +1,616 @@
+run_id: Mkfsj4W8, ============================================================================
+run_id: Mkfsj4W8, project: data-d, run_name: TP2+cln_plus+BERT, run_id: Mkfsj4W8
+
+run_id: Mkfsj4W8, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 5e-05,
+    "batch_size": 20,
+    "epochs": 20,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: DYCnVvSB, ============================================================================
+run_id: DYCnVvSB, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: DYCnVvSB
+
+run_id: DYCnVvSB, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 20,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: YzQHF1uV, ============================================================================
+run_id: YzQHF1uV, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: YzQHF1uV
+
+run_id: YzQHF1uV, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 20,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: TE3mw2Ml, ============================================================================
+run_id: TE3mw2Ml, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: TE3mw2Ml
+
+run_id: TE3mw2Ml, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 20,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: 0iAnEBoh, ============================================================================
+run_id: 0iAnEBoh, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: 0iAnEBoh
+
+run_id: 0iAnEBoh, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 20,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: PnjeXAaq, ============================================================================
+run_id: PnjeXAaq, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: PnjeXAaq
+
+run_id: PnjeXAaq, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 20,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: 0C4p5sNF, ============================================================================
+run_id: 0C4p5sNF, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: 0C4p5sNF
+
+run_id: 0C4p5sNF, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 30,
+    "epochs": 2,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: SOwenrtH, ============================================================================
+run_id: SOwenrtH, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: SOwenrtH
+
+run_id: SOwenrtH, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 30,
+    "epochs": 2,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: kAQ6YOwz, ============================================================================
+run_id: kAQ6YOwz, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: kAQ6YOwz
+
+run_id: kAQ6YOwz, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 30,
+    "epochs": 2,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: 0gD4Oyqv, ============================================================================
+run_id: 0gD4Oyqv, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: 0gD4Oyqv
+
+run_id: 0gD4Oyqv, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 30,
+    "epochs": 2,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: 83qDVSbW, ============================================================================
+run_id: 83qDVSbW, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: 83qDVSbW
+
+run_id: 83qDVSbW, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 2,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: fnSb0kgG, ============================================================================
+run_id: fnSb0kgG, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: fnSb0kgG
+
+run_id: fnSb0kgG, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.0001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 10,
+    "epochs": 2,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: p8mfhR1O, ============================================================================
+run_id: p8mfhR1O, project: data-d, run_name: TP2+cln_plus+BiLSTM, run_id: p8mfhR1O
+
+run_id: p8mfhR1O, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cln_plus",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 10,
+    "epochs": 1,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: p8mfhR1O, {'train_loss': 0.000286466648474372, 'train_small_shaking_seq_acc': 0.9721664301409697, 'learning_rate': 0.0004999999999999999, 'time': 8703.207995414734}
+run_id: p8mfhR1O, {'val_shaking_tag_acc': 0.9960701768440112, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9946822197444033, 'val_ent_recall': 0.9994828923554252, 'val_ent_f1': 0.9970767775766642, 'time': 362.0610475540161}
+run_id: pQGxveYN, ============================================================================
+run_id: pQGxveYN, project: data-d, run_name: TP2+cat+BiLSTM, run_id: pQGxveYN
+
+run_id: pQGxveYN, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 15,
+    "epochs": 1,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: pQGxveYN, {'train_loss': 0.0014041728768532562, 'train_small_shaking_seq_acc': 0.7005604289396946, 'learning_rate': 0.0005, 'time': 1739.6581919193268}
+run_id: pQGxveYN, {'val_shaking_tag_acc': 0.9959298283175418, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9958745165449074, 'val_ent_recall': 0.998621046281134, 'val_ent_f1': 0.9972458903515093, 'time': 42.11512613296509}
+run_id: XY1o9lqt, ============================================================================
+run_id: XY1o9lqt, project: data-v, run_name: TP2+cat+BiLSTM, run_id: XY1o9lqt
+
+run_id: XY1o9lqt, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 5,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: FLCqrlBR, ============================================================================
+run_id: FLCqrlBR, project: data-v, run_name: TP2+cat+BiLSTM, run_id: FLCqrlBR
+
+run_id: FLCqrlBR, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 5,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: FLCqrlBR, {'train_loss': 0.0008058487573931446, 'train_small_shaking_seq_acc': 0.7807486633992047, 'learning_rate': 0.0005, 'time': 2195.9174942970276}
+run_id: FLCqrlBR, {'val_shaking_tag_acc': 0.9956335609089838, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9951876804619827, 'val_ent_recall': 0.9989322214877714, 'val_ent_f1': 0.9970564352410753, 'time': 60.570064067840576}
+run_id: FLCqrlBR, {'train_loss': 3.552910244471586e-06, 'train_small_shaking_seq_acc': 0.9962566837491159, 'learning_rate': 0.001, 'time': 2202.707560777664}
+run_id: FLCqrlBR, {'val_shaking_tag_acc': 0.9972602733194011, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.997867154174284, 'val_ent_recall': 0.999135607871053, 'val_ent_f1': 0.9985009781747585, 'time': 60.4025137424469}
+run_id: FLCqrlBR, {'train_loss': 5.267302338934579e-06, 'train_small_shaking_seq_acc': 0.9947124295173274, 'learning_rate': 0.0005, 'time': 2189.4463703632355}
+run_id: FLCqrlBR, {'val_shaking_tag_acc': 0.997431506441064, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9980702823481616, 'val_ent_recall': 0.9993389942543347, 'val_ent_f1': 0.9987042353713337, 'time': 60.34366965293884}
+run_id: FLCqrlBR, {'train_loss': 1.4002692955705655e-06, 'train_small_shaking_seq_acc': 0.9983029571680683, 'learning_rate': 0.001, 'time': 2187.1567256450653}
+run_id: FLCqrlBR, {'val_shaking_tag_acc': 0.9978167803524292, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9982223576616385, 'val_ent_recall': 0.9993389942543347, 'val_ent_f1': 0.9987803638576157, 'time': 60.32970643043518}
+run_id: FLCqrlBR, {'train_loss': 2.394834276725971e-06, 'train_small_shaking_seq_acc': 0.9972716353286448, 'learning_rate': 0.0005, 'time': 2191.8477029800415}
+run_id: FLCqrlBR, {'val_shaking_tag_acc': 0.9972602733194011, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9975131952902964, 'val_ent_recall': 0.999389840850155, 'val_ent_f1': 0.9984506362546116, 'time': 60.63389205932617}
+run_id: fDcTXVuk, ============================================================================
+run_id: fDcTXVuk, project: data-p, run_name: TP2+cat+BiLSTM, run_id: fDcTXVuk
+
+run_id: fDcTXVuk, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 5,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: fDcTXVuk, {'train_loss': 0.000550164665942259, 'train_small_shaking_seq_acc': 0.8034800072844211, 'learning_rate': 0.0005, 'time': 4117.247932910919}
+run_id: fDcTXVuk, {'val_shaking_tag_acc': 0.9585982678253526, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9461909579021088, 'val_ent_recall': 0.9548470689858259, 'val_ent_f1': 0.9504993062471793, 'time': 106.6987407207489}
+run_id: fDcTXVuk, {'train_loss': 4.1417504930676115e-05, 'train_small_shaking_seq_acc': 0.9563661564937005, 'learning_rate': 0.001, 'time': 4050.0043048858643}
+run_id: fDcTXVuk, {'val_shaking_tag_acc': 0.9616329498833085, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9495157714596865, 'val_ent_recall': 0.9585378303035063, 'val_ent_f1': 0.9540054708865652, 'time': 105.82208371162415}
+run_id: fDcTXVuk, {'train_loss': 4.302360422621713e-05, 'train_small_shaking_seq_acc': 0.9531261571700756, 'learning_rate': 0.0005, 'time': 4619.240803480148}
+run_id: fDcTXVuk, {'val_shaking_tag_acc': 0.9580924870134089, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9508656995788488, 'val_ent_recall': 0.9573991911735835, 'val_ent_f1': 0.9541212607355163, 'time': 113.15653896331787}
+run_id: fDcTXVuk, {'train_loss': 3.936187096808365e-05, 'train_small_shaking_seq_acc': 0.9592615404202388, 'learning_rate': 0.001, 'time': 4130.8461747169495}
+run_id: fDcTXVuk, {'val_shaking_tag_acc': 0.9586946073352487, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9522322822354043, 'val_ent_recall': 0.9580274058659547, 'val_ent_f1': 0.9551210537642035, 'time': 106.95206236839294}
+run_id: fDcTXVuk, {'train_loss': 4.088570545422022e-05, 'train_small_shaking_seq_acc': 0.9562861565663264, 'learning_rate': 0.0005, 'time': 4151.859084606171}
+run_id: fDcTXVuk, {'val_shaking_tag_acc': 0.9611512542000625, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9499495224042868, 'val_ent_recall': 0.9605795280537124, 'val_ent_f1': 0.9552349530479353, 'time': 107.31006741523743}
+run_id: pZDbxOyN, ============================================================================
+run_id: pZDbxOyN, project: data-p, run_name: TP2+cat+BiLSTM, run_id: pZDbxOyN
+
+run_id: pZDbxOyN, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 5,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: pZDbxOyN, {'train_loss': 0.0004838193852100839, 'train_small_shaking_seq_acc': 0.8426350589292044, 'learning_rate': 0.0005, 'time': 3368.4786179065704}
+run_id: pZDbxOyN, {'val_shaking_tag_acc': 0.9741500577990923, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9617059326646451, 'val_ent_recall': 0.9712591778240214, 'val_ent_f1': 0.9664589478614288, 'time': 87.73344254493713}
+run_id: pZDbxOyN, {'train_loss': 3.319805675834991e-05, 'train_small_shaking_seq_acc': 0.9742430983408158, 'learning_rate': 0.001, 'time': 3288.465701818466}
+run_id: pZDbxOyN, {'val_shaking_tag_acc': 0.9763970292257396, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9677141627206199, 'val_ent_recall': 0.9709058070595626, 'val_ent_f1': 0.9693073576099426, 'time': 87.83018469810486}
+run_id: pZDbxOyN, {'train_loss': 3.480880681091369e-05, 'train_small_shaking_seq_acc': 0.9713676163866457, 'learning_rate': 0.0005, 'time': 3288.675493001938}
+run_id: pZDbxOyN, {'val_shaking_tag_acc': 0.9763091038847026, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9679351656095843, 'val_ent_recall': 0.9707094899681966, 'val_ent_f1': 0.9693203426706885, 'time': 87.77234125137329}
+run_id: pZDbxOyN, {'train_loss': 3.177713176257632e-05, 'train_small_shaking_seq_acc': 0.9762355291806261, 'learning_rate': 0.001, 'time': 3288.5149714946747}
+run_id: pZDbxOyN, {'val_shaking_tag_acc': 0.9767194204425477, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9681421470783922, 'val_ent_recall': 0.9712591778240214, 'val_ent_f1': 0.9696981575847606, 'time': 87.72546648979187}
+run_id: pZDbxOyN, {'train_loss': 3.294267874507464e-05, 'train_small_shaking_seq_acc': 0.974510239710897, 'learning_rate': 0.0005, 'time': 3304.985662460327}
+run_id: pZDbxOyN, {'val_shaking_tag_acc': 0.9769050402420487, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9692289600564462, 'val_ent_recall': 0.9708272802230162, 'val_ent_f1': 0.9700274617492057, 'time': 87.84713792800903}
+run_id: 2DJFm6YG, ============================================================================
+run_id: 2DJFm6YG, project: data-d, run_name: TP2+cat+BiLSTM, run_id: 2DJFm6YG
+
+run_id: 2DJFm6YG, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 5,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: 2DJFm6YG, {'train_loss': 0.0012053877169266628, 'train_small_shaking_seq_acc': 0.7554667213510602, 'learning_rate': 0.0005, 'time': 1226.0968210697174}
+run_id: 2DJFm6YG, {'val_shaking_tag_acc': 0.9927199989318848, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9913667834857679, 'val_ent_recall': 0.9995690769628542, 'val_ent_f1': 0.9954510342454873, 'time': 33.32590293884277}
+run_id: 2DJFm6YG, {'train_loss': 8.252803192732887e-06, 'train_small_shaking_seq_acc': 0.9927043762417667, 'learning_rate': 0.001, 'time': 1227.0118901729584}
+run_id: 2DJFm6YG, {'val_shaking_tag_acc': 0.995999999332428, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.99510855573672, 'val_ent_recall': 0.999396707747996, 'val_ent_f1': 0.9972480220153236, 'time': 33.53235101699829}
+run_id: 2DJFm6YG, {'train_loss': 9.344853588746268e-06, 'train_small_shaking_seq_acc': 0.9908854676536768, 'learning_rate': 0.0005, 'time': 1224.5071091651917}
+run_id: 2DJFm6YG, {'val_shaking_tag_acc': 0.996399999332428, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9963045720178754, 'val_ent_recall': 0.9991381539257087, 'val_ent_f1': 0.9977193510903385, 'time': 33.56426668167114}
+run_id: 2DJFm6YG, {'train_loss': 3.2066528591927355e-06, 'train_small_shaking_seq_acc': 0.9968019181696053, 'learning_rate': 0.001, 'time': 1226.4421088695526}
+run_id: 2DJFm6YG, {'val_shaking_tag_acc': 0.9962399991989136, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.99579290804499, 'val_ent_recall': 0.9995690769628542, 'val_ent_f1': 0.9976774193543386, 'time': 33.427629470825195}
+run_id: 2DJFm6YG, {'train_loss': 5.602283246306185e-06, 'train_small_shaking_seq_acc': 0.9946132311457851, 'learning_rate': 0.0005, 'time': 1230.1109070777893}
+run_id: 2DJFm6YG, {'val_shaking_tag_acc': 0.996879999256134, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9974184665691419, 'val_ent_recall': 0.9989657847108505, 'val_ent_f1': 0.9981915260070783, 'time': 33.6989061832428}
+run_id: yAGzCVfE, ============================================================================
+run_id: yAGzCVfE, project: data-v, run_name: TP2+cat+BiLSTM, run_id: yAGzCVfE
+
+run_id: yAGzCVfE, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 5,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
+run_id: yAGzCVfE, {'train_loss': 0.0007189945215314465, 'train_small_shaking_seq_acc': 0.8067408854906122, 'learning_rate': 0.0005, 'time': 2016.187816619873}
+run_id: yAGzCVfE, {'val_shaking_tag_acc': 0.9973358699642512, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9978157065935183, 'val_ent_recall': 0.9987796817003102, 'val_ent_f1': 0.9982974614382721, 'time': 55.49463510513306}
+run_id: yAGzCVfE, {'train_loss': 3.263734228503281e-06, 'train_small_shaking_seq_acc': 0.9964582817111705, 'learning_rate': 0.001, 'time': 1972.176022052765}
+run_id: yAGzCVfE, {'val_shaking_tag_acc': 0.9973834438850265, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9980701843481794, 'val_ent_recall': 0.9992881476585143, 'val_ent_f1': 0.9986787946536999, 'time': 55.04683184623718}
+run_id: yAGzCVfE, {'train_loss': 4.593896690568296e-06, 'train_small_shaking_seq_acc': 0.9951247850723304, 'learning_rate': 0.0005, 'time': 1978.8491880893707}
+run_id: yAGzCVfE, {'val_shaking_tag_acc': 0.9978116075273472, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.998932384341637, 'val_ent_recall': 0.9990847612752326, 'val_ent_f1': 0.9990085669974916, 'time': 55.26824069023132}
+run_id: yAGzCVfE, {'train_loss': 1.195991779695952e-06, 'train_small_shaking_seq_acc': 0.9986298015058143, 'learning_rate': 0.001, 'time': 1975.0475766658783}
+run_id: yAGzCVfE, {'val_shaking_tag_acc': 0.9982873449770187, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9987297393425131, 'val_ent_recall': 0.9994406874459755, 'val_ent_f1': 0.9990850869162429, 'time': 55.51557803153992}
+run_id: yAGzCVfE, {'train_loss': 2.246251437182089e-06, 'train_small_shaking_seq_acc': 0.997540983078618, 'learning_rate': 0.0005, 'time': 1973.12508893013}
+run_id: yAGzCVfE, {'val_shaking_tag_acc': 0.9980970499744651, 'val_rel_prec': 0.0, 'val_rel_recall': 0.0, 'val_rel_f1': 0.0, 'val_ent_prec': 0.9988820002032727, 'val_ent_recall': 0.9994406874459755, 'val_ent_f1': 0.9991612657257676, 'time': 55.49463438987732}
+run_id: 9RnLkpM7, ============================================================================
+run_id: 9RnLkpM7, project: data-pd, run_name: TP2+cat+BiLSTM, run_id: 9RnLkpM7
+
+run_id: 9RnLkpM7, --------------hypter_parameters------------------- 
+{
+    "shaking_type": "cat",
+    "inner_enc_type": "lstm",
+    "match_pattern": "whole_text",
+    "lr": 0.001,
+    "enc_hidden_size": 200,
+    "dec_hidden_size": 300,
+    "emb_dropout": 0.1,
+    "rnn_dropout": 0.5,
+    "word_embedding_dim": 300,
+    "batch_size": 20,
+    "epochs": 5,
+    "seed": 2333,
+    "log_interval": 10,
+    "max_seq_len": 100,
+    "sliding_len": 20,
+    "scheduler": "CAWR",
+    "ghm": false,
+    "tok_pair_sample_rate": 1,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2
+}
+-----------------------------------------
