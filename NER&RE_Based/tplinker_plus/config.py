@@ -28,7 +28,7 @@ train_config = {
     "logger": "default",
     "run_id": run_id,
     "log_path": "./default_log_dir/default.log",
-    "path_to_save_model": "./default_log_dir/{}".format(run_id),
+    "path_to_save_model": "./default_log_dir/{}/{}".format(common["exp_name"], run_id),
 
     # when to save the model state dict
     "f1_2_save": 0,
@@ -54,16 +54,16 @@ train_config = {
 }
 
 eval_config = {
-    "model_state_dict_dir": "./default_log_dir",
+    "model_state_dict_dir": "./default_log_dir/{}".format(common["exp_name"]),
     # if use wandb, set "./wandb", or set "./default_log_dir" if you use default logger
-    "run_ids": ["pQGxveYN", ],  # pQGxveYN
+    "run_ids": ["2DJFm6YG", ],  # v yAGzCVfE, p pZDbxOyN
     "last_k_model": 1,
     "test_data": "*test*.json",  # "*test*.json"
 
     # results
-    "save_res": True,
+    "save_res": False,
     "save_res_dir": "..\\results",
-
+                
     # score: set true only if test set is tagged
     "score": True,
 
@@ -77,7 +77,7 @@ eval_config = {
 
 bert_config = {
     "data_home": "../data4bert",
-    "bert_path": "../../pretrained_models/chinese-bert-wwm-ext-hit",  # bert-base-cased， chinese-bert-wwm-ext-hit
+    "bert_path": "../pretrained_models/chinese-bert-wwm-ext-hit",  # bert-base-cased， chinese-bert-wwm-ext-hit
     "hyper_parameters": {
         "lr": 5e-5,
     },

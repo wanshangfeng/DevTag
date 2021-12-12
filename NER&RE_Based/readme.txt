@@ -30,3 +30,7 @@ python res2tag.py
 
 对转换形式后的结果做评估，存至reports
 python metrics.py
+
+4.上传数据文件, 通过-T选择要标注的tag:<dvp, pd, vd, vp, d, v, p>
+for example:
+python run.py -f ./test/test-dvp.json -T dvp
