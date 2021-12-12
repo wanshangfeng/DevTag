@@ -1,0 +1,159 @@
+,precision,recall,f1-score,support
+access/d-link/dap-1360,1.0,1.0,1.0,2.0
+camera/axis/m1054,1.0,1.0,1.0,2.0
+camera/axis/m3006,1.0,1.0,1.0,2.0
+camera/d-link/,0.0,0.0,0.0,0.0
+camera/d-link/dcs-2120,0.0,0.0,0.0,1.0
+camera/d-link/dcs-930l,1.0,1.0,1.0,3.0
+camera/d-link/dcs-932l,1.0,1.0,1.0,1.0
+camera/hot/,0.0,0.0,0.0,0.0
+camera/hot/flirt4free,0.0,0.0,0.0,1.0
+camera/linksys/wvc54gc,1.0,1.0,1.0,2.0
+camera/microseven/m7cam,1.0,1.0,1.0,5.0
+camera/sony/snc-er580,1.0,1.0,1.0,6.0
+dvr/zoom/channel10,1.0,1.0,1.0,4.0
+gateway/cradlepoint/mbr-800,1.0,1.0,1.0,3.0
+gateway/cradlepoint/mbr1200,1.0,1.0,1.0,8.0
+gateway/gateway/a840,1.0,1.0,1.0,2.0
+gateway/gateway/rg-501h,1.0,1.0,1.0,2.0
+modem/tp-link/td-w8950n,1.0,1.0,1.0,22.0
+modem/tp-link/td-w8960n,1.0,1.0,1.0,620.0
+modem/zyxel/pk5001z,1.0,1.0,1.0,1924.0
+printer/brother/hl-2270dw,1.0,1.0,1.0,8.0
+printer/brother/hl-2280dw,1.0,1.0,1.0,2.0
+printer/brother/hl-4150cdn,1.0,1.0,1.0,2.0
+printer/brother/hl-5250dn,1.0,1.0,1.0,2.0
+printer/brother/mfc-7860dw,1.0,1.0,1.0,4.0
+printer/brother/mfc-8480dn,1.0,1.0,1.0,2.0
+printer/brother/mfc-8880dn,1.0,1.0,1.0,2.0
+printer/brother/mfc-8890dw,1.0,1.0,1.0,1.0
+printer/brother/mfc-9120cn,1.0,1.0,1.0,1.0
+printer/brother/mfc-9460cdn,1.0,1.0,1.0,1.0
+printer/brother/mfc-9970cdw,1.0,1.0,1.0,2.0
+printer/brother/mfc-l2700dw,1.0,1.0,1.0,2.0
+printer/hp/,0.0,0.0,0.0,0.0
+printer/hp/c4700,1.0,1.0,1.0,1.0
+printer/hp/c6200,1.0,1.0,1.0,1.0
+printer/hp/ce278a,1.0,1.0,1.0,17.0
+printer/hp/color laserjet mfp m277dw,0.0,0.0,0.0,20.0
+printer/hp/color laserjet mfp m277n,0.0,0.0,0.0,1.0
+printer/hp/color laserjet mfp m281fdw,1.0,1.0,1.0,17.0
+printer/hp/color laserjet mfp m377dw,1.0,1.0,1.0,1.0
+printer/hp/color laserjet mfp m476dn,0.25,0.3333333333333333,0.28571428571428575,3.0
+printer/hp/color laserjet mfp m476dw,1.0,0.5,0.6666666666666666,2.0
+printer/hp/color laserjet mfp m477fdn,1.0,0.9565217391304348,0.9777777777777777,23.0
+printer/hp/color laserjet mfp m477fdn m477fdn,0.0,0.0,0.0,0.0
+printer/hp/color laserjet mfp m477fdw,1.0,1.0,1.0,29.0
+printer/hp/color laserjet mfp m477fnw,1.0,1.0,1.0,12.0
+printer/hp/d3q16b,1.0,1.0,1.0,2.0
+printer/hp/e709a,1.0,1.0,1.0,1.0
+printer/hp/e809a,1.0,1.0,1.0,2.0
+printer/hp/f4500,1.0,1.0,1.0,1.0
+printer/hp/laserjet 200 color m251nw,1.0,1.0,1.0,4.0
+printer/hp/laserjet 200 colormfp m276nw,0.8571428571428571,1.0,0.923076923076923,6.0
+printer/hp/laserjet 400 color m451dn,0.0,0.0,0.0,25.0
+printer/hp/laserjet 400 color m451dw,0.0,0.0,0.0,5.0
+printer/hp/laserjet 400 color m451nw,0.0,0.0,0.0,5.0
+printer/hp/laserjet 400 colormfp m475dn,0.0,0.0,0.0,2.0
+printer/hp/laserjet 400 m401dn,0.6363636363636364,0.875,0.7368421052631579,8.0
+printer/hp/laserjet 400 m401dne,0.95,0.95,0.9500000000000001,20.0
+printer/hp/laserjet 400 m401n,1.0,1.0,1.0,9.0
+printer/hp/laserjet 400 mfp m425dn,0.8888888888888888,0.8888888888888888,0.8888888888888888,9.0
+printer/hp/laserjet 500 colormfp m570dn,0.0,0.0,0.0,7.0
+printer/hp/laserjet mfp m130fn,1.0,1.0,1.0,2.0
+printer/hp/laserjet mfp m130fw,1.0,1.0,1.0,5.0
+printer/hp/laserjet mfp m227fdn,1.0,1.0,1.0,4.0
+printer/hp/laserjet mfp m227fdw,1.0,1.0,1.0,8.0
+printer/hp/laserjet mfp m426dw,1.0,1.0,1.0,2.0
+printer/hp/laserjet mfp m426fdn,1.0,1.0,1.0,13.0
+printer/hp/laserjet mfp m426fdw,1.0,1.0,1.0,17.0
+printer/hp/laserjet pro m201dw,1.0,1.0,1.0,4.0
+printer/hp/laserjet pro m501dn,1.0,1.0,1.0,10.0
+printer/hp/laserjet pro mfp m225dw,1.0,1.0,1.0,2.0
+printer/hp/laserjet pro mfp m521dn,1.0,1.0,1.0,3.0
+printer/hp/m276nw,0.0,0.0,0.0,1.0
+printer/hp/m277c6,1.0,1.0,1.0,1.0
+printer/hp/m277dw,0.6363636363636364,1.0,0.7777777777777778,35.0
+printer/hp/m277n,0.5,1.0,0.6666666666666666,1.0
+printer/hp/m375nw,1.0,1.0,1.0,1.0
+printer/hp/m401dn,0.75,0.42857142857142855,0.5454545454545454,7.0
+printer/hp/m401dne,0.0,0.0,0.0,1.0
+printer/hp/m401n,1.0,1.0,1.0,2.0
+printer/hp/m425dn,0.0,0.0,0.0,1.0
+printer/hp/m451dn,0.6666666666666666,1.0,0.8,50.0
+printer/hp/m451dw,0.4444444444444444,1.0,0.6153846153846153,4.0
+printer/hp/m451nw,0.7058823529411765,1.0,0.8275862068965517,12.0
+printer/hp/m475dn,0.7142857142857143,0.8333333333333334,0.7692307692307692,6.0
+printer/hp/m476dn,0.75,0.6666666666666666,0.7058823529411765,9.0
+printer/hp/m476dw,0.8571428571428571,1.0,0.923076923076923,6.0
+printer/hp/m476nw,1.0,1.0,1.0,4.0
+printer/hp/m570dn,0.5882352941176471,1.0,0.7407407407407407,10.0
+printer/hp/m570dw,1.0,1.0,1.0,1.0
+printer/hp/p2015,0.0,0.0,0.0,1.0
+printer/hp/p2055dn,1.0,1.0,1.0,1.0
+printer/hp/x451dn,1.0,1.0,1.0,5.0
+router/asus/gt-ac5300,1.0,1.0,1.0,476.0
+router/asus/rt-n66u,1.0,1.0,1.0,1.0
+router/cisco/ws-c3550-24,0.0,0.0,0.0,3.0
+router/d-link/dgl-5500a1,1.0,1.0,1.0,2.0
+router/d-link/dhp-1320,1.0,1.0,1.0,16.0
+router/d-link/dir-300,1.0,1.0,1.0,68.0
+router/d-link/dir-320,1.0,1.0,1.0,17.0
+router/d-link/dir-400,1.0,1.0,1.0,5.0
+router/d-link/dir-524,1.0,1.0,1.0,21.0
+router/d-link/dir-600,1.0,1.0,1.0,51.0
+router/d-link/dir-600m,1.0,1.0,1.0,1.0
+router/d-link/dir-610,1.0,1.0,1.0,1.0
+router/d-link/dir-615,1.0,1.0,1.0,47.0
+router/d-link/dir-652,1.0,1.0,1.0,12.0
+router/d-link/dir-655,1.0,1.0,1.0,112.0
+router/d-link/dir-657,1.0,1.0,1.0,11.0
+router/d-link/dir-685,1.0,1.0,1.0,3.0
+router/d-link/dir-825,1.0,1.0,1.0,266.0
+router/d-link/dir-827,1.0,1.0,1.0,4.0
+router/d-link/dir-835,1.0,1.0,1.0,8.0
+router/d-link/dir-857,1.0,1.0,1.0,9.0
+router/d-link/dir-862l,1.0,1.0,1.0,9.0
+router/d-link/dir-866l,1.0,1.0,1.0,23.0
+router/d-link/dsl-2540u,1.0,1.0,1.0,2.0
+router/d-link/dsl-2640b,1.0,1.0,1.0,20.0
+router/d-link/dsl-2640u,1.0,1.0,1.0,18.0
+router/d-link/dsl-2641b,1.0,1.0,1.0,2.0
+router/d-link/dsl-526b,1.0,1.0,1.0,1.0
+router/d-link/wbr-2200,1.0,1.0,1.0,53.0
+router/dd-wrt/jffs2,1.0,0.6666666666666666,0.8,3.0
+router/dd-wrt/wrt54g,0.0,0.0,0.0,0.0
+router/linksys/jffs2,0.0,0.0,0.0,0.0
+router/linksys/wrt54g,1.0,0.8,0.888888888888889,10.0
+router/netgear/r7800,1.0,1.0,1.0,1.0
+router/soho/fr40,1.0,1.0,1.0,1.0
+router/tp-link/,0.0,0.0,0.0,0.0
+router/tp-link/c1900,1.0,1.0,1.0,24.0
+router/tp-link/mr3420,1.0,1.0,1.0,165.0
+router/tp-link/td-w8968,1.0,1.0,1.0,310.0
+router/tp-link/tl-wdr3600,0.0,0.0,0.0,1.0
+router/tp-link/tl-wr1043nd,1.0,1.0,1.0,197.0
+router/tp-link/tl-wr741nd,1.0,1.0,1.0,841.0
+router/tp-link/tl-wr841hp,1.0,1.0,1.0,67.0
+router/tp-link/tl-wr941hp,1.0,1.0,1.0,93.0
+router/tp-link/tl-wr941nd,1.0,1.0,1.0,334.0
+router/tp-link/wa801n,1.0,1.0,1.0,3.0
+router/tp-link/wdr4300,1.0,1.0,1.0,1.0
+router/tp-link/wr1042nd,1.0,1.0,1.0,2.0
+router/tp-link/wr1043nd,1.0,1.0,1.0,1.0
+router/tp-link/wr340g,1.0,1.0,1.0,3.0
+router/tp-link/wr740n,1.0,1.0,1.0,4.0
+router/tp-link/wr741nd,1.0,1.0,1.0,2.0
+router/tp-link/wr840n,1.0,1.0,1.0,1.0
+router/tp-link/wr841n,1.0,1.0,1.0,252.0
+router/tp-link/wr842nd,1.0,1.0,1.0,21.0
+router/tp-link/wr941n,1.0,1.0,1.0,1.0
+router/tp-link/wr941nd,1.0,1.0,1.0,110.0
+router/trendnet/tew-652brp,1.0,1.0,1.0,1.0
+switch/cisco/ws-c3550-24,0.0,0.0,0.0,0.0
+switch/cisco/ws-c3550-48,1.0,1.0,1.0,4.0
+video/axis/m7014,1.0,1.0,1.0,2.0
+video/axis/p7214,1.0,1.0,1.0,1.0
+accuracy,0.9863616366036075,0.9863616366036075,0.9863616366036075,0.9863616366036075
+macro avg,0.8206155893442421,0.8316063358489725,0.8225139105448152,6819.0
+weighted avg,0.9810308134950355,0.9863616366036075,0.9829029609529129,6819.0
