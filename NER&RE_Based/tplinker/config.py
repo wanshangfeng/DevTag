@@ -34,7 +34,7 @@ train_config = {
     "logger": "default",
     "run_id": run_id,
     "log_path": "./default_log_dir/default.log",
-    "path_to_save_model": "./default_log_dir/{}".format(run_id),
+    "path_to_save_model": "./default_log_dir/{}/{}".format(common["exp_name"], run_id),
 
     # only save the model state dict if F1 score surpasses <f1_2_save>
     "f1_2_save": 0,
@@ -58,9 +58,9 @@ train_config = {
 }
 
 eval_config = {
-    "model_state_dict_dir": "./default_log_dir",
+    "model_state_dict_dir": "./default_log_dir/{}".format(common["exp_name"]),
     # if use wandb, set "./wandb", or set "./default_log_dir" if you use default logger
-    "run_ids": ["RiLFKjJU", ],  # HjoRuy89, pBOlmTsE, dzfQO9Ru, EBt7uig0, MqSkxDKr, vtXCF1xW
+    "run_ids": ["CWPKumXw",],  # dvp, vd wGnfKtTX,vp cs04t6Yj, pd hBrzYKPO
     "last_k_model": 1,
     "test_data": "*test*.json",  # "*test*.json"
 
@@ -81,7 +81,7 @@ eval_config = {
 
 bert_config = {
     "data_home": "../data4bert",
-    "bert_path": "../../pretrained_models/bert-base-cased",
+    "bert_path": "../pretrained_models/bert-base-cased",
     "hyper_parameters": {
         "lr": 5e-5,
     },
