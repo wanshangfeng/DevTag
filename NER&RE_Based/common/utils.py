@@ -30,13 +30,13 @@ class Preprocessor:
     2. add token level span to all entities in the relations, which will be used in tagging phase
     '''
 
-    def __init__(self, tokenize_func, get_tok2char_span_map_func):
+    def __init__(self, tokenize_func="", get_tok2char_span_map_func=""):
         self._tokenize = tokenize_func
         self._get_tok2char_span_map = get_tok2char_span_map_func
 
     def transform_data(self, data, ori_format, dataset_type, add_id=True):
         '''
-        This function can only deal with three original format used in the previous works. 
+        This function can only deal with three original format used in the previous works.
         If you want to feed new dataset to the model, just define your own function to transform data.
         data: original data
         ori_format: "casrel", "joint_re", "raw_nyt"
@@ -355,3 +355,85 @@ class Preprocessor:
                     for arg in event["argument_list"]:
                         arg["tok_span"] = char_span2tok_span(arg["char_span"], char2tok_span)
         return dataset
+
+    def clean4test(self, data, save_path="", add_id=True):
+
+        from nltk.corpus import stopwords
+        from nltk.tokenize import word_tokenize
+
+        def extracTextFromHtml(html):
+            # extract text information from webpages, non-webpage text remains unchanged
+            from bs4 import BeautifulSoup
+            html_a = html
+            try:
+                soup = BeautifulSoup(html, 'html.parser')
+            except:
+                return ""
+            if str(type(soup.script)) != str("<type 'NoneType'>"):
+                for scripts in soup.find_all('script'):
+                    if scripts.string:
+                        html_a = html_a.replace(str(scripts.string), '')
+            if str(type(soup.style)) != str("<type 'NoneType'>"):
+                for styles in soup.find_all('style'):
+                    if styles.string:
+                        html_a = html_a.replace(str(styles.string), '')
+            try:
+                soup = BeautifulSoup(html_a, 'ihtml.parser')
+            except:
+                soup = BeautifulSoup(html_a, 'lxml')
+            text = soup.get_text()
+            return text
+
+        def clean(text):
+            text = extracTextFromHtml(text)
+            text = ' '.join(text.split())
+            # Remove timestamp, ip address, mac address, date information
+            time_pattern1 = "(0\d{1}|1\d{1}|2[0-3]):([0-5]\d{1})"
+            time_pattern2 = "(0\d{1}|1\d{1}|2[0-3]):[0-5]\d{1}:([0-5]\d{0,1})"
+            ip_pattern = " ((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))"
+            mac_pattern = "([A-Fa-f0-9]{2}:){5}[A-Fa-f0-9]{2}"
+            date_pattern1 = "(Mon|Tues|Tue|Wed|Thur|Thu|Fri|Sat|Sun),\s+(\d|\d\d)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Oct|Nov|Dec)\s+\d\d\d\d"
+            date_pattern2 = "(Mon|Tues|Tue|Wed|Thur|Thu|Fri|Sat|Sun)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Oct|Nov|Dec)\s+(\d|\d\d)\s+\d\d:\d\d:\d\d\s+\d\d\d\d"
+            p_date1 = re.compile(date_pattern1)
+            p_date2 = re.compile(date_pattern2)
+            p_mac = re.compile(mac_pattern)
+            p_ip = re.compile(ip_pattern)
+            p_time1 = re.compile(time_pattern1)
+            p_time2 = re.compile(time_pattern2)
+
+            text = p_date1.sub(" ", text)
+            text = p_date2.sub(" ", text)
+            text = p_mac.sub(" ", text)
+            text = p_ip.sub(" ", text)
+            text = p_time2.sub(" ", text)
+            text = p_time1.sub(" ", text)
+
+            text = text.replace(r'\r', ' ').replace(r'\n', ' ').replace(r'\t', ' ')  # remove \r, \n, \t
+            text = re.sub(u"([^\u0030 -\u0039\u0041 -\u005a\u0061-\u007a])", '', text)  # extract English characters and numbers
+            text = ' '.join(re.split('/|=|:', text))
+
+            tokens = [word for word in word_tokenize(text)]
+            tokens = [word.lower() for word in tokens]
+            tokens = [word.strip('-') for word in tokens]  # remove stopwords
+            tokens = [word.strip('.') for word in tokens]
+            stop = stopwords.words('english')
+            tokens = [word for word in tokens if word not in stop]  # remove stopwords
+            characters = ['', ',', '.', ':', ';', '?', '(', ')', '[', ']', '&', "'", "''", '``', '..',
+                          '!', '*', '@', '#', '$', '%', '-', '...', '|', '=', '+', '//', "'s", "n't"]
+            tokens = [word for word in tokens if word not in characters]  # remove special characters
+            return ' '.join(tokens)
+
+        normal_sample_list = []
+        for ind, sample in tqdm(enumerate(data), desc="Transforming data format"):
+            normal_sample = {
+                "text": clean(sample["banner"]),
+            }
+            if add_id:
+                normal_sample["id"] = "{}_{}".format("test", ind)
+                print(normal_sample["id"])
+            normal_sample_list.append(normal_sample)
+
+        if save_path:
+            json.dump(normal_sample_list, open(save_path, "w", encoding="utf-8"), ensure_ascii=False)
+
+        return normal_sample_list
